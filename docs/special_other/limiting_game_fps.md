@@ -19,15 +19,6 @@ This guide will provide you with the basics to limit your framerate using AMD Ad
 
 Keep in mind that this works globally, so it will force the framerate to what you set for ALL games on your system.
 
-<h3>Step 1. - Open AMD Adrenalin:</h3>
-
-* __Easiest Method__ - Right click your desktop wallpaper, and click `AMD Software꞉ Adrenalin Edition`.
-    <div class="figure">
-    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_desktop_context_menu.jpg"/>
-
-* Alternative Method - Search `Adrenalin` in the Windows Search Bar.
-    <div class="figure">
-    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_start_search_software.jpg"/>
 <h3>Step 2. - Enabling "Frame rate target control":</h3>
 
 1. Click `Gaming` on the top most bar of the `Adrenaline` software, and then click `Graphics` in the second bar that has now appeared.
@@ -47,8 +38,21 @@ Keep in mind that this works globally, so it will force the framerate to what yo
 
 <details markdown="block">
 <summary>NVIDIA Control Panel (Driver Based, NVIDIA GPU Only, All Games)</summary>
-This guide will provide you with the basics to limit your framerate using AMD Adrenalin's `Frame rate target control` function.
+
+This guide will provide you with the basics to limit your framerate using NVIDIA's Control Panel `3D Settings` options for `Max Frame Rate`.
 
 Keep in mind that this works globally, so it will force the framerate to what you set for ALL games on your system.
 
+<h3>Step 1. - Open NVIDIA Control Panel:</h3>
+
+* __Easiest Method__ - Right click your desktop wallpaper, and click `NVIDIA Control Panel`.
+
+* Alternative Method - Search `NVIDIA Control Panel` in the Windows Search Bar.
+
+<h3>Step 2. - Adjust the 3D Global Settings:
+
+1. On the left hand corner, click `Manage 3D Settings`.
+2. Ensure that you are within the `Global Settings` tab.
+3. Enable `Max Frame Rate`.
+4. Set the desired framerate between values 20 and 1000.
 </details>
