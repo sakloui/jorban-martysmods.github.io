@@ -78,7 +78,7 @@ The majority of the effects and add-ons are harmless, but if you deliberately us
 ------
 
 <details markdown="block">
-<summary>Installing ReShade with the ReShade Installer</summary>
+<summary>Utilizing the ReShade Installer</summary>
 
 Once launched, the installer will prompt you to select a game or application that you want to inject ReShade to. It's recommended to explore the additional options offered by the installer!
 <div class="figure">
