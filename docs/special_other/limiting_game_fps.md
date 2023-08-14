@@ -9,7 +9,7 @@ parent: Special & Others
 
 While having the highest FPS can be seen as a good thing, it often comes with the side effect of not allowing shaders breathing room in ReShade.
 
-TThese guides will take you down 
+The guides listed below will guide you through several different methods on how to limit your framerate!
 
 -----
 
@@ -21,27 +21,26 @@ Keep in mind that this works globally, so it will force the framerate to what yo
 
 <h3>Step 1. - Open AMD Adrenalin:</h3>
 
-* __Easiest Method__ - Right click your desktop wallpaper, and click `AMD Software꞉ Adrenalin Edition`.<br>
+* __Easiest Method__ - Right click your desktop wallpaper, and click `AMD Software꞉ Adrenalin Edition`.
     <div class="figure">
-    <img src="./images/limiting_game_fps/amd_desktop_context_menu.png" width="225px"/><br>
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_desktop_context_menu.png"/>
 
-* Alternative Method - Search `Adrenalin` in the Windows Search Bar.<br>
+* Alternative Method - Search `Adrenalin` in the Windows Search Bar.
     <div class="figure">
-    <img src="./images/limiting_game_fps/amd_start_search_software.png" width="500px"/><br>
-
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_start_search_software.png"/>
 <h3>Step 2. - Enabling "Frame rate target control":</h3>
 
-1. Click `Gaming` on the top most bar of the `Adrenaline` software, and then click `Graphics` in the second bar that has now appeared.<br>
+1. Click `Gaming` on the top most bar of the `Adrenaline` software, and then click `Graphics` in the second bar that has now appeared.
     <div class="figure">
-    <img src="./images/limiting_game_fps/amd_graphics_gaming_highlight.png" width="400px"/><br>
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_graphics_gaming_highlight.png"/>
 
-2. Scroll down to the `Advanced` portion of the `Graphics` tab and enable `Frame rate target control`.<br>
+2. Scroll down to the `Advanced` portion of the `Graphics` tab and enable `Frame rate target control`.
     <div class="figure">
-    <img src="./images/limiting_game_fps/amd_enable_frtc.png" width="500px"/><br>
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_enable_frtc.png"/>
 
-3. Tune `Frame rate target control` to have the desired `Max FPS`.<br>
+3. Tune `Frame rate target control` to have the desired `Max FPS`.
     <div class="figure">
-    <img src="./images/limiting_game_fps/amd_frtc_tune.png" width="500px"/>
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_frtc_tune.png"/>
 </details>
 
 -----
