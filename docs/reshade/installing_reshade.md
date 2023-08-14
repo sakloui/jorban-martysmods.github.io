@@ -5,11 +5,12 @@ nav_order: 1
 parent: ReShade Guides 
 ---
 
+# Installing ReShade
+
 <div>
-<img style="max-width: 15%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_gradiant.png"/>
+<img style="max-width: 15%; display: block; padding-block: 0rem" src="./images/installing_reshade/rs_gradiant.png"/>
 </div>
 
-# Installing ReShade
 ReShade is a shader-injection tool for all games and applications under the DirectX 9-12, OpenGL, and Vulkan graphics rendering APIs.
 
 Similar to ENB, DXVK, or ASILoader, ReShade injects into your game in order to allow for unlimited creativity from its users so they can create the image that they desire.
