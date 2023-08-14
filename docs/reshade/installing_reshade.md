@@ -159,7 +159,7 @@ ReShade presets will be in the form of {PresetName}.ini files.
 ------
 
 <details markdown="block">
-<summary>Installing Shaders</summary>
+<summary>Installing Shaders with the ReShade Installer</summary>
 
 Shaders are what makes ReShade so valuable to it's users. They're the effects that you can toggle on and configure to get the specific look you want per game!
 
@@ -186,7 +186,7 @@ If you have selected the square tick for any shader repositories, you will be gr
 ------
 
 <details markdown="block">
-<summary>Finishing with the ReShade Installer</summary>
+<summary>Finishing Up the Installation Process</summary>
 
 When you are completely done with installing ReShade through the ReShade installer, you will be greeted with a screen saying that ReShade has installed successfully. Simply click "Finish" and launch your game!
 <div class="figure">
