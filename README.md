@@ -23,7 +23,7 @@
 1. Clone GitHub Repository.
 2. CD To Location Repo exists within.
 3. CMD Run `bundle install` - Only needs to be done once.
-4. CMD Run `bundle exec jekyll serve` You can add the argument `--livereload` so that changes happen on the fly.
+4. CMD Run `bundle exec jekyll serve`
 5. Site will be hosted on `http://127.0.0.1:4000/` for local viewing.
 
 ## Editing Markdown
@@ -33,10 +33,9 @@
 
     However, there is also more provided on the Just The Docs documentation website as well.
     
-1. Simply fork the :dev: branch of the GitHub repository using the GitHub website, and then downlolad GitHub Desktop (as it makes things easier in the long run)
-2. In GitHub Desktop, Clone your forked repository, and make changes to the location that is local to your machine.
-3. View the changes by building the site using the building locally guide above.
-4. Once changes are made and you are happy with them, push your commits to your :dev: branch, and merge them with the :dev: branch of the official repository when you are done!
+1. Fork this repository using the GitHub website.
+2. Modify files within `/docs/` directory of the :dev: branch.
+3. Submit pull request to the original :dev: branch.
 
 ### Page Numbers
 
