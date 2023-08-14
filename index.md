@@ -10,9 +10,9 @@ Your extensive guide site for all things ReShade.
 </div>
 This site is here to help and guide new and returning users into the functions of ReShade!
 
-If at any point and time, you need information about a specific word, you can visit our [Glossary](glossary.htm)!
+If at any point and time, you need information about a specific word, you can visit our [Glossary](./docs/glossary.html)!
 
-If you want to contribute to this site, please visit our [Contributions Page](contribute.htm)!
+If you want to contribute to this site, please visit our [Contributions Page](./docs/contribute.html)!
 
 ----------------
 
