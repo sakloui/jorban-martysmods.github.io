@@ -185,7 +185,7 @@ If you have selected the square tick for any shader repositories, you will be gr
 ------
 
 <details markdown="block">
-<summary>Finishing the ReShade Installer</summary>
+<summary>Finishing with the ReShade Installer</summary>
 
 When you are completely done with installing ReShade through the ReShade installer, you will be greeted with a screen saying that ReShade has installed successfully. Simply click "Finish" and launch your game!
 <div class="figure">
