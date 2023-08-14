@@ -6,7 +6,7 @@ nav_order: 99
 
 Currently, Guides.MartysMods.com needs some love and attention!
 
-You can contribute to the site by making a pull request to the [:dev: branch of Guides.MartysMods.com](https://github.com/Jorbann/Guides.MartysMods.com/tree/dev) with your changes!
+You can contribute to the site by making a pull request to the [public GitHub :dev: branch for Guides.MartysMods.com](https://github.com/Jorban-MartysMods/jorban-martysmods.github.io/tree/dev) with your changes!
 
 {: .warning}
 Pull requests to :main: will be AUTOMATICALLY denied.
@@ -16,7 +16,7 @@ Pull requests to :main: will be AUTOMATICALLY denied.
 
 ### If you would like to reach out about more information/suggestions, you can ask here:
 
-* [GitHub Issues](https://github.com/Jorbann/Guides.MartysMods.com/issues)
+* [GitHub Issues](https://github.com/Jorban-MartysMods/jorban-martysmods.github.io/issues)
 * Email - jorban@martysmods.com
 * Discord DMs - @jorban
 
@@ -33,6 +33,6 @@ So keep in mind that no one is required to create anything for the ReShade commu
 
 ----------------
 
-Thank you! - Jordan Brady - Aug.08.2023<br>
+Thank you! - Jordan Brady - Aug.14.2023<br>
 Credits will be given to those who contribute!<br>
 We want to give as much credit as possible to those who have made this site a reality!

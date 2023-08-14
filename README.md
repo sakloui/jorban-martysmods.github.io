@@ -34,8 +34,8 @@
     However, there is also more provided on the Just The Docs documentation website as well.
     
 1. Fork this repository using the GitHub website.
-2. Modify files within `/docs/` directory of the :dev: branch.
-3. Submit pull request to the original :dev: branch.
+2. Modify files within `/docs/` directory of the `:dev:` branch.
+3. Submit pull request to the original `:dev:` branch.
 
 ### Page Numbers
 
