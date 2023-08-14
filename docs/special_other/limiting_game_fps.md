@@ -9,35 +9,47 @@ parent: Special & Others
 
 While having the highest FPS can be seen as a good thing, it often comes with the side effect of not allowing shaders breathing room in ReShade.
 
-This guide will take you down the various paths of how to limit your framerate, both globally and locally!
+TThese guides will take you down 
+
+-----
 
 <details markdown="block">
-<summary>AMD Adrenalin Global (Driver Based, AMD GPU Only, All Games)</summary>
+<summary>AMD Adrenalin (Driver Based, AMD GPU Only, All Games)</summary>
 This guide will provide you with the basics to limit your framerate using AMD Adrenalin's `Frame rate target control` function.
 
 Keep in mind that this works globally, so it will force the framerate to what you set for ALL games on your system.
 
 <h3>Step 1. - Open AMD Adrenalin:</h3>
 
-* __Easiest Method__ - Right click your desktop wallpaper, and click `AMD Software꞉ Adrenalin Edition`.
+* __Easiest Method__ - Right click your desktop wallpaper, and click `AMD Software꞉ Adrenalin Edition`.<br>
     <div class="figure">
     <img src="./images/limiting_game_fps/amd_desktop_context_menu.png" width="225px"/><br>
 
-* Alternative Method - Search `Adrenalin` in the Windows Search Bar.
+* Alternative Method - Search `Adrenalin` in the Windows Search Bar.<br>
     <div class="figure">
     <img src="./images/limiting_game_fps/amd_start_search_software.png" width="500px"/><br>
 
 <h3>Step 2. - Enabling "Frame rate target control":</h3>
 
-1. Click `Gaming` on the top most bar of the `Adrenaline` software, and then click `Graphics` in the second bar that has now appeared.
+1. Click `Gaming` on the top most bar of the `Adrenaline` software, and then click `Graphics` in the second bar that has now appeared.<br>
     <div class="figure">
     <img src="./images/limiting_game_fps/amd_graphics_gaming_highlight.png" width="400px"/><br>
 
-2. Scroll down to the `Advanced` portion of the `Graphics` tab and enable `Frame rate target control`.
+2. Scroll down to the `Advanced` portion of the `Graphics` tab and enable `Frame rate target control`.<br>
     <div class="figure">
     <img src="./images/limiting_game_fps/amd_enable_frtc.png" width="500px"/><br>
 
-3. Tune `Frame rate target control` to have the desired `Max FPS`.
+3. Tune `Frame rate target control` to have the desired `Max FPS`.<br>
     <div class="figure">
     <img src="./images/limiting_game_fps/amd_frtc_tune.png" width="500px"/>
+</details>
+
+-----
+
+<details markdown="block">
+<summary>NVIDIA Control Panel (Driver Based, NVIDIA GPU Only, All Games)</summary>
+This guide will provide you with the basics to limit your framerate using AMD Adrenalin's `Frame rate target control` function.
+
+Keep in mind that this works globally, so it will force the framerate to what you set for ALL games on your system.
+
 </details>
