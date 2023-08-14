@@ -1,6 +1,9 @@
-# Guides.MartysMods.com Site Repo
+# Guides.MartysMods.com MD Files
+These files will be built into HTML files for the site to display.
 
-## Using
+This is where commits for contributors need to be made!
+
+## Uses:
 * Jekyll - https://jekyllrb.com
 * Just The Docs - https://github.com/just-the-docs/just-the-docs
 * Just The Docs Documentation - https://just-the-docs.com
@@ -38,38 +41,31 @@
 3. View the changes by building the site using the building locally guide above.
 4. Once changes are made and you are happy with them, push your commits to your :dev: branch, and merge them with the :dev: branch of the official repository when you are done!
 
-### Page Numbers
-
-#### Root Pages:
+## Page Numbers
+### Root Pages:
 1. Home - Index
 2. Glossary
-
-#### 3. ReShade Guides Index
-1. Installing ReShade
+### 3. ReShade Guides Index
+1. Installing_ReShade
 2. Understanding ReShade's UI
 3. Understanding ReShade's Depth Buffer
-
-#### 4. Shader Repos Index
+### 4. Shader Repos Index
     1. None are set.
-
-#### 5. Special & Other Index
+### 5. Special & Other Index
 1. Finding your Game Executable
 2. Manually Injecting ReShade
 3. Manually Installing ReShade
 4. Manually Installing Shaders
 5. Manually Installing Addons
-
-#### 6. Best Practices Index
+### 6. Best Practices Index
     1. None are set yet.
-
 7. Using ReShade with an API Wrapper
 8. Using ReShade with an ASI Loader
 9. Using ReShade with ENB
 10. Using ReShade with SpecialK
 11. Limiting Your Game Framerate
 12. Creating and Maintaining a Centralized ReShade Install
-
-#### 99. Special Games Index
+### 99. Special Games Index
     1. FiveM
     2. RageMP
     3. GTAV

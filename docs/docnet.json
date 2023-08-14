@@ -1,0 +1,81 @@
+{
+    "Name" : "Guides | MartysMods",
+    "Source" : ".",
+    "Destination" : "..\\site",
+    "Theme" : "theme",
+	"ThemeFolder" : "..\\",
+    
+    "SourceFoldersToCopy" : 
+    [
+        "images", 
+        "reshade\\images", 
+        "shader_repos\\otisfx\\images", 
+        "shader_repos\\rsretroarch\\images", 
+        "shader_repos\\martysmods\\images", 
+        "shader_repos\\insane_shaders\\images",
+        "shader_repos\\sweetfx\\images",
+        "special_other\\images", 
+        "special_other\\best_practices\\images",
+        "special_other\\special_games\\images",
+    
+    ],
+
+    "Footer" : "&copy MartysMods. All rights reserved.",
+    "UrlFormatting" : "None",
+    "StripIndexHtm" : "false",
+    "StartingPageName" : "Home",
+    "MaxLevelInToC" : "3",
+    "Pages" : 
+    {
+        "__index" : "index.md",
+        "Glossary":"glossary.md",
+        "ReShade Guides" :
+        {
+            "__index": "reshade\\index.md",
+            "Installing ReShade" : "reshade\\installing_reshade.md",
+            "Understanding ReShade's UI" : "reshade\\understanding_reshade_ui.md",
+            "Understanding ReShade's Depth Buffer" : "reshade\\understanding_reshade_depth_buffer.md"
+        },
+        "Shader Repos" :
+        {
+            "__index" : "shader_repos\\index.md",
+            "OtisFX" : "shader_repos\\otisfx\\otisfx.md",
+            "RSRetroArch" : "shader_repos\\rsretroarch\\rsretroarch.md",
+            "Insane-Shaders" : "shader_repos\\insane_shaders\\insane_shaders.md",
+            "SweetFX" : "shader_repos\\sweetfx\\sweetfx.md",
+            "iMMERSE/qUINT" :
+            {
+                "__index" : "shader_repos\\martysmods\\index.md",
+                "iMMERSE" : "shader_repos\\martysmods\\immerse.md",
+                "qUINT" : "shader_repos\\martysmods\\quint.md",
+            },
+        },
+        "Special/Other" :
+        {
+            "__index" : "special_other\\index.md",
+            "Creating and Maintaining a Centralized ReShade Install" : "special_other\\creating_and_maintaining_a_centralized_reshade_install.md",
+            "Manually Injecting ReShade" : "special_other\\manually_injecting_reshade.md",
+            "Using ReShade with ENB" : "special_other\\using_reshade_with_enb.md",
+            "Using ReShade with SpecialK" : "special_other\\using_reshade_with_specialk.md",
+            "Using ReShade with an API Wrapper" : "special_other\\using_reshade_with_an_api_wrapper.md",
+            "Using ReShade with an ASI Loader" : "special_other\\using_reshade_with_an_asi_loader.md",
+            "Best Practices" :
+            {
+                "__index" : "special_other\\best_practices\\index.md",
+                "Creating Presets for Gameplay" : "special_other\\best_practices\\creating_presets_for_gameplay.md",
+                "Creating Presets for Screenshots" : "special_other\\best_practices\\creating_presets_for_screenshots.md",
+                "Creating Presets for Specific Looks" : "special_other\\best_practices\\creating_presets_for_specific_looks.md",
+                "Publishing Presets" : "special_other\\best_practices\\publishing_presets.md",
+            },
+            "Special Games" :
+            {
+                "__index" : "special_other\\special_games\\index.md",
+                "FiveM" : "special_other\\special_games\\fivem.md",
+                "Grand Theft Auto V" : "special_other\\special_games\\gtav.md"
+            }
+        },
+
+        "Want to Contribute?" : "contribute.md",
+    }
+}
+
