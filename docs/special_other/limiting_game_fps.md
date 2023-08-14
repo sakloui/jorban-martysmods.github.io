@@ -59,9 +59,14 @@ Keep in mind that this works globally, so it will force the framerate to what yo
 <h3>Step 2. - Adjust the 3D Global Settings:</h3>
 
 1. On the left hand corner, click `Manage 3D Settings`.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_manage_3d_settings.jpg"/>
 2. Ensure that you are within the `Global Settings` tab.
-3. Enable `Max Frame Rate`.
-4. Set the desired framerate between values 20 and 1000.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_global_settings_tab.jpg"/>
+3. Enable `Max Frame Rate` and set the desired framerate between values 20 and 1000.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_max_frame_rate.jpg"/>
 
 </details>
 
@@ -83,9 +88,11 @@ Keep in mind that this works for only the game you set, so it will force the fra
 <h3>Step 2. - Adjust the 3D Global Settings:</h3>
 
 1. On the left hand corner, click `Manage 3D Settings`.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_manage_3d_settings.jpg"/>
 2. Ensure that you are within the `Program Settings` tab.
 3. Click the option on the right of the `Program`
-3. Enable `Max Frame Rate`.
-4. Set the desired framerate between values 20 and 1000.
+4. Enable `Max Frame Rate` and set the desired framerate between values 20 and 1000.
+
 
 </details>

@@ -6,14 +6,14 @@ nav_order: 1
 # Guides.MartysMods.com
 Your extensive guide site for all things ReShade.
 <div>
-<img src="./assets/mmlogo.png" width="300" height="300"/>
+<img style="max-width: 35%; display: block; padding-block: 1rem" src="./assets/mmlogo.png"/>
 </div>
 This site is here to help and guide new and returning users into the functions of ReShade!
 
-If at any point and time, you need information about a specific word, you can visit our [Glossary](./docs/glossary.html)!
+[comment]: <> If at any point and time, you need information about a specific word, you can visit our [Glossary](./docs/glossary.html)!
 
 If you want to contribute to this site, please visit our [Contributions Page](./docs/contribute.html)!
 
 ----------------
 
-Edit Date: Aug.10.2023 - Jordan Brady
+Edit Date: Aug.14.2023 - Jordan Brady
