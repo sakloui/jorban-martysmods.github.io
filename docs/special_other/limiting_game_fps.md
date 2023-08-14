@@ -19,6 +19,16 @@ This guide will provide you with the basics to limit your framerate using AMD Ad
 
 Keep in mind that this works globally, so it will force the framerate to what you set for ALL games on your system.
 
+<h3>Step 1. - Open Adrenalin:
+
+* __Easiest Method__ - Right click your desktop wallpaper, and click `AMD Software꞉ Adrenalin Edition`.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_desktop_context_menu.jpg"/>
+
+* Alternative Method - Search `Adrenalin` in the Windows Search Bar.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_start_search_software.jpg"/>
+
 <h3>Step 2. - Enabling "Frame rate target control":</h3>
 
 1. Click `Gaming` on the top most bar of the `Adrenaline` software, and then click `Graphics` in the second bar that has now appeared.
