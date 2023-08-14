@@ -424,7 +424,9 @@ Used when the depth buffer has lots of waves or “stripes”. Very FEW games ac
 
 <details markdown="block">
 <summary>Global Preprocessor Advanced Arguments</summary>
-Those options here will rarely need to be changed, but for old games or emulators, you might have to fiddle around with them. Here is a description of them.
+These more advanced options here will rarely need to be changed, but for old games or emulators, you might have to fiddle around with them.
+
+Here is a generalized description of them.
 
 ------
 
