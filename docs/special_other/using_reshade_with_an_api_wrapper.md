@@ -13,7 +13,7 @@ This can provide all sorts of new things for users, such as allowing their ReSha
 ------
 
 <details markdown="block">
-<summary>Installing DXVK for use with ReShade</summary>
+<summary>Installing DXVK</summary>
 DXVK is a utilized used to wrap DirectX titles over to Vulkan! This is most used in order to wrap older APIs like DirectX 9 over for use with newer compute shaders that do not work in DirectX 9!
 
 ### Step 1
@@ -82,5 +82,14 @@ Reinstall ReShade using the Vulkan API for your game, and test!
 
 {: .warning}
 If ReShade does not appear when you have installed it as Vulkan, you have either chosen the wrong application, or have applied the wrong bit architecture/dll file to the game's folder.
+
+</details>
+
+------
+
+<details markdown="block">
+<summary>Installing DGVoodoo 2</summary>
+
+COMING SOON! TM
 
 </details>

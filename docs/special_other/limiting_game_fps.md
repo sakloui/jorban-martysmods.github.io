@@ -11,7 +11,7 @@ While having the highest FPS can be seen as a good thing, it often comes with th
 
 The guides listed below will guide you through several different methods on how to limit your framerate!
 
------
+------
 
 <details markdown="block">
 
@@ -43,7 +43,7 @@ Keep in mind that this works globally, so it will force the framerate to what yo
     <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_frtc_tune.jpg"/>
 </details>
 
------
+------
 
 <details markdown="block">
 <summary>NVIDIA Control Panel (Driver Based, NVIDIA GPU Only, All Games)</summary>
@@ -75,7 +75,7 @@ Keep in mind that this works globally, so it will force the framerate to what yo
 
 </details>
 
------
+------
 
 <details markdown="block">
 <summary>NVIDIA Control Panel (Driver Based, NVIDIA GPU Only, Specific Games)</summary>
