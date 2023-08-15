@@ -29,7 +29,9 @@ Keep in mind that this works globally, so it will force the framerate to what yo
 * Alternative Method - Search `Adrenalin` in the Windows Search Bar.
     <div class="figure">
     <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_start_search_software.jpg"/>
+
 <h3>Step 2. - Enabling "Frame rate target control":</h3>
+
 1. Click `Gaming` on the top most bar of the `Adrenaline` software, and then click `Graphics` in the second bar that has now appeared.
     <div class="figure">
     <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/amd_graphics_gaming_highlight.jpg"/>
@@ -53,8 +55,11 @@ Keep in mind that this works globally, so it will force the framerate to what yo
 <h3>Step 1. - Open NVIDIA Control Panel:</h3>
 
 * __Easiest Method__ - Right click your desktop wallpaper, and click `NVIDIA Control Panel`.
-
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_desktop_context_menu.jpg"/>
 * Alternative Method - Search `NVIDIA Control Panel` in the Windows Search Bar.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_start_search_software.jpg"/>
 
 <h3>Step 2. - Adjust the 3D Global Settings:</h3>
 
@@ -82,8 +87,11 @@ Keep in mind that this works for only the game you set, so it will force the fra
 <h3>Step 1. - Open NVIDIA Control Panel:</h3>
 
 * __Easiest Method__ - Right click your desktop wallpaper, and click `NVIDIA Control Panel`.
-
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_desktop_context_menu.jpg"/>
 * Alternative Method - Search `NVIDIA Control Panel` in the Windows Search Bar.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_start_search_software.jpg"/>
 
 <h3>Step 2. - Adjust the 3D Global Settings:</h3>
 
@@ -91,8 +99,16 @@ Keep in mind that this works for only the game you set, so it will force the fra
     <div class="figure">
     <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_manage_3d_settings.jpg"/>
 2. Ensure that you are within the `Program Settings` tab.
-3. Click the option on the right of the `Program`
-4. Enable `Max Frame Rate` and set the desired framerate between values 20 and 1000.
-
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_perapp_settings_tab.jpg"/>
+3. Click the option on the right of the `Program to customize:` tab that says `Add`
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_perapp_settings_tab_add.jpg"/>
+4. Find the program that you are wanting to cap the framerate of.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_perapp_settings_app.jpg"/>
+5. Enable `Max Frame Rate` and set the desired framerate between values 20 and 1000.
+    <div class="figure">
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_max_frame_rate_per_app.jpg"/>
 
 </details>
