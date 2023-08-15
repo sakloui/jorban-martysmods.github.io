@@ -106,7 +106,7 @@ Keep in mind that this works for only the game you set, so it will force the fra
     <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_perapp_settings_tab_add.jpg"/>
 4. Find the program that you are wanting to cap the framerate of.
     <div class="figure">
-    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_perapp_settings_app.jpg"/>
+    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_perapp_settings_tab_app.jpg"/>
 5. Enable `Max Frame Rate` and set the desired framerate between values 20 and 1000.
     <div class="figure">
     <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/limiting_game_fps/nvidia_max_frame_rate_per_app.jpg"/>
