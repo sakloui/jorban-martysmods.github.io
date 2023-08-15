@@ -28,14 +28,9 @@ Navigate to your game folder - For this instance, I am using ULTRAKILL here as a
 
 ### Step 3
 Use [PCGamingWiki](https://pcgamingwiki.com/) for reference of what rendering API and architecture that your game is:
-
-<div class="figure">
 <img src="./images/using_reshade_with_an_api_wrapper/pcgamingwiki_game_api.png"/>
-</div>
 PCGamingWiki showing the game's original API
-<div class="figure">
 <img src="./images/using_reshade_with_an_api_wrapper/pcgamingwiki_game_api_bit_arch.png"/>
-</div>
 PCGamingWiki showing the game's original bit architecture
 
 ------
@@ -46,9 +41,7 @@ PCGamingWiki showing the game's original bit architecture
 * Navigate to the into the dxvk-2.2.tar file, then into the dxvk-2.2 folder. <br>
     You will then see two folders, one labeled x64 and another labeled x32. 
 
-<div class="figure">
 <img src="./images/using_reshade_with_an_api_wrapper/dxvk_7zip_arch.png"/>
-</div>
 
 {: .highlight}
 The folder you pick here is based off of the information related to architecture on PCGamingWiki in step 3!
@@ -70,10 +63,7 @@ Navigate into the architecture folder that relates to your game, and you will se
 
 ### Step 6 
 Drag the file that you need into the directory that your game is located in - the file needs to be in the same location as the executable!
-
-<div class="figure">
 <img src="./images/using_reshade_with_an_api_wrapper/dxvk_install_drag.png"/>
-</div>
 
 ------
 

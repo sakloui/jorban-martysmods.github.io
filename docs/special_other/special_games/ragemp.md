@@ -17,16 +17,12 @@ In order to install ReShade properly to RageMP, you can proceed with the followi
 
 ### Step 1.
 Open up the install location of RageMP with File Explorer.
-The default location of RageMP will be `C:\RAGEMP`
-  <div>
-  <img src="./images/ragemp/ragemp_install_location.png"/>
-  </div>
- 
- * Once open, copy the location of the game from the address bar in File Explorer.
-  <div>
+The default location of RageMP will be `C:\RAGEMP
+<img src="./images/ragemp/ragemp_install_location.png"/>
+
+* Once open, copy the location of the game from the address bar in File Explorer.
   <img src="./images/ragemp/ragemp_install_address.png"/>
-  </div>
- * Download the latest copy of ReShade from the [ReShade Website](https://reshade.me).
+* Download the latest copy of ReShade from the [ReShade Website](https://reshade.me).
 
 ------
 

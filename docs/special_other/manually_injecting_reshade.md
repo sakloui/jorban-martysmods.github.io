@@ -25,9 +25,7 @@ Finding the proper architecture type of your game:
 2. Search for your game in the search bar.
 3. Navigate towards the API tab of the page for your game (generally towards the end of the page.)
 4. Utilize that information to download the proper injector version in Step 2.
-    <div class="figure">
-    <img src="./images/manually_injecting_reshade/pcgamingwiki_api.png"  class="autosize"/>
-    </div>
+    <img src="./images/manually_injecting_reshade/pcgamingwiki_api.png"/>   
 
 ----------------
 

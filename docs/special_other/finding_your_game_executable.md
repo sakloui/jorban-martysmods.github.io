@@ -23,10 +23,8 @@ Open your game and Window's Task Manager.<br>
 You can open Task Manager in various ways:
 
 1. Right click the Taskbar in Windows, and then click Task Manager.
-    <div class="figure">
     <img src="./images/finding_game_executable/right_click_taskbar_global.png"/>
     Windows 11
-    <div class="figure">
     <img src="./images/finding_game_executable/right_click_taskbar_global_win10.png"/>
     Windows 10<br><br>
 
@@ -41,10 +39,8 @@ In the Processes list, you should be able to see your game:
 
 1. Right click your game in Task Manager's Processes tab.
 2. Click `Open file location`.
-    <div class="figure">
     <img src="./images/finding_game_executable/processes_task_manager_game_right_click_global.png"/>
 Windows 11
-    <div class="figure">
     <img src="./images/finding_game_executable/processes_task_manager_game_right_click_global_win10.png"/>
 Windows 10 <br><br>
 
@@ -63,39 +59,29 @@ In this area, you can note the location of the application you are looking for, 
 Open Steam and right click your game in the Steam "Library" tab, and then click "Properties".<br>
 I will be using ULTRAKILL for this representation.
 
-<div class="figure">
 <img src="./images/finding_game_executable/right_click_game_steam.png"/>
-</div>
 
 ------
 
 ### Step 2.
 With the new `Properties` window open, click the `Installed Files` tab on the left hand side of the window.
 
-<div class="figure">
 <img src="./images/finding_game_executable/click_installed_files_tab_steam.png"/>
-</div>
 
 If you are on the right page, you will see `Installed Files` in bold text on towards the middle of the screen.
 
-<div class="figure">
 <img src="./images/finding_game_executable/installed_files_tab_steam.png"/>
-</div>
 
 ------
 
 ### Step 3.
 In the `Installed Files` section of the `Properties` window, click the `Browse...` button on the right side of the window.
 
-<div class="figure">
 <img src="./images/finding_game_executable/click_browse_steam.png"/>
-</div>
 
 Once done, a File Explorer window with your game's executable and files will be present. The file with the `.exe` extention will be the executable.
 
-<div class="figure">
 <img src="./images/finding_game_executable/game_file_explorer_steam.png"/>
-</div>
 
 This solution will NOT show you what your game's actual exectuable is.
 

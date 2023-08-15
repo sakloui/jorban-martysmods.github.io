@@ -5,9 +5,7 @@ nav_order: 1
 ---
 # Guides.MartysMods.com
 Your extensive guide site for all things ReShade.
-<div>
 <img style="max-width: 35%" src="./assets/mmlogo.png"/>
-</div>
 This site is here to help and guide new and returning users into the functions of ReShade!
 
 [comment]: <> If at any point and time, you need information about a specific word, you can visit our [Glossary](./docs/glossary.html)!

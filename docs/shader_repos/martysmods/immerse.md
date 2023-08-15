@@ -8,7 +8,9 @@ has_toc: true
 
 # iMMERSE
 
-iMMERSE is the successor to qUINT, and is some of Pascal Gilcher's(MartyMcFly) most robust shaders that exist for ReShade.<br>iMMERSE has several different tiers, one free (iMMERSE) and two paid tiers (iMMERSE Pro & Ultimate)
+iMMERSE is the successor to qUINT, and is some of Pascal Gilcher's(MartyMcFly) most robust shaders that exist for ReShade.
+
+iMMERSE has several different tiers, one free (iMMERSE) and two paid tiers (iMMERSE Pro & Ultimate)
 
 ------
 
@@ -26,7 +28,8 @@ These shaders [exist on GitHub](https://github.com/martymcmodding/iMMERSE) and a
 <details markdown="block">
 <summary>iMMERSE Pro Shaders</summary>
 
-iMMERSE Pro is a paid suite of Pascal's shaders, these exist for members of Pascal's Patreon `Raytracers` tier.<br>
+iMMERSE Pro is a paid suite of Pascal's shaders, these exist for members of Pascal's Patreon `Raytracers` tier.
+
 These shaders can be purchased from Pascal's Patreon for 5$ USD, and offer a plethora of shaders shown on [MartysMods.com](https://martysmods.com)
 
 <details markdown="block">
@@ -46,21 +49,13 @@ These shaders exist on [Pascal's Discord (PGHUB)](https://discord.com/invite/wY4
 If you are struggling with getting the proper roles to access your iMMERSE Pro archive:
 1. Go to [your Patreon "connected apps" settings.](https://www.patreon.com/settings/apps/)
 2. Click the `Discord` icon.
-    <div>
    <img src="./images/immerse/patreon_discord_icon.jpg"/> 
-   </div>
 3. Click `Disconnect` for your Discord Access.
-   <div>
    <img src="./images/immerse/patreon_disconnect_discord.jpg"/>
-   </div>
 4. Click `Connect` and log into Discord.
-   <div>
    <img src="./images/immerse/patreon_connect_discord.jpg"/>
-   </div>
 5. Click `Authorize` to allow Patreon to access your account.
-   <div>
    <img src="./images/immerse/discord_authorize.jpg"/>
-   </div>
 6. Check your roles in the PGHub Discord Server.
 
 </details>
@@ -72,7 +67,7 @@ If you are struggling with getting the proper roles to access your iMMERSE Pro a
 <details markdown="block">
 <summary>iMMERSE Ultimate Shaders</summary>
 
-
+Coming soon TM >:)
 
 </details>
 

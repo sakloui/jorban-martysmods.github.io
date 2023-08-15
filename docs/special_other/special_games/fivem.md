@@ -14,9 +14,7 @@ grand_parent: Special & Others
 >At the current time of Aug 08.2023 - this blocking still has not been removed. However, they have pushed an update to the beta and latest Release Channel in order to remove the blocking for 5.9.1 users.
 >
 >Meaning that you should switch your FiveM Release Channel over to Beta, or Latest, and then install the latest version of ReShade on [ReShade's website](https://reshade.me). - Jordan Brady Aug.08.2023
-><div>
 ><img src="./images/fivem/fivem_release_channel.png"/>
-></div>
 >Installing the latest update is the same process as previous, see below.
 
 -------
@@ -97,9 +95,8 @@ If the ReShade installer cannot detect the install location of FiveM, or your Re
 
 `[Addons]`<br>
 `ReShade5=ID:XXXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes.`<br>
-<div>
+
 <img src="./images/fivem/fivem_reshade5_bs.png"/>
-</div>
 
 In order to fix this, go to the same location that is in that error, and add the proper ID shown in your F8 console error to the `CitizenFX.ini` file.
 

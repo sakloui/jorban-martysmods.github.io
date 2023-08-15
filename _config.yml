@@ -8,6 +8,8 @@ repository: jorban-martysmods/jorban-martysmods.github.io # for github-metadata
 #Site Logo
 logo: "/assets/mmlogo.png"
 
+include:
+  - /assets/fonts/
 
 #Search Settings
 search_enabled: true

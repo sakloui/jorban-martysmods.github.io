@@ -24,7 +24,7 @@
 2. CD To Location Repo exists within.
 3. CMD Run `bundle install` - Only needs to be done once.
 4. CMD Run `bundle exec jekyll serve`
-5. Site will be hosted on `http://127.0.0.1:4000/` for local viewing.
+5. Site will be hosted on `http://localhost:4000` for local viewing.
 
 ## Editing Markdown
 * Just The Docs uses a mixture of Kramdown and Markdown in order to allow users to better create documentation/guides.

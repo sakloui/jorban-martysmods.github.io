@@ -1,11 +1,63 @@
-// adding new fonts to overwrite old bs
+// adding new fonts to overwrite old bs.
+// i, Jordan Brady, am making the decision to NOT support IE5-9, and Legacy Safari.. >:) does anyone ever use those?
+// surely that won't be a problem???? right????? right?!!?!
+// regular atkinson hyperlegible weight:400
+@font-face {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'), /* Super Modern Browsers */
+	url('/assets/fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff'), /* Modern Browsers */
+	url('/assets/fonts/Atkinson-Hyperlegible-Regular-102.ttf') format('truetype'); /* Safari, Android, iOS */
 
+}
 
+// italic atkinson hyperlegible weight:400 
+@font-face {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	src: url('/assets/fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'), /* Super Modern Browsers */
+	url('/assets/fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff'), /* Modern Browsers */
+	url('/assets/fonts/Atkinson-Hyperlegible-Italic-102.ttf') format('truetype'); /* Safari, Android, iOS */
 
+}
 
+// bold atkinson hyperlegible weight:700 
+@font-face {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	src: url('/assets/fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'), /* Super Modern Browsers */
+	url('/assets/fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff'), /* Modern Browsers */
+	url('/assets/fonts/Atkinson-Hyperlegible-Bold-102.ttf') format('truetype'); /* Safari, Android, iOS */
 
+}
 
+// bolditalic atkinson hyperlegible weight:700 
+@font-face {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-style: italic;
+	font-weight: 700;
+	src: url('/assets/fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'), /* Super Modern Browsers */
+	url('/assets/fonts/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff'), /* Modern Browsers */
+	url('/assets/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf') format('truetype'); /* Safari, Android, iOS */
 
+}
+
+//overwriting head and body fonts with the atkinson hyperlegible font
+//this took me like literally 30 minutes of me banging my head against my keyboard
+//and 10 mins of dullahan telling me that i am doing it wrong for it to click in my head
+// i have no mouth but i must scream
+head
+{
+    font-family:Atkinson Hyperlegible;
+}
+
+body
+{
+    font-family:Atkinson Hyperlegible;
+}
 
 // Changing img classname to fit the entire content margins and give 1rem pading on all sides.
 img 
@@ -16,9 +68,10 @@ padding-block: 1rem;
 }
 
 // changing summary classname to increase font size to 1.5rem and change color to a pastel magenta to highlight dropdown detail classnames
+// marty said no pink :'( no fun marty smh <3
 summary
 {
     font-size: 1.5rem;
-    color: #DF72DD;
+    color: white;
 }
 
