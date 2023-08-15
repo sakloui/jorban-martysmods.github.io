@@ -27,7 +27,7 @@ To start, download the latest version of ReShade by navigating to the [homepage 
 Do not download ReShade Installers or DLLs from unofficial sources outside of the official ReShade website: [https://reshade.me](https://reshade.me)<br>Downloading and utilizing unofficial binaries can lead to various issues, including viruses.<br>**Be Cautious!**
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_scroll.gif"/>
+<img src="./images/installing_reshade/rs_scroll.gif"/>
 </div>
 
 Once you are at the bottom of the site, you will be presented with two variations of the ReShade Installer.
@@ -39,7 +39,7 @@ There are large differences between these builds, and it is very important to un
 ### Standard ReShade Build (Download ReShade x.x.x)
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_standard_button.png"/>
+<img src="./images/installing_reshade/rs_standard_button.png"/>
 </div>
 
 The first build option for you to choose is ReShade's standard build. 
@@ -57,7 +57,7 @@ Although this provides a secure gaming experience, it can easily restrict the ca
 ### Full Add-On Support ReShade Build (Download ReShade x.x.x with full add-on support)
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_addon_button.png"/>
+<img src="./images/installing_reshade/rs_addon_button.png"/>
 </div>
 
 The second build option for you to choose is ReShade's full add-on support version. 
@@ -82,11 +82,11 @@ The majority of the effects and add-ons are harmless, but if you deliberately us
 
 Once launched, the installer will prompt you to select a game or application that you want to inject ReShade to. It's recommended to explore the additional options offered by the installer!
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_game_list.png"/>
+<img src="./images/installing_reshade/rs_game_list.png"/>
 </div>
 Beneath the game selection box, you'll notice a search bar and a "Browse..." button. These features allow you to locate the game's executable directly. Clicking on "Browse..." opens the File Explorer, where you can pick the exact executable file for your game. Keep in mind that Desktop shortcuts are not the same as the game's executable file.
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_browse.png"/>
+<img src="./images/installing_reshade/rs_browse.png"/>
 </div>
 This method is particularly helpful if you're installing ReShade to a game downloaded from platforms like itch.io, older games without setup processes, or emulators such as DOSBox or Dolphin.
 
@@ -143,11 +143,11 @@ Installing ReShade using the Vulkan rendering API will require the ReShade insta
 
 Installing presets has been made miles easier with the ReShade installer! No longer will you have to worry about finding the specific shaders that are used in presets. When selecting the preset file in the ReShade installer under the preset install section, the ReShade installer will automatically select the proper shaders and repos that you need for it to work properly! Please keep in mind that this method will not work properly for your preset if the preset requires unique shaders and textures that come with the preset archive!
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_preset.png"/>
+<img src="./images/installing_reshade/rs_preset.png"/>
 </div>
 In order to select the preset you want to install with ReShade, simply click the "Browse..." button on the bottom right hand corner of the ReShade installer.
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_preset_browse.png"/>
+<img src="./images/installing_reshade/rs_preset_browse.png"/>
 </div>
 
 {: .note }
@@ -166,7 +166,7 @@ That being said, finding shader collections can be difficult, as each Shader Dev
 
 If you installed a preset, there will already be marks set in this portion of the installer - if not, it should be blank other than "Standard Effects."
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_shader.png"/>
+<img src="./images/installing_reshade/rs_shader.png"/>
 </div>
 
 Each repository has two options for the user to select:
@@ -176,7 +176,7 @@ If you want to know more about the developer of each shader repository, you can 
 
 Once you have the shaders selected that you want, simply click "Next"
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade//rs_shader_select.png"/>
+<img src="./images/installing_reshade//rs_shader_select.png"/>
 </div>
 If you have selected the square tick for any shader repositories, you will be greeted with a "Select {shader repository name} files to install screen. Simply select the shaders that you want from that repository and click next!
 
@@ -189,13 +189,13 @@ If you have selected the square tick for any shader repositories, you will be gr
 
 When you are completely done with installing ReShade through the ReShade installer, you will be greeted with a screen saying that ReShade has installed successfully. Simply click "Finish" and launch your game!
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_complete.png"/>
+<img src="./images/installing_reshade/rs_complete.png"/>
 </div>
 
 
 If you've done everything properly, ReShade will present a banner in game:
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/installing_reshade/rs_game_banner.png"/>
+<img src="./images/installing_reshade/rs_game_banner.png"/>
 </div>
 </details>
 </details>

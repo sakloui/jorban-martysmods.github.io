@@ -24,10 +24,10 @@ You can open Task Manager in various ways:
 
 1. Right click the Taskbar in Windows, and then click Task Manager.
     <div class="figure">
-    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/right_click_taskbar_global.png"/>
+    <img src="./images/finding_game_executable/right_click_taskbar_global.png"/>
     Windows 11
     <div class="figure">
-    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/right_click_taskbar_global_win10.png"/>
+    <img src="./images/finding_game_executable/right_click_taskbar_global_win10.png"/>
     Windows 10<br><br>
 
 2. Control + Alt + Delete all pressed at the same time, and then click Task Manager.
@@ -42,10 +42,10 @@ In the Processes list, you should be able to see your game:
 1. Right click your game in Task Manager's Processes tab.
 2. Click `Open file location`.
     <div class="figure">
-    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/processes_task_manager_game_right_click_global.png"/>
+    <img src="./images/finding_game_executable/processes_task_manager_game_right_click_global.png"/>
 Windows 11
     <div class="figure">
-    <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/processes_task_manager_game_right_click_global_win10.png"/>
+    <img src="./images/finding_game_executable/processes_task_manager_game_right_click_global_win10.png"/>
 Windows 10 <br><br>
 
 If Step 2. is done correctly, you should see your game's application highlighted in File Explorer.
@@ -64,7 +64,7 @@ Open Steam and right click your game in the Steam "Library" tab, and then click 
 I will be using ULTRAKILL for this representation.
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/right_click_game_steam.png"/>
+<img src="./images/finding_game_executable/right_click_game_steam.png"/>
 </div>
 
 ------
@@ -73,13 +73,13 @@ I will be using ULTRAKILL for this representation.
 With the new `Properties` window open, click the `Installed Files` tab on the left hand side of the window.
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/click_installed_files_tab_steam.png"/>
+<img src="./images/finding_game_executable/click_installed_files_tab_steam.png"/>
 </div>
 
 If you are on the right page, you will see `Installed Files` in bold text on towards the middle of the screen.
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/installed_files_tab_steam.png"/>
+<img src="./images/finding_game_executable/installed_files_tab_steam.png"/>
 </div>
 
 ------
@@ -88,13 +88,13 @@ If you are on the right page, you will see `Installed Files` in bold text on tow
 In the `Installed Files` section of the `Properties` window, click the `Browse...` button on the right side of the window.
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/click_browse_steam.png"/>
+<img src="./images/finding_game_executable/click_browse_steam.png"/>
 </div>
 
 Once done, a File Explorer window with your game's executable and files will be present. The file with the `.exe` extention will be the executable.
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/finding_game_executable/game_file_explorer_steam.png"/>
+<img src="./images/finding_game_executable/game_file_explorer_steam.png"/>
 </div>
 
 This solution will NOT show you what your game's actual exectuable is.

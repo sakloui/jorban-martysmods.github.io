@@ -6,7 +6,7 @@ nav_order: 1
 # Guides.MartysMods.com
 Your extensive guide site for all things ReShade.
 <div>
-<img style="max-width: 35%; display: block; padding-block: 1rem" src="./assets/mmlogo.png"/>
+<img style="max-width: 35%" src="./assets/mmlogo.png"/>
 </div>
 This site is here to help and guide new and returning users into the functions of ReShade!
 

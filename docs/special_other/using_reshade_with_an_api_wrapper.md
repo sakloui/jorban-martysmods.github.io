@@ -30,11 +30,11 @@ Navigate to your game folder - For this instance, I am using ULTRAKILL here as a
 Use [PCGamingWiki](https://pcgamingwiki.com/) for reference of what rendering API and architecture that your game is:
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/using_reshade_with_an_api_wrapper/pcgamingwiki_game_api.png"/>
+<img src="./images/using_reshade_with_an_api_wrapper/pcgamingwiki_game_api.png"/>
 </div>
 PCGamingWiki showing the game's original API
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/using_reshade_with_an_api_wrapper/pcgamingwiki_game_api_bit_arch.png"/>
+<img src="./images/using_reshade_with_an_api_wrapper/pcgamingwiki_game_api_bit_arch.png"/>
 </div>
 PCGamingWiki showing the game's original bit architecture
 
@@ -47,7 +47,7 @@ PCGamingWiki showing the game's original bit architecture
     You will then see two folders, one labeled x64 and another labeled x32. 
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/using_reshade_with_an_api_wrapper/dxvk_7zip_arch.png"/>
+<img src="./images/using_reshade_with_an_api_wrapper/dxvk_7zip_arch.png"/>
 </div>
 
 {: .highlight}
@@ -72,7 +72,7 @@ Navigate into the architecture folder that relates to your game, and you will se
 Drag the file that you need into the directory that your game is located in - the file needs to be in the same location as the executable!
 
 <div class="figure">
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/using_reshade_with_an_api_wrapper/dxvk_install_drag.png"/>
+<img src="./images/using_reshade_with_an_api_wrapper/dxvk_install_drag.png"/>
 </div>
 
 ------

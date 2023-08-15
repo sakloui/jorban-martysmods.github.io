@@ -16,7 +16,7 @@ iMMERSE is the successor to qUINT, and is some of Pascal Gilcher's(MartyMcFly) m
 
 iMMERSE is the standard suite of Pascal's shaders.
 
-These shaders [exist on GitHub](https://github.com/martymcmodding/iMMERSE)
+These shaders [exist on GitHub](https://github.com/martymcmodding/iMMERSE) and are free to use for everyone!
 
 </details>
 
@@ -33,6 +33,8 @@ These shaders can be purchased from Pascal's Patreon for 5$ USD, and offer a ple
 
 In order to get access of iMMERSE Pro Shaders, you need to be actively subscribed to Pascal's Patreon under the 5$ USD tier (Raytracers.)
 
+Once you have a paid subscription - you have these files forever(as long as you do not delete them), and are more than welcome to cancel your subscription at any time.
+
 These shaders exist on [Pascal's Discord (PGHUB)](https://discord.com/invite/wY49KMxjHT)
 
 ------
@@ -44,19 +46,19 @@ If you are struggling with getting the proper roles to access your iMMERSE Pro a
 1. Go to [your Patreon "connected apps" settings.](https://www.patreon.com/settings/apps/)
 2. Click the `Discord` icon.
     <div>
-   <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/immerse/patreon_discord_icon.jpg"/> 
+   <img src="./images/immerse/patreon_discord_icon.jpg"/> 
    </div>
 3. Click `Disconnect` for your Discord Access.
    <div>
-   <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/immerse/patreon_disconnect_discord.jpg"/>
+   <img src="./images/immerse/patreon_disconnect_discord.jpg"/>
    </div>
 4. Click `Connect` and log into Discord.
    <div>
-   <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/immerse/patreon_connect_discord.jpg"/>
+   <img src="./images/immerse/patreon_connect_discord.jpg"/>
    </div>
 5. Click `Authorize` to allow Patreon to access your account.
    <div>
-   <img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/immerse/discord_authorize.jpg"/>
+   <img src="./images/immerse/discord_authorize.jpg"/>
    </div>
 6. Check your roles in the PGHub Discord Server.
 

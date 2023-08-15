@@ -15,11 +15,11 @@ grand_parent: Special & Others
 >
 >Meaning that you should switch your FiveM Release Channel over to Beta, or Latest, and then install the latest version of ReShade on [ReShade's website](https://reshade.me). - Jordan Brady Aug.08.2023
 ><div>
-><img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/fivem/fivem_release_channel.png"/>
+><img src="./images/fivem/fivem_release_channel.png"/>
 ></div>
 >Installing the latest update is the same process as previous, see below.
 
-----------------
+-------
 
 # Installing ReShade to FiveM:
 While FiveM is a modification platform for Grand Theft Auto V, it requires it's own special proceedures in order to inject ReShade into FiveM itself.
@@ -28,7 +28,7 @@ Unfortunately, this is the way that the developers of FiveM have set up their cl
 
 In order to install ReShade properly to FiveM, you can proceed with the following step based guide!
 
-----------------
+-------
 
 ### Step 1.
 Start by installing ReShade to GTAV.<br>
@@ -38,7 +38,7 @@ You will likely want the addon-support build of ReShade from the [ReShade websit
 You must install ReShade to `GTA5.exe`<br>
 Installing ReShade to the launcher will give you the wrong binary, and won't allow ReShade to inject properly.
 
-----------------
+-------
 
 ### Step 2.
 Once ReShade is installed to GTAV, navigate to your GTAV folder.<br>
@@ -53,7 +53,7 @@ These files belong to ReShade, and are **needed** for Step 5.<br>
 Do not close this folder!
 
 
-----------------
+-------
 
 ### Step 3.
 Navigate to the location of your FiveM install.
@@ -63,7 +63,7 @@ The **default** is `C:\Users\{USERNAME}\AppData\Local\FiveM`.<br>
 The location of your install of FiveM **might** slightly differ.
 
 
-----------------
+-------
 
 ### Step 4.
 **Create** a `plugins` folder in the `FiveM Application Data` folder.
@@ -72,7 +72,7 @@ The location of your install of FiveM **might** slightly differ.
 Skip if this step is already there
 
 
-----------------
+-------
 
 ### Step 5.
 Cut or move the ReShade files and singular folder from your Grand Theft Auto V game folder, into your FiveM `plugins` folder.
@@ -85,7 +85,7 @@ These files and singular folder are:
 {: .warning}
 Do not copy and paste these files over, as it will cause issues.
 
-----------------
+-------
 
 ### Step 6.
 Boot up FiveM up and check the console for errors using the F8 key.
@@ -98,7 +98,7 @@ If the ReShade installer cannot detect the install location of FiveM, or your Re
 `[Addons]`<br>
 `ReShade5=ID:XXXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes.`<br>
 <div>
-<img style="max-width: 100%; display: block; padding-block: 1rem" src="./images/fivem/fivem_reshade5_bs.png"/>
+<img src="./images/fivem/fivem_reshade5_bs.png"/>
 </div>
 
 In order to fix this, go to the same location that is in that error, and add the proper ID shown in your F8 console error to the `CitizenFX.ini` file.
@@ -106,7 +106,7 @@ In order to fix this, go to the same location that is in that error, and add the
 {: .note}
 If your game launches with ReShade, you are finished with the install.
 
-----------------
+-------
 
 ## Possible errors if done wrong:
 * `Ignored graphics mod \Grand Theft Auto V\dxgi.dll - these should go in plugins/ now!`<br>
