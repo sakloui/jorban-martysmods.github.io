@@ -1,6 +1,24 @@
+// adding new fonts to overwrite old bs
+
+
+
+
+
+
+
+
+// Changing img classname to fit the entire content margins and give 1rem pading on all sides.
 img 
 {
 max-width: 100%;
 display: block;
 padding-block: 1rem;
 }
+
+// changing summary classname to increase font size to 1.5rem and change color to a pastel magenta to highlight dropdown detail classnames
+summary
+{
+    font-size: 1.5rem;
+    color: #DF72DD;
+}
+

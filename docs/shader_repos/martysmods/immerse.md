@@ -7,12 +7,13 @@ has_toc: true
 ---
 
 # iMMERSE
+
 iMMERSE is the successor to qUINT, and is some of Pascal Gilcher's(MartyMcFly) most robust shaders that exist for ReShade.<br>iMMERSE has several different tiers, one free (iMMERSE) and two paid tiers (iMMERSE Pro & Ultimate)
 
 ------
 
 <details markdown="block">
-<summary><font size="+2">iMMERSE Public GitHub Shaders</font></summary>
+<summary>iMMERSE Public GitHub Shaders</summary>
 
 iMMERSE is the standard suite of Pascal's shaders.
 
@@ -23,13 +24,13 @@ These shaders [exist on GitHub](https://github.com/martymcmodding/iMMERSE) and a
 ------
 
 <details markdown="block">
-<summary><font size="+2">iMMERSE Pro Shaders</font></summary>
+<summary>iMMERSE Pro Shaders</summary>
 
 iMMERSE Pro is a paid suite of Pascal's shaders, these exist for members of Pascal's Patreon `Raytracers` tier.<br>
 These shaders can be purchased from Pascal's Patreon for 5$ USD, and offer a plethora of shaders shown on [MartysMods.com](https://martysmods.com)
 
 <details markdown="block">
-<summary><font size="+2">Downloading iMMERSE Pro Shaders</font></summary>
+<summary>Downloading iMMERSE Pro Shaders</summary>
 
 In order to get access of iMMERSE Pro Shaders, you need to be actively subscribed to Pascal's Patreon under the 5$ USD tier (Raytracers.)
 
@@ -40,7 +41,7 @@ These shaders exist on [Pascal's Discord (PGHUB)](https://discord.com/invite/wY4
 ------
 
 <details markdown="block">
-<summary><font size="+2">Patreon Roles not Updating in Discord</font></summary>
+<summary>Patreon Roles not Updating in Discord</summary>
 
 If you are struggling with getting the proper roles to access your iMMERSE Pro archive:
 1. Go to [your Patreon "connected apps" settings.](https://www.patreon.com/settings/apps/)
@@ -69,7 +70,7 @@ If you are struggling with getting the proper roles to access your iMMERSE Pro a
 ------
 
 <details markdown="block">
-<summary><font size="+2">iMMERSE Ultimate Shaders</font></summary>
+<summary>iMMERSE Ultimate Shaders</summary>
 
 
 
