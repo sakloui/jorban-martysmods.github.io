@@ -14,6 +14,7 @@ With that in mind, each install of ReShade can be vastly different, and the ReSh
 If you are struggling on finding a game's executable, this is a definitive guide showing you how to find the installs of the game the easiest.
 
 ------
+
 <details markdown="block">
 <summary>Global - PREFERED</summary>
 
