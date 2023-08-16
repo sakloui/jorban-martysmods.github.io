@@ -100,7 +100,7 @@ ReShade files required:
 <summary>Team Fortress 2</summary>
 
 Location for ReShade files to exist:
- * `\left 4 dead\bin\`
+ * `\Team Fortress 2\bin\`
 
 ReShade files required:
  * `d3d9.dll`
@@ -115,7 +115,7 @@ ReShade files required:
 <summary>Titanfall 2</summary>
 
 Location for ReShade files to exist:
- * `\Titanfall 2\bin\`
+ * `\Titanfall2\bin\x64_retail\`
 
 ReShade files required:
  * `dxgi.dll`
