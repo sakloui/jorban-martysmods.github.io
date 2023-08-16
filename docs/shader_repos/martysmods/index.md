@@ -10,6 +10,8 @@ iMMERSE and qUINT are shader repositories are suites of shaders offered by Pasca
 
 These shaders are often the most influential in terms of performance and visual aesthetics, and often used by many!
 
+------
+
 <details markdown="block">
 <summary>iMMERSE</summary>
 
@@ -108,6 +110,16 @@ If you are struggling with getting the proper roles to access your iMMERSE Pro a
 
 <details markdown="block">
 <summary>iMMERSE Ultimate Shaders</summary>
+
+Coming soon TM >:)
+
+</details>
+</details>
+
+------
+
+<details markdown="block">
+<summary>qUINT</summary>
 
 Coming soon TM >:)
 
