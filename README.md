@@ -42,31 +42,23 @@
 #### Root Pages:
 1. Home - Index
 2. Glossary
-
-#### 3. ReShade Guides Index
-1. Installing ReShade
-2. Understanding ReShade's UI
-3. Understanding ReShade's Depth Buffer
+3. Reshade Guides
 
 #### 4. Shader Repos Index
     1. None are set.
 
 #### 5. Special & Other Index
 1. Finding your Game Executable
-2. Manually Injecting ReShade
-3. Manually Installing ReShade
-4. Manually Installing Shaders
-5. Manually Installing Addons
-
-#### 6. Best Practices Index
+2. Installing ReShade Manually
+#### 3. Best Practices Index
     1. None are set yet.
 
-7. Using ReShade with an API Wrapper
-8. Using ReShade with an ASI Loader
-9. Using ReShade with ENB
-10. Using ReShade with SpecialK
-11. Limiting Your Game Framerate
-12. Creating and Maintaining a Centralized ReShade Install
+4. Using ReShade with an API Wrapper
+5. Using ReShade with an ASI Loader
+6. Using ReShade with ENB
+7. Using ReShade with SpecialK
+8. Limiting Your Game Framerate
+9. Creating and Maintaining a Centralized ReShade Install
 
 #### 99. Special Games Index
     1. FiveM
