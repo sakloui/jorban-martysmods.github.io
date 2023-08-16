@@ -68,8 +68,7 @@ ReShade files required:
 <summary>Black Mesa</summary>
 
 Location for ReShade files to exist:
- * `\Portal\bin\`
- * `\Portal 2\bin`
+ * `\Black Mesa\bin\`
 
 ReShade files required:
  * `d3d9.dll`
@@ -109,3 +108,19 @@ ReShade files required:
  * `ReShade.ini`
 
 </details>
+
+------
+
+<details>
+<summary>Titanfall 2</summary>
+
+Location for ReShade files to exist:
+ * `\Titanfall 2\bin\`
+
+ReShade files required:
+ * `dxgi.dll`
+ * `ReShade-Shaders`
+ * `ReShade.ini`
+
+</details>
+

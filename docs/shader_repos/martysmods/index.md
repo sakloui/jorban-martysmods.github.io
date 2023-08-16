@@ -69,21 +69,24 @@ This is where iMMERSE Pro shaders, such as iMMERSE Pro RTGI, exist for users to 
 Once you have access to iMMERSE Pro Shaders and have them downloaded, installing is as simple as drag and drop!
 
 ### Step 1.
-Open the Archive for iMMERSE Pro
+Open the Archive for iMMERSE Pro:
+<img src="./images/immerse/immerse_pro_archive.jpg"/> 
 
 ------
 
 ### Step 2.
-Open the `ReShade-Shaders` folder that exists in your game directory
+Open the `ReShade-Shaders` folder that exists in your game directory:
+<img src="./images/immerse/reshade_shaders_folder.jpg"/> 
 
 * If you need help finding your game's directory, please refer to our guide on [finding your game's proper executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html)!
 
 ------
 
 ### Step 3.
-Merge the `Shaders` and `Textures` folder within the iMMERSE Pro archive into the `ReShade-Shaders` folder.
+Merge the `Shaders` and `Textures` folder within the iMMERSE Pro archive into the `ReShade-Shaders` folder:
+<img src="./images/immerse/shaders_drag_merge.jpg"/> 
 
-* If you are asked to overwrite the files that exist within the `ReShade-Shaders` folder, do so!
+   * If you are asked to overwrite the files that exist within the `ReShade-Shaders` folder, do so!
 
 </details>
 
