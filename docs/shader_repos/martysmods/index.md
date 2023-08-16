@@ -102,6 +102,9 @@ If you are struggling with getting the proper roles to access your iMMERSE Pro a
    <img src="./images/immerse/discord_authorize.jpg"/>
 6. Check your roles in the PGHub Discord Server.
 
+{: .note }
+If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon!
+
 </details>
 
 </details>
