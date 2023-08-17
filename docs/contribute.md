@@ -4,35 +4,32 @@ layout: page
 nav_order: 99
 ---
 
-Currently, Guides.MartysMods.com needs some love and attention!
+# Help Elevate Guides.MartysMods.com
 
-You can contribute to the site by making a pull request to the [public GitHub :dev: branch for Guides.MartysMods.com](https://github.com/Jorban-MartysMods/jorban-martysmods.github.io/tree/dev) with your changes!
+We're on a mission to make Guides.MartysMods.com the best it can be, and we'd love your expertise! 
 
-{: .warning}
-Pull requests to :main: will be AUTOMATICALLY denied.
+To contribute, simply submit a pull request with your changes to our [public GitHub 'dev' branch for Guides.MartysMods.com](https://github.com/Jorban-MartysMods/jorban-martysmods.github.io/tree/dev).
 
+{: .note}
+**Please Note**: Pull requests to 'main' will be automatically declined.
 
-----------------
+------
 
-### If you would like to reach out about more information/suggestions, you can ask here:
+### Connect with Us:
 
-* [GitHub Issues](https://github.com/Jorban-MartysMods/jorban-martysmods.github.io/issues)
-* Email - jorban@martysmods.com
-* Discord DMs - @jorban
+If you have ideas, feedback, or simply need more information, we're here for you:
 
-I am more than happy to answer any questions that you may have!<br>
-Contributers will also be noted with credits towards the site!
+- **Engage on GitHub**: [Issues & Discussions](https://github.com/Jorban-MartysMods/jorban-martysmods.github.io/issues)
+- **Email**: jorban@martysmods.com
+- **Reach Out on Discord**: @jorban
 
-We're ultimately wanting this site to become the ReShade communities top reference for guides and tutorials.
+Your questions and insights are invaluable to us. Every contributor will receive due credit, highlighting their pivotal role in shaping the site.
 
-However, this means that part of the community will have to contribute in order to make it the best that it possibly can be!
+Our vision is for this platform to be the go-to reference for the ReShade community. To achieve this pinnacle, we need the collective wisdom and efforts of our community. We understand the commitment that crafting guides demands. Remember, there's no obligation, so please, contribute at your pace and comfort.
 
-We know creating guides takes time and effort, and we do not want this to feel like a job.
+------
 
-So keep in mind that no one is required to create anything for the ReShade community, but if you can part with some of your time we'd love to have you helping out!
+With gratitude,<br>
+Jordan Brady, Aug.16.2023
 
-----------------
-
-Thank you! - Jordan Brady - Aug.14.2023<br>
-Credits will be given to those who contribute!<br>
-We want to give as much credit as possible to those who have made this site a reality!
+Contributions are recognized and appreciated. Your input brings this site closer to its vision of being an indispensable resource for the ReShade community.

@@ -7,11 +7,13 @@ grand_parent: Special & Others
 ---
 
 # Source Games
-Source is an engine developed by Valve for their games.
+The Source engine, developed by Valve, is a foundational platform for numerous games within the industry. 
 
-This engine is used all over the gaming industry - that being said, some source games exhibit issues when it comes to loading ReShade, as source requires .dll files to be in a seperate folder.
+However, some games built on the Source engine present challenges when integrating ReShade due to the engine's specific requirements for .dll file placement. 
 
-Most of the time, the ReShade installer will take care of this, but if you are installing manually, or the ReShade installer didn't put it in the proper location - this is to document the locations for source games that the ReShade dll belong in.
+While the ReShade installer typically manages these details seamlessly, there are instances when manual intervention may be necessary or when the installer fails to place the files in the correct directory. 
+
+This guide will provide information about the appropriate locations for the ReShade .dll files within Source games.
 
 ------
 

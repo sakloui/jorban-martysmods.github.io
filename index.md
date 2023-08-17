@@ -3,12 +3,12 @@ title: Home
 layout: home
 nav_order: 1
 ---
-# Guides.MartysMods.com
-Your extensive guide site for all things ReShade.
+# Welcome to Guides.MartysMods.com
+Delve deep into the world of ReShade with our comprehensive guides.
 <img style="max-width: 35%" src="./assets/mmlogo.png"/>
-This site is here to help and guide new and returning users into the functions of ReShade!
+Whether you're a newbie or a returning enthusiast, we're here to illuminate the multifaceted features of ReShade for you!
 
-[comment]: <> If at any point and time, you need information about a specific word, you can visit our [Glossary](./docs/glossary.html)!
+[comment]: <> Our [Glossary](./docs/glossary.html) is in the works! Once ready, it will provide insights into specific terms.
 [comment]: <> not finished yet, will add back when it is.
 
-If you want to contribute to this site, please visit our [Contributions Page](./docs/contribute.html)!
+Keen to lend a hand? We'd love for you to join our community. Explore our [Contributions Page](./docs/contribute.html) to see how you can make a difference!

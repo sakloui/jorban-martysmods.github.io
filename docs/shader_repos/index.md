@@ -7,8 +7,9 @@ has_toc: true
 ---
 
 # ReShade Shader Repositories
-Below you will find different pages and guides that exist for several shader developer's shader repositories.
 
-These repositories hold the meat and potatos of ReShade, and are ultimately what make ReShade so unique!
+Dive deep into a curated collection of pages and guides, dedicated to various esteemed shader developers and their repositories.
 
-For more information click on the page and learn more about the specific repository and their developers!
+These repositories are the very essence of ReShade, crafting its unique identity in the world of graphical enhancements.
+
+To delve deeper into a specific repository and gain insights about its developer, simply select a page of interest.

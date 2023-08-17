@@ -1,92 +1,85 @@
 ---
-title: Finding your Game's Proper Executable
+title: Finding your Game's Executable and Game Directory
 layout: page
 nav_order: 1
 parent: Special & Others
 ---
 
-# Finding your Game's Proper Executable:
+# Finding your Game's Executable and Game Directory
 
-Unfortunately, every system is different, with varrying thoughts from different users.
+Each system and user setup is unique, resulting in diverse ReShade installations and behaviors.
 
-With that in mind, each install of ReShade can be vastly different, and the ReShade Installer can behave differently depending on user's settings / game installs.
+If you're having trouble locating your game's executable, here's a step-by-step guide to assist you.
 
-If you are struggling on finding a game's executable, this is a definitive guide showing you how to find the installs of the game the easiest.
-
-------
+---
 
 <details markdown="block">
-<summary>Global - PREFERED</summary>
+<summary>Using Windows Task Manager (PREFERED)</summary>
 
-### Step 1.
-Open your game and Window's Task Manager.<br>
-You can open Task Manager in various ways:
+### Step 1: Accessing Task Manager
 
-1. Right click the Taskbar in Windows, and then click Task Manager.
-    <img src="./images/finding_game_executable/right_click_taskbar_global.png"/>
-    Windows 11
-    <img src="./images/finding_game_executable/right_click_taskbar_global_win10.png"/>
-    Windows 10<br><br>
+1. **Option 1**: Right-click the Windows Taskbar and select "Task Manager".
+    ![Taskbar Option](./images/finding_game_executable/right_click_taskbar_global.png) (Windows 11)
+    ![Taskbar Option](./images/finding_game_executable/right_click_taskbar_global_win10.png) (Windows 10)
 
-2. Control + Alt + Delete all pressed at the same time, and then click Task Manager.
-3. Control + Shift + Escape all pressed at the same time.
+2. **Option 2**: Press `Control + Alt + Delete` simultaneously, then select "Task Manager".
 
-------
+3. **Option 3**: Press `Control + Shift + Escape` simultaneously.
 
-### Step 2.
-While your game is still open, Alt+Tab over to Task Manager.<br>
-In the Processes list, you should be able to see your game:
+---
 
-1. Right click your game in Task Manager's Processes tab.
-2. Click `Open file location`.
-    <img src="./images/finding_game_executable/processes_task_manager_game_right_click_global.png"/>
-Windows 11
-    <img src="./images/finding_game_executable/processes_task_manager_game_right_click_global_win10.png"/>
-Windows 10 <br><br>
+### Step 2: Locating the Game's Executable
 
-If Step 2. is done correctly, you should see your game's application highlighted in File Explorer.
+1. With your game running, switch to Task Manager using `Alt + Tab`.
+2. In the "Processes" tab, locate your game, right-click it, then choose `Open file location`.
+    ![Find Game](./images/finding_game_executable/processes_task_manager_game_right_click_global.png) (Windows 11)
+    ![Find Game](./images/finding_game_executable/processes_task_manager_game_right_click_global_win10.png) (Windows 10)
 
-In this area, you can note the location of the application you are looking for, as well as the specific game executable itself.
+This will highlight your game's application in File Explorer. 
+
+Here, you can identify both the location and the specific executable of the game.
 
 </details>
 
-------
+---
 
 <details markdown="block">
-<summary>Steam</summary>
+<summary>Finding the Executable through Steam</summary>
 
-### Step 1.
-Open Steam and right click your game in the Steam "Library" tab, and then click "Properties".<br>
-I will be using ULTRAKILL for this representation.
+### Step 1: Accessing Game Properties
 
-<img src="./images/finding_game_executable/right_click_game_steam.png"/>
+1. Open Steam and navigate to the "Library" tab.
+2. Right-click your desired game (e.g., ULTRAKILL) and select "Properties".
+   
+   ![Right Click Game](./images/finding_game_executable/right_click_game_steam.png)
 
-------
+---
 
-### Step 2.
-With the new `Properties` window open, click the `Installed Files` tab on the left hand side of the window.
+### Step 2: Navigating to 'Installed Files' 
 
-<img src="./images/finding_game_executable/click_installed_files_tab_steam.png"/>
+1. In the properties window, select the `Installed Files` tab on the left.
+   
+   ![Installed Files](./images/finding_game_executable/click_installed_files_tab_steam.png)
 
-If you are on the right page, you will see `Installed Files` in bold text on towards the middle of the screen.
+2. Confirm you're on the correct page by checking for the bold `Installed Files` text in the middle of the window.
+   
+   ![Check Installed Files](./images/finding_game_executable/installed_files_tab_steam.png)
 
-<img src="./images/finding_game_executable/installed_files_tab_steam.png"/>
+---
 
-------
+### Step 3: Browsing Game Files
 
-### Step 3.
-In the `Installed Files` section of the `Properties` window, click the `Browse...` button on the right side of the window.
+1. In the `Installed Files` section, click on the `Browse...` button.
+   
+   ![Browse Button](./images/finding_game_executable/click_browse_steam.png)
 
-<img src="./images/finding_game_executable/click_browse_steam.png"/>
+2. A File Explorer window will open, showcasing the game's files. Look for files with the `.exe` extension—those are the game executables.
 
-Once done, a File Explorer window with your game's executable and files will be present. The file with the `.exe` extention will be the executable.
+   ![Find Executable](./images/finding_game_executable/game_file_explorer_steam.png)
 
-<img src="./images/finding_game_executable/game_file_explorer_steam.png"/>
-
-This solution will NOT show you what your game's actual exectuable is.
-
-This will only show you the location of where your game is installed, or where it's launching from in Steam!
-
-Some games can have more than one executable, and it's up to you to determine which is the proper one!
+{: .note} 
+> While this method shows you the game's installation location, it may not always reveal the primary executable, especially if a game has multiple executables.
+> 
+> It's essential to determine the correct one.
 
 </details>
