@@ -4,15 +4,13 @@ layout: page
 parent: Shader Repositories
 ---
 
-#  iMMERSE and qUINT
+# iMMERSE and qUINT
 
 iMMERSE and qUINT are distinguished shader repositories developed by Pascal Gilcher, also known as MartyMcFly. 
 
-These shaders are renowned for their significant performance increases over competing shader repositories and visual aesthetics.
+These shaders are renowned for their significant performance increases over competing shader repositories and visual aesthetic, so much so that both iMMERSE and qUINT are widely adopted within the ReShade community and used by just about every ReShade user!
 
-Both iMMERSE and qUINT are widely adopted within the ReShade community and used by just about every ReShade user!
-
-------
+---
 
 <details markdown="block">
 <summary>iMMERSE</summary>
@@ -21,10 +19,10 @@ iMMERSE is the next step after qUINT and showcases some of the best shaders by P
 
 iMMERSE comes in three versions: a free one (iMMERSE), and two premium options (iMMERSE Pro & Ultimate).
 
-------
+---
 
 <details markdown="block">
-<summary>iMMERSE Shaders</summary>
+<summary><font size="-0.03">iMMERSE Shaders</font></summary>
 
 iMMERSE is the core collection of shaders from Pascal. 
 
@@ -39,12 +37,12 @@ If you need information on installing shaders through the ReShade Installer, ref
 
 </details>
 
+---
+
 </details>
 
-------
-
 <details markdown="block">
-<summary>iMMERSE Pro Shaders</summary>
+<summary><font size="-0.03">iMMERSE Pro Shaders</font></summary>
 
 iMMERSE Pro is a premium collection of Pascal's shaders, available to members of the `Raytracers` tier on Pascal's Patreon. 
 
@@ -74,21 +72,21 @@ Here's a step-by-step guide:
 
 ### Step 1.
 Open the iMMERSE Pro archive:
-<img src="./images/immerse/immerse_pro_archive.jpg"/> 
+![Image](./images/immerse/immerse_pro_archive.jpg) 
 
-------
+---
 
 ### Step 2.
 Navigate to the `ReShade-Shaders` folder in your game directory:
-<img src="./images/immerse/reshade_shaders_folder.jpg"/> 
+![Image](./images/immerse/reshade_shaders_folder.jpg) 
 
 * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html) for assistance!
 
-------
+---
 
 ### Step 3.
 Combine the `Shaders` and `Textures` Folders from the iMMERSE Pro archive with the `ReShade-Shaders` Directory:
-<img src="./images/immerse/shaders_drag_merge.jpg"/> 
+![Image](./images/immerse/shaders_drag_merge.jpg) 
 
    * Should a prompt ask you to overwrite existing files in the `ReShade-Shaders` directory, please proceed with the overwrite.
 
@@ -104,41 +102,41 @@ Navigate to [Patreon's 'Connected Apps' Settings](https://www.patreon.com/settin
 
 ### Step 2.
 Find and Select the `Discord` Icon:
-<img src="./images/immerse/patreon_discord_icon.jpg"/> 
+![Image](./images/immerse/patreon_discord_icon.jpg) 
 
 ### Step 3.
 Choose `Disconnect` to Remove Discord Access:
-<img src="./images/immerse/patreon_disconnect_discord.jpg"/>
+![Image](./images/immerse/patreon_disconnect_discord.jpg)
 
 ### Step 4.
 Select `Connect` and Sign into Your Discord Account:
-<img src="./images/immerse/patreon_connect_discord.jpg"/>
+![Image](./images/immerse/patreon_connect_discord.jpg)
 
 ### Step 5.
 Grant Permission by Clicking `Authorize`:
-<img src="./images/immerse/discord_authorize.jpg"/>
+![Image](./images/immerse/discord_authorize.jpg)
 
 ### Step 6.
 Finally, verify your updated roles within the PGHub Discord Server.
 
-{: .note }
-If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon!
+Note: If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon!
 
 </details>
 
+---
+
 </details>
 
-------
 
 <details markdown="block">
-<summary>iMMERSE Ultimate Shaders</summary>
+<summary><font size="-0.03">iMMERSE Ultimate Shaders</font></summary>
 
 Coming soon TM >:)
 
 </details>
 </details>
 
-------
+---
 
 <details markdown="block">
 <summary>qUINT</summary>

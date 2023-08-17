@@ -81,7 +81,7 @@ Transfer the ReShade files and the single folder from your GTAV directory into t
 * `reshade.ini` - ReShade Settings File
 * `ReShade-Shaders` - ReShade Shaders & Textures Folder
 
-{: .warning}
+{: .warning }
 Avoid copying and pasting these files, as it can cause complications.
 
 ---
@@ -101,7 +101,7 @@ If the ReShade installer can't pinpoint the FiveM install location, or if your R
 
 To remedy this, visit the location mentioned in the error and incorporate the specified ID from your F8 console error into the `CitizenFX.ini` file.
 
-{: .note}
+{: .note }
 If ReShade successfully launches with your game, the installation is complete.
 
 ---
@@ -118,5 +118,5 @@ If ReShade successfully launches with your game, the installation is complete.
 
     To address this, follow Step 6.
 
-{: .warning}
+{: .warning }
 Errors related to using version 5.9 or above suggest that you haven't transitioned your FiveM Release Channel to Beta or Latest, or that you're not using the latest ReShade version.
