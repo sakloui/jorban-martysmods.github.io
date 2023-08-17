@@ -6,116 +6,117 @@ parent: Special Games
 grand_parent: Special & Others
 ---
 
-{: .highlight-title}
-> **IMPORTANT:**
+{: .highlight-title }
+> IMPORTANT:
 > 
->As of Aug. 06.2023, FiveM has released an update to their client in order to block version 5.9 and above. Unfortunately this had also blocked the hotfix specifically for the crashing that they are trying to prevent.
+> As of Aug. 06.2023, FiveM released an update to their client, blocking version 5.9 and above. This also blocked the hotfix designed to prevent crashes.
 >
->At the current time of Aug 08.2023 - this blocking still has not been removed. However, they have pushed an update to the beta and latest Release Channel in order to remove the blocking for 5.9.1 users.
+> As of Aug 08.2023, this block remains in place. However, an update to the beta and the latest Release Channel has been pushed to unblock version 5.9.1 users.
 >
->Meaning that you should switch your FiveM Release Channel over to Beta, or Latest, and then install the latest version of ReShade on [ReShade's website](https://reshade.me). - Jordan Brady Aug.08.2023
-><img src="./images/fivem/fivem_release_channel.png"/>
->Installing the latest update is the same process as previous, see below.
+> Therefore, switch your FiveM Release Channel to Beta or Latest, and install the latest version of ReShade from [ReShade's website](https://reshade.me). - Jordan Brady Aug.08.2023
+>
+> ![FiveM Release Channel](./images/fivem/fivem_release_channel.png)
+>
+> The installation process remains the same as before.
 
--------
+---
 
 # Installing ReShade to FiveM:
-While FiveM is a modification platform for Grand Theft Auto V, it requires it's own special proceedures in order to inject ReShade into FiveM itself.
+FiveM, a modification platform for Grand Theft Auto V, demands specific procedures to integrate ReShade.
 
-Unfortunately, this is the way that the developers of FiveM have set up their client, and there is nothing that we can realistically can do about it.
+Unfortunately, this design choice stems from the FiveM developers. 
 
-In order to install ReShade properly to FiveM, you can proceed with the following step based guide!
-
--------
+To install ReShade to FiveM, follow the guide below!
+---
 
 ### Step 1.
-Start by installing ReShade to GTAV.<br>
-You will likely want the addon-support build of ReShade from the [ReShade website](https://reshade.me).
+Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.me).
 
-{: .warning}
-You must install ReShade to `GTA5.exe`<br>
-Installing ReShade to the launcher will give you the wrong binary, and won't allow ReShade to inject properly.
+{: .warning }
+Ensure ReShade is installed to `GTA5.exe`. 
+Installing to the launcher provides an incorrect binary, preventing proper ReShade injection.
 
--------
+---
 
 ### Step 2.
-Once ReShade is installed to GTAV, navigate to your GTAV folder.<br>
-You should see:
+After installing ReShade to GTAV, open your GTAV folder. 
+
+You should notice the files:
 
 * `dxgi.dll` - ReShade Binary File
 * `reshade.ini` - ReShade Settings File
 * `ReShade-Shaders` - ReShade Shaders & Textures Folder
 
-{: .note}
-These files belong to ReShade, and are **needed** for Step 5.<br>
-Do not close this folder!
+* If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html) for assistance!
 
+{: .note }
+> These files are essential for Step 5. 
+> 
+> **Don't close the folder.**
 
--------
+---
 
 ### Step 3.
-Navigate to the location of your FiveM install.
+Open your FiveM install location.
 
-{: .note}
-The **default** is `C:\Users\{USERNAME}\AppData\Local\FiveM`.<br>
-The location of your install of FiveM **might** slightly differ.
+* If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html) for assistance!
 
+{: .note }
+Typically, this is `C:\Users\{USERNAME}\AppData\Local\FiveM`. Your install location might vary slightly.
 
--------
+---
 
 ### Step 4.
-**Create** a `plugins` folder in the `FiveM Application Data` folder.
+In the `FiveM Application Data` folder, create a `plugins` directory.
 
-{: note}
-Skip if this step is already there
+{: .note}
+If the folder already exists, skip this step.
 
-
--------
+---
 
 ### Step 5.
-Cut or move the ReShade files and singular folder from your Grand Theft Auto V game folder, into your FiveM `plugins` folder.
+Transfer the ReShade files and the single folder from your GTAV directory into the FiveM `plugins` folder:
 
-These files and singular folder are: 
 * `dxgi.dll` - ReShade Binary File
 * `reshade.ini` - ReShade Settings File
 * `ReShade-Shaders` - ReShade Shaders & Textures Folder
 
 {: .warning}
-Do not copy and paste these files over, as it will cause issues.
+Avoid copying and pasting these files, as it can cause complications.
 
--------
+---
 
 ### Step 6.
-Boot up FiveM up and check the console for errors using the F8 key.
+Launch FiveM and inspect the console for issues using the F8 key.
 
-If the ReShade installer cannot detect the install location of FiveM, or your ReShade ID has changed, you can get the error:
+If the ReShade installer can't pinpoint the FiveM install location, or if your ReShade ID has been altered, the following error might arise:
 
-`Blocked load of ReShade Version 5 or higher - it has a bug that will lead to game crashes in GPU drivers or d3d11.dll.` <br>
-`If you want to force it to load anyway, add the following section to {location of CitizenFX.ini file.}`<br>
+`Blocked load of ReShade Version 5 or higher - it has a bug that will lead to game crashes in GPU drivers or d3d11.dll.`
+`To force its load, add the subsequent section to {location of CitizenFX.ini file.}`
 
-`[Addons]`<br>
-`ReShade5=ID:XXXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes.`<br>
+`[Addons]`
+`ReShade5=ID:XXXXXXX acknowledged that ReShade 5.x has a bug leading to game crashes.`
 
-<img src="./images/fivem/fivem_reshade5_bs.png"/>
+![Error Screenshot](./images/fivem/fivem_reshade5_bs.png)
 
-In order to fix this, go to the same location that is in that error, and add the proper ID shown in your F8 console error to the `CitizenFX.ini` file.
+To remedy this, visit the location mentioned in the error and incorporate the specified ID from your F8 console error into the `CitizenFX.ini` file.
 
 {: .note}
-If your game launches with ReShade, you are finished with the install.
+If ReShade successfully launches with your game, the installation is complete.
 
--------
+---
 
-## Possible errors if done wrong:
-* `Ignored graphics mod \Grand Theft Auto V\dxgi.dll - these should go in plugins/ now!`<br>
-    If this error occurs - you likely have not dropped ReShade into the `plugins` folder of your FiveM install directory - or you still have existing mod injections in your GTAV folder.<br> <br>
+## Potential Errors:
+* `Ignored graphics mod \Grand Theft Auto V\dxgi.dll - these should go in plugins/ now!`:
+    If this pops up, you might have neglected to place ReShade in the `plugins` directory of your FiveM installation, or other mod injections persist in your GTAV folder.
 
+* `Blocked load of ReShade Version 5 or higher - it has a bug that will lead to game crashes in GPU drivers or d3d11.dll.`
+    `To force its load, add the subsequent section to {location of CitizenFX.ini file.}`
 
-* `Blocked load of ReShade Version 5 or higher - it has a bug that will lead to game crashes in GPU drivers or d3d11.dll.` <br>
-    `If you want to force it to load anyway, add the following section to {location of CitizenFX.ini file.}`<br>
+    `[Addons]`
+    `ReShade5=ID:XXXXXXX recognizes that ReShade 5.x has a game crash bug.`
 
-    `[Addons]`<br>
-    `ReShade5=ID:XXXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes.`<br>
-    If you get this error, please follow the steps in Step 6.
+    To address this, follow Step 6.
 
 {: .warning}
-If you get any errors relating to using 5.9 or above, you likely have not switched your FiveM Release Channel over to Beta, or Latest, or you are not using the latest version of ReShade!
+Errors related to using version 5.9 or above suggest that you haven't transitioned your FiveM Release Channel to Beta or Latest, or that you're not using the latest ReShade version.

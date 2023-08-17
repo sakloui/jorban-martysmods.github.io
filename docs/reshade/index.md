@@ -438,20 +438,28 @@ This is what the shader looks like when it has no data, and is reversed.
 <details markdown="block">
 <summary>Global Preprocessor Basic Arguments</summary>
 
----
+Dropdowns here will provide you with the basic arguments that are presented to the ReShade Depth Buffer.
 
-### RESHADE_DEPTH_INPUT_IS_REVERSED
+<details markdown="block">
+<summary><font size="-0.3">RESHADE_DEPTH_INPUT_IS_REVERSED</font></summary>
+
 Used when you can see the normals, but can’t see the depth image itself (The first result image should represent this perfectly), usually starts at 1 so set it to 0 to fix it, it can also be the other way around.
 
----
+</details>
 
-### RESHADE_DEPTH_INPUT_IS _UPSIDE_DOWN
+<details markdown="block">
+<summary><font size="-0.3">RESHADE_DEPTH_INPUT_IS _UPSIDE_DOWN</font></summary>
+
 As the name says, when the image shown by the DisplayDepth shader is upside down, setting it to 1 should fix the issue.
 
----
+</details>
 
-### RESHADE_DEPTH_INPUT_IS_LOGARITHMIC
+<details markdown="block">
+<summary><font size="-0.3">RESHADE_DEPTH_INPUT_IS_LOGARITHMIC</font></summary>
+
 Used when the depth buffer has lots of waves or “stripes”. Very FEW games actually do use this, so you rarely will have to switch or change that.
+
+</details>
 
 </details>
 
@@ -459,23 +467,28 @@ Used when the depth buffer has lots of waves or “stripes”. Very FEW games ac
 
 <details markdown="block">
 <summary>Global Preprocessor Advanced Arguments</summary>
+
 These more advanced options here will rarely need to be changed, but for old games or emulators, you might have to fiddle around with them.
 
 Here you can find a generalized description of them.
 
----
-
-### RESHADE_DEPTH_INPUT_X_SCALE | RESHADE_DEPTH_INPUT_Y_SCALE
+<details markdown="block">
+<summary><font size="-0.3">RESHADE_DEPTH_INPUT_X_SCALE | RESHADE_DEPTH_INPUT_Y_SCALE</font></summary>
 Changes the depth buffer size (multiplier, so 1 = original size, 2 = double and so on) on the horizontal (X) and vertical (Y) axis.
 
----
+</details>
 
-### RESHADE_DEPTH_LINEARIZATION_FAR_PLANE
-How far is the “infinite” defined in the depth buffer. Values can either be really low or really high, so you will have to experiment to see which fits best on your case.
+<details markdown="block">
+<summary><font size="-0.3">RESHADE_DEPTH_LINEARIZATION_FAR_PLANE</font></summary>
+How far is the “infinite” defined in the depth buffer. 
 
----
+Values can either be really low or really high, so you will have to experiment to see which fits best on your case.
 
-### RESHADE_DEPTH_MULTIPLIER
+</details>
+
+<details markdown="block">
+<summary><font size="-0.3">RESHADE_DEPTH_MULTIPLIER</font></summary>
 Multiplies the far plane for easy visualization of really low or really high far plane values.
 
+</details>
 </details>
