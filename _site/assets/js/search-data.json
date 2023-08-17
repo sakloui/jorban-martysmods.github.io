@@ -111,68 +111,68 @@
     
     "relUrl": "/docs/reshade/"
   },"16": {
-    "doc": "iMMERSE & qUINT",
-    "title": "iMMERSE and qUINT",
-    "content": "iMMERSE and qUINT are distinguished shader repositories developed by Pascal Gilcher, also known as MartyMcFly. These shaders are renowned for their significant performance increases over competing shader repositories and visual aesthetic, so much so that both iMMERSE and qUINT are widely adopted within the ReShade community and used by just about every ReShade user! . iMMERSE iMMERSE is the next step after qUINT and showcases some of the best shaders by Pascal Gilcher, also known as MartyMcFly, for ReShade. iMMERSE comes in three versions: a free one (iMMERSE), and two premium options (iMMERSE Pro &amp; Ultimate). iMMERSE Shaders iMMERSE is the core collection of shaders from Pascal. You can find these shaders on GitHub and they’re freely accessible to all. Installing iMMERSE Public GitHub Shaders Setting up iMMERSE shaders is straightforward. Just use the ReShade Installer and choose iMMERSE at the shader installation portion of the installer! . If you need information on installing shaders through the ReShade Installer, refer to our guide on installing ReShade and it’s shaders through the ReShade Installer! . iMMERSE Pro Shaders iMMERSE Pro is a premium collection of Pascal’s shaders, available to members of the Raytracers tier on Pascal’s Patreon. For $5 USD, you can access this suite, which offers an array of shaders showcased on MartysMods.com . Downloading iMMERSE Pro Shaders To access the iMMERSE Pro Shaders, ensure you’re a current subscriber to Pascal’s Patreon at the $5 USD Raytracers tier. Once subscribed, you retain the shader files indefinitely, provided you don’t delete them. If desired, you’re free to end your subscription anytime. The shaders are available on Pascal’s Discord (PGHUB). For members with the right permissions, the channel #downloads-level-1 becomes visible. This channel houses the iMMERSE Pro shaders, including iMMERSE Pro RTGI, ready for download. Installing iMMERSE Pro Shaders Once you’ve obtained access to the Raytracers tier and have downloaded the iMMERSE Pro archive, the installation process is straightforward with a simple drag-and-drop action. Here’s a step-by-step guide: . Step 1. Open the iMMERSE Pro archive: . Step 2. Navigate to the ReShade-Shaders folder in your game directory: . | If you’re unsure where your game directory is located, please see our guide on how to locate your game’s executable for assistance! | . Step 3. Combine the Shaders and Textures Folders from the iMMERSE Pro archive with the ReShade-Shaders Directory: . | Should a prompt ask you to overwrite existing files in the ReShade-Shaders directory, please proceed with the overwrite. | . Patreon Roles not Updating in Discord If you’re encountering difficulties in accessing the iMMERSE Pro archive due to role permissions, follow these steps to rectify the issue: . Step 1. Navigate to Patreon’s ‘Connected Apps’ Settings . Step 2. Find and Select the Discord Icon: . Step 3. Choose Disconnect to Remove Discord Access: . Step 4. Select Connect and Sign into Your Discord Account: . Step 5. Grant Permission by Clicking Authorize: . Step 6. Finally, verify your updated roles within the PGHub Discord Server. Note: If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon! . iMMERSE Ultimate Shaders Coming soon TM &gt;:) . qUINT Coming soon TM &gt;:) . ",
-    "url": "/docs/shader_repos/martysmods/#immerse-and-quint",
-    
-    "relUrl": "/docs/shader_repos/martysmods/#immerse-and-quint"
-  },"17": {
-    "doc": "iMMERSE & qUINT",
-    "title": "iMMERSE & qUINT",
-    "content": " ",
-    "url": "/docs/shader_repos/martysmods/",
-    
-    "relUrl": "/docs/shader_repos/martysmods/"
-  },"18": {
-    "doc": "Shader Repositories",
-    "title": "ReShade Shader Repositories",
-    "content": "Dive deep into a curated collection of pages and guides, dedicated to various esteemed shader developers and their repositories. These repositories are the very essence of ReShade, crafting its unique identity in the world of graphical enhancements. To delve deeper into a specific repository and gain insights about its developer, simply select a page of interest. ",
-    "url": "/docs/shader_repos/#reshade-shader-repositories",
-    
-    "relUrl": "/docs/shader_repos/#reshade-shader-repositories"
-  },"19": {
-    "doc": "Shader Repositories",
-    "title": "Shader Repositories",
-    "content": " ",
-    "url": "/docs/shader_repos/",
-    
-    "relUrl": "/docs/shader_repos/"
-  },"20": {
-    "doc": "Home",
-    "title": "Welcome to Guides.MartysMods.com",
-    "content": "Delve deep into the world of ReShade with our comprehensive guides. Whether you’re a newbie or a returning enthusiast, we’re here to illuminate the multifaceted features of ReShade for you! . Keen to lend a hand? We’d love for you to join our community. Explore our Contributions Page to see how you can make a difference! . ",
-    "url": "/#welcome-to-guidesmartysmodscom",
-    
-    "relUrl": "/#welcome-to-guidesmartysmodscom"
-  },"21": {
-    "doc": "Home",
-    "title": "Home",
-    "content": " ",
-    "url": "/",
-    
-    "relUrl": "/"
-  },"22": {
-    "doc": "Special & Others",
-    "title": "Special &amp; Others",
-    "content": "Guides for everything ReShade “related,” but not inherently ReShade focused. ",
-    "url": "/docs/special_other/#special--others",
-    
-    "relUrl": "/docs/special_other/#special--others"
-  },"23": {
-    "doc": "Special & Others",
-    "title": "Special & Others",
-    "content": " ",
-    "url": "/docs/special_other/",
-    
-    "relUrl": "/docs/special_other/"
-  },"24": {
     "doc": "Special Games",
     "title": "Special Games",
     "content": "Each one of these pages has been dedicated to a specific game that needs a little extra umph to get ReShade working properly. ",
     "url": "/docs/special_other/special_games/",
     
     "relUrl": "/docs/special_other/special_games/"
+  },"17": {
+    "doc": "Home",
+    "title": "Welcome to Guides.MartysMods.com",
+    "content": "Delve deep into the world of ReShade with our comprehensive guides. Whether you’re a newbie or a returning enthusiast, we’re here to illuminate the multifaceted features of ReShade for you! . Keen to lend a hand? We’d love for you to join our community. Explore our Contributions Page to see how you can make a difference! . ",
+    "url": "/#welcome-to-guidesmartysmodscom",
+    
+    "relUrl": "/#welcome-to-guidesmartysmodscom"
+  },"18": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"19": {
+    "doc": "Special & Others",
+    "title": "Special &amp; Others",
+    "content": "Guides for everything ReShade “related,” but not inherently ReShade focused. ",
+    "url": "/docs/special_other/#special--others",
+    
+    "relUrl": "/docs/special_other/#special--others"
+  },"20": {
+    "doc": "Special & Others",
+    "title": "Special & Others",
+    "content": " ",
+    "url": "/docs/special_other/",
+    
+    "relUrl": "/docs/special_other/"
+  },"21": {
+    "doc": "Shader Repositories",
+    "title": "ReShade Shader Repositories",
+    "content": "Dive deep into a curated collection of pages and guides, dedicated to various esteemed shader developers and their repositories. These repositories are the very essence of ReShade, crafting its unique identity in the world of graphical enhancements. To delve deeper into a specific repository and gain insights about its developer, simply select a page of interest. ",
+    "url": "/docs/shader_repos/#reshade-shader-repositories",
+    
+    "relUrl": "/docs/shader_repos/#reshade-shader-repositories"
+  },"22": {
+    "doc": "Shader Repositories",
+    "title": "Shader Repositories",
+    "content": " ",
+    "url": "/docs/shader_repos/",
+    
+    "relUrl": "/docs/shader_repos/"
+  },"23": {
+    "doc": "iMMERSE & qUINT",
+    "title": "iMMERSE and qUINT",
+    "content": "iMMERSE and qUINT are distinguished shader repositories developed by Pascal Gilcher, also known as MartyMcFly. These shaders are renowned for their significant performance increases over competing shader repositories and visual aesthetic, so much so that both iMMERSE and qUINT are widely adopted within the ReShade community and used by just about every ReShade user! . iMMERSE iMMERSE is the next step after qUINT and showcases some of the best shaders by Pascal Gilcher, also known as MartyMcFly, for ReShade. iMMERSE comes in three versions: a free one (iMMERSE), and two premium options (iMMERSE Pro &amp; Ultimate). iMMERSE Shaders iMMERSE is the core collection of shaders from Pascal. You can find these shaders on GitHub and they’re freely accessible to all. Installing iMMERSE Public GitHub Shaders Setting up iMMERSE shaders is straightforward. Just use the ReShade Installer and choose iMMERSE at the shader installation portion of the installer! . If you need information on installing shaders through the ReShade Installer, refer to our guide on installing ReShade and it’s shaders through the ReShade Installer! . iMMERSE Pro Shaders iMMERSE Pro is a premium collection of Pascal’s shaders, available to members of the Raytracers tier on Pascal’s Patreon. For $5 USD, you can access this suite, which offers an array of shaders showcased on MartysMods.com . Downloading iMMERSE Pro Shaders To access the iMMERSE Pro Shaders, ensure you’re a current subscriber to Pascal’s Patreon at the $5 USD Raytracers tier. Once subscribed, you retain the shader files indefinitely, provided you don’t delete them. If desired, you’re free to end your subscription anytime. The shaders are available on Pascal’s Discord (PGHUB). For members with the right permissions, the channel #downloads-level-1 becomes visible. This channel houses the iMMERSE Pro shaders, including iMMERSE Pro RTGI, ready for download. Installing iMMERSE Pro Shaders Once you’ve obtained access to the Raytracers tier and have downloaded the iMMERSE Pro archive, the installation process is straightforward with a simple drag-and-drop action. Here’s a step-by-step guide: . Step 1. Open the iMMERSE Pro archive: . Step 2. Navigate to the ReShade-Shaders folder in your game directory: . | If you’re unsure where your game directory is located, please see our guide on how to locate your game’s executable for assistance! | . Step 3. Combine the Shaders and Textures Folders from the iMMERSE Pro archive with the ReShade-Shaders Directory: . | Should a prompt ask you to overwrite existing files in the ReShade-Shaders directory, please proceed with the overwrite. | . Patreon Roles not Updating in Discord If you’re encountering difficulties in accessing the iMMERSE Pro archive due to role permissions, follow these steps to rectify the issue: . Step 1. Navigate to Patreon’s ‘Connected Apps’ Settings . Step 2. Find and Select the Discord Icon: . Step 3. Choose Disconnect to Remove Discord Access: . Step 4. Select Connect and Sign into Your Discord Account: . Step 5. Grant Permission by Clicking Authorize: . Step 6. Finally, verify your updated roles within the PGHub Discord Server. Note: If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon! . iMMERSE Ultimate Shaders Coming soon TM &gt;:) . qUINT Coming soon TM &gt;:) . ",
+    "url": "/docs/shader_repos/martysmods/#immerse-and-quint",
+    
+    "relUrl": "/docs/shader_repos/martysmods/#immerse-and-quint"
+  },"24": {
+    "doc": "iMMERSE & qUINT",
+    "title": "iMMERSE & qUINT",
+    "content": " ",
+    "url": "/docs/shader_repos/martysmods/",
+    
+    "relUrl": "/docs/shader_repos/martysmods/"
   },"25": {
     "doc": "Limiting Your Game's Framerate",
     "title": "Limiting Your Game’s Framerate",
