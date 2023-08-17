@@ -12,5 +12,3 @@ This site is here to help and guide new and returning users into the functions o
 [comment]: <> not finished yet, will add back when it is.
 
 If you want to contribute to this site, please visit our [Contributions Page](./docs/contribute.html)!
-
-------
