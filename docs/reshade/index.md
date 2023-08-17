@@ -6,7 +6,7 @@ nav_order: 3
 
 # ReShade
 
-<img style="max-width:17%" src="./images/installing_reshade/rs_gradiant.png/">
+<img style="max-width:17%" src="./images/rs_gradiant.png/">
 
 ReShade offers dynamic shader-injection across all games and applications supporting DirectX 9-12, OpenGL, and Vulkan graphics rendering APIs. Similar to utilities like ENB, DXVK, or ASILoader, it integrates seamlessly with your game, unlocking an expansive range of visual customization options. 
 
