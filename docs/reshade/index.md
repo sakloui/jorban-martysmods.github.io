@@ -65,8 +65,10 @@ This guide will focus on getting you through the ReShade Installer.
 
 This part can be hard for some, but it has been simplified for the majority of users!
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Selecting Your Game</font></summary>
+<summary>Selecting Your Game</summary>
 
 Launching the installer, you're prompted to select a game or application for ReShade installation. 
 
@@ -89,8 +91,10 @@ If you are struggling to find your game's executable or game directory, you can 
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Selecting the Rendering API</font></summary>
+<summary>Selecting the Rendering API</summary>
 
 This step is crucial! 
 
@@ -126,8 +130,10 @@ Vulkan installations request admin permissions due to certain system-level chang
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Installing Presets</font></summary>
+<summary>Installing Presets</summary>
 
 Installing presets is a breeze with the ReShade installer! 
 
@@ -146,8 +152,10 @@ Look for `.ini` files representing ReShade presets.
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Installing Shaders with the ReShade Installer</font></summary>
+<summary>Installing Shaders with the ReShade Installer</summary>
 
 Shaders are the driving force behind ReShade's versatility, allowing users to craft unique visual experiences for each game.
 
@@ -176,8 +184,10 @@ After selecting the desired shaders, click on `Next.`
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Concluding the Installation Process</font></summary>
+<summary>Concluding the Installation Process</summary>
 
 Upon completing the ReShade installation, a confirmation screen will indicate a successful installation.
 
@@ -208,10 +218,14 @@ First-timers, don't skip it! However, if you've bypassed it, let's explore each 
 <details markdown="block">
 <summary>The Home Tab</summary>
 
-ReShade's Home tab is a crucial hub, packed with valuable configurations awaiting exploration.
+ReShade's `Home` tab is a crucial hub, packed with valuable configurations awaiting exploration.
+
+Below you can find an explanation of each part of the `Home` tab:
 
 <details markdown="block">
-<summary><font size="-0.3">Current Preset</font></summary>
+<summary>Current Preset</summary>
+
+---
 
 ![Current Preset](./images/understanding_reshade_ui/rsui_preset.png)
 
@@ -225,8 +239,10 @@ ReShade smartly identifies which `.ini` files are presets, ensuring seamless use
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Effect List</font></summary>
+<summary>Effect List</summary>
 
 ![Effect List](./images/understanding_reshade_ui/rsui_effectlist.png)
 
@@ -238,8 +254,10 @@ The list's size varies depending on the preset you've chosen and the effect pack
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Global Pre-processor Definitions</font></summary>
+<summary>Global Pre-processor Definitions</summary>
 
 ![Global Pre-processor Definitions](./images/understanding_reshade_ui/rsui_globalpreprocessors.png)
 
@@ -270,8 +288,10 @@ With a default ReShade preset, this tab will be blank.
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Effect Parameters</font></summary>
+<summary>Effect Parameters</summary>
 
 ![Effect Parameters](./images/understanding_reshade_ui/rsui_effect_params.png)
 
@@ -283,8 +303,10 @@ Modifications reflect in real-time. It's handy to keep the window slightly aside
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Reload Button</font></summary>
+<summary>Reload Button</summary>
 
 ![Reload Button](./images/understanding_reshade_ui/rsui_reload.png)
 
@@ -296,8 +318,10 @@ It also reflects changes made to the shader code during its creation.
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">Performance Mode</font></summary>
+<summary>Performance Mode</summary>
 
 ![Performance Mode](./images/understanding_reshade_ui/rsui_performance_mode.png)
 
@@ -440,22 +464,28 @@ This is what the shader looks like when it has no data, and is reversed.
 
 Dropdowns here will provide you with the basic arguments that are presented to the ReShade Depth Buffer.
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">RESHADE_DEPTH_INPUT_IS_REVERSED</font></summary>
+<summary>RESHADE_DEPTH_INPUT_IS_REVERSED</summary>
 
 Used when you can see the normals, but can’t see the depth image itself (The first result image should represent this perfectly), usually starts at 1 so set it to 0 to fix it, it can also be the other way around.
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">RESHADE_DEPTH_INPUT_IS _UPSIDE_DOWN</font></summary>
+<summary>RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN</summary>
 
 As the name says, when the image shown by the DisplayDepth shader is upside down, setting it to 1 should fix the issue.
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">RESHADE_DEPTH_INPUT_IS_LOGARITHMIC</font></summary>
+<summary>RESHADE_DEPTH_INPUT_IS_LOGARITHMIC</summary>
 
 Used when the depth buffer has lots of waves or “stripes”. Very FEW games actually do use this, so you rarely will have to switch or change that.
 
@@ -472,22 +502,28 @@ These more advanced options here will rarely need to be changed, but for old gam
 
 Here you can find a generalized description of them.
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">RESHADE_DEPTH_INPUT_X_SCALE | RESHADE_DEPTH_INPUT_Y_SCALE</font></summary>
+<summary>RESHADE_DEPTH_INPUT_X_SCALE | RESHADE_DEPTH_INPUT_Y_SCALE</summary>
 Changes the depth buffer size (multiplier, so 1 = original size, 2 = double and so on) on the horizontal (X) and vertical (Y) axis.
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">RESHADE_DEPTH_LINEARIZATION_FAR_PLANE</font></summary>
+<summary>RESHADE_DEPTH_LINEARIZATION_FAR_PLANE</summary>
 How far is the “infinite” defined in the depth buffer. 
 
 Values can either be really low or really high, so you will have to experiment to see which fits best on your case.
 
 </details>
 
+---
+
 <details markdown="block">
-<summary><font size="-0.3">RESHADE_DEPTH_MULTIPLIER</font></summary>
+<summary>RESHADE_DEPTH_MULTIPLIER</summary>
 Multiplies the far plane for easy visualization of really low or really high far plane values.
 
 </details>
