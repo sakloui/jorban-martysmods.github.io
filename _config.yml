@@ -1,4 +1,4 @@
-title: Guides.MartysMods.com
+title: guides.martysmods.com
 description: Your extensive guide site for all things ReShade.
 theme: just-the-docs
 
@@ -35,7 +35,7 @@ button: false
 
 # Aux links for the upper right navigation
 aux_links:
-  "MartysMods.com":
+  "martysmods.com":
     - "https://martysmods.com"
 
 # Makes Aux links open in a new tab. Default is false
