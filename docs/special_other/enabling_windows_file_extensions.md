@@ -19,12 +19,16 @@ This options menu is present on both Windows 10, and 11; so the process will be 
 
 ![Start Menu Search Image](./images/enabling_windows_file_extensions/file_explorer_options_start_menu.jpg)
 
+---
+
 ### Step 2: Switch to the `View` tab
 
 * At the top of the options menu are three tabs.
 1. Select the `View` tab
 
 ![File Options View Tab Image](./images/enabling_windows_file_extensions/file_explorer_options_view_tab.jpg)
+
+---
 
 ### Step 3: Uncheck `Hide extensions for known file types`
 
