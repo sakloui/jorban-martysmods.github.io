@@ -76,3 +76,83 @@ summary
     font-size: 1.5rem;
     color: white;
 }
+
+//changing h1 fontsize and making them bold
+h1
+{
+	padding-bottom: 1.2rem !important;
+}
+
+h2
+{
+	margin-top: 25px !important;
+}
+
+//changing h3 fontsize and making them bold
+h3
+{
+	font-size: 1.5rem !important;
+}
+
+// change site nav, header, and footer to use all the space on screen
+.site-nav, .site-header, .site-footer 
+{
+  width: 100%;
+}
+
+//change the sidebar to match the width of nav-width
+.side-bar 
+{
+  @include mq(lg) 
+	{
+    width: $nav-width;
+  }
+}
+
+//change main to match the left margin of nav-width
+.main 
+{
+  @include mq(lg) 
+	{
+		width: 100%;
+    margin-left: $nav-width;
+		font-size: 1.1rem;
+  }
+}
+
+// remove breadcrumbs
+.breadcrumb-nav-list 
+{
+	display: none;
+}
+
+//reduce padding for nav bar top
+.site-nav
+{
+	padding-top: 2.5rem;
+}
+
+.nav-list .nav-list-item 
+{
+	font-size: 1.05rem !important;
+}
+.nav-list .nav-list-item .nav-list-link.active 
+{
+	font-weight: 400 !important;
+}
+
+.site-button
+{
+	font-size: 115%;
+}
+
+.main-content-wrap 
+{
+	padding-top: 2.2rem !important;
+}
+
+hr 
+{
+	margin-top: 25px !important;
+	margin-bottom: 25px !important;
+}
