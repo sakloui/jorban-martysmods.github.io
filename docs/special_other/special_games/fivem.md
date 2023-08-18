@@ -52,10 +52,12 @@ You should notice the files:
 * `reshade.ini` - ReShade Settings File
 * `ReShade-Shaders` - ReShade Shaders & Textures Folder
     * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html) for assistance!
+    * Ensure that you also have file extensions disabled in Windows in order to properly see these files and their extensions. We have a guide here on [how to enable file extensions in Windows](https://guides.martysmods.com/docs/special_other/enabling_windows_file_extensions.html)!
+
 
 {: .note }
 > These files are essential for Step 5. 
-> 
+>
 > **Don't close the folder.**
 
 ---
