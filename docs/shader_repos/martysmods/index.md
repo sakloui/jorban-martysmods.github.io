@@ -44,14 +44,14 @@ If you need information on installing shaders through the ReShade Installer, ref
 <details markdown="block">
 <summary><font size="-0.03">iMMERSE Pro Shaders</font></summary>
 
-iMMERSE Pro is a premium collection of Pascal's shaders, available to members of the `Raytracers` tier on Pascal's Patreon. 
+iMMERSE Pro is a premium collection of Pascal's shaders, available to members of the `Raytracers` tier [on Pascal's Patreon.](http://www.patreon.com/mcflypg)
 
 For $5 USD, you can access this suite, which offers an array of shaders showcased on [MartysMods.com](https://martysmods.com)
 
 <details markdown="block">
 <summary><font size="-0.3">Downloading iMMERSE Pro Shaders</font></summary>
 
-To access the iMMERSE Pro Shaders, ensure you're a current subscriber to Pascal's Patreon at the $5 USD Raytracers tier. 
+To access the iMMERSE Pro Shaders, ensure you're a current subscriber to [Pascal's Patreon at the $5 USD Raytracers tier.](http://www.patreon.com/mcflypg) 
 
 Once subscribed, you retain the shader files indefinitely, provided you don’t delete them. 
 
