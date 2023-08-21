@@ -170,12 +170,12 @@ p
 // edited: @sakloui
 // Tree view for details tags
 // Makes them nicely tabbed :)
-.details-tree 
+.details-tree
 {
 	position: relative;
 }
 
-.details-tree::before 
+.details-tree::before
 {
 	border-left: 1px solid #ffffff4A;
 	content: "";
@@ -185,7 +185,7 @@ p
 	height: calc(100% - 2.4rem);
 }
 
-.details-tree > *:not(summary) 
+.details-tree > *:not(summary)
 {
 	margin-left: 2.4rem;
 }
