@@ -13,6 +13,9 @@ Unfortunately, this is the way that the developers of RageMP have set up their c
 
 In order to install ReShade properly to RageMP, you can proceed with the following step based guide that is presented below:
 
+{: .warning}
+Please note that RageMP uses Easy Anti-Cheat. Any shaders which require the depth buffer or addons <b>will not work</b>.
+
 ------
 
 ### Step 1.
