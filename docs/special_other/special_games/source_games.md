@@ -1,5 +1,5 @@
 ---
-title: Source
+title: Source Games
 layout: page
 nav_order: 4
 parent: Special Games
@@ -15,116 +15,114 @@ While the ReShade installer typically manages these details seamlessly, there ar
 
 This guide will provide information about the appropriate locations for the ReShade .dll files within Source games.
 
-------
+---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Garry's Mod</summary>
 
-Location for ReShade files to exist for 32Bit version of Garry's Mod:
-  * `\GarrysMod\bin\`
-
-Location for ReShade files to exist for 64Bit/Chromium version of Garry's Mod:
-
-  * `\GarrysMod\bin\win64\`
-
-ReShade files required:
-
-  * `d3d9.dll`
-  * `ReShade-Shaders`
-  * `ReShade.ini`
+> Location for ReShade files to exist for 32Bit version of Garry's Mod:
+>   * `\GarrysMod\bin\`
+> 
+> Location for ReShade files to exist for 64Bit/Chromium version of Garry's Mod:
+> 
+>   * `\GarrysMod\bin\win64\`
+> 
+> ReShade files required:
+> 
+>   * `d3d9.dll`
+>   * `ReShade-Shaders`
+>   * `ReShade.ini`
 
 </details>
 
-------
+---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Half Life 2, HL2: EP1, & HL2:EP2</summary>
 
-Location for ReShade files to exist:
-  * `\Half-Life 2\bin\`
-
-ReShade files required:
-  * `d3d9.dll`
-  * `ReShade-Shaders`
-  * `ReShade.ini`
+> Location for ReShade files to exist:
+>   * `\Half-Life 2\bin\`
+> 
+> ReShade files required:
+>   * `d3d9.dll`
+>   * `ReShade-Shaders`
+>   * `ReShade.ini`
 
 </details>
 
-------
+---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Left 4 Dead & Left 4 Dead 2</summary>
 
-Location for ReShade files to exist:
-  * `\left 4 dead\bin\`
-  * `\Left 4 Dead 2\bin\`
-
-ReShade files required:
-  * `d3d9.dll`
-  * `ReShade-Shaders`
-  * `ReShade.ini`
+> Location for ReShade files to exist:
+>   * `\left 4 dead\bin\`
+>   * `\Left 4 Dead 2\bin\`
+> 
+> ReShade files required:
+>   * `d3d9.dll`
+>   * `ReShade-Shaders`
+>   * `ReShade.ini`
 
 </details>
 
-------
+---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Black Mesa</summary>
 
-Location for ReShade files to exist:
-  * `\Black Mesa\bin\`
-
-ReShade files required:
-  * `d3d9.dll`
-  * `ReShade-Shaders`
-  * `ReShade.ini`
-
+> Location for ReShade files to exist:
+>   * `\Black Mesa\bin\`
+> 
+> ReShade files required:
+>   * `d3d9.dll`
+>   * `ReShade-Shaders`
+>   * `ReShade.ini`
 
 </details>
 
-------
+---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Portal & Portal 2</summary>
 
-Location for ReShade files to exist:
-  * `\Portal\bin\`
-  * `\Portal 2\bin`
-
-ReShade files required:
-  * `d3d9.dll`
-  * `ReShade-Shaders`
-  * `ReShade.ini`
+> Location for ReShade files to exist:
+>   * `\Portal\bin\`
+>   * `\Portal 2\bin`
+> 
+> ReShade files required:
+>   * `d3d9.dll`
+>   * `ReShade-Shaders`
+>   * `ReShade.ini`
 
 </details>
 
-------
+---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Team Fortress 2</summary>
 
-Location for ReShade files to exist:
-  * `\Team Fortress 2\bin\`
-
-ReShade files required:
-  * `d3d9.dll`
-  * `ReShade-Shaders`
-  * `ReShade.ini`
+> Location for ReShade files to exist:
+>   * `\Team Fortress 2\bin\`
+> 
+> ReShade files required:
+>   * `d3d9.dll`
+>   * `ReShade-Shaders`
+>   * `ReShade.ini`
 
 </details>
 
-------
+---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Titanfall 2</summary>
 
-Location for ReShade files to exist:
-  * `\Titanfall2\bin\x64_retail\`
-
-ReShade files required:
-  * `dxgi.dll`
-  * `ReShade-Shaders`
-  * `ReShade.ini`
+> Location for ReShade files to exist:
+>   * `\Titanfall2\bin\x64_retail\`
+> 
+> ReShade files required:
+>   * `dxgi.dll`
+>   * `ReShade-Shaders`
+>   * `ReShade.ini`
 
 </details>
-

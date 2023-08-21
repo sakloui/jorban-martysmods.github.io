@@ -165,3 +165,27 @@ p
 	margin-top: 15px !important;
 	margin-bottom: 15px !important;
 }
+
+// original:johnbarnitz 
+// edited: @sakloui
+// Tree view for details tags
+// Makes them nicely tabbed :)
+.details-tree 
+{
+	position: relative;
+}
+
+.details-tree::before 
+{
+	border-left: 1px solid #ffffff4A;
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 2.4rem;
+	height: calc(100% - 2.4rem);
+}
+
+.details-tree > *:not(summary) 
+{
+	margin-left: 2.4rem;
+}
