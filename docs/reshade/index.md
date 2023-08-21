@@ -32,8 +32,6 @@ Only download ReShade from its official site: [https://reshade.me](https://resha
 
 ## Standard ReShade Build (Download ReShade x.x.x)
 
-![Standard Build Image](./images/installing_reshade/rs_standard_button.png)
-
 Designed for online games with stringent anti-cheat mechanisms. 
 
 If you play online games like Dead by Daylight, PUBG, or Apex Legends, this is your go-to build.
@@ -43,8 +41,6 @@ Notably, this build restricts some advanced features for compatibility such as a
 ---
 
 ## Full Add-On Support ReShade Build (Download ReShade x.x.x with full add-on support)
-
-![Add-On Support Image](./images/installing_reshade/rs_addon_button.png)
 
 Best suited for offline games or those without robust anti-cheat systems.
 
