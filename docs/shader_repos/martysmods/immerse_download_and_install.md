@@ -21,6 +21,8 @@ iMMERSE is the core collection of shaders from Pascal.
 
 You can find these shaders [on GitHub](https://github.com/martymcmodding/iMMERSE) and they're freely accessible to all.
 
+---
+
 <details markdown="block" class="details-tree">
 <summary>Installing iMMERSE Public GitHub Shaders</summary>
 
@@ -41,6 +43,8 @@ iMMERSE Pro is a premium collection of Pascal's shaders, available to members of
 
 For $5 USD, you can access this suite, which offers an array of shaders showcased on [MartysMods.com](https://martysmods.com)
 
+---
+
 <details markdown="block" class="details-tree">
 <summary>Downloading iMMERSE Pro Shaders</summary>
 
@@ -55,6 +59,8 @@ The shaders are available on [Pascal's Discord (PGHUB)](https://discord.com/invi
 For members with the right permissions, the channel [#downloads-level-1](https://discord.com/channels/494578207505514496/494599998059839498) becomes visible. This channel houses the iMMERSE Pro shaders, including iMMERSE Pro RTGI, ready for download.
 
 </details>
+
+---
 
 <details markdown ="block">
 <summary>Installing iMMERSE Pro Shaders</summary>
@@ -86,6 +92,8 @@ Combine the `Shaders` and `Textures` Folders from the iMMERSE Pro archive with t
    * Should a prompt ask you to overwrite existing files in the `ReShade-Shaders` directory, please proceed with the overwrite.
 
 </details>
+
+---
 
 <details markdown="block" class="details-tree">
 <summary>Patreon Roles not Updating in Discord</summary>
