@@ -197,8 +197,3 @@ If installed correctly, ReShade will display an in-game banner:
 If you come up with issues here, the most common issue is the wrong API or executable was selected!
 
 </details>
-
-</details>
-
----
-
