@@ -1,6 +1,6 @@
 ---
 title: Downloading and Installing ReShade
-layout: default
+layout: page
 nav_order: 1
 parent: Basic ReShade Guides
 ---
