@@ -5,7 +5,6 @@ nav_order: 2
 parent: Basic ReShade Guides
 ---
 
-
 # Understanding ReShade's UI
 
 After successfully installing ReShade, launch your game, if the ReShade popup appears at the screen's top, great! You're 70% done.
