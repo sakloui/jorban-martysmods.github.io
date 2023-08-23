@@ -26,11 +26,12 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
 ---
 
-### Understanding the Basics of iMMERSE Anti Aliasing's Parameters
+### Understanding the Basic Parameters of  iMMERSE Anti Aliasing:
 
 * Edge Detection Type - Different options given to the user in order to allow for customability in what type of edge detection is used. (Best being `Color edge detection (max)`)
+
 * Enable Predicated Thresholding - Allows for iMMERSE Anti Alaiasing to utilize the depth buffer to better calculate edges that often get missed by the edge detection methods. (Best being enabled)
-* Debug Output - Several options for the user to better configure iMMERSE Anti Aliasing
+
 * SMAA_USE_EXTENDED_EDGE_DETECTION - This preprocessor for iMMERSE Anti Aliasing extends the color detection range of SMAA, allowing for increased detection of edges. (Usable Values: 0/1)
 
 <details markdown="block" class="details-tree">
@@ -38,25 +39,35 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
 ### Step 1: Configuring iMMERSE Anti Aliasing for Best Output
 
-1. Enable the `View edges` `Debug Output`.
+1. Select the option `View edges` for the parameter `Debug Output` -  This will allow you to see all of the edges that iMMERSE Anti Aliasing is able to detect, and will allow us to better see the changes that the shader is able to make!
 
 ![Debug Output Preview](./images/immerse/smaa_debug_edges_preview.png)
 
-2. Enable the `Color edge detection (max)` `Edge Detection Type`.
+2. Select the option `Color edge detection (max)` for `Edge Detection Type` - This option is the best soltuion for getting the most amount of edges within iMMERSE Anti Aliasing.
 
-3. Check the option for `Enable Predicated Thresholding` - With this selected, you should notice a large decrease of edges that are being detected, this is normal, do not panic!
+However, other options can be chosen if desired.
+
+3. Check the option for `Enable Predicated Thresholding` - With this selected, you should notice a large decrease of edges that are being detected, this is normal, do not panic. 
+
+We will be configuring other parameters in order to get more of those edges back into view!
 
 ![Enable Predicated Thresholding Debug Output Preview](./images/immerse/smaa_debug_edges_depth_preview.png)
 
-4. Reduce `Edge Detection Threshold` and `Depth Edge Detection Threshold` to the lowest value that they can go - This will increase the amount of edges that you see, we will configure this more as we go on.
+4. Reduce `Edge Detection Threshold` and `Depth Edge Detection Threshold` parameters to the lowest value that they can go.
+
+This will increase the amount of edges that you see, other parameters will be configured in order to detect more edges later on.
 
 ![Reducing Edge Detection Threshold and Depth Edge Detection Threshold Parameter Preview](./images/immerse/smaa_reduce_edt_and_dedt.png)
 
-5. Reduce `Predication Threshold` as low as it can go - If you already have this set to default values, this will likely not change much within your scene.
+5. Reduce `Predication Threshold` as low as it can go - If you already have this set to default values, the parameter will likely not change much within your scene.
+
+Keep in mind that this parameter will not do anything if you do not have depth access within your game!
 
 ![Reducing Predication Threshold Parameter Preview](./images/immerse/smaa_reduce_pt.png)
 
 6. Increase `Predication Strength` just enough to the point where you notice no extra changes within the scene. This will increase the depth predication strength in order to grab more edges that are noticble in depth, but not by the edge detection method.
+
+Keep in mind that this parameter also will not do anything if you do not have depth access within your game!
 
   * Good `Predication Strength` value debug output:
 
@@ -77,15 +88,20 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
   ![Not Good](./images/immerse/smaa_debug_edge_pred_scale_bad.png)
 
 8. If performance is permitting in your game and system, max out:
+
   * `Max Search Steps`
+
   * `Max Search Steps Diagonal`
+
   * `Corner Rounding`
 
   If performance is an issue, you can reduce these down to whatever value pleases your framerate choice.
 
 ---
 
-From this point forward you should notice a decrease in shimmer and bright aliasing within your game. Note that this will not take away everything, but it can help enough to give you that extra smoothing to edges!
+From this point forward you should notice a decrease in shimmer and bright aliasing within your game. 
+
+Please know that this will not take away all of your aliasing issues, but it can be enough to give you that extra smoothing to edges!
 
   * SMAA Enabled:
 
