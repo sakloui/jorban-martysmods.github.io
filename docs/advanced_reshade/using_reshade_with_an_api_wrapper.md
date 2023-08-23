@@ -1,8 +1,8 @@
 ---
 title: Using ReShade with a Rendering API Wrapper
 layout: page
-nav_order: 7
-parent: Special & Others
+nav_order: 2
+parent: Advanced ReShade Guides
 ---
 
 # Using ReShade with a Rendering API Wrapper

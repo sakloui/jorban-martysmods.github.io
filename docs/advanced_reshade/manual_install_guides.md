@@ -1,8 +1,8 @@
 ---
-title: ReShade Manual Installation Guides
+title: ReShade Manual Installations
 layout: default
-nav_order: 2
-parent: Special & Others
+nav_order: 1
+parent: Advanced ReShade Guides
 ---
 # ReShade Manual Installation Guides
 

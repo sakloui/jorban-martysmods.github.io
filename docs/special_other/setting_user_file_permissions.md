@@ -2,6 +2,7 @@
 title: Setting Up User File Permissions
 layout: page
 parent: Special & Others
+nav_order: 3
 ---
 
 # Windows File Permisions

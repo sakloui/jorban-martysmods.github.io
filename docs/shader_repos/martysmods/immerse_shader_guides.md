@@ -285,4 +285,4 @@ If you get results that are close to the original game, with the added benifits 
 
 Coming Soon >:)
 
-</details
+</details>

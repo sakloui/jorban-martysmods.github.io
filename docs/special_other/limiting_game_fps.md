@@ -1,7 +1,7 @@
 ---
 title: Limiting Your Game's Framerate
 layout: page
-nav_order: 11
+nav_order: 4
 parent: Special & Others
 ---
 
