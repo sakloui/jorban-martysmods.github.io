@@ -137,7 +137,50 @@ You can now disable `Debug Output` and continue to the game as usual!
 
     ![Color Edge Detection(Max) Preview](./images/immerse/smaa_color_edge_detection_max_argument.png)
 
-3. 
+3. Reduce `Edge Detection Threshold` as far as you can go without picking up too many edges within textures.
+
+    Some are fine, but you do not want a whole lot:
+
+    * Good `Predication Scale` value debug output:
+
+    ![Good](./images/immerse/smaa_debug_edge_detect_thresh_good.png)
+
+    * Poor `Predication Scale` value debug output:
+  
+    ![Not Good](./images/immerse/smaa_debug_edge_detect_thresh_bad.png)
+
+4. Enable `SMAA_USE_EXTENDED_EDGE_DETECTION` if desired.
+
+    In theory this should allow iMMERSE Anti Aliasisng to provide better results for edges - however, in practice, the change is not always visable off the bat.
+
+    ![SMAA USE EXTENDED EDGE DETECTION Argument Preview](./images/immerse/smaa_use_edge_extended_preview.png)
+
+5. If performance is permitting in your game and system, max out:
+
+    * `Max Search Steps`
+
+    * `Max Search Steps Diagonal`
+
+    * `Corner Rounding`
+
+    If performance is an issue, you can reduce these down to whatever value pleases your framerate choice.
+
+---
+
+From this point forward you should notice a decrease in shimmer and bright aliasing within your game. 
+
+Please know that this method is not as good as the method with depth detection - however, it might be enough to satisfy your desire to elimite those shimmers!
+
+  * SMAA Enabled:
+
+  ![Enabled](./images/immerse/smaa_no_depth_enabled.png)
+
+  * SMAA Disabled:
+
+  ![Disabled](./images/immerse/smaa_no_depth_disabled.png)
+
+
+You can now disable `Debug Output` and continue to the game as usual!
 
 </details>
 
@@ -165,7 +208,6 @@ Below is our guide on how to utilize Clarity to your advantage, and what you sho
 <summary>Adding Details | No Depth Separation</summary>
 
 Since Clarity is a local contrasting sharpener, you can easily get more precieved quality or "Clartiy" out of your game's textures, this guide will go over how to do so without destroying your image all together without using depth separation!
-
 
 ---
 
