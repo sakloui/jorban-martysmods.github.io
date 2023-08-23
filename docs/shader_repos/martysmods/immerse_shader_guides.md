@@ -37,65 +37,69 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 <details markdown="block" class="details-tree">
 <summary>Configuring iMMERSE Anti Aliasing with Depth (Best Output)</summary>
 
-### Step 1: Configuring iMMERSE Anti Aliasing for Best Output
+# Configuring iMMERSE Anti Aliasing for Best Output with Depth
 
 1. Select the option `View edges` for the parameter `Debug Output` -  This will allow you to see all of the edges that iMMERSE Anti Aliasing is able to detect, and will allow us to better see the changes that the shader is able to make!
 
-![Debug Output Preview](./images/immerse/smaa_debug_edges_preview.png)
+    ![Debug Output Preview](./images/immerse/smaa_debug_edges_preview.png)
 
 2. Select the option `Color edge detection (max)` for `Edge Detection Type` - This option is the best soltuion for getting the most amount of edges within iMMERSE Anti Aliasing.
 
-However, other options can be chosen if desired.
+    However, other options can be chosen if desired.
+
+    ![Color Edge Detection(Max) Preview](./images/immerse/smaa_color_edge_detection_max_argument.png)
 
 3. Check the option for `Enable Predicated Thresholding` - With this selected, you should notice a large decrease of edges that are being detected, this is normal, do not panic. 
 
-We will be configuring other parameters in order to get more of those edges back into view!
+   We will be configuring other parameters in order to get more of those edges back into view!
 
-![Enable Predicated Thresholding Debug Output Preview](./images/immerse/smaa_debug_edges_depth_preview.png)
+    ![Enable Predicated Thresholding Debug Output Preview](./images/immerse/smaa_debug_edges_depth_preview.png)
 
 4. Reduce `Edge Detection Threshold` and `Depth Edge Detection Threshold` parameters to the lowest value that they can go.
 
-This will increase the amount of edges that you see, other parameters will be configured in order to detect more edges later on.
+    This will increase the amount of edges that you see, other parameters will be configured in order to detect more edges later on.
 
-![Reducing Edge Detection Threshold and Depth Edge Detection Threshold Parameter Preview](./images/immerse/smaa_reduce_edt_and_dedt.png)
+    ![Reducing Edge Detection Threshold and Depth Edge Detection Threshold Parameter Preview](./images/immerse/smaa_reduce_edt_and_dedt.png)
 
 5. Reduce `Predication Threshold` as low as it can go - If you already have this set to default values, the parameter will likely not change much within your scene.
 
-Keep in mind that this parameter will not do anything if you do not have depth access within your game!
+    Keep in mind that this parameter will not do anything if you do not have depth access within your game!
 
-![Reducing Predication Threshold Parameter Preview](./images/immerse/smaa_reduce_pt.png)
+    ![Reducing Predication Threshold Parameter Preview](./images/immerse/smaa_reduce_pt.png)
 
-6. Increase `Predication Strength` just enough to the point where you notice no extra changes within the scene. This will increase the depth predication strength in order to grab more edges that are noticble in depth, but not by the edge detection method.
+6. Increase `Predication Strength` just enough to the point where you notice no extra changes within the scene. 
 
-Keep in mind that this parameter also will not do anything if you do not have depth access within your game!
+    This will increase the depth predication strength in order to grab more edges that are noticble in depth, but not by the edge detection method.
 
-  * Good `Predication Strength` value debug output:
+    Keep in mind that this parameter also will not do anything if you do not have depth access within your game!
 
-  ![Good](./images/immerse/smaa_debug_edge_prediction_good_strength_preview.png)
+    * Good `Predication Strength` value debug output:
 
-  * Poor `Predication Strength` value debug output:
+    ![Good](./images/immerse/smaa_debug_edge_prediction_good_strength_preview.png)
 
-  ![Not Good](./images/immerse/smaa_debug_edge_prediction_bad_strength_preview.png)
+    * Poor `Predication Strength` value debug output:
+
+    ![Not Good](./images/immerse/smaa_debug_edge_prediction_bad_strength_preview.png)
 
 7. Reduce `Predication Scale` as far as you can go without picking up noise from textures.
 
-  * Good `Predication Scale` value debug output:
+    * Good `Predication Scale` value debug output:
 
-  ![Good](./images/immerse/smaa_debug_edge_pred_scale_good.png)
+    ![Good](./images/immerse/smaa_debug_edge_pred_scale_good.png)
 
-  * Poor `Predication Scale` value debug output:
+    * Poor `Predication Scale` value debug output:
   
-  ![Not Good](./images/immerse/smaa_debug_edge_pred_scale_bad.png)
+    ![Not Good](./images/immerse/smaa_debug_edge_pred_scale_bad.png)
 
 8. If performance is permitting in your game and system, max out:
 
-  * `Max Search Steps`
+    * `Max Search Steps`
 
-  * `Max Search Steps Diagonal`
+    * `Max Search Steps Diagonal`
 
-  * `Corner Rounding`
+    * `Corner Rounding`
 
-  If performance is an issue, you can reduce these down to whatever value pleases your framerate choice.
+    If performance is an issue, you can reduce these down to whatever value pleases your framerate choice.
 
 ---
 
@@ -113,6 +117,27 @@ Please know that this will not take away all of your aliasing issues, but it can
 
 
 You can now disable `Debug Output` and continue to the game as usual!
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Configuring iMMERSE Anti Aliasing without Depth</summary>
+
+# Configuring iMMERSE Anti Aliasing for Best Output Without Depth
+
+1. Select the option `View edges` for the parameter `Debug Output` -  This will allow you to see all of the edges that iMMERSE Anti Aliasing is able to detect, and will allow us to better see the changes that the shader is able to make!
+
+    ![Debug Output Preview](./images/immerse/smaa_debug_edges_preview.png)
+
+2. Select the option `Color edge detection (max)` for `Edge Detection Type` - This option is the best soltuion for getting the most amount of edges within iMMERSE Anti Aliasing.
+
+    However, other options can be chosen if desired.
+
+    ![Color Edge Detection(Max) Preview](./images/immerse/smaa_color_edge_detection_max_argument.png)
+
+3. 
 
 </details>
 
