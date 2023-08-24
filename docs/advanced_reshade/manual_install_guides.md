@@ -201,11 +201,15 @@ This guide assumes that you already have ReShade installed!
 
 2. Create a `reshade-shaders` folder in the same location as your ReShade binary and enter the `reshade-shaders` folder.
 
+   ![Newly Created reshade-shaders Folder](./images/manually_installing_shaders/new_reshadeshader_folder.png)
+
 3. Create two new folders within `reshade-shaders` called:
 
    * `Shaders`
 
    * `Textures`
+
+   ![Newly Created Shader and Texture Folders](./images/manually_installing_shaders/new_shader_and_textures_folders.png)
 
 ### Step 2: Download the Shader Repository(s) Required
 
@@ -220,9 +224,13 @@ Skip this portion of the guide if you already have the shader repositories alrea
 
 2. Click the green `<> Code` button
 
+   ![<> Code Button](./images/manually_installing_shaders/github_shader_repo_code_button_highlight.png)
+
    * Notice the dropdown that is now displayed, and the `Download ZIP` button that is within.
 
 3. Click the `Download ZIP` button in the `<> Code` dropdown.
+
+   ![Download Zip Button](./images/manually_installing_shaders/github_download_zip_button_highlight.png)
 
    * This will download an archive of the shader repository from that GitHub site.
 
@@ -233,6 +241,12 @@ Skip this portion of the guide if you already have the shader repositories alrea
 2. Open up the shader repository that you have downloaded in Step 2.
 
 3. Copy the `Shaders` and `Textures` folders from the shader repository archive, and place them into the `reshade-shaders` folder.
+
+   ![Copying Shaders and Textures Folders](./images/manually_installing_shaders/c_and_paste_shaders_and_textures_folder.png)
+
+   * If Windows is warning you of files already existing in that location with the names, simply click `Replace the files in the destination`.
+
+      ![Merge or Replace Files Prompt](./images/manually_installing_shaders/windows_replace_prompt.png)
 
    * Remember that not every shader repository will have the same structured layout, you might have to dig deeper, collect the shader and texture files manually , or place the shaders and their textures manually within the `reshade-shaders\Shaders` and `reshade-shaders\Textures` folders.
 
@@ -246,11 +260,15 @@ Skip this portion of the guide if you already have the shader repositories alrea
 
    * If you are starting with a fresh install of ReShade from a manual install, this area should be blank
 
+   ![Shaders and Textures Search Paths Highlight](./images/manually_installing_shaders/effect_and_texture_search_paths.png)
+
 4. Add the following paths to the arguments
 
    * `.\reshade-shaders\Shaders\**`- Goes in the arguments for `Effect Search Path`
 
    * `.\reshade-shaders\Textures\**`- Goes in the arguments for `Texture Search Path`
+
+   ![Search Paths Example](./images/manually_installing_shaders/effect_and_textures_search_path_examples.png)
 
 {: note }
 If you do not have a free slot to add a search path for, you can click the `+` icon located directly under the search paths!
