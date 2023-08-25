@@ -8,7 +8,9 @@ grand_parent: Shader Repositories
 
 # Configuring iMMERSE Shaders
 
-This guide page will walk you through each step of configuring the shaders under the entire iMMERSE suite.
+Welcome to the configuration guide for iMMERSE Shaders. 
+
+This guide will walk you through each step of configuring the shaders under the entire iMMERSE suite.
 
 Click the suite you'd like to start configuring below:
 
@@ -17,7 +19,7 @@ Click the suite you'd like to start configuring below:
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Shader Guides</summary>
 
-This dropdown will serve as a guide for setting up and configuring specific shaders within the standard iMMERSE shader suite!
+This section will guide you through setting up and configuring specific shaders within the standard iMMERSE shader suite!
 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Anti Aliasing</summary>
@@ -26,13 +28,13 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
 ---
 
-### Understanding the Basic Parameters of  iMMERSE Anti Aliasing:
+### Understanding the Basic Parameters of iMMERSE Anti Aliasing:
 
-* Edge Detection Type - Different options given to the user in order to allow for customability in what type of edge detection is used. (Best being `Color edge detection (max)`)
+* **Edge Detection Type** - This parameter provides different options to the user for customizing the type of edge detection used. The best option for most scenarios is `Color edge detection (max)`.
 
-* Enable Predicated Thresholding - Allows for iMMERSE Anti Alaiasing to utilize the depth buffer to better calculate edges that often get missed by the edge detection methods. (Best being enabled)
+* **Enable Predicated Thresholding** - This feature allows iMMERSE Anti Aliasing to utilize the depth buffer to better calculate edges that often get missed by the edge detection methods. It is recommended to enable this feature.
 
-* SMAA_USE_EXTENDED_EDGE_DETECTION - This preprocessor for iMMERSE Anti Aliasing extends the color detection range of SMAA, allowing for increased detection of edges. (Usable Values: 0/1)
+* **SMAA_USE_EXTENDED_EDGE_DETECTION** - This preprocessor for iMMERSE Anti Aliasing extends the color detection range of SMAA, allowing for increased detection of edges. The usable values are 0 and 1.
 
 <details markdown="block" class="details-tree">
 <summary>Configuring iMMERSE Anti Aliasing with Depth (Best Output)</summary>
@@ -51,7 +53,7 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
 3. Check the option for `Enable Predicated Thresholding` - With this selected, you should notice a large decrease of edges that are being detected, this is normal, do not panic. 
 
-   We will be configuring other parameters in order to get more of those edges back into view!
+    We will be configuring other parameters in order to get more of those edges back into view!
 
     ![Enable Predicated Thresholding Debug Output Preview](./images/immerse/smaa_debug_edges_depth_preview.png)
 
@@ -75,21 +77,21 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
     * Good `Predication Strength` value debug output:
 
-    ![Good](./images/immerse/smaa_debug_edge_prediction_good_strength_preview.png)
+        ![Good](./images/immerse/smaa_debug_edge_prediction_good_strength_preview.png)
 
     * Poor `Predication Strength` value debug output:
 
-    ![Not Good](./images/immerse/smaa_debug_edge_prediction_bad_strength_preview.png)
+        ![Not Good](./images/immerse/smaa_debug_edge_prediction_bad_strength_preview.png)
 
 7. Reduce `Predication Scale` as far as you can go without picking up noise from textures.
 
     * Good `Predication Scale` value debug output:
 
-    ![Good](./images/immerse/smaa_debug_edge_pred_scale_good.png)
+        ![Good](./images/immerse/smaa_debug_edge_pred_scale_good.png)
 
     * Poor `Predication Scale` value debug output:
   
-    ![Not Good](./images/immerse/smaa_debug_edge_pred_scale_bad.png)
+        ![Not Good](./images/immerse/smaa_debug_edge_pred_scale_bad.png)
 
 8. If performance is permitting in your game and system, max out:
 
@@ -99,7 +101,7 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
     * `Corner Rounding`
 
-    If performance is an issue, you can reduce these down to whatever value pleases your framerate choice.
+        * If performance is an issue, you can reduce these down to whatever value pleases your framerate choice.
 
 ---
 
@@ -109,11 +111,11 @@ Please know that this will not take away all of your aliasing issues, but it can
 
   * SMAA Enabled:
 
-  ![Enabled](./images/immerse/smaa_enabled_preview.png)
+    ![Enabled](./images/immerse/smaa_enabled_preview.png)
 
   * SMAA Disabled:
 
-  ![Disabled](./images/immerse/smaa_disabled_preview.png)
+    ![Disabled](./images/immerse/smaa_disabled_preview.png)
 
 
 You can now disable `Debug Output` and continue to the game as usual!
@@ -143,11 +145,11 @@ You can now disable `Debug Output` and continue to the game as usual!
 
     * Good `Predication Scale` value debug output:
 
-    ![Good](./images/immerse/smaa_debug_edge_detect_thresh_good.png)
+        ![Good](./images/immerse/smaa_debug_edge_detect_thresh_good.png)
 
     * Poor `Predication Scale` value debug output:
-  
-    ![Not Good](./images/immerse/smaa_debug_edge_detect_thresh_bad.png)
+        
+        ![Not Good](./images/immerse/smaa_debug_edge_detect_thresh_bad.png)
 
 4. Enable `SMAA_USE_EXTENDED_EDGE_DETECTION` if desired.
 
@@ -163,7 +165,7 @@ You can now disable `Debug Output` and continue to the game as usual!
 
     * `Corner Rounding`
 
-    If performance is an issue, you can reduce these down to whatever value pleases your framerate choice.
+        * If performance is an issue, you can reduce these down to whatever value pleases your framerate choice.
 
 ---
 
@@ -179,6 +181,7 @@ Please know that this method is not as good as the method with depth detection -
 
   ![Disabled](./images/immerse/smaa_no_depth_disabled.png)
 
+---
 
 You can now disable `Debug Output` and continue to the game as usual!
 
@@ -193,12 +196,12 @@ You can now disable `Debug Output` and continue to the game as usual!
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro Shader Guides</summary>
 
-This portion will serve as a guide for setting up and configuring specific shaders within the iMMERSE Pro shader suite!
+This section will guide you through setting up and configuring specific shaders within the iMMERSE Pro shader suite!
 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro Clarity</summary>
 
-Clarity is a shader that allows you to enhance texture and imaged details by adjusting the image's local contrast.
+Clarity is a shader that allows you to enhance texture and image details by adjusting the image's local contrast.
 
 This allows you to add a soft glow or sharp, gritty textures to your game without the standard issues of haloing or noise.
 
@@ -207,19 +210,21 @@ Below is our guide on how to utilize Clarity to your advantage, and what you sho
 <details markdown="block" class="details-tree">
 <summary>Adding Details | No Depth Separation</summary>
 
-Since Clarity is a local contrasting sharpener, you can easily get more precieved quality or "Clartiy" out of your game's textures, this guide will go over how to do so without destroying your image all together without using depth separation!
+Since Clarity is a local contrasting sharpener, you can easily get more perceived quality or "Clarity" out of your game's textures. 
+
+This guide will go over how to do so without destroying your image altogether without using depth separation!
 
 ---
 
 ### Step 1: Enable the Shader
 
-Simply check the shader `iMMERSE Pro Clarity [MartysMods_CLARITY.fx]` in the `Home` tab of ReShade.
+* Simply check the shader `iMMERSE Pro Clarity [MartysMods_CLARITY.fx]` in the `Home` tab of ReShade.
 
-![Check Clarity Shader](./images/immerse/immerse_clarity_enable.png)
+    ![Check Clarity Shader](./images/immerse/immerse_clarity_enable.png)
 
-This will activate Clarity and give you the arguments at the bottom to change.
+* This will activate Clarity and give you the arguments at the bottom to change.
 
-![Show User Clarity Options with Defaults](./images/immerse/show_user_clarity_arguments.png)
+    ![Show User Clarity Options with Defaults](./images/immerse/show_user_clarity_arguments.png)
 
 ---
 
@@ -232,17 +237,17 @@ You will notice that textures end up popping out more, and the contrast of the o
 
 However, do not go extremely overboard with this effect, as it can damage the game author's original envision for the game!
 
-Example of the base game:
+* Example of the base game:
 
-![Clarity Texture Intensity Base Game Image](./images/immerse/clarity_base_game_image.png)
+    ![Clarity Texture Intensity Base Game Image](./images/immerse/clarity_base_game_image.png)
 
-Example of a properly configured `Texture Intensity`:
+* Example of a properly configured `Texture Intensity`:
 
-![Clarity Texture Intensity Properly Configured](./images/immerse/clarity_properly_configured.png)
+    ![Clarity Texture Intensity Properly Configured](./images/immerse/clarity_properly_configured.png)
 
-Example of a poorly configured `Texture Intensity`:
+* Example of a poorly configured `Texture Intensity`:
 
-![Clarity Texture Intensity Poorly Configured](./images/immerse/clarity_poorly_configured.png)
+    ![Clarity Texture Intensity Poorly Configured](./images/immerse/clarity_poorly_configured.png)
 
 Once you have configured this argument to your liking, you might notice that the scene is slightly darker than it should be - this is where `Local Contrast Intensity` will come into play!
 
@@ -250,7 +255,7 @@ Once you have configured this argument to your liking, you might notice that the
 
 ### Step 3: Configure `Local Contrast Intensity` to Remove Some Contrast
 
-In order to remove some contrast from the image, while still keeping the benifits that iMMERSE Pro Clarity has to offer, you can configure the `Local Contrast Intensity` argument!
+In order to remove some contrast from the image, while still keeping the benefits that iMMERSE Pro Clarity has to offer, you can configure the `Local Contrast Intensity` argument!
 
 This argument is touchy, so it only needs a little bit.
 
@@ -258,19 +263,19 @@ You are going to want to match the original game world's contrast with this, so 
 
 Moving this slider to the right, will increase the local contrast intensity giving the image a brighter feeling, while moving it to the left and give you a darker feel.
 
-Example of the base game:
+* Example of the base game:
 
-![Clarity Local Contrast Base Game Image](./images/immerse/clarity_base_game_image.png)
+    ![Clarity Local Contrast Base Game Image](./images/immerse/clarity_base_game_image.png)
 
-Example of a properly configured `Local Contrast Intensity`:
+* Example of a properly configured `Local Contrast Intensity`:
 
-![Clarity Local Contrast Properly Configured](./images/immerse/clarity_properly_configured.png)
+    ![Clarity Local Contrast Properly Configured](./images/immerse/clarity_properly_configured.png)
 
-Example of a poorly configured `Local Contrast Intensity`:
+* Example of a poorly configured `Local Contrast Intensity`:
 
-![Clarity Local Contrast Poorly Configured](./images/immerse/clarity_local_contrast_poorly_configured.png)
+    ![Clarity Local Contrast Poorly Configured](./images/immerse/clarity_local_contrast_poorly_configured.png)
 
-If you get results that are close to the original game, with the added benifits of increased texture resolve/quality - you have set up Clarity without any depth separation properly!
+If you get results that are close to the original game, with the added benefits of increased texture resolve/quality - you have set up Clarity without any depth separation properly!
 
 </details>
 
@@ -283,6 +288,6 @@ If you get results that are close to the original game, with the added benifits 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate Shader Guides</summary>
 
-Coming Soon >:)
+Stay tuned for iMMERSE Ultimate Shaders - coming soon!
 
 </details>

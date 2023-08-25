@@ -7,33 +7,38 @@ nav_order: 2
 
 # Enabling Windows File Extensions
 
-Windows does not come with File Extenions visable to the user.
-
-This causes issues for individuals trying to see specific files within their game folder.
+By default, Windows does not display file extensions, which can cause confusion when trying to identify specific files within a game folder. This guide will walk you through the process of making file extensions visible in Windows.
 
 ---
 
-### Step 1: Search for `File Explorer Options` in the Windows Start Menu
-This options menu is used to change the settings of Windows `File Explorer`.
+### Step 1: Open `File Explorer Options`
 
-This options menu is present on both Windows 10, and 11; so the process will be the same regardless of what Windows itteration you are on.
+Start by searching for `File Explorer Options` in the Windows Start Menu. This options menu allows you to modify the settings of Windows `File Explorer`. The process is the same for both Windows 10 and 11.
 
-![Start Menu Search Image](./images/enabling_windows_file_extensions/file_explorer_options_start_menu.jpg)
-
----
-
-### Step 2: Switch to the `View` tab
-
-* At the top of the options menu are three tabs.
-1. Select the `View` tab
-
-![File Options View Tab Image](./images/enabling_windows_file_extensions/file_explorer_options_view_tab.jpg)
+  ![Start Menu Search Image](./images/enabling_windows_file_extensions/file_explorer_options_start_menu.jpg)
 
 ---
 
-### Step 3: Uncheck `Hide extensions for known file types`
+### Step 2: Navigate to the `View` Tab
 
-1. Untick the option for `Hide extensions for known file types`
-2. Then click `OK` on the bottom right hand side of the options menu.
+Once the options menu opens, you will see three tabs at the top. 
 
-![File Options Untick Option Image](./images/enabling_windows_file_extensions/file_explorer_options_remove_tick.jpg)
+1. Click on the `View` tab.
+
+  ![File Options View Tab Image](./images/enabling_windows_file_extensions/file_explorer_options_view_tab.jpg)
+
+---
+
+### Step 3: Make File Extensions Visible
+
+Now, you need to change the settings to make file extensions visible.
+
+1. Untick the checkbox next to `Hide extensions for known file types`.
+
+2. Click `OK` on the bottom right of the options menu to save your changes.
+
+  ![File Options Untick Option Image](./images/enabling_windows_file_extensions/file_explorer_options_remove_tick.jpg)
+
+---
+
+Now, you should be able to see the extensions for all files in your game folder. This will make it easier for you to identify specific files.

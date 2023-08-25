@@ -7,4 +7,5 @@ has_toc: true
 ---
 
 # Special & Others
-Guides for everything ReShade "related," but not inherently ReShade focused.
+
+This section contains guides that are not directly focused on ReShade, but are related and can be useful in your ReShade experience. Explore the guides below to enhance your understanding of the topics that are presented!
