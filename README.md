@@ -62,32 +62,42 @@ Both the Kramdown reference and Just The Docs documentation offer comprehensive 
 
 1. Home - Index
 
-2. Glossary
+2. Basic ReShade Guides
 
-3. Reshade Guides
+    1. Downloading and Installing ReShade
 
-#### Shader Repository Index
+    2. Understanding and Using ReShade
 
-* Currently under development.
+    3. Best Practice Guides
 
-#### Special & Other Topics:
+3. Advanced ReShade Guides
 
-1. Finding your Game Executable
+    1. ReShade Manual Installations
 
-2. Manual ReShade Installation
+    2. Using ReShade with: (Various external programs that can be used *with* ReShade)
 
-3. Best Practices (Under development)
+4. Shader Repository Index
 
-4. Using ReShade with Different Tools (API Wrapper, ASI Loader, ENB, SpecialK)
+    1. iMMERSE and qUINT
 
-5. Game Optimization: Frame Rate Limits, Centralized ReShade Install, etc.
+    2. Under Development
 
-#### Game-specific Guides:
+5. Special & Others
 
-* FiveM
+    1. Finding your Game Executable
 
-* RageMP
+    2. Enabling Windows File Extensions
 
-* GTAV
+    3. Setting Up User File Permissions
 
-* Source Games
+    4. Limiting Game Framerates
+
+    5. Game Specific Guides
+
+        1. FiveM
+
+        2. RageMP
+
+        3. GTAV
+
+        4. Source Games

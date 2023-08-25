@@ -35,7 +35,7 @@ To install ReShade to FiveM, please follow the step-by-step guide below:
 
 Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.me).
 
-* If you're unsure on how to install ReShade to GTAV, you can follow our guide for [installing ReShade](https://guides.martysmods.com/docs/reshade/)!
+* If you're unsure on how to install ReShade to GTAV, you can follow our guide for [installing ReShade](https://guides.martysmods.com/docs/basic_reshade/installing_reshade.html)!
 
 * Please ensure that you are using the latest version of ReShade!
 

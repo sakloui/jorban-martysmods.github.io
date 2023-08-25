@@ -70,31 +70,23 @@ Consequently, the list's size will vary depending on the chosen preset and the s
 <details markdown="block" class="details-tree">
 <summary>Global Pre-processor Definitions</summary>
 
-* The spotlighted area below shows the `Edit Global Preprocessor Definitions` button:
+* The `Edit Global Preprocessor Definitions` button, highlighted in the image below, is your gateway to controlling the behavior of effects before they load. These definitions act like switches, guiding how shaders function and interact with each other.
 
   ![Global Pre-processor Definitions](./images/understanding_reshade_ui/rsui_globalpreprocessors.png)
 
-Pre-Processor definitions serve as toggles that guide the behavior of effects before they load. Changes here can affect shader functionality or compatibility.
-
-* Clicking the `Edit Global Preprocessor Definitions` button button opens a small window showing a `Global` tab:
+* Clicking this button opens a window with two tabs: `Global` and `Current Preset`. The `Global` tab, shown below, lists definitions that apply to all presets. ReShade provides some defaults, but you have the freedom to add, edit, or remove them using the `+` and `-` buttons.
 
   ![Global Pre-processor Window](./images/understanding_reshade_ui/rsui_globalpreprocessors_window.png)
 
-The primary tab shows `Global` definitions, applies all definitions listed to all presets. ReShade will set some defaults - however you can add, edit, or remove them using the `+` and `-` signs shown!
+  {: .note }
+  A word of caution: When tinkering with these options, it's crucial to know the pre-processor definition name and its range. You can often find this information in the comments of the shaders. To inspect FX files and their contents, consider using advanced text editors like [Notepad++](https://notepad-plus-plus.org/) or [Visual Studio Code](https://code.visualstudio.com/).
 
-{: .note }
-It's important to know the pre-processor definition name and its range when configuring these options. Shaders often include this info in their comments. Use advanced text editors (like [Notepad++](https://notepad-plus-plus.org/) or [Visual Studio Code](https://code.visualstudio.com/)) to inspect FX files and their contents!
-
-* The secondary tab displays pre-processor definitions for the `Current Preset`:
+* The `Current Preset` tab, shown below, displays pre-processor definitions specific to the current preset. These definitions can change or reset based on the shader's default pre-processor definitions or their global value when you modify the preset. This feature is handy when different presets require unique pre-load settings.
 
   ![Global Pre-processor Current Preset](./images/understanding_reshade_ui/rsui_globalpreprocessors_current_preset.png)
 
-These current preset global pre-processors change or reset based on the shader's default pre-processor definitions or their global value when you alter the preset. 
-
-This is often useful when different presets need unique pre-load settings.
-
-{: .note }
-With a default ReShade preset, the `Current Preset` tab will be empty, so do not panic if you do not see anything on a fresh install of the default ReShade preset
+  {: .note }
+  Don't worry if the `Current Preset` tab is empty with a default ReShade preset. It's normal and expected on a fresh install of the default ReShade preset.
 
 </details>
 
@@ -103,15 +95,15 @@ With a default ReShade preset, the `Current Preset` tab will be empty, so do not
 <details markdown="block" class="details-tree">
 <summary>Understanding Effect Parameters</summary>
 
-* The image shown below highlights the effect parameters of shaders:
+* The image below shows the effect parameters of shaders:
 
   ![Effect Parameters](./images/understanding_reshade_ui/rsui_effect_params.png)
 
-When you activate a shader in ReShade, its corresponding options and parameters will appear in the highlighted section.
+When you enable a shader in ReShade, its associated options and parameters appear in the highlighted section. 
 
-Any changes you make to these parameters will be reflected in real-time. 
+These parameters are dynamic. Any modifications you make are reflected in real-time, allowing you to see the impact of your changes immediately. 
 
-It's useful to position the window slightly to the side so that you can view the real-time image changes of each shader configuration that you apply!
+For the best experience, consider positioning the window slightly to the side. This setup lets you observe the real-time image changes as you adjust each shader configuration!
 
 </details>
 
@@ -120,13 +112,11 @@ It's useful to position the window slightly to the side so that you can view the
 <details markdown="block" class="details-tree">
 <summary>Understanding the Reload Button</summary>
 
-
-
-* The highlighted `Reload` button in the image prompts ReShade to recheck the files in the Shaders and Textures folder:
+* The `Reload` button, as highlighted in the image below, instructs ReShade to re-examine the files in the Shaders and Textures folders:
 
   ![Reload Button](./images/understanding_reshade_ui/rsui_reload.png)
 
-Clicking the `Reload` button in ReShade incorporates newly installed effects without requiring a game restart. It will also mirror modifications made to the shader code during its development.
+By clicking the `Reload` button, you can integrate newly installed effects without needing to restart the game. This feature also reflects any changes made to the shader code during development, making it a handy tool for real-time adjustments.
 
 </details>
 
@@ -135,13 +125,13 @@ Clicking the `Reload` button in ReShade incorporates newly installed effects wit
 <details markdown="block" class="details-tree">
 <summary>Understanding Performance Mode</summary>
 
-* The `Performance Mode` setting highlighted in the image below optimizes compilation processes and ReShade's memory operations, minimizing performance overhead:
+* The `Performance Mode` setting, as highlighted in the image below, enhances the efficiency of compilation processes and ReShade's memory operations, reducing performance overhead:
 
   ![Performance Mode](./images/understanding_reshade_ui/rsui_performance_mode.png)
 
-It is worth keeping in mind that `Performance Mode` limits edits to shader parameters (this is expected behavior of ReShade,) and some effects may not function correctly. 
+Note that `Performance Mode` restricts edits to shader parameters - this is a standard feature of ReShade, and certain effects may not function as expected. 
 
-**Always** report any inconsistencies with Performance Mode to the shader creator.
+If you encounter any inconsistencies while using Performance Mode, **always** report them to the shader creator.
 
 </details>
 
@@ -152,34 +142,34 @@ It is worth keeping in mind that `Performance Mode` limits edits to shader param
 <details markdown="block" class="details-tree">
 <summary>Understanding the Add-ons Tab</summary>
 
-* The `Add-ons Tab` shown in the image below is responsible for managing each ReShade Add-on:
+* The `Add-ons Tab`, as shown in the image below, manages each ReShade Add-on:
 
   ![Add-ons Tab](./images/understanding_reshade_ui/rsui_addons_tab.png)
 
-By default, only `Generic Depth` is included with the ReShade Installer - however there are many other ReShade Add-ons that you can install to ReShade.
+By default, `Generic Depth` is the only add-on included with the ReShade Installer. However, you can install many other ReShade Add-ons.
 
-Generic Depth in ReShade is responsible for retrieving the depth buffer and selecting the appropriate one. The depth buffer is a critical component in 3D graphics, used to determine the distance of each pixel in a rendered scene from the viewer's perspective. In the context of ReShade, the depth buffer is used to apply effects like depth of field, ambient occlusion, and more. These effects can significantly enhance the visual quality of a game or video, adding a level of realism and immersion.
+`Generic Depth` in ReShade retrieves and selects the appropriate depth buffer, a critical component in 3D graphics. It determines the distance of each pixel in a rendered scene from the viewer's perspective. In ReShade, the depth buffer is used to apply effects like depth of field, ambient occlusion, and more, enhancing the visual quality of a game or video.
 
-The `Add-ons` Tab in ReShade serves as a control panel for managing the various Add-ons that can be used with ReShade. Each `Add-on` provides additional functionality or enhancements to the ReShade shaders that you currently have installed. For instance, some `Add-ons`` may offer new effects, while others may provide tools for fine-tuning existing effects!
+The `Add-ons` Tab serves as a control panel for managing various Add-ons. Each `Add-on` provides additional functionality or enhancements to your installed ReShade shaders. Some `Add-ons` may offer new effects, while others provide tools for fine-tuning existing effects!
 
-The `Add-ons` Tab also allows you to enable or disable individual add-ons, and control those specific Add-ons with their given arguments (if they have any) - giving you control over which features are active at any given time. This can be particularly useful for troubleshooting, as you can disable Add-ons or change configurations within Add-ons one by one to identify any that may be causing issues.
+The `Add-ons` Tab also allows you to enable or disable individual add-ons and control specific Add-ons with their given arguments, if any. This feature is useful for troubleshooting, as you can disable Add-ons or change configurations within Add-ons one by one to identify any causing issues.
 
-In addition to `Generic Depth`, other popular Add-ons, such as [ShaderToggler - FransBouma](https://github.com/FransBouma/ShaderToggler), [ReShade Effect Shader Toggler - 4lex4nder](https://github.com/4lex4nder/ReshadeEffectShaderToggler), and [AutoHDR - MajorPainTheCactus](https://github.com/MajorPainTheCactus/AutoHDR-ReShade). Each of these Add-ons can significantly alter the behavior of each ReShade shader and game it is applied to, making them powerful tools for customizing the visual experience for each user.
+In addition to `Generic Depth`, other popular Add-ons include [ShaderToggler - FransBouma](https://github.com/FransBouma/ShaderToggler), [ReShade Effect Shader Toggler - 4lex4nder](https://github.com/4lex4nder/ReshadeEffectShaderToggler), and [AutoHDR - MajorPainTheCactus](https://github.com/MajorPainTheCactus/AutoHDR-ReShade). These Add-ons can significantly alter the behavior of each ReShade shader and game it is applied to, making them powerful tools for customizing the visual experience.
 
-We'll explore the depth buffer and `Generic Depth` in more detail later, but keep in mind that these Add-on can alter the behavior of each ReShade shader and game it is applied to - as it's very powerful, and can allow any developer's code to inject into the game!
+We'll explore the depth buffer and `Generic Depth` in more detail later. Remember, these Add-ons can significantly alter the behavior of each ReShade shader and game they are applied to - they are powerful tools that can inject any developer's code into the game!
 
 </details>
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Exploring the Settings Tab</summary>
+<summary>Discovering the Settings Tab</summary>
 
-* The `Settings` tab depicted in the image below allows you to adjust various crucial ReShade settings—such as directories for Shaders, keys for menu access, FPS meter configurations, theme settings, and more:
+* The `Settings` tab, depicted in the image below, allows you to adjust various crucial ReShade settings—such as directories for Shaders, keys for menu access, FPS meter configurations, theme settings, and more:
 
   ![Settings Tab](./images/understanding_reshade_ui/rsui_settings_tab.png)
 
-This guide will be here to help you get to know these options for a better experience with ReShade!
+This guide will help you understand these options for a better ReShade experience!
 
 Below are dropdowns that provide information about the key settings, per dropdown in ReShade, you can adjust within the ReShade `Settings` Tab:
 
@@ -188,9 +178,7 @@ Below are dropdowns that provide information about the key settings, per dropdow
 
 1. `Keybindings`: 
 
-  * Here, you can set the keybindings for various actions in ReShade. This allows you to customize the controls to your liking. 
-  
-    * As each setting is self explanitory, there is no need to go over them in detail, however, these are the options for hotkeys set.
+  * Here, you can set the keybindings for various actions in ReShade, allowing you to customize the controls. The options for hotkeys set include:
 
       * `Overlay key`
 
@@ -204,45 +192,35 @@ Below are dropdowns that provide information about the key settings, per dropdow
     
       * `Next preset key`
 
+---
 
 2. `Preset transition duration`:
 
-  * This setting allows you to change the transition between preset files. This is counted in Miliseconds.
-
-    * 1 Second is equal to 1000 Miliseconds!
+  * This setting allows you to change the transition between preset files, counted in milliseconds. Remember, 1 second equals 1000 milliseconds!
 
 ---
 
 3. `Input processing`:
 
-  * This setting allows for users to change the default behavior of ReShade's input control
+  * This setting lets users change the default behavior of ReShade's input control:
 
-    * `Pass on all input` - Allows your game to also recieve inputs from your keyboard and mouse, regardless of where they are on the game window.
+    * `Pass on all input` - Allows your game to also receive inputs from your keyboard and mouse, regardless of where they are on the game window.
 
-    * `Block input when cursor is on overlay` - Allows the game to recieve inputs from your keyboard and mouse only when they are off of the ReShade UI.
+    * `Block input when cursor is on overlay` - Allows the game to receive inputs from your keyboard and mouse only when they are off of the ReShade UI.
 
-    * `Block all input when overlay is visible` (default option) - Disallows the game to recieve all inputs from your keyboard and mouse when the ReShade overlay is active.
+    * `Block all input when overlay is visible` (default option) - Disallows the game to receive all inputs from your keyboard and mouse when the ReShade overlay is active.
 
 ---
 
 4. `Start-up preset`:
 
-  * This argument allows for ReShade to utilize a preset to use once your game has started.
-
-    * The default behavior of ReShade is to load the last used preset from the user, however, you can change this behavior with this function by defining a preset file path!
-
-    * By default this argument will be blank - as it requires a user to specify what preset that they want started.
-    
+  * This argument allows ReShade to utilize a preset to use once your game has started. By default, ReShade loads the last used preset from the user. You can change this behavior by defining a preset file path. By default, this argument will be blank - as it requires a user to specify what preset they want started.
 
 ---
 
 5. `Effect...` and `Texture search paths`: 
 
-  * This setting allows you to specify where ReShade should look for shader files.
-  
-  You can add multiple directories here for ReShade to look through, and ReShade will search all of them when looking for shaders. 
-  
-  * The default options for ReShade's `Effect...` and Texture search paths are:
+  * These settings allow you to specify where ReShade should look for shader files. You can add multiple directories, and ReShade will search all of them when looking for shaders. The default options are:
 
     * `Effect search paths` - `.\ReShade-Shaders\Shaders\**`
 
@@ -252,19 +230,13 @@ Below are dropdowns that provide information about the key settings, per dropdow
 
 6. `Load only enabled effects`:
 
-  * This option allows for the options that are selected in your current ReShade preset to be loaded.
-
-    * This can prevent issues with conflicting files/techniques used from other shaders
-
-    * This option can also reduce the compile time needed on the start of ReShade
+  * This option ensures that only the options selected in your current ReShade preset are loaded. It can prevent issues with conflicting files/techniques from other shaders and reduce the compile time needed at the start of ReShade.
 
 ---
 
 7. `Clear effect cache`:
 
-  * This option allows you to clear the cache for the shaders that are compiled in ReShade.
-
-    * Sometimes issues with shaders can occur that this fixes.
+  * This option allows you to clear the cache for the compiled shaders in ReShade. It can be useful for resolving issues with shaders.
 
 </details>
 
@@ -275,105 +247,69 @@ Below are dropdowns that provide information about the key settings, per dropdow
 
 1. `Screenshot key`:
 
-  * This option is a keybind setup argument for screenshots, the default is `Print Screen` which is generally located above the `Insert` and `Home` keys on most standard keyboards. 
-    * If you do not have a `Print Screen` key, you can rebind the screenshot function here.
+  * This option lets you set a keybind for taking screenshots. The default key is `Print Screen`, usually found above the `Insert` and `Home` keys on standard keyboards. If you don't have a `Print Screen` key, you can rebind the screenshot function here.
 
 ---
 
 2. `Screenshot path`:
 
-  * Like other paths before, this option is for ReShade's location to save screenshots. 
-    * By default this is set to `.\`. This means that ReShade will save screenshots to the directory that the ReShade binary `.dll` file is located in!
+  * This option sets the location where ReShade saves screenshots. By default, it's set to `.\`, meaning ReShade will save screenshots in the directory where the ReShade binary `.dll` file is located.
 
 ---
 
 3. `Screenshot name`:
 
-  * This is an advanced option for users that allows each user to specically specify what they want each screenshot to have included in it. 
-  
-    * This function utilizes macros in it's arguments to allow for real-time data to be ported over to the screenshot name.
+  * This advanced option lets you specify the naming convention for screenshots. It uses macros to include real-time data in the screenshot name. The available macros are:
 
-    * The macros that can be used within this argument are listed below:
+      * %AppName% - Current application name.
 
-      * %AppName% - Name of the current application.
+      * %PresetName% - Name of the applied preset at the moment of the screenshot.
 
-      * %PresetName% - Name of the preset applied at the moment of a screenshot.
+      * %Date% - Current date (in '%s' or seconds format).
 
-      * %Date% - Current date argument (in the format of '%s' or seconds.)
+        * %DateYear%, %DateMonth%, %DateDay% - Year, month, and day components of the current date.
 
-		  * %DateYear% - Year component of current date.
+      * %Time% - Current time (in '%s' or seconds format).
 
-		  * %DateMonth% - Month component of current date.
+        * %TimeHour%, %TimeMinute%, %TimeSecond%, %TimeMS% - Hour, minute, second, and millisecond components of the current time.
 
-		  * %DateDay% - Day component of current date.
-
-		  * %Time% - The current time argument (in format of '%s' or seconds.)
-
-		  * %TimeHour% - Hour component of the current time.
-
-		  * %TimeMinute% - Minute component of the current time.
-
-		  * %TimeSecond% - Second component of the current time.
-
-		  * %TimeMS% - Milliseconds fraction of the current time.
-
-      * %Count% - Number of screenshots taken within your current session.
+      * %Count% - Number of screenshots taken in the current session.
 
 ---
 
 4. `Screenshot format`:
 
-  * This argument allows you to change the extension of files, and allow for different compression processing of your screenshots. 
+  * This option lets you change the file extension and compression processing for your screenshots. The available formats are:
 
-    * Listed below are the arguments that you can choose from, as well as what you can expect from them
+      * `Bitmap (*.bmp)` - Choose this for a lossless file that's easy to edit but takes up more space. This format isn't ideal for online sharing. If selected, you can enable `Clear alpha channel` to remove the image's transparency layer if shaders support creating alpha channels.
 
-      * `Bitmap (*.bmp)` - You would choose this if you want a purely lossless file that you can easily edit - however, note that this option takes up the most space on your hard drive! 
-      
-        * Keep in mind, that this option makes your image not easily sharable online if you are wanting to share.
+      * `Portable Network Graphics (*.png)` - Choose this for a lossy file that's almost identical to the original and good for online sharing. This is the default option in ReShade. If selected, you can enable `Clear alpha channel`.
 
-        * With this option selected, you are will be given the option to enabled `Clear alpha channel`. Clearing the alpha channel completely clears the transparency layer of images, providing you an image without black if shaders support creating alpha channels to the screen/screenshot.
-
-      * `Portable Network Graphics (*.png)` - You would choose this if you want a lossy file, that is almost identical to the original with some pulled out data that the general user will never notice. You will also want to choose this if you are wanting to share the files online for others to view! 
-      
-        * This is the default option selected within ReShade!
-
-        * With this option selected, you are will be given the option to enabled `Clear alpha channel`. Clearing the alpha channel completely clears the transparency layer of images, providing you an image without black if shaders support creating alpha channels to the screen/screenshot.
-
-      * `JPEG (*.jpeg)` - You would choose this option if you want a compressed file. While not close to the original output of the image, it allows for the user to save on storage, and bandwidth if they are sharing online. 
-
-        * Upon choosing this option, you will get a new argument to change the compression quality of the image that is selected!
+      * `JPEG (*.jpeg)` - Choose this for a compressed file that saves on storage and bandwidth but isn't as close to the original. If selected, you can adjust the compression quality.
 
 ---
 
 5. `Save current preset file`:
 
-  * This option will allow the user to save the preset used at the time the screenshot is taken.
+  * This option lets you save the preset used when the screenshot is taken.
 
 ---
 
 6. `Save before and after images`:
 
-  * This option will allow the user to take two screenshots on the same frame:
-
-    * One of the original output without ReShade
-
-    * One with the edited output with ReShade
+  * This option lets you take two screenshots of the same frame: one without ReShade and one with ReShade.
 
 ---
 
-7. `Save separate image with the overlay visable`:
+7. `Save separate image with the overlay visible`:
 
-  * This option allows you to save a seperate image from the original, or the one with ReShade effects applied to it. This image will include the ReShade UI in a seperate file.
-
-    * This is really good for sharing if you are seeking out a solution!
+  * This option lets you save a separate image with the ReShade UI, useful for troubleshooting.
 
 ---
 
 8. `Screenshot sound`:
 
-  * This option allows you to choose a specific sound that you would like ReShade to play when you take a screenshot.
-  
-    * This option only allows for `.wav` files types to be played upon taking a screenshot.
+  * This option lets you choose a `.wav` file to play when you take a screenshot.
 
 ---
 
@@ -387,53 +323,43 @@ Below are dropdowns that provide information about the key settings, per dropdow
 
 10. `Post-save command arguments`:
 
-  * This option allows the users to specify what arguments are passed to the executable that was provided in `Post-save command`
+  * This option lets you specify arguments for the executable provided in `Post-save command`. Supported macros include:
 
-    * This argument allows support for macros to specify:
+      * %AppName% - Current application name.
 
-      * %AppName% - Name of the current application.
+      * %PresetName% - Name of the preset applied when the screenshot was taken.
 
-      * %PresetName% - Name of the preset applied at the moment of a screenshot.
+      * %Date% - Current date (in '%s' or seconds format).
 
-      * %Date% - Current date argument (in the format of '%s' or seconds.)
+        * %DateYear%, %DateMonth%, %DateDay% - Year, month, and day components of the current date.
 
-		  * %DateYear% - Year component of current date.
+      * %Time% - Current time (in '%s' or seconds format).
 
-		  * %DateMonth% - Month component of current date.
+        * %TimeHour%, %TimeMinute%, %TimeSecond%, %TimeMS% - Hour, minute, second, and millisecond components of the current time.
 
-		  * %DateDay% - Day component of current date.
+      * %TargetPath% - Full path of the screenshot file.
 
-		  * %Time% - The current time argument (in format of '%s' or seconds.)
+      * %TargetDir% - Directory of the screenshot file.
 
-		  * %TimeHour% - Hour component of the current time.
+      * %TargetFileName% - Full name of the screenshot file.
 
-		  * %TimeMinute% - Minute component of the current time.
+      * %TargetExt% - Extension of the screenshot file.
 
-		  * %TimeSecond% - Second component of the current time.
+      * %TargetName% - Name of the screenshot file without the extension.
 
-		  * %TimeMS% - Milliseconds fraction of the current time.
+      * %Count% - Number of screenshots taken in the current session.
 
-      * %TargetPath% - Lists the full path of the screenshot file to the Post-save software.
-
-      * %TargetDir% - Lists the directory of the of the screenshot file to the Post-save software.
-
-      * %TargetFileName% - Lists the full name of the of the screenshot file to the Post-save software.
-
-      * %TargetExt% - Lists the extension of the of the screenshot file to the Post-save software.
-
-      * %TargetName% - Lists the name of the of the screenshot file without the file extension to the Post-save software.
-
-      * %Count% - Number of screenshots taken within your current session.
+---
 
 11. `Post-save command working directory`:
 
-  * This argument allows for the user to define the area that the software they want to execute for Post-save processing is in.
+  * This option lets you define the directory for the Post-save processing software.
+
+---
 
 12. `Hide post-save command window`:
 
-  * This toggle allows for the user to state if they want the window of the application that they have specified to make Post-save processing to visable or hidden.
-
-    * By default this option is set to off, allowing the program to fully open and be visable to the user.
+  * This toggle lets you choose whether to show or hide the window of the Post-save processing application. By default, this option is off, so the program window is visible.
 
 </details>
 
@@ -444,67 +370,57 @@ Below are dropdowns that provide information about the key settings, per dropdow
 
 1. `Restart tutorial`:
 
-  * This button allows you to completely restart the tutorial of ReShade that you should have seen at the first launch of your game with ReShade injected.
+  * This button restarts the ReShade tutorial that appears when you first launch a game with ReShade injected.
 
 ---
 
 2. `Show screenshot message`:
 
-  * This toggle allows you to disable the screenshot notification message
+  * This toggle enables or disables the screenshot notification message.
 
 ---
 
 3. `Group effect files with tabs instead of a tree`:
 
-  * This toggle allows for the user to select if they want the default behavior of ReShade to place all of the arguments of shaders that are configurable within a tree structure, or within a grouped structure.
-    
-    * Generally a grouped structure allows for more organization, however, this option is purely preference based.
-
-    * By default this option is left off, and the tree structuring for shader configuration arguments is used.
+  * This toggle lets you choose between a tree structure or a grouped structure for shader configuration arguments. While a grouped structure can be more organized, the choice is purely preference-based. By default, this option is off, and the tree structure is used.
 
 ---
 
-4. `Global Style`
+4. `Global Style`:
 
-  * This option allows for the user to choose through a few distinct themes for ReShade.
-    
-    * Below are listings and images of what each preset looks like for the user:
+  * This option lets you select from several distinct themes for ReShade. Here's what each preset looks like:
 
-      * `Default`:
+    * `Default`:
 
-        ![Default Preset](./images/understanding_reshade_ui/default.png)
+      ![Default Preset](./images/understanding_reshade_ui/default.png)
       
-      * `Dark`:
+    * `Dark`:
 
-        ![Dark Preset](./images/understanding_reshade_ui/dark.png)
+      ![Dark Preset](./images/understanding_reshade_ui/dark.png)
 
-      * `Light`:
+    * `Light`:
 
-        ![Light Preset](./images/understanding_reshade_ui/light.png)
+      ![Light Preset](./images/understanding_reshade_ui/light.png)
 
-      * `Custom Simple`:
+    * `Custom Simple`:
 
-        * This option allows you to define your own color configuration for ReShade.
+      * This option lets you define your own color configuration for ReShade.
       
-      * `Custom Advanced`:
+    * `Custom Advanced`:
 
-        * More advanced option of `Custom Simple`.
+      * This is a more advanced version of `Custom Simple`.
 
-      * Solarized Dark:
+    * `Solarized Dark`:
 
-        ![Solarized Dark Preset](./images/understanding_reshade_ui/solarized_dark.png)
+      ![Solarized Dark Preset](./images/understanding_reshade_ui/solarized_dark.png)
 
-      * Solarized Light:
+    * `Solarized Light`:
 
-        ![Solarized Light Preset](./images/understanding_reshade_ui/solarized_light.png)
-
+      ![Solarized Light Preset](./images/understanding_reshade_ui/solarized_light.png)
 
 </details>
 
----
-
 </details>
-
 
 ---
 
@@ -513,9 +429,35 @@ Below are dropdowns that provide information about the key settings, per dropdow
 
 ![Statistics Tab](./images/understanding_reshade_ui/rsui_stats_tab.png)
 
-The `Statistics Tab` shown in the image provides performance statistics, effect utilization, consumption rates, visual appearances per pass, and more. 
+The `Statistics Tab`, as shown in the image, is a powerful tool for monitoring and optimizing the performance of ReShade. It provides detailed information about various aspects of ReShade's operation:
 
-Generally, this isn't a frequent stop unless you're creating or analyzing a shader's performance.
+---
+
+* Performance Statistics: 
+
+  * This section provides real-time data on the performance of ReShade, including the current frame rate, the time taken to render each frame, and the total number of frames rendered since ReShade was started.
+
+---
+
+* Effect Utilization: 
+
+  * This section shows how much each effect is being used. This can be useful for identifying effects that are consuming a disproportionate amount of resources.
+
+---
+
+* Consumption Rates: 
+
+  * This section provides information about the rate at which ReShade is consuming various resources, such as memory and CPU time. This can help you identify potential bottlenecks and optimize your setup.
+
+---
+
+* Visual Appearances Per Pass: 
+
+  * This section provides a breakdown of how many times each effect is applied per pass. This can be useful for understanding the impact of each effect on the overall appearance of the scene.
+
+---
+
+While the `Statistics Tab` is not typically a frequent stop for casual users, it is an invaluable resource for those creating or analyzing shaders. It provides the detailed performance data needed to optimize shaders and ensure they run smoothly.
 
 </details>
 
@@ -526,19 +468,25 @@ Generally, this isn't a frequent stop unless you're creating or analyzing a shad
 
 ![Log Tab](./images/understanding_reshade_ui/rsui_log_tab.png)
 
-The `Log Tab` highlighted in the image displays ReShade’s log, documenting the shader loading process and ReShade's overall operations. 
+The `Log Tab`, as shown in the image above, is a crucial tool for monitoring ReShade's operations and troubleshooting issues. It provides a detailed log of ReShade's activities, including:
 
-If a shader encounters issues, they'll appear here: 
+* Shader Loading Process: 
 
-  * YELLOW indicates a warning (when an effect loads, but could have better, optimized code or experienced mid-load alterations).
+  * The Log Tab documents the entire process of loading shaders, from initiation to completion. This can be useful for identifying issues that may be preventing a shader from loading correctly.
 
-  * RED signals an error, usually with an explanatory note. 
+* Overall Operations: 
 
-This tool is invaluable to developers when crafting shaders.
+  * The Log Tab also records general operations of ReShade, providing a comprehensive overview of its activities.
 
-If something seems off, share the error text or the log file (stored in the game directory as ReShade.log). 
+If a shader encounters issues, they'll appear in the Log Tab in different colors:
 
-However, logs are reset each game restart, so share logs before rebooting to avoid data loss.
+  * YELLOW: Indicates a warning. This usually means that an effect has loaded, but there might be potential for optimization or the effect experienced alterations during the load process.
+
+  * RED: Signals an error. This is typically accompanied by an explanatory note detailing the nature of the error.
+
+The `Log Tab` is an invaluable tool for developers when crafting shaders. It provides detailed feedback and error reporting, helping to identify and fix issues quickly.
+
+If something seems off, it's recommended to share the error text or the entire log file, which is stored in the game directory as `ReShade.log`. However, it's important to note that logs are reset each time the game is restarted. Therefore, be sure to share or save logs before rebooting to avoid data loss.
 
 </details>
 
@@ -549,9 +497,21 @@ However, logs are reset each game restart, so share logs before rebooting to avo
 
 ![About Tab](./images/understanding_reshade_ui/rsui_about_tab.png)
 
-The `About Tab`, visible in the image, credits the contributors behind ReShade's development, acknowledges licenses, and other supportive codes. 
+The `About Tab`, as shown in the image, serves several important functions related to the acknowledgement and recognition of the work behind ReShade:
 
-It's a formal acknowledgment.
+* Contributor Credits: 
+
+  * The About Tab lists the names and contributions of the individuals who have worked on the development of ReShade. This is a way of formally recognizing and appreciating their efforts.
+
+* License Acknowledgements: 
+  
+  * The About Tab also includes information about the licenses under which ReShade and its components are distributed. This is important for ensuring compliance with legal requirements and respecting the rights of original creators.
+
+* Supportive Codes: 
+
+  * In addition to the above, the About Tab acknowledges other supportive codes that have been used in the development of ReShade. This could include libraries, frameworks, or other resources that have been instrumental in building and improving the software.
+
+The `About Tab` is a formal acknowledgment of the collective effort that goes into creating, maintaining, and improving ReShade. It serves as a reminder of the collaborative nature of software development and the importance of giving credit where it's due.
 
 </details>
 
