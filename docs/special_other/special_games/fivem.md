@@ -40,9 +40,9 @@ Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.m
 * Please ensure that you are using the latest version of ReShade!
 
 {: .warning }
-Ensure ReShade is installed to `GTA5.exe`. 
-
-Installing to the launcher provides an incorrect binary, preventing proper ReShade injection.
+> Ensure ReShade is installed to `GTA5.exe`. 
+> 
+> Installing to the launcher provides an incorrect binary, preventing proper ReShade injection.
 
 ---
 

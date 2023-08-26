@@ -1,143 +1,172 @@
-// Define the base path for the font files
-$font-path: './fonts/Atkinson-Hyperlegible';
+// Define font family and path
+$font-family: 'Atkinson Hyperlegible';
+$font-path: './fonts/';
+$body-font-family: $font-family, sans-serif;
 
-// Create a mixin to define font-face with different styles and weights
-@mixin font-face($style, $weight, $name: $style) {
-    @font-face {
-        font-family: 'Atkinson Hyperlegible';
-        font-style: $style;
-        font-weight: $weight;
-        src: url('#{$font-path}-#{$name}-102a.woff2') format('woff2'), // Super Modern Browsers 
-        url('#{$font-path}-#{$name}-102.woff') format('woff'), // Modern Browsers 
-        url('#{$font-path}-#{$name}-102.ttf') format('truetype'); // Safari, Android, iOS 
-    }
+// Mixin for font-face
+@mixin font-face($style, $weight, $name) {
+  @font-face {
+    font-family: $font-family;
+    font-style: $style;
+    font-weight: $weight;
+    // Define source paths for different font formats
+    src: url('#{$font-path}Atkinson-Hyperlegible-#{$name}-102a.woff2') format('woff2'),
+         url('#{$font-path}Atkinson-Hyperlegible-#{$name}-102.woff') format('woff'),
+         url('#{$font-path}Atkinson-Hyperlegible-#{$name}-102.ttf') format('truetype');
+  }
 }
 
-// Use the mixin to define the font faces
+// Define navigation and content widths, header height
+$nav-width: 350px !important;
+$content-width: 1000px !important;
+$header-height: 4rem !important;
+
+// Define padding and margin for headers
+$padding-headers: 20px 0px 7.5px 0px;
+$margin-headers: 0px 0px 0px 0px;
+
+// Define font size and color for summary
+$font-size-summary: 1.3rem;
+$color-summary: white;
+
+// Include font-face for different styles and weights
 @include font-face(normal, 400, 'Regular');
 @include font-face(italic, 400, 'Italic');
 @include font-face(normal, 700, 'Bold');
 @include font-face(italic, 700, 'BoldItalic');
 
-// Define the font family
-$body-font-family: 'Atkinson Hyperlegible', sans-serif;
+// THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
+// THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
+// THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
+// THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
 
-// Create a mixin for font styling
-@mixin font-style($font-family) {
-    font-family: $font-family;
+// Apply font family to body and head
+body, head {
+  font-family: $body-font-family;
 }
 
-// Apply the mixin to head and body
-head, body {
-    @include font-style($body-font-family);
-}
-
-// Style for images
+// Define image styling
 img {
-    max-width: 100%;
-    display: block;
-    padding: 1rem;
+  max-width: 100%;
+  display: block;
+  padding: 1rem 0;
 }
 
-// Style for summary
+// Define styling for summary
 summary {
-    font-size: 1.3rem;
-    color: white;
+		font-size: $font-size-summary;
+		color: $color-summary;
 }
 
-// Style for h1
+// Define styling for h1
 h1 {
-    padding: 20px 0 !important;
-    margin: 0 !important;
+		display: block;
+		padding: $padding-headers;
+		margin: $margin-headers !important;
 }
 
-// Style for h2
-h2 {
-    margin-top: 25px !important;
+// Define common styling for h1, h2, h3
+h1, h2, h3 {
+		position: relative;
+		padding: $padding-headers;
+		margin: $margin-headers !important;
 }
 
-// Style for h3
-h3 {
-    font-size: 1.45rem !important;
+// Define styling for anchor-heading
+.anchor-heading {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 }
 
-// Style for site nav, header, and footer
-.site-nav, .site-header, .site-footer {
-    width: 100%;
+// Define common styling for site-nav, site-header, nav-list-link
+.site-nav, .site-header, .nav-list-link {
+		font-size: 1rem !important;
+		width: 100% !important;
 }
 
-// Style for side bar
+// Define styling for site-footer
+.site-footer {
+		padding: 10px 15px 10px 15px !important;
+		width: 100% !important;
+		text-align: center;
+		font-size: 1rem !important;
+}
+
+// Define styling for side-bar
 .side-bar {
-    @include mq(lg) {
-        width: $nav-width;
-    }
+@include mq(lg) {
+		width: $nav-width;
+		}
 }
 
-// Style for main
+// Define styling for main
 .main {
-    @include mq(lg) {
-        width: 100%;
-        margin-left: $nav-width;
-        font-size: 1.1rem;
-    }
+@include mq(lg) {
+		width: 100%;
+		margin-left: $nav-width;
+		font-size: 1.1rem;
+		}
 }
 
-// Style for breadcrumb nav list
+// Define styling for breadcrumb-nav-list
 .breadcrumb-nav-list {
-    display: none;
+		display: none;
 }
 
-// Style for site nav
+// Define styling for site-nav
 .site-nav {
-    padding-top: 2.5rem;
+		padding-top: 2.5rem;
 }
 
-// Style for nav list item
-.nav-list .nav-list-item {
-    font-size: 1.05rem !important;
+// Define styling for nav-list .nav-list-ite
+.nav-list .nav-list-ite {
+		font-size: 1.05rem !important;
 }
 
-// Style for active nav list link
+// Define styling for active nav-list .nav-list-item .nav-list-link 
 .nav-list .nav-list-item .nav-list-link.active {
-    font-weight: 400 !important;
+		font-weight: 400 !important;
 }
 
-// Style for site button
-.site-button {
-    font-size: 115%;
+// Define styling for site-butto
+.site-butto {
+		font-size: 115%;
 }
 
-// Style for main content wrap
+// Define styling for main-content-wrap
 .main-content-wrap {
-    padding-top: 2.2rem !important;
+		padding-top: 2.2rem !important;
 }
 
-// Style for hr
+// Define styling for hr
 hr {
-    margin: 10px 0 !important;
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
 }
 
-// Style for p
+// Define styling for p
 p {
-    margin: 15px 0 !important;
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
 }
 
-// Style for details tree
-// Original: johnbarnitz
-// Edited: @sakloui, and @jorban
-// Makes details tags nicely tabbed
+// Define styling for details-tree
 .details-tree {
-    position: relative;
+		position: relative;
+}
 
-    &::before {
-        border-left: 1px solid #ffffff4A;
-        content: "";
-        height: calc(100% - 2.4rem);
-        position: absolute;
-        top: 2.4rem;
-    }
+// Define styling for details-tree::before
+.details-tree::before {
+		border-left: 1px solid #ffffff4A;
+		content: "";
+		height: 100%;
+		position: absolute;
+		top: 2.4rem;
+		height: calc(100% - 2.4rem);
+}
 
-    & > *:not(summary) {
-        margin-left: 2.4rem;
-    }
+// Define styling for details-tree > *:not(summary)
+.details-tree > *:not(summary) {
+		margin-left: 2.4rem !important;
 }
