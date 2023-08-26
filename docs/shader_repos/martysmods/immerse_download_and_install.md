@@ -165,4 +165,4 @@ If you still do not have your Patreon roles in Discord, please leave the Discord
 
 Stay tuned for iMMERSE Ultimate Shaders - coming soon!
 
-</details>"
+</details>

@@ -1,13 +1,8 @@
 ---
-
 title: ReShade Manual Installations
-
 layout: default
-
 nav_order: 1
-
 parent: Advanced ReShade Guides
-
 ---
 
 # ReShade Manual Installation Guides
@@ -41,13 +36,14 @@ When manually installing ReShade, you have to manually install shaders as well.
  
 ### Step 2: Download the ReShade Installer
 
-- Download the latest ReShade installer from the [official ReShade website](https://reshade.me).
+* Download the latest ReShade installer from the [official ReShade website](https://reshade.me).
 
 ---
 
 ### Step 3: Download and Install `7Zip`
 
 1. Download and install the latest `.msi` version of `7Zip` from [7Zip's official website](https://www.7-zip.org/download.html).
+
    ![7Zip Download](./images/manually_installing_reshade/7zip_website_download.jpg)
 
    {: .note} 
@@ -63,11 +59,11 @@ When manually installing ReShade, you have to manually install shaders as well.
 
 2. Choose the necessary DLL from the options:
 
->    - `ReShade64.dll` for 64-Bit
+    * `ReShade64.dll` for 64-Bit
 
->    - `ReShade32.dll` for 32-Bit
+    * `ReShade32.dll` for 32-Bit
 
-   ![Extract DLL](./images/manually_installing_reshade/7zip_extract_reshade_binaries.jpg)
+         ![Extract DLL](./images/manually_installing_reshade/7zip_extract_reshade_binaries.jpg)
 
 ---
  
@@ -75,19 +71,19 @@ When manually installing ReShade, you have to manually install shaders as well.
 
 Right-click the `ReShadeXX.dll` you've extracted and choose `Rename`. Then, rename it according to your game's rendering API:
 
-> - **dxgi.dll** - DirectX 10/11/12
+ * dxgi.dll - DirectX 10/11/12
 
-> - **d3d12.dll** - DirectX 12
+ * d3d12.dll - DirectX 12
 
-> - **d3d11.dll** - DirectX 11
+ * d3d11.dll - DirectX 11
 
-> - **d3d10.dll** - DirectX 10
+ * d3d10.dll - DirectX 10
 
-> - **d3d9.dll** - DirectX 9
+ * d3d9.dll - DirectX 9
 
-> - **opengl32.dll** - OpenGL
+ * opengl32.dll - OpenGL
 
-![Rename DLL](./images/manually_installing_reshade/extacted_reshade_binary_rename.jpg)
+   ![Rename DLL](./images/manually_installing_reshade/extacted_reshade_binary_rename.jpg)
 
 ---
  
@@ -97,11 +93,11 @@ Right-click the `ReShadeXX.dll` you've extracted and choose `Rename`. Then, rena
 
    ![Place in Game Folder](./images/manually_installing_reshade/place_reshade_binary_game_folder.jpg)
 
-      2. If unsure of your game's executable location, consult [our guide on identifying your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html).
+   * If unsure of your game's executable location, consult [our guide on identifying your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html).
 
 Upon completion, your game should launch with ReShade already integrated!
 
-![Successful Installation](./images/manually_injecting_reshade/ultrakill_reshade_installed.jpg)
+   ![Successful Installation](./images/manually_injecting_reshade/ultrakill_reshade_installed.jpg)
 
 </details>
 
@@ -140,9 +136,9 @@ Crosire's Inject tool, being an external injector, is more likely to trigger ant
 
 Choose the injector based on your game's architecture:
 
-* [64-bit Injector](https://reshade.me/downloads/inject64.exe)
+   * [64-bit Injector](https://reshade.me/downloads/inject64.exe)
 
-* [32-bit Injector](https://reshade.me/downloads/inject32.exe)
+   * [32-bit Injector](https://reshade.me/downloads/inject32.exe)
 
 ---
 
@@ -171,9 +167,9 @@ Acquire the latest ReShade Installer from the [ReShade website](https://www.resh
 
 2. Extract the desired DLL:
 
-   - `ReShade64.dll` for 64-Bit
+   * `ReShade64.dll` for 64-Bit
 
-   - `ReShade32.dll` for 32-Bit
+   * `ReShade32.dll` for 32-Bit
 
    ![Extract DLL](./images/manually_installing_reshade/7zip_extract_reshade_binaries.jpg)
 
@@ -186,9 +182,9 @@ The DLL architecture should match the injector you've previously downloaded.
 
 Move both the `injectXX.exe` and `ReShadeXX.dll` files to your game directory.
 
-![File Placement](./images/manually_injecting_reshade/place_reshade_dll_and_inject_in_game_folder.jpg)
+   ![File Placement](./images/manually_injecting_reshade/place_reshade_dll_and_inject_in_game_folder.jpg)
 
-For assistance locating your game directory, see [our guide on finding your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html).
+   * For assistance locating your game directory, see [our guide on finding your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html).
 
 ---
 
@@ -222,7 +218,7 @@ For assistance locating your game directory, see [our guide on finding your game
 
 If executed correctly, ReShade should be active once the game begins.
 
-![Successful Injection](./images/manually_injecting_reshade/ultrakill_reshade_installed.jpg)
+   ![Successful Injection](./images/manually_injecting_reshade/ultrakill_reshade_installed.jpg)
 
 </details>
 
@@ -242,7 +238,7 @@ This guide assumes that you already have ReShade installed!
 
 1. Navigate to your game directory.
 
-   - If unsure of your game's executable location, consult [our guide on identifying your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html).
+   * If unsure of your game's executable location, consult [our guide on identifying your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html).
 
 2. Create a `reshade-shaders` folder in the same location as your ReShade binary and enter the `reshade-shaders` folder.
 

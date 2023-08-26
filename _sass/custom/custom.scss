@@ -103,6 +103,7 @@ h1, h2, h3 {
 // Define styling for main
 .main {
 @include mq(lg) {
+		max-width: 1500px;
 		width: 100%;
 		margin-left: $nav-width;
 		font-size: 1.1rem;
