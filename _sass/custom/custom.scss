@@ -16,6 +16,12 @@ $body-font-family: $font-family, sans-serif;
   }
 }
 
+// Include font-face for different styles and weights
+@include font-face(normal, 400, 'Regular');
+@include font-face(italic, 400, 'Italic');
+@include font-face(normal, 700, 'Bold');
+@include font-face(italic, 700, 'BoldItalic');
+
 // Define navigation and content widths, header height
 $nav-width: 350px !important;
 $content-width: 1000px !important;
@@ -28,12 +34,6 @@ $margin-headers: 0px 0px 0px 0px;
 // Define font size and color for summary
 $font-size-summary: 1.3rem;
 $color-summary: white;
-
-// Include font-face for different styles and weights
-@include font-face(normal, 400, 'Regular');
-@include font-face(italic, 400, 'Italic');
-@include font-face(normal, 700, 'Bold');
-@include font-face(italic, 700, 'BoldItalic');
 
 // THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
 // THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
