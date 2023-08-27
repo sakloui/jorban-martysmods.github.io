@@ -114,11 +114,11 @@ If the ReShade installer can't pinpoint the FiveM install location, or if your R
 `Blocked load of ReShade Version 5 or higher - it has a bug that will lead to game crashes in GPU drivers or d3d11.dll.`<br>
     `If you want to force it to load anyway, add the following section to {location of CitizenFX.ini file.}`<br>
     `[Addons]`<br>
-    `ReShade5=ID:XXXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes.`
+    `ReShade5=ID:XXXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes`
 
 ![Error Screenshot](./images/fivem/fivem_reshade5_bs.png)
 
-To remedy this, visit the location mentioned in the error and incorporate the specified ID from your F8 console error into the `CitizenFX.ini` file.
+To remedy this, visit the location mentioned in the error and incorporate the specified ID from your F8 console error into the `CitizenFX.ini` file located in the directory in the error. The directory where `CitizenFX.ini` may change per user, but is noted in green.
 
 {: .note }
 If ReShade successfully launches with your game, the installation is complete.
