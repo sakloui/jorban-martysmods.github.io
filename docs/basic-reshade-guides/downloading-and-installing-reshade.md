@@ -84,7 +84,7 @@ If your game doesn't appear in the selection menu, don't fret! You can manually 
 
 The browse function lets you pinpoint the executable you want to inject ReShade into. This is particularly useful for games from platforms like itch.io, classic games, or emulators like DOSBox and Dolphin.
 
-  * If you are having trouble finding the proper location for your game directory or executable, check out our guide on [finding your game directory and executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html) for help!
+  * If you are having trouble finding the proper location for your game directory or executable, check out our guide on [finding your game directory and executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for help!
 
 </details>
 

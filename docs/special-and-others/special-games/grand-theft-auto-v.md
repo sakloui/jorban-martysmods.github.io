@@ -3,7 +3,7 @@ title: Grand Theft Auto V
 layout: page
 nav_order: 3
 parent: Special Games
-grand_parent: Special & Others
+grand_parent: Special and Others
 ---
 
 # Installing ReShade to Grand Theft Auto V

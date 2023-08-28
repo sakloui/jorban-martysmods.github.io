@@ -3,7 +3,7 @@ title: Source Games
 layout: page
 nav_order: 4
 parent: Special Games
-grand_parent: Special & Others
+grand_parent: Special and Others
 ---
 
 # Source Games

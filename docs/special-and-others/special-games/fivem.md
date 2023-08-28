@@ -3,7 +3,7 @@ title: FiveM
 layout: page
 nav_order: 1
 parent: Special Games
-grand_parent: Special & Others
+grand_parent: Special and Others
 ---
 
 {: .warning-title }
@@ -15,7 +15,7 @@ grand_parent: Special & Others
 >
 > Therefore, **switch your FiveM `Update channel` to `Beta` or `Latest`**, and **install the latest version of ReShade** from [ReShade's website](https://reshade.me). - Jordan Brady Aug.08.2023
 >
-> ![FiveM Release Channel](./images/fivem/fivem_release_channel.png)
+> ![FiveM Release Channel](../images/fivem/fivem_release_channel.png)
 
 The installation process remains the same as before.
 
@@ -35,7 +35,7 @@ To install ReShade to FiveM, please follow the step-by-step guide below:
 
 Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.me).
 
-* If you're unsure on how to install ReShade to GTAV, you can follow our guide for [installing ReShade](https://guides.martysmods.com/docs/basic_reshade/installing_reshade.html)!
+* If you're unsure on how to install ReShade to GTAV, you can follow our guide for [installing ReShade](https://guides.martysmods.com/docs/basic-reshade-guides/downloading-and-installing-reshade/)!
 
 * Please ensure that you are using the latest version of ReShade!
 
@@ -58,9 +58,9 @@ You should notice the files:
 
 * `ReShade-Shaders` - ReShade Shaders & Textures Folder
 
-    * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html) for assistance!
+    * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
 
-    * Ensure that you also have file extensions enabled in Windows in order to properly see these files and their extensions.<br> We have a guide here on [how to enable file extensions in Windows](https://guides.martysmods.com/docs/special_other/enabling_windows_file_extensions.html)!
+    * Ensure that you also have file extensions enabled in Windows in order to properly see these files and their extensions.<br> We have a guide here on [how to enable file extensions in Windows](https://guides.martysmods.com/docs/special-and-others/enabling-windows-file-extensions/)!
 
 {: .note }
 > These files are essential for Step 5. 
@@ -73,7 +73,7 @@ You should notice the files:
 
 Open your FiveM install location.
     
-- If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html) for assistance!
+- If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
 
 {: .note }
 Typically, this is `C:\Users\YOUR_USERNAME_HERE\AppData\Local\FiveM`. Replace `YOUR_USERNAME_HERE` with your actual username. Your install location might vary slightly.
@@ -116,7 +116,7 @@ If the ReShade installer can't pinpoint the FiveM install location, or if your R
     `[Addons]`<br>
     `ReShade5=ID:XXXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes`
 
-![Error Screenshot](./images/fivem/fivem_reshade5_bs.png)
+![Error Screenshot](../images/fivem/fivem_reshade5_bs.png)
 
 To remedy this, visit the location mentioned in the error and incorporate the specified ID from your F8 console error into the `CitizenFX.ini` file located in the directory in the error. The directory where `CitizenFX.ini` may change per user, but is noted in green.
 

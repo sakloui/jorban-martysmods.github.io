@@ -32,7 +32,7 @@ Before proceeding, ensure that your game is closed and no associated files are o
 
 The game directory is typically indicated in the file permissions error message. Use this information to navigate to the directory requiring edits.
 
-  * If you need assistance locating your game directory, refer to our guide on [how to find your game directory](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory.html).
+  * If you need assistance locating your game directory, refer to our guide on [how to find your game directory](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory).
 
 ---
 

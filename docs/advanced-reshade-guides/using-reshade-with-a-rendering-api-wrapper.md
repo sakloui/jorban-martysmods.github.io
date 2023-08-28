@@ -34,7 +34,7 @@ Acquire the latest DXVK version from [their GitHub releases](https://github.com/
 
 For this guide, ULTRAKILL will serve as our example.
 
-  * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html) for assistance!
+  * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
 
 ---
 

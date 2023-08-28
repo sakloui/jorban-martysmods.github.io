@@ -2,7 +2,7 @@
 title: Special Games
 layout: default
 nav_order: 99
-parent: Special & Others
+parent: Special and Others
 has_children: true
 has_toc: true
 ---
