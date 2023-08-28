@@ -1,6 +1,7 @@
 ---
 title: Contribute
 layout: page
+permalink: /contribute/
 nav_order: 99
 ---
 
