@@ -33,7 +33,7 @@ Below will be a breakdown of each part of the `Home` tab to help guide you into 
 
 Let's start by identifying the active preset in ReShade, as shown in the highlighted section below:
 
-![Current Preset](../images/understanding-and-using-reshade/rsui_preset.png)
+![Current Preset](../images/understanding-and-using-reshade/rsui_preset.png){: style="max-width:65%" }
 
 To the right of the current preset dropdown, you'll find a `+` button. Use this to create a new preset. Next to it, the diskette icon serves to save your preset.
 
@@ -50,7 +50,7 @@ When saving your preset, ReShade by default will save presets in the game direct
 
 The highlighted area below shows ReShade's `Technique List` within the `Home` tab:
 
-![Technique List](../images/understanding-and-using-reshade/rsui_effectlist.png)
+![Technique List](../images/understanding-and-using-reshade/rsui_effectlist.png){: style="max-width:65%" }
 
 This section lists all the shaders installed by you or the ReShade Installer. 
 
@@ -65,7 +65,7 @@ It is worth noting that your `Technique List` will likely not look like the imag
 
 The `Edit Global Preprocessor Definitions` button, highlighted in the image below, is your gateway to controlling the behavior of effects before they load. Definitions that you set here will act like switches, guiding how shaders function:
 
-![Global Pre-processor Definitions](../images/understanding-and-using-reshade/rsui_globalpreprocessors.png)
+![Global Pre-processor Definitions](../images/understanding-and-using-reshade/rsui_globalpreprocessors.png){: style="max-width:65%" }
 
 Clicking this button above will open a window with two tabs:
 
@@ -93,7 +93,7 @@ When tinkering with these options, it's crucial to know the pre-processor defini
 
 The image below shows the effect parameters of shaders:
 
-![Effect Parameters](../images/understanding-and-using-reshade/rsui_effect_params.png)
+![Effect Parameters](../images/understanding-and-using-reshade/rsui_effect_params.png){: style="max-width:65%" }
 
 When you enable a shader in ReShade, its options and parameters appear in the highlighted section above.
 
@@ -108,7 +108,7 @@ Shader parameters are dynamic, meaning that any modifications you make are refle
 
 The `Reload` button, as highlighted in the image below, instructs ReShade to re-examine the files in the Shaders and Textures folders:
 
-![Reload Button](../images/understanding-and-using-reshade/rsui_reload.png)
+![Reload Button](../images/understanding-and-using-reshade/rsui_reload.png){: style="max-width:65%" }
 
 By clicking the `Reload` button, you can integrate newly installed effects without needing to restart the game. This feature also reflects any changes made to the shader code during development, making it a handy tool for real-time adjustments of the shader's code!
 
@@ -121,7 +121,7 @@ By clicking the `Reload` button, you can integrate newly installed effects witho
 
 The `Performance Mode` setting, as highlighted in the image below, enhances the efficiency of compilation processes and ReShade's memory operations, reducing performance overhead:
 
-![Performance Mode](../images/understanding-and-using-reshade/rsui_performance_mode.png)
+![Performance Mode](../images/understanding-and-using-reshade/rsui_performance_mode.png){: style="max-width:65%" }
 
 `Performance Mode` will restrict changes made to a shader's parameters.
 
@@ -138,7 +138,7 @@ If you encounter any inconsistencies while using Performance Mode, **always** re
 
 The `Add-ons Tab`, as shown in the image below, manages each ReShade Add-on:
 
-![Add-ons Tab](../images/understanding-and-using-reshade/rsui_addons_tab.png)
+![Add-ons Tab](../images/understanding-and-using-reshade/rsui_addons_tab.png){: style="max-width:65%" }
 
 The `Add-ons` Tab serves as a control panel for managing Add-ons. Each `Add-on` provides additional functionality or enhancements to your installed ReShade shaders. Some `Add-ons` may offer new effects, while others provide tools for fine-tuning existing effects!
 
@@ -159,7 +159,7 @@ We'll explore `Generic Depth` and other add-ons in more detail later, as these c
 
 The `Settings` tab, depicted in the image below, allows you to adjust variousReShade settings — such as directories for Shaders, keys for menu access, FPS meter configurations, theme settings, and more:
 
-![Settings Tab](../images/understanding-and-using-reshade/rsui_settings_tab.png)
+![Settings Tab](../images/understanding-and-using-reshade/rsui_settings_tab.png){: style="max-width:65%" }
 
 Below are dropdowns that provide information about the key settings, per dropdown in ReShade, you can adjust within the ReShade `Settings` Tab:
 
@@ -371,7 +371,7 @@ Below are dropdowns that provide information about the key settings, per dropdow
 <details markdown="block" class="details-tree">
 <summary>Getting to Know the Statistics Tab</summary>
 
-![Statistics Tab](../images/understanding-and-using-reshade/rsui_stats_tab.png)
+![Statistics Tab](../images/understanding-and-using-reshade/rsui_stats_tab.png){: style="max-width:65%" }
 
 The `Statistics Tab`, as shown in the image, is a powerful tool for monitoring and optimizing the performance of ReShade. It provides detailed information about various aspects of ReShade's operation:
 
@@ -404,7 +404,7 @@ While the `Statistics Tab` is not typically a frequent stop for casual users, it
 <details markdown="block" class="details-tree">
 <summary>Deciphering the Log Tab</summary>
 
-![Log Tab](../images/understanding-and-using-reshade/rsui_log_tab.png)
+![Log Tab](../images/understanding-and-using-reshade/rsui_log_tab.png){: style="max-width:65%" }
 
 The `Log Tab`, as shown in the image above, is a crucial tool for monitoring ReShade's operations and troubleshooting issues. It provides a detailed log of ReShade's activities that should be able to help you decipher where your issues lie!
 
@@ -423,7 +423,7 @@ If something seems off, it's recommended to share the error text or the entire l
 <details markdown="block" class="details-tree">
 <summary>Appreciating the About Tab</summary>
 
-![About Tab](../images/understanding-and-using-reshade/rsui_about_tab.png)
+![About Tab](../images/understanding-and-using-reshade/rsui_about_tab.png){: style="max-width:65%" }
 
 The `About Tab`, as shown in the image, serves several important functions related to the acknowledgement and recognition of the work behind ReShade:
 
