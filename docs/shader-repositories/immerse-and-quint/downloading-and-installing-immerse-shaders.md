@@ -30,7 +30,7 @@ Setting up iMMERSE shaders is a breeze.
 
 Simply use the ReShade Installer and select `iMMERSE` during the shader installation process!
 
-For detailed instructions on installing shaders through the ReShade Installer, check out our guide on [installing ReShade and its shaders]().
+For detailed instructions on installing shaders through the ReShade Installer, check out our guide on [installing ReShade and its shaders](https://guides.martysmods.com/docs/).
 
 </details>
 
@@ -77,7 +77,7 @@ Here's a step-by-step guide:
 
 Open the iMMERSE Pro archive:
 
-![Image](../images/downloading-and-installing-immerse-shaders/immerse_pro_archive.jpg) 
+![Image](../images/downloading-and-installing-immerse-shaders/immerse_pro_archive.jpg)
 
 ---
 
@@ -85,7 +85,7 @@ Open the iMMERSE Pro archive:
 
 Navigate to the `ReShade-Shaders` folder in your game directory:
 
-![Image](../images/downloading-and-installing-immerse-shaders/reshade_shaders_folder.jpg) 
+![Image](../images/downloading-and-installing-immerse-shaders/reshade_shaders_folder.jpg)
 
 * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
 
@@ -95,7 +95,7 @@ Navigate to the `ReShade-Shaders` folder in your game directory:
 
 Merge the `Shaders` and `Textures` folders from the iMMERSE Pro archive with the `ReShade-Shaders` directory:
 
-![Image](../images/downloading-and-installing-immerse-shaders/shaders_drag_merge.jpg) 
+![Image](../images/downloading-and-installing-immerse-shaders/shaders_drag_merge.jpg)
 
    * If prompted to overwrite existing files in the `ReShade-Shaders` directory, please proceed with the overwrite.
 

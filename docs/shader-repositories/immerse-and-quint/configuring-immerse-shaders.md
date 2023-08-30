@@ -97,13 +97,13 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
 ### Step 7. Reduce `Predication Scale` as far as you can go without picking up noise from textures.
 
-    * Good `Predication Scale` value debug output:
+* Good `Predication Scale` value debug output:
 
-        ![Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_good.png)
+    ![Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_good.png)
 
-    * Poor `Predication Scale` value debug output:
+* Poor `Predication Scale` value debug output:
   
-        ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_bad.png)
+    ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_bad.png)
 
 ### Step 8. Increase or Decrease Settings Based on Desired Performance:
 
