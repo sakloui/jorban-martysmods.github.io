@@ -4,10 +4,10 @@
 $body-background-color: #191C20;
 
 // Color for headings in the body
-$body-heading-color: $grey-lt-000;
+$body-heading-color: #ffffff;
 
 // Color for text in the body
-$body-text-color: $grey-lt-300;
+$body-text-color: #ffffff ;
 
 // Color for hyperlinks
 $link-color: #5da8ed;
@@ -28,7 +28,7 @@ $btn-primary-color: $blue-200;
 $code-background-color: #31343f;
 
 // Color for line numbers in code blocks, default for syntax-one-dark-vivid in OneDarkJekyll
-$code-linenumber-color: #dee2f7;
+$code-linenumber-color: #ffffff;
 
 // Color for feedback messages, slightly darker than the sidebar color
 $feedback-color: darken($sidebar-color, 3.5%);

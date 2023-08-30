@@ -68,22 +68,19 @@ callouts_level: quiet # or loud
 callouts:
 
   highlight:
+  title: Highlight
     color: yellow
 
   important:
-    title: Important
+    title: Important!
     color: blue
-
-  new:
-    title: New
-    color: green
 
   note:
     title: Note
-    color: purple
+    color: "#9b80ce"
 
   warning:
-    title: Warning
+    title: Warning!
     color: red 
 
 # Color scheme supports "light" (default) and "dark"

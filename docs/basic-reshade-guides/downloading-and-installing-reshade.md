@@ -38,11 +38,7 @@ Only download ReShade from offical sources to avoid malicious files and potentia
 
 The Standard ReShade Build is tailored for online games with strict anti-cheat mechanisms. 
 
-If you're an avid player of online games like Dead by Daylight, PUBG, or Apex Legends, this build is for you.
-
-However, to ensure compatibility with online games, this build limits some advanced features, such as disabling add-ons when a network connection is detected in your game.
-
-This measure prevents misuse of ReShade for cheating or code injection.
+If you're an avid player of online games like Dead by Daylight, PUBG, or Apex Legends, this is the build to use. However, to ensure compatibility with online games, this build limits some advanced features, like add-ons when a network connection is detected. This measure exists to prevent misuse of ReShade for cheating!
 
 </details>
 
@@ -51,16 +47,14 @@ This measure prevents misuse of ReShade for cheating or code injection.
 <details markdown="block" class="details-tree">
 <summary>Full Add-On Support ReShade Build (Download ReShade x.x.x with full add-on support)</summary>
 
-The Full Add-on Support ReShade Build is ideal for offline games or online games that lack robust anti-cheat systems.
+The Full Add-on Support ReShade Build is for offline games or games without a robust anti-cheat system.
 
-If you enjoy games like Final Fantasy XXIV, World of Warcraft, or Baldur's Gate 3, this is the ReShade build for you!
+If you play games like Final Fantasy XXIV, World of Warcraft, or Baldur's Gate 3, this is the build to use. 
 
-This build supports the full array of ReShade's features and add-ons, offering maximum creative freedom. It allows users to inject a wide range of enhancements into their game, including depth-based shaders like iMMERSE MXAO, iMMERSE Pro RTGI, or StageDepthPlus.
-
-However, remember that using this version of ReShade in online games with anti-cheat solutions can lead to bans. While typically you'll receive a warning before a ban, some systems may enforce immediate bans, so caution is advised!
+This build supports the full array of ReShade's features and add-ons, offering total freedom, and allowing users to create presets using a wide range of shaders and add-ons, including depth-based shaders like iMMERSE MXAO, iMMERSE Pro RTGI, or StageDepthPlus.
 
 {: .warning }
-Using shaders or add-ons to gain an unfair advantage in games can lead to bans. Always respect the game rules, and expect bans for bypassing these rules by any means!
+Using this build of ReShade in online games with anti-cheat solutions can lead to bans. Always respect the game rules, and expect bans for bypassing these rules by any means!
 
 </details>
 
@@ -181,35 +175,48 @@ If your preset requires unique shaders and textures outside the installer's offe
 <details markdown="block" class="details-tree">
 <summary>Installing Shaders Using the ReShade Installer</summary>
 
-Shaders are the backbone of ReShade's flexibility and power, enabling users to create unique visual experiences for each game. However, finding and sourcing shader repositories can be tricky as Shader Developers can have differing storage and update methods from others. The ReShade Installer seeks to simplify this for it's users by presenting known, and working, shaders in the installer.
+Shaders are the backbone of ReShade, enabling users to create unique visual experiences for each game. However, finding shader repositories can be tricky as Shader Developers can have differing storage and update methods. The ReShade Installer simplifies this for users by presenting known, and working, shader repositories in the installer.
+
+The image below shows the shader installation portion of the ReShade Installer. Simply select the repositories that you want, and click "Next"
 
 ![ReShade Shader Repositories Selection Image](../images/downloading-and-installing-reshade/rs_shader.png){: style="max-width:30%" }
 
-{: .note }
 If you've chosen to install a preset with the preset installation page of the ReShade Installer, the necessary shaders will be pre-selected in this section.
 
 ---
 
-The two different ways that you can mark shader repositories to be downloaded and installed through the ReShade installer:
+For information about Shader Developers and their repositories, you can click on the blue-highlighted repository or author names, as shown below. The link often contains detailed shader information and descriptions useful for users.
 
-  * A **check tick** installs all shaders from each selected repository. Clicking `Next` will install everything for you automatically.
-
-    ![ReShade Shader Repo Check Tick](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_check_tick.png)
-  
-  * A **square tick** allows you to individually pick which shaders from each selected repository.
-
-    ![ReShade Shader Repo Square Tick](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_square_tick.png)
-
-      {: .note }
-      > Choosing the square tick for any shader repositories will bring up a menu to select the specific shaders from the repository marked. 
-      > ![ReShade Square Tick Shader Selection Image](../images/downloading-and-installing-reshade/rs_shader_select.png){: style="max-width:30%" }
-      > From here, select your preferred shaders and click `Next` to continue.
+  ![ReShade Shader Repo Link Highlight](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_link_highlight.jpg)
 
 ---
 
-For information about Shader Developers and their repositories, you can click on the blue-highlighted repository or author names. Doing so will take you to their online repository, which often contains detailed shader information and descriptions useful for users.
+### Below are the two different ways to mark shader repositories to be downloaded:
 
-![ReShade Shader Repo Link Highlight](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_link_highlight.jpg)
+<details markdown="block" class="details-tree">
+<summary>Check Tick</summary>
+
+* A **check tick** installs all shaders from each selected repository. Clicking `Next` will install everything for you automatically.
+
+  ![ReShade Shader Repo Check Tick](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_check_tick.png)
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Square Tick</summary>
+
+* A **square tick** allows you to individually pick which shaders from each selected repository.
+
+  ![ReShade Shader Repo Square Tick](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_square_tick.png)
+
+    {: .note }
+    > Choosing the square tick for any shader repositories will bring up a menu to select the specific shaders from the repository marked. 
+    > ![ReShade Square Tick Shader Selection Image](../images/downloading-and-installing-reshade/rs_shader_select.png){: style="max-width:30%" }
+    > From here, select your preferred shaders and click `Next` to continue.
+
+</details>
 
 </details>
 
