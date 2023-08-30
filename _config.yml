@@ -77,7 +77,7 @@ callouts:
 
   note:
     title: Note
-    color: "#9b80ce"
+    color: purple"
 
   warning:
     title: Warning!
