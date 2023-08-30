@@ -175,63 +175,63 @@ p {
 
 // Styles for note blocks
 p.note, .note, blockquote.note {
-		background: #9b80ce;
-		border: 3px solid #381885;
-		border-radius: 4px;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
-		padding: 0.8rem;
-		color:#FFFFFF;
+	background: #9b80ce;
+	border: 3px solid #381885;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+	padding: 0.8rem;
+	color: #FFFFFF;
 }
 
 // Styles for the "Note" label
 p.note::before {
-		color: #381885;
-		content: "Note";
-		display: block;
-		font-weight: bold;
-		text-transform: uppercase;
-		font-size: 1rem;
-		padding-bottom: 0.125rem;
-}
-
-// Styles for warning blocks
-p.warning, .warning, blockquote.warning {
-		background: #FF5264;
-		border: 3px solid #B32736;
-		border-radius: 4px;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
-		padding: 0.8rem;
-		color:#FFFFFF;
-}
-
-// Styles for the "Warning!" label
-p.warning::before {
-		color: #B32736;
-		content: "Warning!";
-		display: block;
-		font-weight: bold;
-		text-transform: uppercase;
-		font-size: 1rem;
-		padding-bottom: 0.125rem;
-}
-
-// Styles for warning blocks
-p.important, .important, blockquote.important {
-	background: #70bfe7;
-	border: 3px solid #254da4;
-	border-radius: 4px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
-	padding: 0.8rem;
-	color:#FFFFFF;
-}
-
-// Styles for the "Warning!" label
-p.important::before {
-	color: #254da4;
-	content: "Important!";
+	color: #381885;
+	content: "Note";
 	display: block;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1rem;
 	padding-bottom: 0.125rem;
+}
+
+// Styles for warning blocks
+p.warning, .warning, blockquote.warning {
+	background: #FF5264;
+	border: 3px solid #B32736;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+	padding: 0.8rem;
+	color: #FFFFFF;
+}
+
+// Styles for the "Warning!" label
+p.warning::before {
+	color: #B32736;
+	content: "Warning!";
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1rem;
+	padding-bottom: 0.125rem;
+}
+
+// Styles for warning blocks
+p.important, .important, blockquote.important {
+background: #70bfe7;
+border: 3px solid #254da4;
+border-radius: 4px;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+padding: 0.8rem;
+color: #FFFFFF;
+}
+
+// Styles for the "Warning!" label
+p.important::before {
+color: #254da4;
+content: "Important!";
+display: block;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 1rem;
+padding-bottom: 0.125rem;
 }

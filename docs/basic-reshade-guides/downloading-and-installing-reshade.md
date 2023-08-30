@@ -253,6 +253,3 @@ The most common issue that prevents ReShade from injecting is selecting the wron
   * The user not having the proper dependancies [(.NET Framework)](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-web-installer).
 
   * Conflicting modifications.
-
-
-
