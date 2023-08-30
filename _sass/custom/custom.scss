@@ -24,7 +24,7 @@ $body-font-family: $font-family, sans-serif;
 
 // Define navigation and content widths, header height
 $nav-width: 350px !important;
-$content-width: 1000px !important;
+$content-width: 100% !important;
 $header-height: 4rem !important;
 
 // Define padding and margin for headers
@@ -103,7 +103,7 @@ h1, h2, h3 {
 // Define styling for main
 .main {
 @include mq(lg) {
-		max-width: 1500px;
+		max-width: 1050px;
 		width: 100%;
 		margin-left: $nav-width;
 		font-size: 1.1rem;
