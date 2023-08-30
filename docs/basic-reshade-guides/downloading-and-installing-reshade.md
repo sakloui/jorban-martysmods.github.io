@@ -24,8 +24,6 @@ First, visit the [official ReShade website](https://reshade.me/#download) and sc
 
 <video id="rs_scroll.webm" autoplay muted loop style="max-width:55%" src="../images/downloading-and-installing-reshade/rs_scroll.webm" type="video/webm"></video>
 
-</script>
-
 Once at the bottom, you'll find two distinct ReShade builds.
 
 Below will be information to help you familiarize yourself with which build to choose for your games:
