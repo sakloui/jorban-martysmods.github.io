@@ -24,11 +24,6 @@ First, visit the [official ReShade website](https://reshade.me/#download) and sc
 
 <video id="rs_scroll.webm" autoplay muted loop style="max-width:55%" src="../images/downloading-and-installing-reshade/rs_scroll.webm" type="video/webm"></video>
 
-<script type="text/javascript">
-
-  /* play video twice as fast */
-  document.getElementById("rs_scroll.webm").defaultPlaybackRate = 2.0;
-
 </script>
 
 Once at the bottom, you'll find two distinct ReShade builds.
