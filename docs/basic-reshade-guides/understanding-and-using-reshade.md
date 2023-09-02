@@ -455,9 +455,11 @@ Ensure you've correctly set up ReShade and followed the previous steps on the ot
 <details markdown="block" class="details-tree">
 <summary>Understanding Depth Buffer Basics</summary>
 
-Before diving in, it's crucial to understand what each part and color of the Depth Buffer signifies.
+The image below will give you an idea of what your depth buffer **should** look like:
 
-This section will explain, what to look out for, and how to handle each case.
+![Depth Buffer Reversed](../images/understanding-and-using-reshade/working_depth_output.jpg)
+
+If your depth does not look like this - look below for the most common issues and solutions:
 
 ---
 
@@ -466,15 +468,32 @@ This section will explain, what to look out for, and how to handle each case.
 
 To start, enable the shader `DisplayDepth`. This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
 
-The image below shows that the `DisplayDepth` shader has loaded correctly, however, there are issues with the example shown. 
+The image below shows that the `DisplayDepth` shader has loaded correctly, however, the depth is reversed. 
 
 ![Depth Buffer Reversed](../images/understanding-and-using-reshade/depth_buffer_reversed_example.png)
 
-This is unfortunately a case of the Depth Buffer being reversed, but it's an easy fix!
+---
 
 You can solve this issue by simply flipping the `RESHADE_DEPTH_INPUT_IS_REVERSED` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade.
 
 </details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Upside Down Depth Buffer</summary>
+
+To start, enable the shader `DisplayDepth`. This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
+
+The image below shows that the `DisplayDepth` shader has loaded correctly, however, the depth output is upside down:
+
+![Depth Buffer Upside Down](../images/understanding-and-using-reshade/upside_down_normals.jpg)
+
+You can solve this issue by simply flipping the `RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade.
+
+</details>
+
+---
 
 <details markdown="block" class="details-tree">
 <summary>No Depth Buffer</summary>
@@ -505,29 +524,76 @@ This means that:
 
 ---
 
-You can absolve this issue simply by playing around with `Generic Depth` in order to 
+You can absolve this issue simply by playing around with `Generic Depth` in order to get the proper depth buffer active:
 
+  * Try toggling on and off `Copy depth buffer before clear operations` and `Copy depth buffer before fullscreen draw calls`
 
+  * Try selecting the depth buffer with the closest resolution to your game resolution
+
+  * Try selecting the depth buffer with the highest amount of draw calls and verticies.
+
+</details>
+
+<details markdown="block" class="details-tree">
+<summary>No Depth Buffer and Reversed</summary>
+
+To start, enable the shader `DisplayDepth`. This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
+
+If your shader resembles the images below, it lacks data from the `Generic Depth` Add-on and the depth from the game is reversed:
 
 ![Depth Buffer No Data - Reversed](../images/understanding-and-using-reshade/depth_buffer_no_data_reversed_example.png)
 
-This image shows what the shader looks like when it lacks data and is reversed.
+  * Before proceeding any further, ensure that these anti-aliasing options are disable within your game:
+
+    * MSAA ANTIALIASING
+
+    * SSAA ANTIALIASING
+
+  FXAA or TXAA are acceptable, as they don’t erase the depth-buffer information.
+
+  The image shown above is the output of `DisplayDepth` showing no data from `Generic Depth`.
+
+A depth buffer that is not presenting data, and is reversed means that:
+
+* Your game is not presenting a depth buffer 
+
+* You have the wrong options configured for `Generic Depth`
+
+* You have the wrong arguments chosen for your `global preprocessor definitions`
+
+* Your depth buffer choice is wrong.
+
+---
+
+You can absolve this issue simply by playing around with `Generic Depth` in order to get the proper depth buffer active and changing the value for `RESHADE_DEPTH_INPUT_IS_REVERSED`:
+
+  * Try toggling on and off `Copy depth buffer before clear operations` and `Copy depth buffer before fullscreen draw calls`
+
+  * Try selecting the depth buffer with the closest resolution to your game resolution
+
+  * Try selecting the depth buffer with the highest amount of draw calls and verticies.
+
+  * Flip the `RESHADE_DEPTH_INPUT_IS_REVERSED` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade.
+
+</details>
 
 </details>
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Understanding Global Preprocessor Basic Arguments</summary>
+<summary>Global Preprocessor Arguments</summary>
 
-This section will guide you through the basic arguments that are presented to the ReShade Depth Buffer.
+This section will provide you with the `Global Preprocessor Definitions` that can be utilized with the ReShade Depth Buffer.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>RESHADE_DEPTH_INPUT_IS_REVERSED</summary>
 
-This argument is used when you can see the normals, but the depth image itself is not visible (The first result image should illustrate this perfectly). It usually starts at 1, so setting it to 0 should fix the issue. However, the solution could also be the reverse.
+This preprocessor is used when you can see the normals, but the depth image itself is not visible.
+
+The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
 
 </details>
 
@@ -536,7 +602,9 @@ This argument is used when you can see the normals, but the depth image itself i
 <details markdown="block" class="details-tree">
 <summary>RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN</summary>
 
-As the name suggests, this argument is used when the image displayed by the DisplayDepth shader is upside down. Setting it to 1 should rectify the problem.
+This preprocessor is used when the image displayed by the DisplayDepth shader is upside down.
+
+The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
 
 </details>
 
@@ -545,24 +613,22 @@ As the name suggests, this argument is used when the image displayed by the Disp
 <details markdown="block" class="details-tree">
 <summary>RESHADE_DEPTH_INPUT_IS_LOGARITHMIC</summary>
 
-This argument is used when the depth buffer displays numerous waves or "stripes". Very FEW games actually utilize this, so it's rare that you'll need to toggle or modify this setting.
+This argument is used when the depth buffer displays numerous waves or "stripes".
+
+Very FEW games actually utilize this, so it's rare that you'll need to toggle or modify this setting.
+
+The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
 
 </details>
-
-</details>
-
----
-
-<details markdown="block" class="details-tree">
-<summary>Understanding Global Preprocessor Advanced Arguments</summary>
-
-These advanced options will seldom require modification. However, for older games or emulators, you might need to adjust them. Below, you'll find a general description of these arguments.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>RESHADE_DEPTH_INPUT_X_SCALE | RESHADE_DEPTH_INPUT_Y_SCALE</summary>
-These arguments modify the depth buffer size (with 1 representing the original size, 2 being double, and so forth) along the horizontal (X) and vertical (Y) axes.
+
+These two preprocessors modify the depth buffer size along the `X` and `Y` axes.
+
+They work in multiplcations and you can test them in the `DisplayDepth` shader before applying them to the `Global Preprocessors`.
 
 </details>
 
@@ -570,17 +636,15 @@ These arguments modify the depth buffer size (with 1 representing the original s
 
 <details markdown="block" class="details-tree">
 <summary>RESHADE_DEPTH_LINEARIZATION_FAR_PLANE</summary>
-This argument defines the "infinite" distance in the depth buffer. 
+
+This preprocessor will adjust the value of the depth range.
+
+If the depth range is too narrow or wide, based on the visible black to white (close to far) gradient given from the depth in `DisplayDepth`, shaders that utilize the depth buffer will not be able to properly account for depth.
 
 The values can be either extremely low or high, so you'll need to experiment to determine the best fit for your specific case.
 
 </details>
 
----
-
-<details markdown="block" class="details-tree">
-<summary>RESHADE_DEPTH_MULTIPLIER</summary>
-This argument multiplies the far plane, facilitating the visualization of extremely low or high far plane values.
-
 </details>
+
 </details>
