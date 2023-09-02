@@ -11,9 +11,9 @@ grand_parent: Special and Others
 > 
 > As of Aug. 06.2023, FiveM released an update to their client, blocking version 5.9 and above. This also blocked the hotfix designed to prevent crashes.
 >
-> As of Aug 08.2023, this block remains in place. However, an update to the beta and the latest `Update channel` has been pushed to unblock version 5.9.1 users.
+> As of Sep 01.2023, this block remains in place. However, an update to the beta and the latest `Update channel` has been pushed to unblock version 5.9.1 users.
 >
-> Therefore, **switch your FiveM `Update channel` to `Beta` or `Latest`**, and **install the latest version of ReShade** from [ReShade's website](https://reshade.me). - Jordan Brady Aug.08.2023
+> Therefore, **switch your FiveM `Update channel` to `Beta` or `Latest`**, and **install the latest version of ReShade** from [ReShade's website](https://reshade.me). - Jorban Sep 01.2023
 >
 > ![FiveM Release Channel](../images/fivem/fivem_release_channel.png)
 
@@ -109,6 +109,8 @@ Avoid copying and pasting these files, as it can cause complications, instead cu
 
 Launch FiveM and inspect the console for issues using the **F8 key**.
 
+
+
 If the ReShade installer can't pinpoint the FiveM install location, or if your ReShade ID has been altered, the following error might arise:
 
 `Blocked load of ReShade Version 5 or higher - it has a bug that will lead to game crashes in GPU drivers or d3d11.dll.`<br>
@@ -121,7 +123,7 @@ If the ReShade installer can't pinpoint the FiveM install location, or if your R
 To remedy this, visit the location mentioned in the error and incorporate the specified ID from your F8 console error into the `CitizenFX.ini` file located in the directory in the error. The directory where `CitizenFX.ini` may change per user, but is noted in green.
 
 {: .note }
-If ReShade successfully launches with your game, the installation is complete.
+On `Beta` or `Latest (Unstable)` clients of FiveM, your console will have lots to unpack. The error discussed above will likely require the user to check the actual FiveM log file, or scroll up to find it.
 
 ---
 

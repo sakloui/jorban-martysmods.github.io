@@ -9,27 +9,23 @@ nav_order: 1
 
 ![ReShade Logo](../images/rs_gradiant.png){: style="max-width:17%" }
 
-ReShade is an advanced and customizable post-processing injector designed to enhance the visual aesthetics of video games. It operates by interfacing directly with the game's rendering API, thereby offering a wide range of visual effects, including but not limited to depth of field, color correction, and ambient occlusion.
+ReShade is a post-processing injector for enhancing video game visuals. It interfaces with the game's rendering API for effects like depth of field and color correction. Compatible with most games and APIs like DirectX, OpenGL, and Vulkan, the guides below detail its installation and customization process.
 
-ReShade is highly compatible and works well with most games, including those utilizing DirectX (versions 9 to 12), OpenGL, and Vulkan.
-
-These guides will walk you through the downloading and installing procedures of ReShade so that you can easily customize your game, the way that you want.
+These guides below will walk you through the downloading and installing procedures of ReShade so that you can easily customize your game, the way that you want.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>Downloading the ReShade Installer</summary>
 
-First, visit the [official ReShade website](https://reshade.me/#download) and scroll down to the very bottom.
+[Visit the official ReShade website](https://reshade.me/#download) and scroll to the bottom.
 
 <video id="rs_scroll.webm" autoplay muted loop style="max-width:55%" src="../images/downloading-and-installing-reshade/rs_scroll.webm" type="video/webm"></video>
 
-Once at the bottom, you'll find two distinct ReShade builds.
-
-Below will be information to help you familiarize yourself with which build to choose for your games:
-
 {: .warning }
-Only download ReShade from offical sources to avoid malicious files and potential threats!
+Download ReShade only from official sources to avoid threats and shady software!
+
+You'll find two ReShade builds at the bottom. The information below will guide you on the right build for your games.
 
 ---
 
@@ -72,19 +68,19 @@ After downloading the right build of ReShade, the information below will help yo
 <details markdown="block" class="details-tree">
 <summary>Choosing Your Game</summary>
 
-Launch the ReShade installer that you've downloaded previously. 
+Run the ReShade installer.
 
-Once open, You'll be asked to select a game or application to install ReShade to:
+Select a game or application for ReShade installation:
 
 ![Game List](../images/downloading-and-installing-reshade/rs_game_list.png)
 
-If your game doesn't appear in the game or applicaiton selection menu, you can manually browse for your game by clicking the `Browse...` button at the bottom right hand side of the page.
+If your game isn't listed, click `Browse...` at the bottom right to manually locate it.
 
 ![Browse](../images/downloading-and-installing-reshade/rs_browse.png)
 
-The browse function lets you pinpoint the executable you want to install ReShade to. This is particularly useful for games from platforms like itch.io, classic games, or emulators like DOSBox and Dolphin.
+This is useful for games from platforms like itch.io, classic games, or emulators like DOSBox and Dolphin.
 
-  * If you are having trouble finding the proper location for your game directory or executable, check out our guide on [finding your game directory and executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for help!
+  * If you need help finding your game directory or executable, check out [our guide here](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/).
 
 </details>
 
@@ -93,13 +89,12 @@ The browse function lets you pinpoint the executable you want to install ReShade
 <details markdown="block" class="details-tree">
 <summary>Choosing the Rendering API</summary>
 
-Rendering APIs like DirectX, Vulkan, or OpenGL are tools that developers use to communicate with your computer hardware for drawing and presenting visuals on screen.
+Rendering APIs (DirectX, Vulkan, OpenGL) are used by developers to display visuals on screen, and each game uses a specific API, which must be correctly selected for ReShade to work!
 
-Each game uses a specific rendering API, so it's vital to select the correct one for ReShade to inject properly!
+  * Not sure about your game's API? Check [PCGamingWiki](https://pcgamingwiki.com).
 
-If you're not sure about your game's rendering API, resources like the [PCGamingWiki](https://pcgamingwiki.com) can be a great help! 
+If you want to guess, however, here are some guidelines for what to choose:
 
-However, if you want to guess your game's API, here are some general guidelines:
 
 ---
 
@@ -155,18 +150,18 @@ Vulkan installations require admin permissions due to certain system-level chang
 <details markdown="block" class="details-tree">
 <summary>Installing Presets</summary>
 
-ReShade presets are `.ini` configuration files that users have set up in order to share their customizations to others. These configurations can hold shader load orders, hotkeys, and specific arguments!
+ReShade presets are `.ini` files containing user customizations like shader load orders, hotkeys, and specific arguments.
 
-Fortunately, installing presets has been made simple with the ReShade Installer, as shaders used by presets will be automatically selected, download, and installed. This removes all the guesswork from ReShade's users, making things much easier than manually installing them.
+The ReShade Installer simplifies preset installation by automatically selecting, downloading, and installing the shaders used by presets.
 
-To install a preset, hit the `Browse...` button in the installer and then select your preset. 
+To install a preset, click `Browse...` in the installer and select your preset. 
 
 ![Preset Image](../images/downloading-and-installing-reshade/rs_preset.png)
 
-If you do not have a preset, you can skip this portion of the installer by clicking `Next` in the bottom right hand corner.
+No preset? Just click `Next` to skip this step.
 
 {: .note }
-If your preset requires unique shaders and textures outside the installer's offerings, you may need to install them manually.
+Presets requiring unique shaders and textures, not in the installer, need manual installation.
 
 </details>
 
@@ -175,19 +170,19 @@ If your preset requires unique shaders and textures outside the installer's offe
 <details markdown="block" class="details-tree">
 <summary>Installing Shaders Using the ReShade Installer</summary>
 
-Shaders are the backbone of ReShade, enabling users to create unique visual experiences for each game. However, finding shader repositories can be tricky as Shader Developers can have differing storage and update methods. The ReShade Installer simplifies this for users by presenting known, and working, shader repositories in the installer.
+ReShade shaders enhance game visuals, and are the backbone of customizations for each user. The ReShade Installer makes finding and installing these shaders easy by listing known and working repositories.
 
-The image below shows the shader installation portion of the ReShade Installer. Simply select the repositories that you want, and click "Next"
+Below is the shader installation section of the ReShade Installer. Select the repositories you want and click `Next`.
 
 ![ReShade Shader Repositories Selection Image](../images/downloading-and-installing-reshade/rs_shader.png){: style="max-width:30%" }
 
-If you've chosen to install a preset with the preset installation page of the ReShade Installer, the necessary shaders will be pre-selected in this section.
+If you've selected a preset, necessary shaders will be pre-selected here.
 
 ---
 
-For information about Shader Developers and their repositories, you can click on the blue-highlighted repository or author names, as shown below. The link often contains detailed shader information and descriptions useful for users.
+If you want more information on the repository or Shader Developer, click on blue-highlighted repository or author names for more details.
 
-  ![ReShade Shader Repo Link Highlight](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_link_highlight.jpg)
+![ReShade Shader Repo Link Highlight](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_link_highlight.jpg)
 
 ---
 
@@ -214,7 +209,7 @@ For information about Shader Developers and their repositories, you can click on
     {: .note }
     > Choosing the square tick for any shader repositories will bring up a menu to select the specific shaders from the repository marked. 
     > ![ReShade Square Tick Shader Selection Image](../images/downloading-and-installing-reshade/rs_shader_select.png){: style="max-width:30%" }
-    > From here, select your preferred shaders and click `Next` to continue.
+    > Select your preferred shaders and click `Next` to continue.
 
 </details>
 
@@ -225,17 +220,15 @@ For information about Shader Developers and their repositories, you can click on
 <details markdown="block" class="details-tree">
 <summary>Finishing the Installation Process</summary>
 
-Once the ReShade Installer has finished, a confirmation screen will show a successful installation.
+After the ReShade Installer finishes, a confirmation screen appears. Click `Finish` and start your game.
 
-At this point, you can click `Finish` in the ReShade installer and start your game.
+![ReShade Complete Image](../images/downloading-and-installing-reshade/rs_complete.png)
 
-  ![ReShade Complete Image](../images/downloading-and-installing-reshade/rs_complete.png)
+If ReShade is installed correctly, ReShade displays an in-game banner:
 
-If ReShade has been installed correctly, ReShade will show an in-game banner:
+![ReShade Game Banner Image](../images/downloading-and-installing-reshade/rs_game_banner.png)
 
-  ![ReShade Game Banner Image](../images/downloading-and-installing-reshade/rs_game_banner.png)
-
-If ReShade is not presenting this banner, it hasn't injected into your game. 
+If no banner is shown, that means ReShade didn't inject into your game.
 
 </details>
 
@@ -244,12 +237,15 @@ If ReShade is not presenting this banner, it hasn't injected into your game.
 <details markdown="block" class="details-tree">
 <summary>Common Issues After Installing</summary>
 
-### Common Issues
+### Common Problems
 
-The most common issue that prevents ReShade from injecting is selecting the wrong API or executable/program when prompted in the ReShade installer. However, other issues can occur, such as:
+ReShade may fail to inject if you select the wrong API or program in the installer. 
 
-  * The game not allowing ReShade.
+Other issues include:
+
+  * Game not supporting ReShade.
   
-  * The user not having the proper dependancies [(.NET Framework)](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-web-installer).
+  * Missing dependencies [(like .NET Framework)](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-web-installer).
+  
+  * Conflicting mods.
 
-  * Conflicting modifications.
