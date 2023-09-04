@@ -1,23 +1,29 @@
 ---
-title: Downloading and Installing iMMERSE Shaders
+title: Downloading and Installing iMMERSE Shaders and Add-ons
 layout: page
 nav_order: 1
 parent: iMMERSE & qUINT
 grand_parent: Shader Repositories
 ---
 
-# Downloading and Installing iMMERSE Shaders
+# Downloading and Installing iMMERSE Shaders and Addons
 
-Welcome to the world of iMMERSE Shaders! Created by Pascal Gilcher (also known as MartyMcFly), iMMERSE is the successor to qUINT and features some of the best shaders available for ReShade.
+Created by Pascal Gilcher (also known as MartyMcFly), iMMERSE is the successor to qUINT and features some of the best shaders available for ReShade.
 
-iMMERSE comes in three flavors: a free version (iMMERSE), and two premium versions (iMMERSE Pro & Ultimate).
+iMMERSE comes in three flavors:
+
+* iMMERSE (FREE)
+
+* iMMERSE Pro (5 USD)
+
+* iMMERSE Ultimate (9 USD)
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Shaders</summary>
 
-iMMERSE is the core collection of shaders from Pascal. 
+iMMERSE is the core collection of shaders from Pascal.
 
 These shaders are available [on GitHub](https://github.com/martymcmodding/iMMERSE) and are freely accessible to all.
 
@@ -26,11 +32,11 @@ These shaders are available [on GitHub](https://github.com/martymcmodding/iMMERS
 <details markdown="block" class="details-tree">
 <summary>Installing iMMERSE Public GitHub Shaders</summary>
 
-Setting up iMMERSE shaders is a breeze. 
+Setting up iMMERSE shaders is a breeze.
 
 Simply use the ReShade Installer and select `iMMERSE` during the shader installation process!
 
-For detailed instructions on installing shaders through the ReShade Installer, check out our guide on [installing ReShade and its shaders](https://guides.martysmods.com/docs/).
+For information on installing shaders through the ReShade Installer, check out [our guide for installing ReShade and its avaliable shaders](https://guides.martysmods.com/docs/basic-reshade-guides/downloading-and-installing-reshade/).
 
 </details>
 
@@ -39,26 +45,22 @@ For detailed instructions on installing shaders through the ReShade Installer, c
 ---
 
 <details markdown="block" class="details-tree">
-<summary>iMMERSE Pro Shaders</summary>
+<summary>iMMERSE Pro</summary>
 
-iMMERSE Pro is a premium collection of Pascal's shaders, available to `Raytracers` tier members [on Pascal's Patreon](http://www.patreon.com/mcflypg).
+iMMERSE Pro is a premium collection of Pascal's shaders, available to [the "Raytracers" tier members from Pascal's Patreon](http://www.patreon.com/mcflypg).
 
-For just $5 USD, you can access this suite, which features a variety of shaders showcased on [MartysMods.com](https://martysmods.com).
+For just $5 USD, you can access this suite, which features [a variety of shaders shown on MartysMods.com](https://www.martysmods.com/patreon/).
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Downloading iMMERSE Pro Shaders</summary>
+<summary>Downloading iMMERSE Pro Archive</summary>
 
-To access the iMMERSE Pro Shaders, make sure you're a current subscriber to [Pascal's Patreon at the $5 USD Raytracers tier](http://www.patreon.com/mcflypg). 
+To access the iMMERSE Pro Archive, make sure you're a current subscriber to [Pascal's Patreon at the $5 USD Raytracers tier](http://www.patreon.com/mcflypg).
 
-Once subscribed, you retain the shader files indefinitely, unless you delete them. 
+Once subscribed, you are able to download and keep the shaders you have purchases access to. You are free to keep these shaders after your subscription, and you're free to end your subscription at any time.
 
-You're free to end your subscription at any time.
-
-The shaders are available on [Pascal's Discord (PGHUB)](https://discord.com/invite/wY49KMxjHT). 
-
-For members with the appropriate permissions, the channel [#downloads-level-1](https://discord.com/channels/494578207505514496/494599998059839498) becomes visible. This channel houses the iMMERSE Pro shaders, including iMMERSE Pro RTGI, ready for download.
+The latest iMMERSE Pro Archive is available for download on [Pascal's Discord (PGHUB)](https://discord.com/invite/wY49KMxjHT). You can find them in the Discord channel [#downloads-level-1](https://discord.com/channels/494578207505514496/494599998059839498).
 
 </details>
 
@@ -67,21 +69,21 @@ For members with the appropriate permissions, the channel [#downloads-level-1](h
 <details markdown="block" class="details-tree">
 <summary>Installing iMMERSE Pro Shaders</summary>
 
-Once you've gained access to the Raytracers tier and downloaded the iMMERSE Pro archive, the installation process is as simple as drag-and-drop. 
+Once you've downloaded the latest iMMERSE Pro Shader archive, you can install them with a simple drag and drop procedure. Below will be a step-by-step guide:
 
-Here's a step-by-step guide:
+* This guide assumes that you have ReShade and iMMERSE (FREE) Shaders already installed. If you need help with installing ReShade, refer to [our guide for installing ReShade](https://guides.martysmods.com/docs/basic-reshade-guides/downloading-and-installing-reshade/)
 
 ---
 
-### Step 1: Opening the iMMERSE Pro Archive
+### Step 1: Open the iMMERSE Pro Archive
 
-Open the iMMERSE Pro archive:
+Open the iMMERSE Pro archive that you've downloaded from the PGHub Discord:
 
 ![Image](../images/downloading-and-installing-immerse-shaders/immerse_pro_archive.jpg)
 
 ---
 
-### Step 2: Opening the `ReShade-Shaders` Folder
+### Step 2: Open the `ReShade-Shaders` Folder
 
 Navigate to the `ReShade-Shaders` folder in your game directory:
 
@@ -91,13 +93,15 @@ Navigate to the `ReShade-Shaders` folder in your game directory:
 
 ---
 
-### Step 3: Combining the Proper Folders in `ReShade-Shaders`
+### Step 3: Combine the Proper Folders in `ReShade-Shaders`
 
 Merge the `Shaders` and `Textures` folders from the iMMERSE Pro archive with the `ReShade-Shaders` directory:
 
 ![Image](../images/downloading-and-installing-immerse-shaders/shaders_drag_merge.jpg)
 
    * If prompted to overwrite existing files in the `ReShade-Shaders` directory, please proceed with the overwrite.
+
+After merging the folders, you've sucessfully installed the iMMERSE Pro Shader archive!
 
 </details>
 
@@ -106,7 +110,7 @@ Merge the `Shaders` and `Textures` folders from the iMMERSE Pro archive with the
 <details markdown="block" class="details-tree">
 <summary>Patreon Roles not Updating in Discord</summary>
 
-If you're having trouble accessing the iMMERSE Pro archive due to role permissions, follow these steps to resolve the issue:
+If you're having trouble accessing the iMMERSE Pro archive due to role permissions in the Discord, follow these steps to resolve the issue:
 
 ---
 
@@ -132,7 +136,7 @@ Click `Disconnect` to unlink your Discord Account from Patreon:
 
 ---
 
-### Step 4: Reconnecting your Discord Account
+### Step 4: Reconnect your Discord Account
 
 Click `Connect` and sign into your Discord account:
 
@@ -151,8 +155,7 @@ Grant Permission by clicking `Authorize`:
 ### Step 6: Check Your Role Access
 Finally, verify your updated roles within the PGHub Discord Server.
 
-{: .note }
-If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon!
+* If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon!
 
 </details>
 
@@ -161,8 +164,103 @@ If you still do not have your Patreon roles in Discord, please leave the Discord
 ---
 
 <details markdown="block" class="details-tree">
-<summary>iMMERSE Ultimate Shaders</summary>
+<summary>iMMERSE Ultimate</summary>
 
-Stay tuned for iMMERSE Ultimate Shaders - coming soon!
+iMMERSE Ultimate is an aditional premium collection of Pascal's shaders, available to [the "Pathtracers" tier members from Pascal's Patreon](http://www.patreon.com/mcflypg).
+
+For $10 USD, you can access this suite, which features [a variety of shaders shown on MartysMods.com](https://www.martysmods.com/patreon/).
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Downloading the iMMERSE Ultimate Archive</summary>
+
+To access the iMMERSE Ultimate Shaders, make sure you're a current subscriber to [Pascal's Patreon for the $10 USD Pathtracers tier](http://www.patreon.com/mcflypg).
+
+Once subscribed, you are able to download and keep the shaders you have purchases access to. You are free to keep these shaders after your subscription, and you're free to end your subscription at any time.
+
+The latest iMMERSE Ultimate Archive is available for download on [Pascal's Discord (PGHUB)](https://discord.com/invite/wY49KMxjHT). You can find them in the Discord channel [#downloads-level-2](https://discord.com/channels/494578207505514496/494599917273350164).
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Installing iMMERSE Ultimate Shaders</summary>
+
+Once you've downloaded the latest iMMERSE Ultimate Shader archive, you can install them with a simple drag and drop procedure. Below will be a step-by-step guide:
+
+* This guide assumes that you have ReShade and iMMERSE (FREE) Shaders already installed. If you need help with installing ReShade, refer to [our guide for installing ReShade](https://guides.martysmods.com/docs/basic-reshade-guides/downloading-and-installing-reshade/)
+
+---
+
+### Step 1: Open the iMMERSE Ultimate Archive
+
+Open the iMMERSE Ultimate archive that you've downloaded from the PGHub Discord:
+
+![Image](../images/downloading-and-installing-immerse-shaders/immerse_ultimate_archive.jpg)
+
+---
+
+### Step 2: Open the `ReShade-Shaders` Folder
+
+Navigate to the `ReShade-Shaders` folder in your game directory:
+
+![Image](../images/downloading-and-installing-immerse-shaders/reshade_shaders_folder.jpg)
+
+* If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+
+---
+
+### Step 3: Combine the Proper Folders in `ReShade-Shaders`
+
+Merge the `Shaders` and `Textures` folders from the iMMERSE Ultimate archive with the `ReShade-Shaders` directory:
+
+![Image](../images/downloading-and-installing-immerse-shaders/shaders_drag_merge_ultimate.jpg)
+
+   * If prompted to overwrite existing files in the `ReShade-Shaders` directory, please proceed with the overwrite.
+
+After merging the folders, you've sucessfully installed the iMMERSE Ultimate Shader portion of the archive!
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Installing iMMERSE Ultimate Add-ons</summary>
+
+### Step 1: Open the iMMERSE Ultimate Archive
+
+Open the iMMERSE Ultimate archive that you've downloaded from the PGHub Discord:
+
+![Image](../images/downloading-and-installing-immerse-shaders/immerse_ultimate_archive.jpg)
+
+---
+
+### Step 2: Navigate to the Addons Folder
+
+Open the `Addons` folder within the iMMERSE Ultimate Archive
+
+![Image](../images/downloading-and-installing-immerse-shaders/immerse_ultimate_addons.jpg)
+
+---
+
+### Step 3: Open Your Game Folder
+
+Navigate to your game folder where ReShade and the game exectuable exist.
+
+* If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+
+---
+
+### Step 4: Drag and Drop the Addons Into Your Game Folder
+
+Drag and drop the addon files from the iMMERSE Ultimate archive into your game folder.
+
+![Image](../images/downloading-and-installing-immerse-shaders/addons_drag_and_drop.jpg)
+
+After moving the addon files into your game folder, you've sucessfully installed the iMMERSE Ultimate Add-on portion of the archive!
+
+</details>
 
 </details>
