@@ -7,21 +7,36 @@ grand_parent: Shader Repositories
 ---
 
 # Configuring RSRetroArch Shaders
-First of all, this will only cover the order and more or less how and where to position each shader. Which means individual informations about each shader will have to be looked on the wiki dedicated for the Emulators and Emulation itself. You can find those [here](https://emulation.gametechwiki.com/index.php/Shaders_and_filters). The emulators part ain't too important, but the individual shaders are.
-The basic grasp to have is the following: 
 
-> Imagine you have a console setup in a room. The way you think of it, there is the game / medium itself, the signal, your TV apparel (hypotetically if its a CRT), the cables you use to connect to your said hypotetical display, and everything else after is the world around you / the place you are.
+RSRetroArch shaders is a repository filled with powerful shaders that allow you to manipulate the visual output of your emulated games. 
 
-That said, you'll always have those layers, without considering the ReShade ordering (classic depth shaders first, 2D-shaders later):
+This guide seeks to help you understand the processes for configuring the order and position of each shader within ReShade.
 
- - The Medium/Game layer. Everything that should affect only the game itself goes here. Doesn't matter if its color-correction and whatnot, so whatever you want to affect the game, goes always on the top-ish.
- - The Signal of the image. If you use a shader such as NTSC or PAL signal shaders, here, you'll alter the "signal" output, this brings artifacts, blurring and other color/visual modifying shaders that aren't from the game, but from the cable/apparel/physical part of the image itself. If you need color-correction here aswell, have a separate set of shaders for it (Incase you want the game to look like something and then tune-up the signal to give a specific TV-look) so it applies to your taste.
- - The CRT/Output display. This is all that comes on the Physical side. This will be responsible on replicating the ambient around your display, either an overlay, an Arcade Cabinet, you get the point. This also would be responsible for any other effect which is **outside** the TV screen.
+For detailed information about each individual shader, please refer to the [Emulators and Emulation wiki](https://emulation.gametechwiki.com/index.php/Shaders_and_filters).
 
-Here's how a basic depth + signal + output should be ordered
+## Understanding the Layers
+
+To understand how shaders work, imagine your gaming setup as a series of layers. Each layer represents a different part of the gaming experience, from the game itself to the signal, the display, and the surrounding environment.
+
+Each layer below is described for you to better visualize how these will work in terms of emulation:
+
+* **Game/Medium Layer:**
+
+  * This is the first layer and it represents the game or medium itself. Any shader that you apply at this layer will directly affect the game. This could include color correction, brightness adjustments, or other visual effects. Think of this layer as the 'base' of your gaming experience - everything starts here.
+
+* **Image Signal:**
+
+  * The next layer is the image signal. This represents the output from your game console or computer. Shaders applied at this layer will mimic the effects of different types of signals, such as NTSC or PAL. These shaders can introduce artifacts, blurring, and color changes that simulate the look of these signals. If you want to apply color correction at this layer, you should use a separate set of shaders to ensure that the effects are applied to the signal, not the game itself.
+
+* **CRT/Output Display:**
+
+  * The final layer is the CRT or output display. This layer represents the physical display and the surrounding environment. Shaders applied at this layer can simulate the look of different types of displays, such as a CRT monitor or an arcade cabinet. They can also create effects that appear outside the TV screen, such as reflections or ambient light.
+
+Here's how a basic depth + signal + output should be ordered:
+
 ![Prefered / Correct Order](../images/configuring-rsretroarch-shaders/pref_order.png){: style="max-width:65%" }
 
-However, even with the link above, this guide will now try to explain the most popular shaders from that repository to not make for a full/messy installation.
+Remember, the key to configuring RetroArch shaders is understanding these layers and how they interact. By carefully choosing and positioning your shaders, you can create a wide range of visual effects that enhance your gaming experience.
 
 ---
 
