@@ -534,6 +534,8 @@ You can absolve this issue simply by playing around with `Generic Depth` in orde
 
 </details>
 
+---
+
 <details markdown="block" class="details-tree">
 <summary>No Depth Buffer and Reversed</summary>
 
@@ -642,8 +644,6 @@ This preprocessor will adjust the value of the depth range.
 If the depth range is too narrow or wide, based on the visible black to white (close to far) gradient given from the depth in `DisplayDepth`, shaders that utilize the depth buffer will not be able to properly account for depth.
 
 The values can be either extremely low or high, so you'll need to experiment to determine the best fit for your specific case.
-
-</details>
 
 </details>
 

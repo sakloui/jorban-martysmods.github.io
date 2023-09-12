@@ -21,7 +21,7 @@ Note: This will affect all games on your system.
 
 ---
 
-### Step 1: Open Adrenalin
+## **Step 1:** Open Adrenalin
 
 - **Quick Access**: Right-click your desktop and select `AMD Software: Adrenalin Edition`.
 
@@ -33,7 +33,7 @@ Note: This will affect all games on your system.
 
 ---
 
-### Step 2: Enable "Frame rate target control"
+## **Step 2:** Enable "Frame rate target control"
 
 1. Navigate to `Gaming` in the top bar and select `Graphics`.
 
@@ -61,7 +61,7 @@ Note: This will affect all games on your system.
 
 ---
 
-### Step 1: Open NVIDIA Control Panel
+## **Step 1:** Open NVIDIA Control Panel
 
 - **Quick Access**: Right-click your desktop and select `NVIDIA Control Panel`.
 
@@ -73,7 +73,7 @@ Note: This will affect all games on your system.
 
 ---
 
-### Step 2: Adjust 3D Global Settings
+## **Step 2:** Adjust 3D Global Settings
 
 1. On the left panel, select `Manage 3D Settings`.
 
@@ -98,7 +98,7 @@ You can use NVIDIA's Control Panel to limit the FPS for specific games:
 
 ---
 
-### Step 1: Open NVIDIA Control Panel
+## **Step 1:** Open NVIDIA Control Panel
 
 - **Quick Access**: Right-click your desktop and choose `NVIDIA Control Panel`.
 
@@ -111,7 +111,7 @@ You can use NVIDIA's Control Panel to limit the FPS for specific games:
 
 ---
 
-### Step 2: Adjust Per-Game 3D Settings
+## **Step 2:** Adjust Per-Game 3D Settings
 
 1. On the left panel, select `Manage 3D Settings`.
 

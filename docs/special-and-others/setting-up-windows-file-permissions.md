@@ -7,38 +7,23 @@ nav_order: 3
 
 # Windows File Permisions
 
-Many gamers prefer to install their games in directories such as `Program Files (x86)`, a practice that promotes organization and easy access to all installed games. 
+Game distribution platforms like Steam, EA Play/Origin, Ubisoft Connect, and GOG Galaxy often utilize `Program Files (x86)` directories in order to take control over the installed games and their files. However, this practice can occasionally lead to complications. For instance, these controlled directories may hinder other software, like ReShade, from accessing necessary files due to restricted permissions. ReShade, in particular, requires both read and write permissions to function optimally.
 
-Game distribution platforms like Steam, EA Play/Origin, Ubisoft Connect, and GOG Galaxy often utilize these directories, exerting control over the installed games.
-
-However, this practice can occasionally lead to complications. For instance, these controlled directories may hinder other software, like ReShade, from accessing necessary files due to restricted permissions. 
-
-ReShade, in particular, requires both read and write permissions to function optimally.
-
-In this guide, we aim to simplify the concept of file permissions, making it comprehensible even for individuals with minimal technical expertise. 
-
-Please note that this is a complex topic, so we recommend following the guide closely to grasp the concept fully.
-
-{: .warning }
-Please be aware that this method is applicable only for NTFS formatted drives. For drives with other formats, the `Security` tab will not be visible in the `Folder Properties` window.
-
+In this guide, we aim to simplify the concept of file permissions, however, this is a complex topic, so we recommend following the guide closely!
 
 ---
 
-### Step 1: Identify the Game Directory
+## **Step 1:** Identify the Game Directory
 
-{: .warning }
-Before proceeding, ensure that your game is closed and no associated files are open!
+Before proceeding, ensure that your game is closed and no associated files are open! 
 
-The game directory is typically indicated in the file permissions error message. Use this information to navigate to the directory requiring edits.
-
-  * If you need assistance locating your game directory, refer to our guide on [how to find your game directory](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory).
+The game directory is typically indicated in the file permissions error message. However, if you need assistance locating your game directory, refer to our guide on [how to find your game directory](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory).
 
 ---
 
-### Step 2: Access the Properties of Your Game's Root Folder
+## **Step 2:** Access the Properties of Your Game's Root Folder
 
-For illustration, let's use FFXIV, as an example:
+For illustration, let's use FFXIV:
 
 The game executable is usually located in the `game` folder, which is not the root directory for FFXIV. The root directory would be `FINAL FANTASY XIV – A Realm Reborn\game`.
 
@@ -48,7 +33,7 @@ Right-click the folder named `FINAL FANTASY XIV – A Realm Reborn`, **NOT** `ga
 
 ---
 
-### Step 3: Proceed to the Security Tab
+## **Step 3:** Proceed to the Security Tab
 
 In the `Folder Properties` window, select the `Security` tab.
 
@@ -60,7 +45,7 @@ While this tab may seem complex for beginners, this guide will walk you through 
 
 ---
 
-### Step 4: Select `Advanced`
+## **Step 4:** Select `Advanced`
 
 In the lower right corner of the `Security` tab, click the `Advanced` button.
 
@@ -73,13 +58,13 @@ This action will open the `Advanced Security Settings` window, which contains mo
 ---
 
 
-### Step 5: Modify the Folder's Ownership
+## **Step 5:** Modify the Folder's Ownership
 
 At the top of the `Advanced Security Settings` window, you'll find two fields:
 
-  * Name:
+  * Name: `{Name Of The Folder Location}`
 
-  * Owner:
+  * Owner: `{Username and Location of User}`
 
 ![Highlight of Name and Owner Fields](../images/setting-up-windows-file-permissions/name_and_owner_arguments.jpg)
 
@@ -91,7 +76,7 @@ Click the blue `Change` button next to the `Owner` field.
 
 ---
 
-### Step 6: Update the Directory's Owner
+## **Step 6:** Update the Directory's Owner
 
 After clicking `Change`, a `Select User or Group` window will appear.
 
@@ -119,7 +104,7 @@ Double-click your username to select it, then click `OK`.
 
 ---
 
-### Step 7: Enable `Replace owner on subcontainers and objects`
+## **Step 7:** Enable `Replace owner on subcontainers and objects`
 
 Back in the `Advanced Security Settings` window, ensure `Replace owner on subcontainers and objects` is checked.
 
@@ -135,7 +120,7 @@ The `Replace owner on subcontainers and objects` option should now be removed, i
 
 ---
 
-### Step 8: Grant `Full Control` Access to Your User
+## **Step 8:** Grant `Full Control` Access to Your User
 
 Now that you've changed the directory's owner, you need to grant your user full control over the directory.
 

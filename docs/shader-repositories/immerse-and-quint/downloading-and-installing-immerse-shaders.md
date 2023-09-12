@@ -75,7 +75,7 @@ Once you've downloaded the latest iMMERSE Pro Shader archive, you can install th
 
 ---
 
-### Step 1: Open the iMMERSE Pro Archive
+## **Step 1:** Open the iMMERSE Pro Archive
 
 Open the iMMERSE Pro archive that you've downloaded from the PGHub Discord:
 
@@ -83,7 +83,7 @@ Open the iMMERSE Pro archive that you've downloaded from the PGHub Discord:
 
 ---
 
-### Step 2: Open the `ReShade-Shaders` Folder
+## **Step 2:** Open the `ReShade-Shaders` Folder
 
 Navigate to the `ReShade-Shaders` folder in your game directory:
 
@@ -93,7 +93,7 @@ Navigate to the `ReShade-Shaders` folder in your game directory:
 
 ---
 
-### Step 3: Combine the Proper Folders in `ReShade-Shaders`
+## **Step 3:** Combine the Proper Folders in `ReShade-Shaders`
 
 Merge the `Shaders` and `Textures` folders from the iMMERSE Pro archive with the `ReShade-Shaders` directory:
 
@@ -114,13 +114,13 @@ If you're having trouble accessing the iMMERSE Pro archive due to role permissio
 
 ---
 
-### Step 1: Open Patreon's `Connected Apps` Settings
+## **Step 1:** Open Patreon's `Connected Apps` Settings
 
 Navigate to [Patreon's 'Connected Apps' Settings](https://www.patreon.com/settings/apps/)
 
 ---
 
-### Step 2: Navigate to the Discord Account Connections
+## **Step 2:** Navigate to the Discord Account Connections
 
 Click the `Discord` Icon:
 
@@ -128,7 +128,7 @@ Click the `Discord` Icon:
 
 ---
 
-### Step 3: Disconnect your Discord Account
+## **Step 3:** Disconnect your Discord Account
 
 Click `Disconnect` to unlink your Discord Account from Patreon:
 
@@ -136,7 +136,7 @@ Click `Disconnect` to unlink your Discord Account from Patreon:
 
 ---
 
-### Step 4: Reconnect your Discord Account
+## **Step 4:** Reconnect your Discord Account
 
 Click `Connect` and sign into your Discord account:
 
@@ -144,7 +144,7 @@ Click `Connect` and sign into your Discord account:
 
 ---
 
-### Step 5: Grant Discord Permissions for Patreon
+## **Step 5:** Grant Discord Permissions for Patreon
 
 Grant Permission by clicking `Authorize`:
 
@@ -152,7 +152,7 @@ Grant Permission by clicking `Authorize`:
 
 ---
 
-### Step 6: Check Your Role Access
+## **Step 6:** Check Your Role Access
 Finally, verify your updated roles within the PGHub Discord Server.
 
 * If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon!
@@ -194,7 +194,7 @@ Once you've downloaded the latest iMMERSE Ultimate Shader archive, you can insta
 
 ---
 
-### Step 1: Open the iMMERSE Ultimate Archive
+## **Step 1:** Open the iMMERSE Ultimate Archive
 
 Open the iMMERSE Ultimate archive that you've downloaded from the PGHub Discord:
 
@@ -202,7 +202,7 @@ Open the iMMERSE Ultimate archive that you've downloaded from the PGHub Discord:
 
 ---
 
-### Step 2: Open the `ReShade-Shaders` Folder
+## **Step 2:** Open the `ReShade-Shaders` Folder
 
 Navigate to the `ReShade-Shaders` folder in your game directory:
 
@@ -212,7 +212,7 @@ Navigate to the `ReShade-Shaders` folder in your game directory:
 
 ---
 
-### Step 3: Combine the Proper Folders in `ReShade-Shaders`
+## **Step 3:** Combine the Proper Folders in `ReShade-Shaders`
 
 Merge the `Shaders` and `Textures` folders from the iMMERSE Ultimate archive with the `ReShade-Shaders` directory:
 
@@ -229,7 +229,7 @@ After merging the folders, you've sucessfully installed the iMMERSE Ultimate Sha
 <details markdown="block" class="details-tree">
 <summary>Installing iMMERSE Ultimate Add-ons</summary>
 
-### Step 1: Open the iMMERSE Ultimate Archive
+## **Step 1:** Open the iMMERSE Ultimate Archive
 
 Open the iMMERSE Ultimate archive that you've downloaded from the PGHub Discord:
 
@@ -237,7 +237,7 @@ Open the iMMERSE Ultimate archive that you've downloaded from the PGHub Discord:
 
 ---
 
-### Step 2: Navigate to the Addons Folder
+## **Step 2:** Navigate to the Addons Folder
 
 Open the `Addons` folder within the iMMERSE Ultimate Archive
 
@@ -245,7 +245,7 @@ Open the `Addons` folder within the iMMERSE Ultimate Archive
 
 ---
 
-### Step 3: Open Your Game Folder
+## **Step 3:** Open Your Game Folder
 
 Navigate to your game folder where ReShade and the game exectuable exist.
 
@@ -253,7 +253,7 @@ Navigate to your game folder where ReShade and the game exectuable exist.
 
 ---
 
-### Step 4: Drag and Drop the Addons Into Your Game Folder
+## **Step 4:** Drag and Drop the Addons Into Your Game Folder
 
 Drag and drop the addon files from the iMMERSE Ultimate archive into your game folder.
 

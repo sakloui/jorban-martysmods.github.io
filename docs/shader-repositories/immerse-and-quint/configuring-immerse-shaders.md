@@ -21,6 +21,8 @@ Click the suite you'd like to start configuring below:
 
 This section will guide you through setting up and configuring specific shaders within the standard iMMERSE shader suite!
 
+---
+
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Anti Aliasing</summary>
 
@@ -28,7 +30,7 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
 ---
 
-### Understanding the Basic Parameters of iMMERSE Anti Aliasing:
+## Understanding the Basic Parameters of iMMERSE Anti Aliasing:
 
 * `Edge Detection Type`: 
 
@@ -42,18 +44,22 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
     * This preprocessor for iMMERSE Anti Aliasing extends the color detection range of SMAA, allowing for increased detection of edges. The usable values are 0 and 1.
 
+---
+
 <details markdown="block" class="details-tree">
 <summary>Configuring iMMERSE Anti Aliasing with Depth (Best Output)</summary>
 
 # Configuring iMMERSE Anti Aliasing for Best Output with Depth
 
-### Step 1. Select the option `View edges` for the parameter `Debug Output`:
+## **Step 1:** Select the option `View edges` for the parameter `Debug Output`:
 
 * This will allow you to see all of the edges that iMMERSE Anti Aliasing is able to detect, and will allow us to better see the changes that the shader is able to make!
 
     ![Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_preview.png)
 
-### Step 2. Select the option `Color edge detection (max)` for `Edge Detection Type`:
+---
+
+## **Step 2:** Select the option `Color edge detection (max)` for `Edge Detection Type`:
 
 * This option is the best soltuion for getting the most amount of edges within iMMERSE Anti Aliasing.
         
@@ -61,19 +67,25 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
         ![Color Edge Detection(Max) Preview](../images/configuring-immerse-shaders/smaa_color_edge_detection_max_argument.png)
 
-### Step 3. Check the option for `Enable Predicated Thresholding`:
+---
+
+## **Step 3:** Check the option for `Enable Predicated Thresholding`:
 
 * With this selected, you should notice a large decrease of edges that are being detected, this is normal, do not panic, as we will be configuring other parameters in order to get more of those edges back into view!
 
     ![Enable Predicated Thresholding Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_depth_preview.png)
 
-### Step 4. Reduce `Edge Detection Threshold` and `Depth Edge Detection Threshold` parameters to the lowest value that they can go:
+---
+
+## **Step 4:** Reduce `Edge Detection Threshold` and `Depth Edge Detection Threshold` parameters to the lowest value that they can go:
 
 * This will increase the amount of edges that you see, other parameters will be configured in order to detect more edges later on.
 
     ![Reducing Edge Detection Threshold and Depth Edge Detection Threshold Parameter Preview](../images/configuring-immerse-shaders/smaa_reduce_edt_and_dedt.png)
 
-### Step 5. Reduce `Predication Threshold` as low as it can go:
+---
+
+## **Step 5:** Reduce `Predication Threshold` as low as it can go:
 
 * If you already have this set to default values, the parameter will likely not change much within your scene.
 
@@ -81,7 +93,9 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
     ![Reducing Predication Threshold Parameter Preview](../images/configuring-immerse-shaders/smaa_reduce_pt.png)
 
-### Step 6. Increase `Predication Strength` just enough to the point where you notice no extra changes within the scene:
+---
+
+## **Step 6:** Increase `Predication Strength` just enough to the point where you notice no extra changes within the scene:
 
 * This will increase the depth predication strength in order to grab more edges that are noticble in depth, but not by the edge detection method.
 
@@ -95,7 +109,9 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
         ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_prediction_bad_strength_preview.png)
 
-### Step 7. Reduce `Predication Scale` as far as you can go without picking up noise from textures.
+---
+
+## **Step 7:** Reduce `Predication Scale` as far as you can go without picking up noise from textures.
 
 * Good `Predication Scale` value debug output:
 
@@ -105,7 +121,9 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
   
     ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_bad.png)
 
-### Step 8. Increase or Decrease Settings Based on Desired Performance:
+---
+
+## **Step 8:** Increase or Decrease Settings Based on Desired Performance:
 
 * If performance is permitting in your game and system, max out:
 
@@ -143,13 +161,15 @@ You can now disable `Debug Output` and continue to the game as usual!
 
 # Configuring iMMERSE Anti Aliasing for Best Output Without Depth
 
-### Step 1. Select the option `View edges` for the parameter `Debug Output`:
+## **Step 1:** Select the option `View edges` for the parameter `Debug Output`:
 
 * This will allow you to see all of the edges that iMMERSE Anti Aliasing is able to detect, and will allow us to better see the changes that the shader is able to make!
 
     ![Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_preview.png)
 
-### Step 2. Select the option `Color edge detection (max)` for `Edge Detection Type`:
+---
+
+## **Step 2:** Select the option `Color edge detection (max)` for `Edge Detection Type`:
 
 * This option is the best soltuion for getting the most amount of edges within iMMERSE Anti Aliasing.
 
@@ -157,7 +177,9 @@ You can now disable `Debug Output` and continue to the game as usual!
 
         ![Color Edge Detection(Max) Preview](../images/configuring-immerse-shaders/smaa_color_edge_detection_max_argument.png)
 
-### Step 3. Reduce `Edge Detection Threshold` as far as you can go without picking up too many edges within textures:
+---
+
+## **Step 3:** Reduce `Edge Detection Threshold` as far as you can go without picking up too many edges within textures:
 
 * Some are fine, but you do not want a whole lot:
 
@@ -169,13 +191,17 @@ You can now disable `Debug Output` and continue to the game as usual!
         
         ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_detect_thresh_bad.png)
 
-### Step 4. Enable `SMAA_USE_EXTENDED_EDGE_DETECTION` if desired:
+---
+
+## **Step 4:** Enable `SMAA_USE_EXTENDED_EDGE_DETECTION` if desired:
 
 * In theory this should allow iMMERSE Anti Aliasisng to provide better results for edges - however, in practice, the change is not always visable off the bat.
 
     ![SMAA USE EXTENDED EDGE DETECTION Argument Preview](../images/configuring-immerse-shaders/smaa_use_edge_extended_preview.png)
 
-### Step 5. Increase or Decrease Settings Based on Desired Performance:
+---
+
+## **Step 5:** Increase or Decrease Settings Based on Desired Performance:
 
 * If performance is permitting in your game and system, max out:
 
@@ -236,7 +262,7 @@ This guide will go over how to do so without destroying your image altogether wi
 
 ---
 
-### Step 1: Enable the Shader
+## **Step 1:** Enable the Shader
 
 * Simply check the shader `iMMERSE Pro Clarity [MartysMods_CLARITY.fx]` in the `Home` tab of ReShade.
 
@@ -248,7 +274,7 @@ This guide will go over how to do so without destroying your image altogether wi
 
 ---
 
-### Step 2: Configure `Texture Intensity` for Increased Perception and Clarity: 
+## **Step 2:** Configure `Texture Intensity` for Increased Perception and Clarity: 
 
 To configure `Texture Intensity` for increased perception and clarity in the scene, move the slider to the right.
 
@@ -273,7 +299,7 @@ Once you have configured this argument to your liking, you might notice that the
 
 ---
 
-### Step 3: Configure `Local Contrast Intensity` to Remove Some Contrast
+## **Step 3:** Configure `Local Contrast Intensity` to Remove Some Contrast
 
 In order to remove some contrast from the image, while still keeping the benefits that iMMERSE Pro Clarity has to offer, you can configure the `Local Contrast Intensity` argument!
 

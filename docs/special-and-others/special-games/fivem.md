@@ -8,7 +8,7 @@ grand_parent: Special and Others
 
 {: .warning-title }
 > IMPORTANT NOTICE:
-> 
+>
 > As of Aug. 06.2023, FiveM released an update to their client, blocking version 5.9 and above. This also blocked the hotfix designed to prevent crashes.
 >
 > As of Sep 01.2023, this block remains in place. However, an update to the beta and the latest `Update channel` has been pushed to unblock version 5.9.1 users.
@@ -25,13 +25,13 @@ The installation process remains the same as before.
 
 FiveM, a modification platform for Grand Theft Auto V typically used for PVP and roleplay servers, demands specific procedures to integrate ReShade with the client properly.
 
-Unfortunately, this design choice stems from the FiveM developers and there is nothing that the ReShade community can do to circumvent this! 
+Unfortunately, this design choice stems from the FiveM developers and there is nothing that the ReShade community can do to circumvent this!
 
 To install ReShade to FiveM, please follow the step-by-step guide below:
 
 ---
 
-## Step 1: Install ReShade to GTAV
+## **Step 1:** Install ReShade to GTAV
 
 Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.me).
 
@@ -46,7 +46,7 @@ Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.m
 
 ---
 
-## Step 2: Ensure ReShade Files are Installed
+## **Step 2:** Ensure ReShade Files are Installed
 
 After installing ReShade to GTAV, open your GTAV folder. 
 
@@ -69,7 +69,7 @@ You should notice the files:
 
 ---
 
-## Step 3: Locate your FiveM Installation
+## **Step 3:** Locate your FiveM Installation
 
 Open your FiveM install location.
     
@@ -81,16 +81,15 @@ Typically, this is `C:\Users\YOUR_USERNAME_HERE\AppData\Local\FiveM`. Replace `Y
 ---
 
 
-## Step 4: Create or Navigate to the Plugins Directory
+## **Step 4:** Create or Navigate to the Plugins Directory
 
-In the `FiveM Application Data` folder, create a `plugins` directory.
+In the `FiveM Application Data` folder, create a `plugins` directory, then enter it.
 
-{: .note}
-If the folder already exists, skip this step.
+If the `plugins` directory already exists, just enter it.
 
 ---
 
-## Step 5: Transfer ReShade Files to the FiveM Plugins Directory
+## **Step 5:** Transfer ReShade Files to the FiveM Plugins Directory
 
 Transfer the ReShade files and the single folder from your GTAV directory into the FiveM `plugins` folder:
 
@@ -100,16 +99,13 @@ Transfer the ReShade files and the single folder from your GTAV directory into t
 
  * `ReShade-Shaders` - ReShade Shaders & Textures Folder
 
-{: .warning }
 Avoid copying and pasting these files, as it can cause complications, instead cut and paste, or move the files.
 
 ---
 
 ## Step 6: Check for FiveM Errors using the Console
 
-Launch FiveM and inspect the console for issues using the **F8 key**.
-
-
+Launch FiveM and inspect the **entire** console for issues using the **F8 key**.
 
 If the ReShade installer can't pinpoint the FiveM install location, or if your ReShade ID has been altered, the following error might arise:
 
@@ -131,7 +127,3 @@ On `Beta` or `Latest (Unstable)` clients of FiveM, your console will have lots t
 
 - `Ignored graphics mod \Grand Theft Auto V\dxgi.dll - these should go in plugins/ now!`<br><br>
     If this pops up, you might have neglected to place ReShade in the `plugins` directory of your FiveM installation, or other mod injections persist in your GTAV folder.
-
-{: .warning }
-Errors related to using version 5.9 or above suggest that you haven't transitioned your FiveM Release Channel to Beta or Latest, or that you're not using the latest ReShade version.
-
