@@ -1,0 +1,21 @@
+---
+title: 32 or 64 Bits 
+layout: page
+parent: Basic ReShade Guides
+nav_order: 4
+---
+## Finding out if a game has a 32 or 64 Bits architecture ##
+
+If you downloaded a ReShade Addon or tried to install ReShade manually you likely seen that the files end with 32 or 64.
+
+That number shows in with architecture the addon or ReShade .dll file was made for.
+
+If you have doubts on what file to install on your game, there is a very simple way to find out if the game is 32 or 64 bits.
+
+Open the game you want to check and Alt+Tab out of it.
+
+Then open up Task Manager and look for the process of the game.
+
+If the game has a 32 bit architecture it should show up with the tag (32 Bits) after the process name.
+
+If it does not have that then the game utilizes a 64 bits architecture.

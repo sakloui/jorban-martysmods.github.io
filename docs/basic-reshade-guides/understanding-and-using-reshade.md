@@ -1,79 +1,83 @@
 ---
-title: Understanding ReShade's UI
+title: Understanding and Using ReShade
 layout: default
 nav_order: 2
 parent: Basic ReShade Guides
 ---
 
-# Understanding ReShade's UI
+# Mastering ReShade
 
-Understanding the UI of ReShade is key to using it effectively. Knowing what ReShade offers and how to navigate its systems is extremely beneficial for both creators of presets and individuals looking to utilizing already created presets!
+Understanding the ReShade UI is key to using it effectively. Knowing what it offers and how to navigate its menu is beneficial!
 
-To open ReShade, press `HOME` (or `POS1` in some locales) to start the on-screen tutorial.
+Press `HOME` (or `POS1` in some locales) to start the on-screen tutorial.
 
 If you're new to ReShade, follow this tutorial - it covers the basics and sets a solid foundation. **Don't skip it!**
 
-If you have skipped the tutorial already, do not worry - we'll cover each feature and menu in this guide.
+Skipped the tutorial already? No worries - we'll cover each feature and menu in this guide.
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Home Tab</summary>
+<summary>Exploring the Home Tab</summary>
 
-The `Home` tab in ReShade houses several buttons and menus that you can interact with in order to change the way your game looks, as well as configure specific shaders.
+The `Home` tab in ReShade houses all shaders and their configurations.
 
-As the `Home` tab is one of the most crucial tabs in ReShade for the end user, it can be a bit intricate, but everything that you will need to better utilize each function.
+Being one of the most crucial tabs in ReShade, it can be a bit intricate.
 
-Below will be a dropdown that provides a disection of each part of the `Home` tab to help you become more familiar with it!
+Below, we'll dissect each part of the `Home` tab to help you grasp its offerings:
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Preset Selection Bar</summary>
+<summary>Current Preset</summary>
 
-The image below will show you where the preset selection section of ReShade's `Home` tab exists:
+First, identify the active preset in ReShade, as shown below:
 
 ![Current Preset](../images/understanding-and-using-reshade/rsui_preset.png){: style="max-width:65%" }
 
-This area allows the user to select, create, or configure their preset to auto save once changes are made.
+On the right of the preset dropdown, there's a `+` button for creating new presets. The diskette icon next to it is for saving your preset.
 
-By default, ReShade saves presets in the game directory, in a file called `ReShadePreset.ini`.
+On the left, `<` and `>` buttons switch to the next available preset in the same directory. ReShade will smartly identify which `.ini` files in your game directory are presets!
+
+By default, ReShade saves presets in the game directory, in a file called `ReShadePreset.ini` unless you rename it.
 
 </details>
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Shader List</summary>
+<summary>Understanding the Technique List</summary>
 
-The area below highlights ReShade's shader list within the `Home` tab:
+The highlighted area below shows ReShade's `Technique List` within the `Home` tab:
 
 ![Technique List](../images/understanding-and-using-reshade/rsui_effectlist.png){: style="max-width:65%" }
 
-This list will provide the user with all of the shaders that is installed for ReShade. If a shader is disabled, there will be a blank square to the left of the shader, and if it's enabled, there will be a check to the left of the shader.
+This section lists all the shaders installed by you or the ReShade Installer. 
+
+Keep in mind, that your `Technique List` may not match the image above. Its size can change based on the preset you choose and the shader repositories you install.
 
 </details>
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Edit Pre-processor Definitions Button</summary>
+<summary>Global Pre-processor Definitions</summary>
 
-The `Edit Global Preprocessor Definitions` button, shown below, lets you control aspects of shaders and depth before they are loaded by ReShade:
+The `Edit Global Preprocessor Definitions` button, shown below, lets you control effects before they load. Definitions set here act like switches, directing how shaders work:
 
 ![Global Pre-processor Definitions](../images/understanding-and-using-reshade/rsui_globalpreprocessors.png){: style="max-width:65%" }
 
-Clicking the `Edit Preprocessor Definitions` button will show two tabs:
+Clicking this button above will open a window with two tabs:
 
-* Global:
+* `Global`:
 
-  * The Global tab will be where you can add or edit definitions that apply to all presets.
+  * Global will be where you can add or edit definitions that apply to all presets.
 
     ![Global Pre-processor Window](../images/understanding-and-using-reshade/rsui_globalpreprocessors_window.png)
 
-* Current Preset:
+* `Current Preset`:
 
-  * The Current Preset tab will likely not have any definitions by default, however, you can add and remove to apply these to your current preset!
+  * Current Preset will likely not have any definitions by default, however, you can add and remove to apply these to your current preset!
 
     ![Global Pre-processor Current Preset](../images/understanding-and-using-reshade/rsui_globalpreprocessors_current_preset.png)
 
@@ -85,22 +89,22 @@ When adjusting these options, you need to know the pre-processor definition's na
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Shader Parameters List</summary>
+<summary>Understanding Effect Parameters</summary>
 
-The image below highlights the shader parameter list that is in the ReShade `Home` tab:
+The image below shows the shader's effect parameters:
 
 ![Effect Parameters](../images/understanding-and-using-reshade/rsui_effect_params.png){: style="max-width:65%" }
 
 When you turn on a shader in ReShade, you'll see its options and parameters in the highlighted section.
 
-Changes to shader parameters happen in realtime. So, any changes you make show up right away, letting you see the effect of your changes instantly.
+Changes to Shader parameters happen in realtime. So, any changes you make show up right away, letting you see the effect of your changes instantly.
 
 </details>
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Reload Button</summary>
+<summary>Understanding the Reload Button</summary>
 
 The `Reload` button, shown in the image below, tells ReShade to look again at the files in the Shaders and Textures folders:
 
@@ -113,7 +117,7 @@ Clicking the `Reload` button lets you add new effects without restarting the gam
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Performance Mode Button</summary>
+<summary>Understanding Performance Mode</summary>
 
 The `Performance Mode` setting, shown in the image below, boosts the speed of compilation processes and ReShade's memory operations, cutting down on performance overhead:
 
