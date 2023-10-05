@@ -19,7 +19,34 @@ Click the suite you'd like to start configuring below:
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Shader Guides</summary>
 
-This section will guide you through setting up and configuring specific shaders within the standard iMMERSE shader suite!
+Each dropdown will provide guides for the best configurations for each shader!
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Launchpad</summary>
+
+
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE MXAO</summary>
+
+
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Sharpen</summary>
+
+
+
+</details>
 
 ---
 
@@ -30,7 +57,8 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
 ---
 
-## Understanding the Basic Parameters of iMMERSE Anti Aliasing:
+<details markdown="block" class="details-tree">
+<summary>General Parameters</summary>
 
 * `Edge Detection Type`: 
 
@@ -44,12 +72,12 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
     * This preprocessor for iMMERSE Anti Aliasing extends the color detection range of SMAA, allowing for increased detection of edges. The usable values are 0 and 1.
 
+</details>
+
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Configuring iMMERSE Anti Aliasing with Depth (Best Output)</summary>
-
-# Configuring iMMERSE Anti Aliasing for Best Output with Depth
+<summary>With Depth</summary>
 
 ## **Step 1:** Select the option `View edges` for the parameter `Debug Output`:
 
@@ -157,9 +185,7 @@ You can now disable `Debug Output` and continue to the game as usual!
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Configuring iMMERSE Anti Aliasing without Depth</summary>
-
-# Configuring iMMERSE Anti Aliasing for Best Output Without Depth
+<summary>Without Depth</summary>
 
 ## **Step 1:** Select the option `View edges` for the parameter `Debug Output`:
 
@@ -244,6 +270,17 @@ You can now disable `Debug Output` and continue to the game as usual!
 
 This section will guide you through setting up and configuring specific shaders within the iMMERSE Pro shader suite!
 
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Pro RTGI</summary>
+
+
+
+</details>
+
+---
+
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro Clarity</summary>
 
@@ -254,13 +291,7 @@ This allows you to add a soft glow or sharp, gritty textures to your game withou
 Below is our guide on how to utilize Clarity to your advantage, and what you should look out for in order to get the best image possible!
 
 <details markdown="block" class="details-tree">
-<summary>Adding Details | No Depth Separation</summary>
-
-Since Clarity is a local contrasting sharpener, you can easily get more perceived quality or "Clarity" out of your game's textures. 
-
-This guide will go over how to do so without destroying your image altogether without using depth separation!
-
----
+<summary>Without Depth</summary>
 
 ## **Step 1:** Enable the Shader
 
@@ -327,6 +358,33 @@ If you get results that are close to the original game, with the added benefits 
 
 </details>
 
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Pro Depth of Field</summary>
+
+
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Pro ReGrade</summary>
+
+
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Pro Solaris</summary>
+
+
+
+</details>
+
 </details>
 
 ---
@@ -334,6 +392,33 @@ If you get results that are close to the original game, with the added benefits 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate Shader Guides</summary>
 
-Stay tuned for iMMERSE Ultimate Shaders - coming soon!
+Add text here about iMMERSE Ultimate Shaders
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Ultimate Convolution Bloom</summary>
+
+
+
+</details>
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Ultimate Addon Guides</summary>
+
+Add text here about iMMERSE Ultimate Addons
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Ultimate ReGrade +</summary>
+
+
+
+</details>
 
 </details>
