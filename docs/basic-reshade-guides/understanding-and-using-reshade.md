@@ -7,7 +7,7 @@ parent: Basic ReShade Guides
 
 # Understanding ReShade's UI
 
-Understanding the ReShade UI is key to using it effectively. Knowing what it offers and how to navigate its menu is beneficial!
+Understanding the UI of ReShade is key to using it effectively. Knowing what ReShade offers and how to navigate its systems is extremely beneficial for both creators of presets and individuals looking to utilizing already created presets!
 
 To open ReShade, press `HOME` (or `POS1` in some locales) to start the on-screen tutorial.
 
@@ -29,7 +29,7 @@ Below will be a dropdown that provides a disection of each part of the `Home` ta
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Preset Selection Section</summary>
+<summary>Preset Selection Bar</summary>
 
 The image below will show you where the preset selection section of ReShade's `Home` tab exists:
 
@@ -46,11 +46,11 @@ By default, ReShade saves presets in the game directory, in a file called `ReSha
 <details markdown="block" class="details-tree">
 <summary>The Shader List</summary>
 
-The highlighted area below shows ReShade's shader list within the `Home` tab:
+The area below highlights ReShade's shader list within the `Home` tab:
 
 ![Technique List](../images/understanding-and-using-reshade/rsui_effectlist.png){: style="max-width:65%" }
 
-This list will provide the user with all of the shaders that ReShade can detect being installed. If a shader is disabled, there will be a blank square to the left of the shader, and if it's enabled, there will be a check to the left of the shader.
+This list will provide the user with all of the shaders that is installed for ReShade. If a shader is disabled, there will be a blank square to the left of the shader, and if it's enabled, there will be a check to the left of the shader.
 
 </details>
 
