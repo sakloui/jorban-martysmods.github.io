@@ -11,4 +11,5 @@ _site/
 vendor/
 Gemfile.lock
 Gemfile.lock
-boot server.ps1
+boot server.cmd
+
