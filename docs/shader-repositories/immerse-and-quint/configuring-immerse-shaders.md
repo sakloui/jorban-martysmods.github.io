@@ -92,7 +92,7 @@ iMMERSE MXAO is Marty's new iteration of qUINT MXAO, a robust ambient occlusion 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Configuring iMMERSE Sharpen</summary>
+<summary>Configuring iMMERSE MXAO</summary>
 
 ## **Step 1:** Finding a testing area:
 
@@ -117,7 +117,7 @@ iMMERSE Sharpen is Marty's new iteration of DELC, a local contrast sharpener.
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Configuring iMMERSE MXAO</summary>
+<summary>Configuring iMMERSE Sharpen</summary>
 
 ## **Step 1:** Finding a testing area:
 
