@@ -96,7 +96,7 @@ For $10 USD, you can access this suite, which features:
 
 ---
 
-## Downloading and Installing iMMERSE Pro Shaders
+## Downloading and Installing iMMERSE Ultimate Shaders
 
 To access the iMMERSE Ultimate Shaders, make sure you're a current subscriber to [Pascal's Patreon for the $10 USD Pathtracers tier](http://www.patreon.com/mcflypg).
 

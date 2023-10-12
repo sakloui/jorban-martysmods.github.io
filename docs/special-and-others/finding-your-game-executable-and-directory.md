@@ -20,20 +20,36 @@ If you're having trouble locating your game's executable, here's a step-by-step 
 
 Pick one of the options below, to open Task Manager:
 
-Option 1:
+---
 
-   * Right-click the Windows Taskbar and select "Task Manager".
-      ![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global.png)(Windows 11)
+<details markdown="block" class="details-tree">
+<summary>Option 1: Windows Taskbar</summary>
 
-      ![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global_win10.png)(Windows 10)
+Right-click the Windows Taskbar and select "Task Manager".
 
-Option 2:
+   Windows 11:<br>![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global.png)
 
-   * Press `Control + Alt + Delete` simultaneously, then select `Task Manager`.
+   Windows 10:<br>![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global_win10.png)
 
-Option 3:
+</details>
 
-   * Press `Control + Shift + Escape` simultaneously.
+---
+
+<details markdown="block" class="details-tree">
+<summary>Option 2: Control + Alt + Delete</summary>
+
+Press `Control + Alt + Delete` simultaneously, then select `Task Manager`.
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Option 3: Control + Shift + Escape</summary>
+
+Press `Control + Shift + Escape` simultaneously.
+
+</details>
 
 ---
 
@@ -43,9 +59,9 @@ Option 3:
 
 2. In the `Processes` tab, locate your game, right-click it, then choose `Open file location`.
 
-    ![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global.png) (Windows 11)
+    Windows 11:<br>![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global.png)
 
-    ![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global_win10.png) (Windows 10)
+    Windows 10:<br>![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global_win10.png) 
 
 This will highlight your game's application in File Explorer. 
 
