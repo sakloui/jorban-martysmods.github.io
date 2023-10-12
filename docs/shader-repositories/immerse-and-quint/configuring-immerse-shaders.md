@@ -8,29 +8,157 @@ grand_parent: Shader Repositories
 
 # Configuring iMMERSE Shaders
 
-Welcome to the configuration guide for iMMERSE Shaders. 
-
-This guide will walk you through each step of configuring the shaders under the entire iMMERSE suite.
-
-Click the suite you'd like to start configuring below:
+This guide will walk you through each step of configuring shaders under the entire iMMERSE suite.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Shader Guides</summary>
 
-This section will guide you through setting up and configuring specific shaders within the standard iMMERSE shader suite!
+This section will guide you through setting up and configuring specific shaders within the iMMERSE Pro shader suite!
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Launchpad</summary>
+
+iMMERSE Launchpad is a helper shader, in so, there won't be a whole lot of changes you can see on screen, or configuring required.
+
+However, there are neat things you can do with it listed below:
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Smoothed Normals</summary>
+
+Smoothed Normals allows you to better smooth over the normals that are given to shaders from ReShade.
+
+Simply, toggle on Smoothed Normals in Launchpad's avaliable arguments to enable it.
+
+---
+
+* Smoothed Normals
+    ![Smoothed Normals](../images/configuring-immerse-shaders/launchpad_smoothed_normals.png)
+
+* Original Normals
+    ![Original Normals](../images/configuring-immerse-shaders/launchpad_original_normals.png)
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Textured Normals</summary>
+
+Textured Normals allows you to bring more detail out into the normals that are given to shaders from ReShade.
+
+Textured Normals requires Smoothed Normals to be active beforehand.
+
+---
+
+## **Step 1:** WIP
+
+WIP NEEDS MORE INFORMATION IN REGARDS TO HOW TO BETTER SET UP TEXTURED NORMALS
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Optical Flow</summary>
+
+Optical Flow is a simulation of movement within the screen space. This allows shaders to more acurately account for the motion of your game camera and objects in motion.
+
+Shaders, like iMMERSE Pro RTGI require Optical Flow in order to work properly.
+
+---
+
+## **Step 1:** WIP
+
+WIP NEEDS MORE INFORMATION IN REGARDS TO HOW OPTICAL FLOW ACTUALLY WORKS AND HOW TO SET UP
+
+
+</details>
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE MXAO</summary>
+
+iMMERSE MXAO is Marty's new iteration of qUINT MXAO, a robust ambient occlusion shader based off of GTAO and Irradiance Bitfields.
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Configuring iMMERSE MXAO</summary>
+
+## **Step 1:** Finding a testing area:
+
+While iMMERSE MXAO can be used anywhere, it's best to find a **static area with complex geometry** so that you can better configure the settings that you have avalible to you.
+
+---
+
+## **Step 2:** Consider the following AO Modes:
+
+
+</details>
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Sharpen</summary>
+
+iMMERSE Sharpen is Marty's new iteration of DELC, a local contrast sharpener.
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Configuring iMMERSE Sharpen</summary>
+
+## **Step 1:** Finding a testing area:
+
+While iMMERSE Sharpen can be used anywhere, it's best to find a **static area with complex texturing** so that you can better configure the settings that you have avalible to you.
+
+---
+
+## **Step 2:** Configuring Sharpen Intensity
+
+iMMERSE Sharpen has a single slider. Sharpen Intensity. This means that it takes very little in order to properly sharpen the scene.
+
+You want to manage this argument where there is a noticble increase in game details, but not overly sharpening what there is to offer.
+
+Start at the value of `0.000` and work your way up until you're able to find details being presnted more in the scene you've chosen.
+
+---
+
+* Base Image:
+    ![Base Image](../images/configuring-immerse-shaders/sharpen_no_sharpen.png)
+
+* Properly Sharpened Image:
+    ![Sharpened Image](../images/configuring-immerse-shaders/sharpen_properly_sharpened.png)
+
+* Badly Sharpened Image:
+    ![Badly Sharpened Image](../images/configuring-immerse-shaders/sharpen_badly_sharpened.png)
+
+</details>
+
+</details>
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Anti Aliasing</summary>
 
-iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the performance of the original shader depending on your settings!
+iMMERSE Anti-Aliasing is Marty's itteration of SMAA.
 
 ---
 
-## Understanding the Basic Parameters of iMMERSE Anti Aliasing:
+<details markdown="block" class="details-tree">
+<summary>General Parameters</summary>
 
 * `Edge Detection Type`: 
 
@@ -44,12 +172,12 @@ iMMERSE Anti-Aliasing is a robust iteration of SMAA offering up to twice the per
 
     * This preprocessor for iMMERSE Anti Aliasing extends the color detection range of SMAA, allowing for increased detection of edges. The usable values are 0 and 1.
 
+</details>
+
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Configuring iMMERSE Anti Aliasing with Depth (Best Output)</summary>
-
-# Configuring iMMERSE Anti Aliasing for Best Output with Depth
+<summary>With Depth</summary>
 
 ## **Step 1:** Select the option `View edges` for the parameter `Debug Output`:
 
@@ -157,9 +285,7 @@ You can now disable `Debug Output` and continue to the game as usual!
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Configuring iMMERSE Anti Aliasing without Depth</summary>
-
-# Configuring iMMERSE Anti Aliasing for Best Output Without Depth
+<summary>Without Depth</summary>
 
 ## **Step 1:** Select the option `View edges` for the parameter `Debug Output`:
 
@@ -244,6 +370,17 @@ You can now disable `Debug Output` and continue to the game as usual!
 
 This section will guide you through setting up and configuring specific shaders within the iMMERSE Pro shader suite!
 
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Pro RTGI</summary>
+
+
+
+</details>
+
+---
+
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro Clarity</summary>
 
@@ -254,13 +391,7 @@ This allows you to add a soft glow or sharp, gritty textures to your game withou
 Below is our guide on how to utilize Clarity to your advantage, and what you should look out for in order to get the best image possible!
 
 <details markdown="block" class="details-tree">
-<summary>Adding Details | No Depth Separation</summary>
-
-Since Clarity is a local contrasting sharpener, you can easily get more perceived quality or "Clarity" out of your game's textures. 
-
-This guide will go over how to do so without destroying your image altogether without using depth separation!
-
----
+<summary>Without Depth</summary>
 
 ## **Step 1:** Enable the Shader
 
@@ -327,6 +458,33 @@ If you get results that are close to the original game, with the added benefits 
 
 </details>
 
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Pro Depth of Field</summary>
+
+
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Pro ReGrade</summary>
+
+
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Pro Solaris</summary>
+
+
+
+</details>
+
 </details>
 
 ---
@@ -334,6 +492,33 @@ If you get results that are close to the original game, with the added benefits 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate Shader Guides</summary>
 
-Stay tuned for iMMERSE Ultimate Shaders - coming soon!
+This section will guide you through setting up and configuring specific shaders within the iMMERSE Ultimate shader suite!
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Ultimate Convolution Bloom</summary>
+
+
+
+</details>
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Ultimate Addon Guides</summary>
+
+This section will guide you through setting up and configuring specific shaders within the iMMERSE Ultimate Addon suite!
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>iMMERSE Ultimate ReGrade +</summary>
+
+
+
+</details>
 
 </details>
