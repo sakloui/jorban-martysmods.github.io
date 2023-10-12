@@ -9,40 +9,37 @@ grand_parent: Special and Others
 {: .warning-title }
 > IMPORTANT NOTICE:
 >
-> As of Aug. 06.2023, FiveM released an update to their client, blocking version 5.9 and above. This also blocked the hotfix designed to prevent crashes.
+> As of Aug. 06.2023, FiveM released an update to their client, blocking version 5.9 and above. This also blocked the hotfix designed to prevent crashes. 
 >
 > As of Sep 01.2023, this block remains in place. However, an update to the beta and the latest `Update channel` has been pushed to unblock version 5.9.1 users.
 >
-> Therefore, **switch your FiveM `Update channel` to `Beta` or `Latest`**, and **install the latest version of ReShade** from [ReShade's website](https://reshade.me). - Jorban Sep 01.2023
+> Therefore, **switch your FiveM `Update channel` to `Beta` or `Latest`**, and **install the latest version of ReShade** from [ReShade's website](https://reshade.me).
 >
 > ![FiveM Release Channel](../images/fivem/fivem_release_channel.png)
-
-The installation process remains the same as before.
+>
+> Passing up this notice will not allow ReShade to work properly in your game. Do not utilize older builds of ReShade. - Jordan Oct. 10th, 2023
 
 ---
 
-# FiveM
+## FiveM
 
-FiveM, a modification platform for Grand Theft Auto V typically used for PVP and roleplay servers, demands specific procedures to integrate ReShade with the client properly.
+FiveM is a modification platform for Grand Theft Auto V, typically used for PVP and roleplay servers. 
 
-Unfortunately, this design choice stems from the FiveM developers and there is nothing that the ReShade community can do to circumvent this!
+Unfortunately, FiveM requires procedures from the end user in order to properlly allow ReShade to be installed to their client.
 
-To install ReShade to FiveM, please follow the step-by-step guide below:
+This design choice stems from the FiveM developers and there is nothing that the ReShade community can do to circumvent this. 
+
+Please do not ask for additional help in relation to getting FiveM to work in accordance of the ReShade Discord, as all of the information you need to get ReShade running in FiveM is in this guide.
 
 ---
 
 ## **Step 1:** Install ReShade to GTAV
 
-Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.me).
+Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.me). Always install the latest version of ReShade. Using older builds of ReShade will only cause issues for you in the future.
 
-* If you're unsure on how to install ReShade to GTAV, you can follow our guide for [installing ReShade](https://guides.martysmods.com/docs/basic-reshade-guides/downloading-and-installing-reshade/)!
+If you're unsure on how to install ReShade to GTAV, you can follow our guide for [installing ReShade](https://guides.martysmods.com/docs/basic-reshade-guides/downloading-and-installing-reshade/)!
 
-* Please ensure that you are using the latest version of ReShade!
-
-{: .warning }
-> Ensure ReShade is installed to `GTA5.exe`. 
-> 
-> Installing to the launcher provides an incorrect binary, preventing proper ReShade injection.
+**When installing ReShade, make sure that you are installing ReShade to the `GTA5.exe` executable file. Installing to the launcher will provide you with an incorrect ReShade install, and will not work for you.**
 
 ---
 
@@ -50,7 +47,9 @@ Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.m
 
 After installing ReShade to GTAV, open your GTAV folder. 
 
-You should notice the files:
+If you're unsure where your game directory is located, please follow our guide on [locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+
+Once in your GTAV folder, you will see the files:
 
 * `dxgi.dll` - ReShade Binary File
 
@@ -58,25 +57,17 @@ You should notice the files:
 
 * `ReShade-Shaders` - ReShade Shaders & Textures Folder
 
-    * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
-
-    * Ensure that you also have file extensions enabled in Windows in order to properly see these files and their extensions.<br> We have a guide here on [how to enable file extensions in Windows](https://guides.martysmods.com/docs/special-and-others/enabling-windows-file-extensions/)!
-
-{: .note }
-> These files are essential for Step 5. 
->
-> **Do not close the folder until the end of the procedure!**
+If you cannot find the files, please follow the guide here on [enabling file extensions in Windows](https://guides.martysmods.com/docs/special-and-others/enabling-windows-file-extensions/)!
 
 ---
 
 ## **Step 3:** Locate your FiveM Installation
 
 Open your FiveM install location.
-    
-- If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
 
-{: .note }
 Typically, this is `C:\Users\YOUR_USERNAME_HERE\AppData\Local\FiveM`. Replace `YOUR_USERNAME_HERE` with your actual username. Your install location might vary slightly.
+
+If you're unable to find your FiveM install location, please follow our guide on [locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
 
 ---
 
@@ -93,11 +84,11 @@ If the `plugins` directory already exists, just enter it.
 
 Transfer the ReShade files and the single folder from your GTAV directory into the FiveM `plugins` folder:
 
- * `dxgi.dll` - ReShade Binary File
+* `dxgi.dll` - ReShade Binary File
 
- * `reshade.ini` - ReShade Settings File
+* `reshade.ini` - ReShade Settings File
 
- * `ReShade-Shaders` - ReShade Shaders & Textures Folder
+* `ReShade-Shaders` - ReShade Shaders & Textures Folder
 
 Avoid copying and pasting these files, as it can cause complications, instead cut and paste, or move the files.
 
@@ -107,7 +98,7 @@ Avoid copying and pasting these files, as it can cause complications, instead cu
 
 Launch FiveM and inspect the **entire** console for issues using the **F8 key**.
 
-If the ReShade installer can't pinpoint the FiveM install location, or if your ReShade ID has been altered, the following error might arise:
+You are looking for the error below, please read it:
 
 `Blocked load of ReShade Version 5 or higher - it has a bug that will lead to game crashes in GPU drivers or d3d11.dll.`<br>
     `If you want to force it to load anyway, add the following section to {location of CitizenFX.ini file.}`<br>
@@ -116,14 +107,12 @@ If the ReShade installer can't pinpoint the FiveM install location, or if your R
 
 ![Error Screenshot](../images/fivem/fivem_reshade5_bs.png)
 
-To remedy this, visit the location mentioned in the error and incorporate the specified ID from your F8 console error into the `CitizenFX.ini` file located in the directory in the error. The directory where `CitizenFX.ini` may change per user, but is noted in green.
+The location of your `CitizenFX.ini` file will be noted in green in your game console.
 
-{: .note }
-On `Beta` or `Latest (Unstable)` clients of FiveM, your console will have lots to unpack. The error discussed above will likely require the user to check the actual FiveM log file, or scroll up to find it.
+Visit the location of your `CitizenFX.ini` file, and open it.
 
----
+Then copy the entire error from `[Addons]` downward into your CitizenFX.ini file.
 
-## Potential Errors:
+The error you are copying has to be exactly as it was seen in the game console, otherwise it will not work.
 
-- `Ignored graphics mod \Grand Theft Auto V\dxgi.dll - these should go in plugins/ now!`<br><br>
-    If this pops up, you might have neglected to place ReShade in the `plugins` directory of your FiveM installation, or other mod injections persist in your GTAV folder.
+Additionally, keep in mind that on the `Beta` or `Latest (Unstable)` clients of FiveM, your console will have lots to unpack. The error discussed above will likely require the user to check the actual FiveM log file, or scroll up to find it.
