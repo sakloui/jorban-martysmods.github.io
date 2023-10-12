@@ -11,3 +11,5 @@ _site/
 vendor/
 Gemfile.lock
 Gemfile.lock
+boot server.cmd
+
