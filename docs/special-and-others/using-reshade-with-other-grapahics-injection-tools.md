@@ -1,7 +1,7 @@
 ---
 title: Using ReShade with Other Graphics Injection Tools
 layout: page
-nav_order: 99
+nav_order: 98
 parent: Special and Others
 ---
 

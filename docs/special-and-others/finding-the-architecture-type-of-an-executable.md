@@ -2,7 +2,7 @@
 title: Finding the Archtecture Type of an Executable
 layout: page
 parent: Special and Others
-nav_order: 98
+nav_order: 97
 ---
 
 ## Finding the Architecture Type of an Executable
