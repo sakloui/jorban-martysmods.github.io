@@ -37,7 +37,7 @@ Please do not ask for additional help in relation to getting FiveM to work in ac
 
 Begin by installing ReShade to GTAV from the [ReShade website](https://reshade.me). Always install the latest version of ReShade. Using older builds of ReShade will only cause issues for you in the future.
 
-If you're unsure on how to install ReShade to GTAV, you can follow our guide for [installing ReShade](https://guides.martysmods.com/docs/basic-reshade-guides/downloading-and-installing-reshade/)!
+If you're unsure on how to install ReShade to GTAV, you can follow our guide for [installing ReShade](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/)!
 
 **When installing ReShade, make sure that you are installing ReShade to the `GTA5.exe` executable file. Installing to the launcher will provide you with an incorrect ReShade install, and will not work for you.**
 
