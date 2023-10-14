@@ -22,7 +22,7 @@ Install ReShade to Grand Theft Auto V normally.
 
 Ensure that you are selecting the `GTAV.exe` exectuable when installing ReShade, otherwise you will be installing ReShade improperly.
 
-If you need help with the ReShade installation, refer to [our guide on downloading and installing ReShade.](https://guides.martysmods.com/docs/basic-reshade-guides/downloading-and-installing-reshade/)
+If you need help with the ReShade installation, refer to [our guide on downloading and installing ReShade.](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/)
 
 ---
 
