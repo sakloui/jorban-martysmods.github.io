@@ -1,8 +1,8 @@
 ---
-title: Understanding ReShade's UI
+title: ReShade's UI & Depth Buffer
 layout: default
 nav_order: 2
-parent: Basic ReShade Guides
+parent: ReShade Guides
 ---
 
 # Understanding ReShade's UI
@@ -33,7 +33,7 @@ Below will be a dropdown that provides a disection of each part of the `Home` ta
 
 The image below will show you where the preset selection section of ReShade's `Home` tab exists:
 
-![Current Preset](../images/understanding-and-using-reshade/rsui_preset.png){: style="max-width:65%" }
+![Current Preset](../images/reshades-ui-and-depth-buffer/rsui_preset.png){: style="max-width:65%" }
 
 This area allows the user to select, create, or configure their preset to auto save once changes are made.
 
@@ -48,7 +48,7 @@ By default, ReShade saves presets in the game directory, in a file called `ReSha
 
 The area below highlights ReShade's shader list within the `Home` tab:
 
-![Technique List](../images/understanding-and-using-reshade/rsui_effectlist.png){: style="max-width:65%" }
+![Technique List](../images/reshades-ui-and-depth-buffer/rsui_effectlist.png){: style="max-width:65%" }
 
 This list will provide the user with all of the shaders that is installed for ReShade. If a shader is disabled, there will be a blank square to the left of the shader, and if it's enabled, there will be a check to the left of the shader.
 
@@ -61,7 +61,7 @@ This list will provide the user with all of the shaders that is installed for Re
 
 The `Edit Global Preprocessor Definitions` button, shown below, lets you control aspects of shaders and depth before they are loaded by ReShade:
 
-![Global Pre-processor Definitions](../images/understanding-and-using-reshade/rsui_globalpreprocessors.png){: style="max-width:65%" }
+![Global Pre-processor Definitions](../images/reshades-ui-and-depth-buffer/rsui_globalpreprocessors.png){: style="max-width:65%" }
 
 Clicking the `Edit Preprocessor Definitions` button will show two tabs:
 
@@ -69,13 +69,13 @@ Clicking the `Edit Preprocessor Definitions` button will show two tabs:
 
   * The Global tab will be where you can add or edit definitions that apply to all presets.
 
-    ![Global Pre-processor Window](../images/understanding-and-using-reshade/rsui_globalpreprocessors_window.png)
+    ![Global Pre-processor Window](../images/reshades-ui-and-depth-buffer/rsui_globalpreprocessors_window.png)
 
 * Current Preset:
 
   * The Current Preset tab will likely not have any definitions by default, however, you can add and remove to apply these to your current preset!
 
-    ![Global Pre-processor Current Preset](../images/understanding-and-using-reshade/rsui_globalpreprocessors_current_preset.png)
+    ![Global Pre-processor Current Preset](../images/reshades-ui-and-depth-buffer/rsui_globalpreprocessors_current_preset.png)
 
 {: .note }
 When adjusting these options, you need to know the pre-processor definition's name and range. This info is usually in the shader comments. To look at FX files and their contents, try using advanced text editors like [Notepad++](https://notepad-plus-plus.org/) or [Visual Studio Code](https://code.visualstudio.com/).
@@ -89,7 +89,7 @@ When adjusting these options, you need to know the pre-processor definition's na
 
 The image below highlights the shader parameter list that is in the ReShade `Home` tab:
 
-![Effect Parameters](../images/understanding-and-using-reshade/rsui_effect_params.png){: style="max-width:65%" }
+![Effect Parameters](../images/reshades-ui-and-depth-buffer/rsui_effect_params.png){: style="max-width:65%" }
 
 When you turn on a shader in ReShade, you'll see its options and parameters in the highlighted section.
 
@@ -104,7 +104,7 @@ Changes to shader parameters happen in realtime. So, any changes you make show u
 
 The `Reload` button, shown in the image below, tells ReShade to look again at the files in the Shaders and Textures folders:
 
-![Reload Button](../images/understanding-and-using-reshade/rsui_reload.png){: style="max-width:65%" }
+![Reload Button](../images/reshades-ui-and-depth-buffer/rsui_reload.png){: style="max-width:65%" }
 
 Clicking the `Reload` button lets you add new effects without restarting the game. It also shows any changes you make to the shader code while you're working on it, so it's a useful tool for making real-time changes to the shader's code!
 
@@ -117,7 +117,7 @@ Clicking the `Reload` button lets you add new effects without restarting the gam
 
 The `Performance Mode` setting, shown in the image below, boosts the speed of compilation processes and ReShade's memory operations, cutting down on performance overhead:
 
-![Performance Mode](../images/understanding-and-using-reshade/rsui_performance_mode.png){: style="max-width:65%" }
+![Performance Mode](../images/reshades-ui-and-depth-buffer/rsui_performance_mode.png){: style="max-width:65%" }
 
 `Performance Mode` will limit changes to a shader's parameters.
 
@@ -134,7 +134,7 @@ If you notice anything odd while using Performance Mode, **always** let the shad
 
 The `Add-ons Tab`, shown below, is your control center for managing ReShade Add-ons:
 
-![Add-ons Tab](../images/understanding-and-using-reshade/rsui_addons_tab.png){: style="max-width:65%" }
+![Add-ons Tab](../images/reshades-ui-and-depth-buffer/rsui_addons_tab.png){: style="max-width:65%" }
 
 Each `Add-on` adds extra features or improvements to your ReShade shaders. They can offer new effects or tools for tweaking existing ones. `Generic Depth` comes with the ReShade Installer, but you can add many more.
 
@@ -151,7 +151,7 @@ We'll dive deeper into `Generic Depth` and other add-ons later. They're powerful
 
 The `Settings` tab, shown below, lets you tweak ReShade settings like shader directories, menu access keys, FPS meter configurations, theme settings, and more:
 
-![Settings Tab](../images/understanding-and-using-reshade/rsui_settings_tab.png){: style="max-width:65%" }
+![Settings Tab](../images/reshades-ui-and-depth-buffer/rsui_settings_tab.png){: style="max-width:65%" }
 
 The dropdowns below detail the settings you can adjust within the ReShade `Settings` Tab:
 
@@ -339,23 +339,23 @@ The following dropdowns for ReShade's settings are verbose, and might not provid
 
       * `Default`:
 
-        ![Default Preset](../images/understanding-and-using-reshade/default.png){: style="max-width:20%" }
+        ![Default Preset](../images/reshades-ui-and-depth-buffer/default.png){: style="max-width:20%" }
       
       * `Dark`:
 
-        ![Dark Preset](../images/understanding-and-using-reshade/dark.png){: style="max-width:20%" }
+        ![Dark Preset](../images/reshades-ui-and-depth-buffer/dark.png){: style="max-width:20%" }
 
       * `Light`:
 
-        ![Light Preset](../images/understanding-and-using-reshade/light.png){: style="max-width:20%" }
+        ![Light Preset](../images/reshades-ui-and-depth-buffer/light.png){: style="max-width:20%" }
 
       * `Solarized Dark`:
 
-        ![Solarized Dark Preset](../images/understanding-and-using-reshade/solarized_dark.png){: style="max-width:20%" }
+        ![Solarized Dark Preset](../images/reshades-ui-and-depth-buffer/solarized_dark.png){: style="max-width:20%" }
 
       * `Solarized Light`:
 
-        ![Solarized Light Preset](../images/understanding-and-using-reshade/solarized_light.png){: style="max-width:20%" }
+        ![Solarized Light Preset](../images/reshades-ui-and-depth-buffer/solarized_light.png){: style="max-width:20%" }
 
 </details>
 
@@ -366,7 +366,7 @@ The following dropdowns for ReShade's settings are verbose, and might not provid
 <details markdown="block" class="details-tree">
 <summary>Getting to Know the Statistics Tab</summary>
 
-![Statistics Tab](../images/understanding-and-using-reshade/rsui_stats_tab.png){: style="max-width:65%" }
+![Statistics Tab](../images/reshades-ui-and-depth-buffer/rsui_stats_tab.png){: style="max-width:65%" }
 
 The `Statistics Tab`, shown in the image, is a great tool for tracking and improving ReShade's performance. It gives detailed info on various aspects of ReShade's operation:
 
@@ -399,7 +399,7 @@ While the `Statistics Tab` is not typically a frequent stop for casual users, it
 <details markdown="block" class="details-tree">
 <summary>Deciphering the Log Tab</summary>
 
-![Log Tab](../images/understanding-and-using-reshade/rsui_log_tab.png)
+![Log Tab](../images/reshades-ui-and-depth-buffer/rsui_log_tab.png)
 
 The `Log Tab` is a key tool for monitoring ReShade's operations and troubleshooting issues. It provides a detailed log of ReShade's activities to help you identify where your issues are.
 
@@ -418,7 +418,7 @@ If something seems wrong, it's recommended to share the error text or the entire
 <details markdown="block" class="details-tree">
 <summary>Appreciating the About Tab</summary>
 
-![About Tab](../images/understanding-and-using-reshade/rsui_about_tab.png)
+![About Tab](../images/reshades-ui-and-depth-buffer/rsui_about_tab.png)
 
 The `About Tab`, as shown in the image above, acknowledges and recognizes the work behind ReShade:
 
@@ -453,7 +453,7 @@ Ensure you've correctly set up ReShade and followed the previous steps on the ot
 
 The image below will give you an idea of what your depth buffer **should** look like:
 
-![Depth Buffer Reversed](../images/understanding-and-using-reshade/working_depth_output.jpg)
+![Depth Buffer Reversed](../images/reshades-ui-and-depth-buffer/working_depth_output.jpg)
 
 If your depth does not look like this - look below for the most common issues and solutions:
 
@@ -466,7 +466,7 @@ To start, enable the shader `DisplayDepth`. This shader is included with all ReS
 
 The image below shows that the `DisplayDepth` shader has loaded correctly, however, the depth is reversed. 
 
-![Depth Buffer Reversed](../images/understanding-and-using-reshade/depth_buffer_reversed_example.png)
+![Depth Buffer Reversed](../images/reshades-ui-and-depth-buffer/depth_buffer_reversed_example.png)
 
 ---
 
@@ -483,7 +483,7 @@ To start, enable the shader `DisplayDepth`. This shader is included with all ReS
 
 The image below shows that the `DisplayDepth` shader has loaded correctly, however, the depth output is upside down:
 
-![Depth Buffer Upside Down](../images/understanding-and-using-reshade/upside_down_normals.jpg)
+![Depth Buffer Upside Down](../images/reshades-ui-and-depth-buffer/upside_down_normals.jpg)
 
 You can solve this issue by simply flipping the `RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade.
 
@@ -498,7 +498,7 @@ To start, enable the shader `DisplayDepth`. This shader is included with all ReS
 
 If your shader resembles the images below, it lacks data from the `Generic Depth` Add-on:
 
-![Depth Buffer No Data](../images/understanding-and-using-reshade/depth_buffer_no_data_example.png)
+![Depth Buffer No Data](../images/reshades-ui-and-depth-buffer/depth_buffer_no_data_example.png)
 
   * Before proceeding any further, ensure that these anti-aliasing options are disable within your game:
 
@@ -539,7 +539,7 @@ To start, enable the shader `DisplayDepth`. This shader is included with all ReS
 
 If your shader resembles the images below, it lacks data from the `Generic Depth` Add-on and the depth from the game is reversed:
 
-![Depth Buffer No Data - Reversed](../images/understanding-and-using-reshade/depth_buffer_no_data_reversed_example.png)
+![Depth Buffer No Data - Reversed](../images/reshades-ui-and-depth-buffer/depth_buffer_no_data_reversed_example.png)
 
   * Before proceeding any further, ensure that these anti-aliasing options are disable within your game:
 
