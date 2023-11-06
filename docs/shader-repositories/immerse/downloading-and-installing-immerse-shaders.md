@@ -10,7 +10,7 @@ grand_parent: Shader Repositories
 
 Created by Pascal Gilcher (also known as MartyMcFly), iMMERSE is the successor to qUINT and features some of the most robust and well known shaders that are available for ReShade.
 
-iMMERSE comes in three editions:
+iMMERSE comes in three different repositories:
 
 * iMMERSE (FREE)
 
@@ -21,11 +21,11 @@ iMMERSE comes in three editions:
 ---
 
 <details markdown="block" class="details-tree">
-<summary>iMMERSE Shaders</summary>
+<summary>iMMERSE</summary>
 
-iMMERSE is the core collection of shaders from Pascal that are available [on GitHub](https://github.com/martymcmodding/iMMERSE).
+iMMERSE is the core repository of shaders from Pascal that are available [on GitHub](https://github.com/martymcmodding/iMMERSE).
 
-The iMMERSE Repository hosts:
+The iMMERSE repository includes:
 
 * iMMERSE Launchpad
 
@@ -37,11 +37,14 @@ The iMMERSE Repository hosts:
 
 ---
 
-## Installing iMMERSE Shaders
+<details markdown="block" class="details-tree">
+<summary>Installing the iMMERSE Repository</summary>
 
-To install iMMERSE Shaders, utilize the ReShade Installer to download the iMMERSE repository during the shader installation process.
+To install the iMMERSE repository, utilize the ReShade Installer to download the iMMERSE repository during the shader installation process.
 
-**Alternatively**, if you would like to install these shaders manually, check out [our guide for installing ReShade Shaders manually](https://guides.martysmods.com/docs/reshade-guides/manual-reshade-installs/#step-1-create-a-reshade-shaders-folder)!
+**Alternatively**, if you would like to install this repository manually, check out [our guide for installing ReShade shaders manually](https://guides.martysmods.com/docs/reshade-guides/manual-reshade-installs/#step-1-create-a-reshade-shaders-folder)!
+
+</details>
 
 </details>
 
@@ -50,9 +53,9 @@ To install iMMERSE Shaders, utilize the ReShade Installer to download the iMMERS
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro</summary>
 
-iMMERSE Pro is a premium collection of Pascal's shaders, available to [the "Raytracers" tier members from Pascal's Patreon](http://www.patreon.com/mcflypg).
+iMMERSE Pro is a premium repository of Pascal's shaders, available to [the "Raytracers" tier members from Pascal's Patreon](http://www.patreon.com/mcflypg).
 
-For $5 USD, you can access this suite, which features:
+For $5 USD, you can access this repository, which currently features:
 
 * iMMERSE Pro RTGI
 
@@ -66,7 +69,8 @@ For $5 USD, you can access this suite, which features:
 
 ---
 
-## Downloading and Installing iMMERSE Pro Shaders
+<details markdown="block" class="details-tree">
+<summary>Downloading and Installing the iMMERSE Pro Repository</summary>
 
 To access the iMMERSE Pro Archive, make sure you're a current subscriber to [Pascal's Patreon at the $5 USD Raytracers tier](http://www.patreon.com/mcflypg).
 
@@ -74,10 +78,9 @@ Once subscribed, you are able to download iMMERSE Pro shaders from [Pascal's Dis
 
 You are free to keep these shaders after your subscription and you will not be revoked access to these shaders at any given point. You are also free to end your subscription at any time.
 
----
-
 Once you've downloaded the latest iMMERSE Pro Shader archive, you can install them with a simple drag and drop procedure. This process is shown in [our guide for installing ReShade Shaders manually](https://guides.martysmods.com/docs/reshade-guides/manual-reshade-installs/#step-1-create-a-reshade-shaders-folder)!
 
+</details>
 
 </details>
 
@@ -96,17 +99,27 @@ For $10 USD, you can access this suite, which features:
 
 ---
 
-## Downloading and Installing iMMERSE Ultimate Shaders
+<details markdown="block" class="details-tree">
+<summary>Downloading the iMMERSE Ultimate Repository</summary>
 
-To access the iMMERSE Ultimate Shaders, make sure you're a current subscriber to [Pascal's Patreon for the $10 USD Pathtracers tier](http://www.patreon.com/mcflypg).
+To access the iMMERSE Ultimate repository, make sure you're a current subscriber to [Pascal's Patreon for the $10 USD Pathtracers tier](http://www.patreon.com/mcflypg).
 
-Once subscribed, you are able to download iMMERSE Pro shaders from [Pascal's Discord (PGHUB)](https://discord.com/invite/wY49KMxjHT). You can find the latest iMMERSE Pro shader archive in the [#downloads-level-2](https://discord.com/channels/494578207505514496/494599917273350164) Discord channel.
+Once subscribed, you are able to download iMMERSE Pro repository from [Pascal's Discord (PGHUB)](https://discord.com/invite/wY49KMxjHT). 
+
+You can find the latest iMMERSE Pro shader archive in the [#downloads-level-2](https://discord.com/channels/494578207505514496/494599917273350164) Discord channel.
 
 You are free to keep these shaders after your subscription and you will not be revoked access to these shaders at any given point. You are also free to end your subscription at any time.
 
+</details>
+
 ---
 
+<details markdown="block" class="details-tree">
+<summary>Installing iMMERSE Ultimate Shaders</summary>
+
 Once you've downloaded the latest iMMERSE Ultimate Shader archive, you can install them with a simple drag and drop procedure. This process is shown in [our guide for installing ReShade Shaders manually](https://guides.martysmods.com/docs/reshade-guides/manual-reshade-installs/#step-1-create-a-reshade-shaders-folder)!
+
+</details>
 
 ---
 

@@ -8,21 +8,23 @@ grand_parent: Shader Repositories
 
 # Configuring iMMERSE Shaders
 
-This guide will walk you through each step of configuring shaders under the entire iMMERSE suite.
+Below will be drop downs for each iMMERSE suite.
+
+In each iMMERSE suite dropdown there are guides or explanations for each shader:
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>iMMERSE Shader Guides</summary>
+<summary>iMMERSE</summary>
 
-This section will guide you through setting up and configuring specific shaders within the iMMERSE Pro shader suite!
+This section will guide you through setting up and configuring shaders within the iMMERSE shader suite!
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Launchpad</summary>
 
-iMMERSE Launchpad is a helper shader, in so, there won't be a whole lot of changes you can see on screen, or configuring required.
+iMMERSE Launchpad is a helper shader, in so, there won't be a whole lot of changes you can see on screen, or require configuring from the user.
 
 However, there are neat things you can do with it listed below:
 
@@ -50,15 +52,34 @@ Simply, toggle on Smoothed Normals in Launchpad's avaliable arguments to enable 
 <details markdown="block" class="details-tree">
 <summary>Textured Normals</summary>
 
-Textured Normals allows you to bring more detail out into the normals that are given to shaders from ReShade.
+Textured Normals allows you to bring more detail out into the normals, by estimating the surface relief through color information.
 
+{: .note}
 Textured Normals requires Smoothed Normals to be active beforehand.
 
 ---
 
-## **Step 1:** WIP
+## Arguments:
 
-WIP NEEDS MORE INFORMATION IN REGARDS TO HOW TO BETTER SET UP TEXTURED NORMALS
+* Textured Normals Sample Radius:
+
+    Value used to increase or decrease the sampling radius of added textured normals.
+
+    You do not want this value to be too high, please use it with caution!
+
+    Too low, and you will end up embedding the estimated texturing into the normals.
+
+    To high, and you will end up embossing the estimated texturing into the normals.
+
+* Textured Normals Intensity
+
+    Value used to increase or decrease the intensity of added textured normals.
+
+    You do not want this value to be too high, please use it with caution!
+
+* Textured Normals Quality
+
+    Value ranging from 1 to 3 that allows the user to increase or decrease the quality of the textured normals on screen.
 
 </details>
 
@@ -73,10 +94,39 @@ Shaders, like iMMERSE Pro RTGI require Optical Flow in order to work properly.
 
 ---
 
-## **Step 1:** WIP
+## Arguments
 
-WIP NEEDS MORE INFORMATION IN REGARDS TO HOW OPTICAL FLOW ACTUALLY WORKS AND HOW TO SET UP
+* Optical Flow Filter Smoothness
 
+    Allows the user to change the value of smoothness in the optical flow estimation.
+
+    Too high and you will lose finer details.
+
+    Too low, and you will enable the estimation to allow for artifacts.
+
+---
+
+## Preprocessors
+
+* OPTICAL_FLOW_MATCHING_LAYERS
+
+    Alows for three options from the user in order to increase or decrease the accuracy of the optical flow estimation:
+    
+     * 0: Luma (fastest)
+
+     * 1: Luma + Depth (more accurate, slower, recommended)
+
+     * 2: Circular Harmonics (most accurate, slowest)
+
+* OPTICAL_FLOW_RESOLUTION
+    
+    Allows three options from the user in relation to increasing or decreasing the resolution of the optical flow estimation:
+
+     * 0: Full Resolution (slowest)
+
+     * 1: Half Resolution (faster, recommended)
+
+     * 2: Quarter Resolution (fastest)
 
 </details>
 
@@ -94,13 +144,46 @@ iMMERSE MXAO is Marty's new iteration of qUINT MXAO, a robust ambient occlusion 
 <details markdown="block" class="details-tree">
 <summary>Configuring iMMERSE MXAO</summary>
 
-## **Step 1:** Finding a testing area:
+MXAO is often good enough with it's stock standard values. However, some users might want to configure MXAO to provide more quality shading.
+
+The information below will provide you with a better idea of how arguments will interact with your game, and how or when to change arguments to get the desired look you want!
+
+---
+
+## **Step 1:** Find a testing area
 
 While iMMERSE MXAO can be used anywhere, it's best to find a **static area with complex geometry** so that you can better configure the settings that you have avalible to you.
 
 ---
 
-## **Step 2:** Consider the following AO Modes:
+## **Step 2:** Enable "Show Raw AO" and configure "AO Type" preprocessor
+
+Start off by enabling "Show Raw AO", this will allow you to better see what each AO type does on screen without the noise of textures and colors.
+
+---
+
+By default, MXAO will use GTAO, however, there are three others from you to choose from:
+
+* **0**: Ground Truth Ambient Occlusion (high contrast, fast)
+
+* **1**: Solid Angle (smoother, fastest)
+
+* **2**: Visibility Bitmask (DX11+ only, highest quality, slower)
+
+* **3**: Visibility Bitmask w/ Solid Angle (like 2, only smoother)
+
+AO type 3 will often be the best looking, but will only work in DX11 and above, alongside it will also be the harshest to performance.
+
+---
+
+## **Step 3:** Configure "Sample Quality" Argument
+
+Sample Quality can quickly become overbearing on hardware that isn't suited for heavier AO calculations, however, it is also one of the most notible differences for MXAO arguments.
+
+Generally, you do not have to go past very high, however, large radius setups might require a higher Sample Quality configuration.
+
+---
+
 
 
 </details>
@@ -375,7 +458,7 @@ This section will guide you through setting up and configuring specific shaders 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro RTGI</summary>
 
-
+WIP
 
 </details>
 
@@ -463,7 +546,7 @@ If you get results that are close to the original game, with the added benefits 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro Depth of Field</summary>
 
-
+WIP
 
 </details>
 
@@ -472,7 +555,7 @@ If you get results that are close to the original game, with the added benefits 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro ReGrade</summary>
 
-
+WIP
 
 </details>
 
@@ -481,7 +564,7 @@ If you get results that are close to the original game, with the added benefits 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro Solaris</summary>
 
-
+WIP
 
 </details>
 
@@ -499,7 +582,7 @@ This section will guide you through setting up and configuring specific shaders 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate Convolution Bloom</summary>
 
-
+WIP
 
 </details>
 
@@ -517,7 +600,7 @@ This section will guide you through setting up and configuring specific shaders 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate ReGrade +</summary>
 
-
+WIP
 
 </details>
 
