@@ -78,7 +78,7 @@ Once you have located your FiveM Installation folder, enter the `FiveM Applicati
 
 ![FiveM appdata Location](../images/fivem/fivem-appdata-location.png)
 
-![FiveM plugins Location](../images/fivem/fivem-plguins-location.png)
+![FiveM plugins Location](../images/fivem/fivem-plugins-location.png)
 
 ---
 
