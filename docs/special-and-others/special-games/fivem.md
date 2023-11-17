@@ -52,20 +52,29 @@ Keep a mental note of where these files are for Step 5.
 
 ---
 
-## **Step 3:** Locate your FiveM Installation
+## **Step 3:** Set FiveM to update using the **Beta Channel**
+
+Open FiveM and then navigate to the settings menu, and go to the `Game` tab.
+
+There you will find an option specifically for `Update Channel`.
+
+Click on the `Beta` option and then close your game.
+
+---
+
+## **Step 4:** Locate your FiveM Installation
 
 In order to locate your FiveM location, please utilize our [guide for locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/)!
 
 ---
 
-
-## **Step 4:** Create or Navigate to the Plugins Directory
+## **Step 5:** Create or Navigate to the Plugins Directory
 
 Once you have located your FiveM Installation folder, enter the `FiveM Application Data` folder, and create a `plugins` directory, then enter it.
 
 ---
 
-## **Step 5:** Transfer ReShade Files to the FiveM Plugins Directory
+## **Step 6:** Transfer ReShade Files to the FiveM Plugins Directory
 
 Transfer the ReShade files and the single folder from your GTAV directory into the FiveM `plugins` folder:
 
@@ -81,7 +90,7 @@ Avoid copying and pasting these files, as it can cause complications, instead cu
 
 ---
 
-## Step 6: Check for FiveM Errors using the Console
+## Step 7: Check for FiveM Errors using the Console
 
 Launch FiveM and inspect the **entire** console for issues. You can open the console by tapping the **F8 Key** on your keyboard.
 
