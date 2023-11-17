@@ -28,7 +28,7 @@ You can get the information for setting up Windows file extensions to be viewed 
 
 ## **Step 1:** Install ReShade to GTAV
 
-Begin by downloading the latest version of ReShade from the [ReShade website](https://reshade.me). 
+Begin by downloading the latest version of ReShade from the [ReShade website](https://reshade.me).
 
 **DO NOT use older builds of ReShade** as it will only cause issues for you in the future.
 
@@ -40,7 +40,7 @@ If you are struggling to install ReShade ot GTAV, please [follow our guide for i
 
 Navigate to your GTAV folder by using our [guide for locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/)!
 
-Once there, look specifically for these two files, and singular folder:
+Once there, look specifically for these two files, and singular folder and keep a mental note of where they are located:
 
 * `dxgi.dll` - ReShade Binary File
 
@@ -48,7 +48,7 @@ Once there, look specifically for these two files, and singular folder:
 
 * `reshade-shaders` - ReShade Shaders & Textures Folder
 
-Keep a mental note of where these files are for Step 5.
+![GTAV ReShade Install Files](../images/fivem/gtav-reshade-install-files.png)
 
 ---
 
@@ -60,17 +60,25 @@ There you will find an option specifically for `Update Channel`.
 
 Click on the `Beta` option and then close your game.
 
+![Release Channel Screenshot](../images/fivem/fivem-release-channel.png)
+
 ---
 
 ## **Step 4:** Locate your FiveM Installation
 
 In order to locate your FiveM location, please utilize our [guide for locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/)!
 
+![FiveM File Location](../images/fivem/fivem-file-location.png)
+
 ---
 
 ## **Step 5:** Create or Navigate to the Plugins Directory
 
 Once you have located your FiveM Installation folder, enter the `FiveM Application Data` folder, and create a `plugins` directory, then enter it.
+
+![FiveM appdata Location](../images/fivem/fivem-appdata-location.png)
+
+![FiveM plugins Location](../images/fivem/fivem-plguins-location.png)
 
 ---
 
@@ -83,6 +91,8 @@ Transfer the ReShade files and the single folder from your GTAV directory into t
 * `reshade.ini` - ReShade Settings File
 
 * `reshade-shaders` - ReShade Shaders & Textures Folder
+
+![FiveM reshade install Location](../images/fivem/fivem-reshade-install-location.png)
 
 {: .note}
 
