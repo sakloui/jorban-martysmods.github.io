@@ -214,8 +214,6 @@ Keep in mind that you should configure "Sample Radius" in MXAO so that it is not
 
 "Filter Quality" is an option to provide better filtering and blending to the scene by reducing MXAO's banding and noise. Higher values will look better, but they will also lower performance.
 
----
-
 </details>
 
 </details>
