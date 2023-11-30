@@ -238,16 +238,7 @@ You want to manage this argument where there is a noticble increase in game deta
 
 Start at the value of `0.000` and work your way up until you're able to find details being presnted more in the scene you've chosen.
 
----
-
-* Base Image:
-    ![Base Image](../images/configuring-immerse-shaders/sharpen_no_sharpen.png)
-
-* Properly Sharpened Image:
-    ![Sharpened Image](../images/configuring-immerse-shaders/sharpen_properly_sharpened.png)
-
-* Badly Sharpened Image:
-    ![Badly Sharpened Image](../images/configuring-immerse-shaders/sharpen_badly_sharpened.png)
+![Comparison](../images/configuring-immerse-shaders/sharpened_image.jpg)
 
 </details>
 
