@@ -67,10 +67,6 @@ Textured Normals requires Smoothed Normals to be active beforehand.
 
     You do not want this value to be too high, please use it with caution!
 
-    Too low, and you will end up embedding the estimated texturing into the normals.
-
-    To high, and you will end up embossing the estimated texturing into the normals.
-
 * Textured Normals Intensity
 
     Value used to increase or decrease the intensity of added textured normals.
@@ -88,7 +84,7 @@ Textured Normals requires Smoothed Normals to be active beforehand.
 <details markdown="block" class="details-tree">
 <summary>Optical Flow</summary>
 
-Optical Flow is a simulation of movement within the screen space. This allows shaders to more acurately account for the motion of your game camera and objects in motion.
+Optical Flow is a process that estimates movement within the screen space. This allows shaders to more acurately account for the motion of your game camera and objects in motion.
 
 Shaders, like iMMERSE Pro RTGI require Optical Flow in order to work properly.
 
@@ -137,14 +133,14 @@ Shaders, like iMMERSE Pro RTGI require Optical Flow in order to work properly.
 <details markdown="block" class="details-tree">
 <summary>iMMERSE MXAO</summary>
 
-iMMERSE MXAO is Marty's new iteration of qUINT MXAO, a robust ambient occlusion shader based off of GTAO and Irradiance Bitfields.
+iMMERSE MXAO is Marty's new iteration of MXAO, a robust ambient occlusion shader based off of GTAO and Irradiance Bitfields.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>Configuring iMMERSE MXAO</summary>
 
-MXAO should look on-pair with most AO solutions out of the box, but some users might like to tweak it a bit more for their needs.
+MXAO should look on-par with most ambient occlusion solutions out of the box, but some users might like to tweak it a bit more for their needs.
 
 The information below will explain what each function does, along with good practices and what should or should not be done with it.
 
@@ -182,15 +178,15 @@ AO type 3 will often be the best looking, but will only work in DX11 and above, 
 
 ---
 
-## **Step 3:** Configure "Sample Quality" and "Shading Rate" Arguments
+## **Step 3:** Configure "Sample Quality and Shading Rate" Arguments
 
 ![MXAO Quality Comparison](../images/configuring-immerse-shaders/mxao_quality_comparison.png)
 
-Sample Quality defines how many times the geometry will be taken to generate the AO, while this raises the quality and how detailed and dark the geometry is, it will also take more performance the higher it is.
+"Sample Quality" configures how many times geometry will be taken to generate the ambient occlusion. While this raises the quality and how detailed and dark the geometry is, it will also be harsher on performance the higher it is.
 
-Generally, you do not have to go past very high, however, large radius setups might require a higher Sample Quality configuration.
+Often, you will not have to go past very high, however, large radius setups might require a higher "Sample Quality" configuration.
 
-Shading Rate defines the size of the processed frame slices for the AO computing. The larger, the better the quality will be, but also the bigger the performance hit. Usually half-rate balances quality and performance.
+"Shading Rate" allows the user to configure the size of the processed frame slices for the ambient occlusion. The larger, the better the quality will be, but also the bigger the performance hit.
 
 ---
 
@@ -198,25 +194,25 @@ Shading Rate defines the size of the processed frame slices for the AO computing
 
 ![MXAO Sample Radius Comparison](../images/configuring-immerse-shaders/mxao_sampleradius_comparison_numbered.png)
 
-Sample Radius defines how far the AO will be spread, the lower, the closer the shadows will be concentrated.
+"Sample Radius" defines how far MXAO will reach out and spread it's shading. The lower this argue is set the closer the shading will be concentrated.
 
-The other option also makes it so the radius is scaled up according to the distance from the screen. This is good for games with an extremely huge horizon, but might look wrong for buildings far-away or too-detailed horizons.
+"Increase Radius with Distance" is a toggle that configures MXAO's radius so that it scales the shading based around how far away the object is from the screen. This is good for games with an extremely huge horizon, but might look wrong for buildings far-away or massively detailed objects.
 
-You should define it in a way that it doesn't cause halos or shadows that "spread" in the environment. Below is examples of something that looks correct vs something that looks wrong.
+Keep in mind that you should configure "Sample Radius" in MXAO so that it is not producing halos in its shading that "spread" in the environment. Below are examples of a correct configuration, and a wrong configuration.
 
 ![MXAO Bad Example](../images/configuring-immerse-shaders/mxao_excessive_sample_radius_example.png)
 
 ---
 
-## **Step 5:** Configure "Amount and Fade-Out Range" arguments
+## **Step 5:** Configure "Ambient Occlusion Amount, Fade-Out Distance, and Filter Quality" arguments
 
 ![MXAO Amount Comparison](../images/configuring-immerse-shaders/mxao_amount_comparison.png)
 
-Amount defines how strong the shadows are. Since those are for close range objects, they should be dark, but remember to not make them too dark to avoid excessive shadows on leaves and tiny objects, or halos.
+"Ambient Occlusion Amount" allows you to configure how strong the shadows are. Larger and close together objects should be dark, but, you want to avoid excessive shading on leaves and tiny objects.
 
-Fade-Out distance defines how far the AO will be processed until it disappears completely. With 1.0 being the horizon, and 0.1 being the most-valid closer value to the screen. It is recommended to change the Radius according to how intense and "correct" the scene looks with that.
+"Fade-Out Distance" defines how far the AO will be processed until it disappears completely. With 1.0 being the horizon, and 0.1 being the most-valid closer value to the screen. It is recommended to change the Radius according to how intense and "correct" the scene looks with that.
 
-Filter Quality aims to reduce the banding and blending of the dither and noise. Higher values mitigate this better, but also lowers performance. Usually 1 is fine.
+"Filter Quality" is an option to provide better filtering and blending to the scene by reducing MXAO's banding and noise. Higher values will look better, but they will also lower performance.
 
 ---
 
