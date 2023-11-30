@@ -135,12 +135,7 @@ Shaders, like iMMERSE Pro RTGI require Optical Flow in order to work properly.
 
 iMMERSE MXAO is Marty's new iteration of MXAO, a robust ambient occlusion shader based off of GTAO and Irradiance Bitfields.
 
----
-
-<details markdown="block" class="details-tree">
-<summary>Configuring iMMERSE MXAO</summary>
-
-MXAO should look on-par with most ambient occlusion solutions out of the box, but some users might like to tweak it a bit more for their needs.
+By default, MXAO should look on-par with most ambient occlusion solutions, but some users might like to tweak it a bit more for their needs.
 
 The information below will explain what each function does, along with good practices and what should or should not be done with it.
 
@@ -215,8 +210,6 @@ Keep in mind that you should configure "Sample Radius" in MXAO so that it is not
 "Filter Quality" is an option to provide better filtering and blending to the scene by reducing MXAO's banding and noise. Higher values will look better, but they will also lower performance.
 
 ---
-
-</details>
 
 </details>
 
