@@ -144,9 +144,9 @@ iMMERSE MXAO is Marty's new iteration of qUINT MXAO, a robust ambient occlusion 
 <details markdown="block" class="details-tree">
 <summary>Configuring iMMERSE MXAO</summary>
 
-MXAO is often good enough with it's stock standard values. However, some users might want to configure MXAO to provide more quality shading.
+MXAO should look on-pair with most AO solutions out of the box, but some users might like to tweak it a bit more for their needs.
 
-The information below will provide you with a better idea of how arguments will interact with your game, and how or when to change arguments to get the desired look you want!
+The information below will explain what each function does, along with good practices and what should or should not be done with it.
 
 ---
 
@@ -154,15 +154,21 @@ The information below will provide you with a better idea of how arguments will 
 
 While iMMERSE MXAO can be used anywhere, it's best to find a **static area with complex geometry** so that you can better configure the settings that you have avalible to you.
 
+Also make sure to find one area with **foliage or flat geometry** to prevent haloing or shadows around them.
+
 ---
 
 ## **Step 2:** Enable "Show Raw AO" and configure "AO Type" preprocessor
 
 Start off by enabling "Show Raw AO", this will allow you to better see what each AO type does on screen without the noise of textures and colors.
 
+If you are on an area without geometry, the screen will just be white. So make sure you set it up before you started trying to configure it.
+
 ---
 
 By default, MXAO will use GTAO, however, there are three others from you to choose from:
+
+![MXAO Modes Comparison](../images/configuring-immerse-shaders/mxao_comparison_numbered.png)
 
 * **0**: Ground Truth Ambient Occlusion (high contrast, fast)
 
@@ -176,15 +182,43 @@ AO type 3 will often be the best looking, but will only work in DX11 and above, 
 
 ---
 
-## **Step 3:** Configure "Sample Quality" Argument
+## **Step 3:** Configure "Sample Quality" and "Shading Rate" Arguments
 
-Sample Quality can quickly become overbearing on hardware that isn't suited for heavier AO calculations, however, it is also one of the most notible differences for MXAO arguments.
+![MXAO Quality Comparison](../images/configuring-immerse-shaders/mxao_quality_comparison.png)
+
+Sample Quality defines how many times the geometry will be taken to generate the AO, while this raises the quality and how detailed and dark the geometry is, it will also take more performance the higher it is.
 
 Generally, you do not have to go past very high, however, large radius setups might require a higher Sample Quality configuration.
 
+Shading Rate defines the size of the processed frame slices for the AO computing. The larger, the better the quality will be, but also the bigger the performance hit. Usually half-rate balances quality and performance.
+
 ---
 
+## **Step 4:** Configure "Sample Radius" Argument
 
+![MXAO Sample Radius Comparison](../images/configuring-immerse-shaders/mxao_sampleradius_comparison_numbered.png)
+
+Sample Radius defines how far the AO will be spread, the lower, the closer the shadows will be concentrated.
+
+The other option also makes it so the radius is scaled up according to the distance from the screen. This is good for games with an extremely huge horizon, but might look wrong for buildings far-away or too-detailed horizons.
+
+You should define it in a way that it doesn't cause halos or shadows that "spread" in the environment. Below is examples of something that looks correct vs something that looks wrong.
+
+![MXAO Bad Example](../images/configuring-immerse-shaders/mxao_excessive_sample_radius_example.png)
+
+---
+
+## **Step 5:** Configure "Amount and Fade-Out Range" arguments
+
+![MXAO Amount Comparison](../images/configuring-immerse-shaders/mxao_amount_comparison.png)
+
+Amount defines how strong the shadows are. Since those are for close range objects, they should be dark, but remember to not make them too dark to avoid excessive shadows on leaves and tiny objects, or halos.
+
+Fade-Out distance defines how far the AO will be processed until it disappears completely. With 1.0 being the horizon, and 0.1 being the most-valid closer value to the screen. It is recommended to change the Radius according to how intense and "correct" the scene looks with that.
+
+Filter Quality aims to reduce the banding and blending of the dither and noise. Higher values mitigate this better, but also lowers performance. Usually 1 is fine.
+
+---
 
 </details>
 
