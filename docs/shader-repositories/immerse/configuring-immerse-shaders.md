@@ -213,8 +213,6 @@ Keep in mind that you should configure "Sample Radius" in MXAO so that it is not
 
 </details>
 
-</details>
-
 ---
 
 <details markdown="block" class="details-tree">
