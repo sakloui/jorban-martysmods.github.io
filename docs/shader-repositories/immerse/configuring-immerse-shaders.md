@@ -26,24 +26,18 @@ This section will guide you through setting up and configuring shaders within th
 
 iMMERSE Launchpad is a helper shader, in so, there won't be a whole lot of changes you can see on screen, or require configuring from the user.
 
-However, there are neat things you can do with it listed below:
+However, there are a few arguments that the user might want to enable, or disable.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>Smoothed Normals</summary>
 
-Smoothed Normals allows you to better smooth over the normals that are given to shaders from ReShade.
+"Smoothed Normals" configures the normals in a fasion that can provide a smoother normal map to shaders that require normals.
 
 Simply, toggle on Smoothed Normals in Launchpad's avaliable arguments to enable it.
 
----
-
-* Smoothed Normals
-    ![Smoothed Normals](../images/configuring-immerse-shaders/launchpad_smoothed_normals.png)
-
-* Original Normals
-    ![Original Normals](../images/configuring-immerse-shaders/launchpad_original_normals.png)
+![Comparison](../images/configuring-immerse-shaders/launchpad_smoothed_normals.jpg){: style="max-width:85%" }
 
 </details>
 
