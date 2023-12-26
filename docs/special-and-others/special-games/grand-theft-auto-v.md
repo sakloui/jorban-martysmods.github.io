@@ -8,32 +8,85 @@ grand_parent: Special and Others
 
 ## Installing ReShade to Grand Theft Auto V
 
-Grand Theft Auto V unfortunately blocks `dxgi` and `d3d11` graphics injections now. 
+Grand Theft Auto: V is tricky to get ReShade properly installed for.
 
-With this in mind, you have to change the graphics injection point of ReShade to `d3d12`.
+In a recent update, they've decided to block certain graphics injections, and this has caused ReShade to stop working properly.
 
-Below are steps on how to properly do this:
-
----
-
-## **Step 1:** Install ReShade
-
-Install ReShade to Grand Theft Auto V normally.
-
-Ensure that you are selecting the `GTAV.exe` exectuable when installing ReShade, otherwise you will be installing ReShade improperly.
-
-If you need help with the ReShade installation, refer to [our guide on downloading and installing ReShade.](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/)
+Below will be several guides that you can follow in order to get ReShade working in Grand Theft Auto: V.
 
 ---
 
-## **Step 2:** Change `dxgi.dll` to `d3d12.dll`
+<details markdown="block" class="details-tree">
+<summary>Just ReShade</summary>
 
-Navigate to your Grand Theft Auto V folder and rename the file `dxgi.dll` to `d3d12.dll`.
+This guide will go over how to install ReShade specifically for Grand Theft Auto: V.
 
-If you need help finding the folder for Grand Theft Auto V, please follow our guide on [locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+This guide will assume that you have no other graphics injections installed.
 
 ---
 
-## **Step 3:** Verify everything is working
+## **Step 1:** Install ReShade through the ReShade Installer
 
-Launch your game and verify that Grand Theft Auto V has launched properly and ReShade is installed!
+Install ReShade to Grand Theft Auto: V through the ReShade Installer. If you need help with the ReShade installation, please refer to [our guide on downloading and installing ReShade.](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/)
+
+Make sure that you are selecting the "GTAV.exe" exectuable when installing ReShade through the ReShade Installer. If you select the wrong exectuable, the ReShade Installer will install the improper ReShade binary to your game directory.
+
+---
+
+## **Step 2:** Change the ReShade DLL name
+
+Navigate to your Grand Theft Auto: V folder using our guide for [locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) and rename the file "dxgi.dll" to "d3d12.dll".
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>ReShade with ENB</summary>
+
+This guide will go over how to install ReShade alongside ENB in Grand Theft Auto: V.
+
+---
+
+## **Step 1:** Download ENB for Grand Theft Auto: V - Ignore if you already have ENB Installed
+
+Navigate to the ENB page for Grand Theft Auto: V [http://enbdev.com/download_mod_gta5.htm](http://enbdev.com/download_mod_gta5.htm)
+
+The ENB page for Grand Theft Auto: V will provide you with the latest version of ENB for Grand Theft Auto: V.
+
+At the bottom of the page, click the latest version to go to it's change-log page.
+
+![ENB Version Select Highlight](../images/gtav/enb-version-select.png)
+
+Then click the download icon at the bottom of the change-log page.
+
+![ENB Download Button Highlight](../images/gtav/enb-download-button.png)
+
+---
+
+## **Step 2:** Install ENB for Grand Theft Auto: V - Ignore if you already have ENB Installed
+
+Open the archive that you have downloaded from the ENB page for Grand Theft Auto: V.
+
+![ENB Archive Image](../images/gtav/open-enb-archive.png)
+
+Then enter the "WrapperVersion" directory.
+
+![ENB Wrapper Version Directory](../images/gtav/enter-wrapperversion-directory.png)
+
+Once there you will be greated with a plethora of files:
+
+![ENB WrapperVersion Files Image](../images/gtav/wrapperversion-files.png)
+
+The files shown above are files are needed for ENB. 
+
+Copy each of these files over to the Grand Theft Auto: V base directory. 
+
+If you need help finding your Grand Theft Auto: V base directory, you can [follow our guide for finding your game's executable and directory](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/).
+
+![Move ENB files to GTAV Directory](../images/gtav/enb-to-gtav-move.png)
+
+## **Step 2:** WIP DO LATER
+
+
+</details>
