@@ -577,7 +577,46 @@ WIP
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro Solaris</summary>
 
-WIP
+Solaris is IMMERSE's main implementation of a Bloom shader. Bloom shaders are meant to mimic light bleeding from very bright surfaces, similar to how a camera lens act when looking at very bright reflective objects.
+
+It's differential is ease of usage, and quality x speed relation. It is a very fast shader with very high quality results.
+
+To configure it, follow the below steps. In this guide, there is no "best" or "worst" option, its all up to personal preference.
+
+---
+
+## **Step 1:** Enable the Shader
+
+Click on the IMMERSE Pro Solaris shader and enable it. Once you do, there will be some options, first, lets start by setting up the scene settings.
+
+---
+
+## **Step 2:** Configure overall Scene Look
+
+The first two options, `Log Exposure Bias` and `Log HDR Whitepoint` are responsible for telling how much light the "camera" is absorbing and how bright the "White" is. The more exposure bias, the more bloom, and the higher the Whitepoint, the more intense the bright parts will glow.
+
+The last 3 parameters are the more "artistic" side of the bloom, those are:
+
+* `Bloom Intensity`: Changes the overall intensity of the bloom. Independent of what area is considered white or "dark".
+* `Bloom Radius`: How large are the light glows / ranges.
+* `Bloom Hazyness`: Changes how much of the colors the bloom washes-away. With 0 being no color changes, and 1 being a full bleached look.
+
+---
+
+## **Step 3:** Technical Parameters
+
+Those parameters are more techincal and won't change much of the final look, they are made for more specific changes or user needs.
+
+* `High Resolution Input`: Changes the resolution the Bloom should sample the scene. Useful if you need to grab more detailed objects which should glow.
+* `Mask by Depth`: Made as a way to prevent HUD elements from glowing. Enabling this will make it so the depth controls what will emit bloom or not.
+* `Depth Mask Strength`: The higher it is, the far away the bloom will apply, with 0 being the same as having depth masking disabled.
+
+The last 2 post-process parameters will also depend on your usage.
+
+* `ENABLE_SOLARIS_REGRADE_PARITY`: This will make it so Solaris will work together with ReGrade, using its exposure parameters and levels to define the bloom on the scene.
+* `SOLARIS_PERF_MODE`: Enables a higher-performance mode for Solaris, changing how it works internally to tax less of the computer. Not generally necessary, but low-performance setups might benefit from having it on.
+
+---
 
 </details>
 
@@ -595,7 +634,46 @@ This section will guide you through setting up and configuring specific shaders 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate Convolution Bloom</summary>
 
-WIP
+Convolution Bloom (or FFT Bloom) is a more-advanced and high-end bloom based on Fast-Fourier Transform with a different end-effect. The way it works allows for bloom to have different shapes and sizes, instead of being just huge glowing light sources. Those being "Spikes", which simulates blades from a camera, and "Inverse Square Glow", which is similar to traditional bloom methods, but with a much higher range.
+More about those will be shown later down the guide, meanwhile, we'll focus on the shared options.
+
+---
+
+## **Step 1:** Enabling the shader
+Click on the IMMERSE Ultimate ConvolutionBloom shader and enable it. Most of the parameters are the same as Solaris, with only one new option shared between the (later) pre-processor options.
+
+* `Bloom Padding`: Due to the way FFT works, the bloom will usually go beyond the screen resolution and boundaries and "leak" to the top or bottom of the image, causing weird / innacurate results. This parameter creates a black border to mitigate this, but will also reduce how far the bloom goes.
+* `Log Exposure Bias` and `Log HDR Whitepoint` are responsible for telling how much light the "camera" is absorbing and how bright the "White" is. The more exposure bias, the more bloom, and the higher the Whitepoint, the more intense the bright parts will glow.
+* `Bloom Intensity`: Changes the overall intensity of the bloom. Independent of what area is considered white or "dark".
+* `Bloom Radius`: How large are the light glows / ranges.
+* `Bloom Hazyness`: Changes how much of the colors the bloom washes-away. With 0 being no color changes, and 1 being a full bleached look.
+* `Enable Debug View`: Shows multiple debug outputs to help see how the shader is working, with the first option showing only the output of the bloom (how the bright areas look without taking the general image into consideration) and the second showing the Fourier texture of the bloom (more dev-oriented).
+
+---
+
+## **Step 2:** Pre-Processor options
+Before talking about the other options, we must talk about the Pre-Processor ones since those interfere on what options you'll have at your disposure, the Pre-Processor settings are:
+
+* `CONVOLUTION_BLOOM_QUALITY`: Changes the resolution of the Fourier kernel, higher values (from 0 to 2) will produce better results, but also require more resources.
+* `CONVOLUTION_BLOOM_MASK_PRESET`: The default option is "Diffraction Spikes", which will create blades of light from glowing / bright sources, similar to the blades of a camera. The second one is "Inverse Square Glow", which will create a more traditional bloom (as in, light sources will spread lights to its surroundings).
+
+---
+
+## *Step 3:* Individual options
+The options of the First method, `Diffraction Spikes`, are:
+
+* `Diffraction Spike Amount`: How many "Spikes" the bloom has, basically working as how many blades the "camera" has.
+* `Diffraction Spike Rotation`: The rotation of the blades, as in, if they are coming straight from vertical, or tilted. 
+* `Diffraction Spike Radius`: How far the "spikes" of light go through the image. The higher the value, the further they'll reach.
+* `Diffraction Spike Blurryness`: How blurry the spikes are. The lower the value, the more evident the spike shapes are.
+* `Diffraction Spike Phase Amount`: How bright the spikes (blades) are, not the light sources. The higher, the brighter / more visible the spikes will appear.
+
+The options for the Second method, `Inverse Square Glow`, are:
+
+* `Glow Intensity`: How far the bloom goes and how intense it is, higher values means further and brighter.
+* `Glare Amount`: How far the "dark" part of the bloom goes, the higher, the darker it is at the edges of the bloom sources.
+
+---
 
 </details>
 
