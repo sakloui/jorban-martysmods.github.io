@@ -10,7 +10,7 @@ grand_parent: Special and Others
 
 Grand Theft Auto: V is tricky to get ReShade properly installed for.
 
-In a recent update, they've decided to block certain graphics injections, and this has caused ReShade to stop working properly.
+In a recent update, Grand Theft Auto: V developers decided to block certain graphics injections, and this has caused ReShade and other graphics injections to stop working properly.
 
 Below will be several guides that you can follow in order to get ReShade working in Grand Theft Auto: V.
 
@@ -19,9 +19,7 @@ Below will be several guides that you can follow in order to get ReShade working
 <details markdown="block" class="details-tree">
 <summary>Just ReShade</summary>
 
-This guide will go over how to install ReShade specifically for Grand Theft Auto: V.
-
-This guide will assume that you have no other graphics injections installed.
+This guide will go over how to install ReShade specifically for Grand Theft Auto: V and assumes that you have no other graphics injections installed.
 
 ---
 
@@ -33,7 +31,7 @@ Make sure that you are selecting the "GTAV.exe" exectuable when installing ReSha
 
 ---
 
-## **Step 2:** Change the ReShade DLL name
+## **Step 2:** Change the ReShade DLL name from "dxgi.dll" to "d3d12.dll"
 
 Navigate to your Grand Theft Auto: V folder using our guide for [locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) and rename the file "dxgi.dll" to "d3d12.dll".
 
@@ -86,7 +84,25 @@ If you need help finding your Grand Theft Auto: V base directory, you can [follo
 
 ![Move ENB files to GTAV Directory](../images/gtav/enb-to-gtav-move.png)
 
-## **Step 2:** WIP DO LATER
+---
 
+## **Step 3:** Make a copy of ENB's "d3d11.dll" and rename it to "d3d12.dll"
+
+This step has to be done because the latest version of Grand Theft Auto: V refuses to inject via the "d3d11.dll" injection name.
+
+However, ENB does not like to inject via the "d3d12.dll" so this is the compromise.
+
+You should have a two files that look identical to the image below.
+
+
+![Renamed ENB DLL](../images/gtav/enb-dll-rename.png)
+
+---
+
+## **Step 4:** Install ReShade normally
+
+Install ReShade as you normally would.
+
+Make sure that you target the executable called "GTAV.exe" otherwise, the ReShade Installer will not copy over the proper binary file, and ReShade will not work.
 
 </details>
