@@ -1,21 +1,46 @@
 // COLORS
-$body-background-color: #191C20;
-$body-heading-color: $grey-lt-000;
-$body-text-color: $grey-lt-300;
-$link-color: #5da8ed;
-$nav-child-link-color: #ffffff;
-$sidebar-color: #202329;
-$base-button-color: $grey-dk-250;
-$btn-primary-color: $blue-200;
-$code-background-color: #31343f; // OneDarkJekyll default for syntax-one-dark-vivid
-$code-linenumber-color: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
-$feedback-color: darken($sidebar-color, 3.5%);
-$table-background-color: $grey-dk-250;
-$search-background-color: $grey-dk-250;
-$search-result-preview-color: $grey-dk-000;
-$border-color: #ffffff4b;
 
-// OTHERS??? Idk what to name this yet.
-$content-width: 1000px !important;
-$nav-width: 350px !important;
-$header-height: 4rem !important;
+// Background color for the body of the website
+$body-background-color: #191C20;
+
+// Color for headings in the body
+$body-heading-color: #ffffff;
+
+// Color for text in the body
+$body-text-color: #ffffff;
+
+// Color for hyperlinks
+$link-color: #5da8ed;
+
+// Color for child links in the navigation
+$nav-child-link-color: #ffffff;
+
+// Color for the sidebar
+$sidebar-color: #202329;
+
+// Base color for buttons
+$base-button-color: $grey-dk-250;
+
+// Color for primary buttons
+$btn-primary-color: $blue-200;
+
+// Background color for code blocks, default for syntax-one-dark-vivid in OneDarkJekyll
+$code-background-color: #31343f;
+
+// Color for line numbers in code blocks, default for syntax-one-dark-vivid in OneDarkJekyll
+$code-linenumber-color: #ffffff;
+
+// Color for feedback messages, slightly darker than the sidebar color
+$feedback-color: darken($sidebar-color, 3.5%);
+
+// Background color for tables
+$table-background-color: $grey-dk-250;
+
+// Background color for search bar
+$search-background-color: $grey-dk-250;
+
+// Color for search result previews
+$search-result-preview-color: $grey-dk-000;
+
+// Color for borders
+$border-color: #ffffff4b;
