@@ -12,7 +12,7 @@ This guide aims to help users understand and navigate the process of manual inst
 
 ---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Installing ReShade Manually</summary>
 
 ## Step 1: Identify Your Game's Architecture
@@ -46,8 +46,8 @@ This guide aims to help users understand and navigate the process of manual inst
 1. Right-click on the ReShade Installer `ReShade_Setup_x.x.x.exe`, hover over `7Zip`, and select `Open Archive`.
    ![Open with 7Zip](./images/manually_installing_reshade/reshade_setup_open_with_7zip.jpg)
 2. Choose the necessary DLL from the options:
-   - `ReShade64.dll` for 64-Bit
-   - `ReShade32.dll` for 32-Bit
+>    - `ReShade64.dll` for 64-Bit
+>    - `ReShade32.dll` for 32-Bit
    ![Extract DLL](./images/manually_installing_reshade/7zip_extract_reshade_binaries.jpg)
 
 ---
@@ -56,12 +56,12 @@ This guide aims to help users understand and navigate the process of manual inst
 
 Right-click the `ReShadeXX.dll` you've extracted and choose `Rename`. Then, rename it according to your game's rendering API:
 
-- dxgi.dll - DirectX 10/11/12
-- d3d12.dll - DirectX 12
-- d3d11.dll - DirectX 11
-- d3d10.dll - DirectX 10
-- d3d9.dll - DirectX 9
-- opengl32.dll - OpenGL
+> - **dxgi.dll** - DirectX 10/11/12
+> - **d3d12.dll** - DirectX 12
+> - **d3d11.dll** - DirectX 11
+> - **d3d10.dll** - DirectX 10
+> - **d3d9.dll** - DirectX 9
+> - **opengl32.dll** - OpenGL
 
 ![Rename DLL](./images/manually_installing_reshade/extacted_reshade_binary_rename.jpg)
 
@@ -71,6 +71,7 @@ Right-click the `ReShadeXX.dll` you've extracted and choose `Rename`. Then, rena
 
 1. Position the renamed DLL into the root folder of your game, the same directory where the game's executable is located.
    ![Place in Game Folder](./images/manually_installing_reshade/place_reshade_binary_game_folder.jpg)
+
 2. If unsure of your game's executable location, consult [our guide on identifying your game's executable](https://guides.martysmods.com/docs/special_other/finding_your_game_executable.html).
 
 Upon completion, your game should launch with ReShade already integrated!
@@ -80,7 +81,7 @@ Upon completion, your game should launch with ReShade already integrated!
 
 ------
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>How to Manually Inject ReShade</summary>
 
 Certain games do not support automatic ReShade injection during runtime. 

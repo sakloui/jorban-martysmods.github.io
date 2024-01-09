@@ -13,8 +13,9 @@ This guide offers multiple methods to help you limit your game's framerate.
 
 ---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>AMD Adrenalin | Driver-Based (For AMD GPU only, Affects All Games)</summary>
+
 Here's how you can use AMD Adrenalin's `Frame rate target control` feature to limit the FPS of your games:
 
 {: .warning}
@@ -40,12 +41,14 @@ This impacts all games on your system.
    ![FRTC Option](./images/limiting_game_fps/amd_enable_frtc.jpg)
 3. Adjust the `Max FPS` as per your preference.
    ![Set Max FPS](./images/limiting_game_fps/amd_frtc_tune.jpg)
+
 </details>
 
 ---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>NVIDIA Control Panel | Driver-Based (For NVIDIA GPU only, Affects All Games)</summary>
+
 Here's how to use NVIDIA's Control Panel in order to globally limit the FPS of all your games:
 
 {: .warning}
@@ -71,12 +74,14 @@ This impacts all games on your system.
    ![Global Settings](./images/limiting_game_fps/nvidia_global_settings_tab.jpg)
 3. Activate `Max Frame Rate` and select a value between 20 and 1000.
    ![Set Max FPS](./images/limiting_game_fps/nvidia_max_frame_rate.jpg)
+
 </details>
 
 ---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>NVIDIA Control Panel | Driver-Based (For NVIDIA GPU only, Specific Games)</summary>
+
 Here's how to use NVIDIA's Control Panel in order to globally limit the FPS to specific games:
 
 ---
@@ -103,4 +108,5 @@ Here's how to use NVIDIA's Control Panel in order to globally limit the FPS to s
    ![Select Game](./images/limiting_game_fps/nvidia_perapp_settings_tab_app.jpg)
 5. Enable `Max Frame Rate` and choose a value between 20 and 1000.
    ![Set Game-specific Max FPS](./images/limiting_game_fps/nvidia_max_frame_rate_per_app.jpg)
+
 </details>

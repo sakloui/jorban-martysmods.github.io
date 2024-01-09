@@ -1,6 +1,7 @@
 ---
 title: Grand Theft Auto V
 layout: page
+nav_order: 3
 parent: Special Games
 grand_parent: Special & Others
 ---

@@ -13,18 +13,18 @@ If you're having trouble locating your game's executable, here's a step-by-step 
 
 ---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Using Windows Task Manager (PREFERED)</summary>
 
 ### Step 1: Accessing Task Manager
 
-1. **Option 1**: Right-click the Windows Taskbar and select "Task Manager".
+**Option 1**: Right-click the Windows Taskbar and select "Task Manager".
     ![Taskbar Option](./images/finding_game_executable/right_click_taskbar_global.png) (Windows 11)
     ![Taskbar Option](./images/finding_game_executable/right_click_taskbar_global_win10.png) (Windows 10)
 
-2. **Option 2**: Press `Control + Alt + Delete` simultaneously, then select "Task Manager".
+**Option 2**: Press `Control + Alt + Delete` simultaneously, then select "Task Manager".
 
-3. **Option 3**: Press `Control + Shift + Escape` simultaneously.
+**Option 3**: Press `Control + Shift + Escape` simultaneously.
 
 ---
 
@@ -43,7 +43,7 @@ Here, you can identify both the location and the specific executable of the game
 
 ---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Finding the Executable through Steam</summary>
 
 ### Step 1: Accessing Game Properties
@@ -58,11 +58,9 @@ Here, you can identify both the location and the specific executable of the game
 ### Step 2: Navigating to 'Installed Files' 
 
 1. In the properties window, select the `Installed Files` tab on the left.
-   
    ![Installed Files](./images/finding_game_executable/click_installed_files_tab_steam.png)
 
 2. Confirm you're on the correct page by checking for the bold `Installed Files` text in the middle of the window.
-   
    ![Check Installed Files](./images/finding_game_executable/installed_files_tab_steam.png)
 
 ---
@@ -70,16 +68,14 @@ Here, you can identify both the location and the specific executable of the game
 ### Step 3: Browsing Game Files
 
 1. In the `Installed Files` section, click on the `Browse...` button.
-   
    ![Browse Button](./images/finding_game_executable/click_browse_steam.png)
 
-2. A File Explorer window will open, showcasing the game's files. Look for files with the `.exe` extension—those are the game executables.
-
+2. A File Explorer window will open, showcasing the game's files. Look for files with the `.exe` extension — those are the game executables.
    ![Find Executable](./images/finding_game_executable/game_file_explorer_steam.png)
 
 {: .note} 
-> While this method shows you the game's installation location, it may not always reveal the primary executable, especially if a game has multiple executables.
-> 
+> While this method shows you the game's installation location, it may not always reveal the primary executable, especially if a game has multiple executables. 
 > It's essential to determine the correct one.
+
 
 </details>
