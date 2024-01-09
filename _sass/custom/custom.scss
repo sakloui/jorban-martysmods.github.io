@@ -59,6 +59,13 @@ summary {
 		color: $color-summary;
 }
 
+.text-center {
+    text-align: center !important;
+	display: block;
+	padding: $padding-headers;
+	margin: $margin-headers !important;
+}
+
 // Define styling for h1
 h1 {
 		display: block;
@@ -85,6 +92,15 @@ h1, h2, h3 {
 		font-size: 1rem !important;
 		width: 100% !important;
 }
+
+.site-logo {
+    width: 100%;
+    height: 100%;
+    background-image: url($logo);
+    background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: contain;
+  }
 
 // Define styling for site-footer
 .site-footer {

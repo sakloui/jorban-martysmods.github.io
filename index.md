@@ -3,11 +3,11 @@ title: Home
 layout: home
 nav_order: 1
 ---
+Marty's Mods Guide Site
+{: .text-center}
+{: .fs-8 }
 
-# Welcome to MartysMods Guides!
+<img style="max-width: 100%" src="./assets/home-page-image.jpg"/>
 
-<img style="max-width: 100px" src="./assets/mmlogo350.png"/>
-
-Delve deep into the world of ReShade with our comprehensive guides.
-
-Whether you're a newbie or a returning enthusiast, we're here to illuminate the multifaceted features of ReShade for you!
+Welcome to our guide site! Here we host a plethora of guides that will help to illuminate you on the multifaceted features of ReShade and it's shaders!
+{: .text-center}
