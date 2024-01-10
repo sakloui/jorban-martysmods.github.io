@@ -471,7 +471,97 @@ This section will guide you through setting up and configuring specific shaders 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro RTGI</summary>
 
-WIP
+RTGI is iMMERSE's flagship shader. It is a raytraced global-lighting solution. It brings realistic lighting to scenes using ReShade, while not being too taxing on the performance, especially against other solutions of its class. Ultimately, bringing the best on quality x performance ratio.
+
+RTGI is capable of highlighting details or adding details that are otherwise hidden to the scenes via Global Illumination and Ambient Occlusion with Raytracing. It can also highlight textures via its recently added Specular GGX reflections.
+
+Our guide below will make sure you'll be familiarized with it and will allow you to learn how to make the most usage out of it.
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Initial Configuration</summary>
+Before starting, make sure Launchpad is properly set-up. After that, find a place you want to try the shader in a game or application and get to tweaking it.
+RTGI is also made to take advantage of specific Launchpad features, such as Texture Normals, Smooth Normals and whatnot, so make sure to re-read the guide if you ever get lost or feel like something could look better.
+
+---
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Configuring the Shader</summary>
+## **Step 1:** Enable the Shader
+* Simply check the shader `iMMERSE Pro RTGI [MartysMods_RTGI.fx]` in the `Home` tab of ReShade.
+* This will activate RTGI and will give you the arguments at the bottom to change.
+
+---
+
+## **Step 2:** Configuring the Scene lighting using the `Ambient Light` slider.
+
+As of RTGI version 0.50 (Released in 2023/12/31), RTGI now has an option to darken the overall scene to allow for the games to take more advantage of the Dynamic Lighting introduced by RTGI. At first, your scene might look too dark for your liking, but that's what this function is here for.
+It goes from 0.0 to 1.0, 0.0 being little to no original game scene lighting, and 1.0 being fully lit by the game, with GI over the top. There isn't a value that fits all scenes, so its all up to preference.
+A good strategy is to use these for close-up pictures or to give it more of a studio-lighting look by having only the parts you want lit illuminated.
+
+![Comparison between none to full Ambient Lighting](../images/configuring-immerse-shaders/rtgi_ambient_lighting_comparison.png)
+
+---
+	
+## **Step 3:** Restoring and configuring the scene lighting.
+
+With the above said, we'll start by tweaking the scene lighting again in a case which the ambient lighting is really low, allowing effectively for RTGI to replace the game's lighting.
+First, we'll start up by changing the quality of the RTGI by going on the `Diffuse GI Quality` setting. It has a few presets, with "Low" being the lowest but fastest, and "Ultra" being the highest but the most performance-consuming one.
+The higher the quality, the larger the GI will bleed and the less noise it will have in the final result.
+
+![Comparison of Quality Levels](../images/configuring-immerse-shaders/rtgi_quality_comparison.png)
+
+Second option we'll have to tweak is the `Diffuse GI Radius`, this tells how far the Global Illumination will go in the scene. The larger this is, the more the bright elements will spread on the scene. With 1 being little to no light bleeding and 20 being the farthest it can reach.
+
+![Comparison of GI Radius](../images/configuring-immerse-shaders/rtgi_radius_comparison.png)
+
+Last, is the `Diffuse Bounce Lighting Intensity` slider, this used to be configured via a pre-processor definition, but as of the latest version, it is computed along with the base RTGI. This is responsible for telling how bright later bounces of lighting are.
+This helps maintain the scene lit while not making light sources reach too far or overbright the entire scene.
+
+![Comparison of Bounce Lighting Values](../images/configuring-immerse-shaders/rtgi_bouncelighting_comparison.png)
+	
+Now, to fine-tune it, change the `Fade-Out Range` so what you want covered from the scene gets covered up and `Z-Thickness` to change how thin or thick the objects on the scene are to add shadows. This is also useful to avoid halos around objects which shouldn't have them.
+
+---
+
+## **Step 4:** Tweaking Surfaces and Reflections.
+
+As of 0.50, the PBR GGX Specular Reflection feature has been re-introduced. This feature allows RTGI to "guess" reflective surfaces and how rough or smooth they are. Combined with Launchpad's Texture Normals, it allows for a "wet-floors" while not looking out of place, or to give extra depth to scenes.
+
+Please note that this feature `only works on DirectX 10 and up, OpenGL and Vulkan`, it does not work with DirectX 9 given its age and limitations. So, moving those sliders in a DX9 application will result in no changes.
+
+Make sure to also check Launchpad, as it has special integration with `Texture Normals` to keep details and highlights of the scene textures intact, while adding reflections. If there is too much noise on them, tweak the `Texture Normals Sample Radius` and `Texture Normals Intensity` on Launchpad until it looks correct to your tastes.
+
+Observations out of the way, lets learn about its parameters.
+
+Starting with `Specular GI Quality`, this works the same as the `Diffuse GI Quality` parameter, except it will only affect the reflections part, you can keep that on "Low" if you're not planning on having them enabled to save computational power and framerate.
+
+Then, the second parameter: `Specular Lighting Intensity`. This tells RTGI how much the surfaces reflect on the scene. With 0 disabling the reflections fully. 
+
+If you don't want to cause a "wet-world" effect, tweak those until they just show a bit of the geometry above them.
+
+![Specular Lighting Preview](../images/configuring-immerse-shaders/rtgi_specular_comparison.png)
+	
+At last, we have `Surface Roughness`, this tells how Defined the reflections are, since RTGI doesn't know how rough surfaces are, it guesses and blurs the reflections as a mean to make it more rough and less defined. 0 makes the reflections super-shiny and defined, while 1.0 makes them super-blurry and hard to see.
+	
+![Reflection Roughness Comparison](../images/configuring-immerse-shaders/rtgi_reflection_comparison.png)
+	
+---
+
+## **Step 5:** Experimental section.
+
+It only has one option, which is `Assume sRGB Input`, with games that has flat and simple lighting, this will prevent washing the scene's colors or making them too bright. For games with more detailed lighting, having this disabled will help highlight the scenes details.
+
+---
+
+</details>
+
+---
 
 </details>
 
@@ -577,7 +667,46 @@ WIP
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro Solaris</summary>
 
-WIP
+Solaris is IMMERSE's main implementation of a Bloom shader. Bloom shaders are meant to mimic light bleeding from very bright surfaces, similar to how a camera lens act when looking at very bright reflective objects.
+
+It's differential is ease of usage, and quality x speed relation. It is a very fast shader with very high quality results.
+
+To configure it, follow the below steps. In this guide, there is no "best" or "worst" option, its all up to personal preference.
+
+---
+
+## **Step 1:** Enable the Shader
+
+Click on the IMMERSE Pro Solaris shader and enable it. Once you do, there will be some options, first, lets start by setting up the scene settings.
+
+---
+
+## **Step 2:** Configure overall Scene Look
+
+The first two options, `Log Exposure Bias` and `Log HDR Whitepoint` are responsible for telling how much light the "camera" is absorbing and how bright the "White" is. The more exposure bias, the more bloom, and the higher the Whitepoint, the more intense the bright parts will glow.
+
+The last 3 parameters are the more "artistic" side of the bloom, those are:
+
+* `Bloom Intensity`: Changes the overall intensity of the bloom. Independent of what area is considered white or "dark".
+* `Bloom Radius`: How large are the light glows / ranges.
+* `Bloom Hazyness`: Changes how much of the colors the bloom washes-away. With 0 being no color changes, and 1 being a full bleached look.
+
+---
+
+## **Step 3:** Technical Parameters
+
+Those parameters are more techincal and won't change much of the final look, they are made for more specific changes or user needs.
+
+* `High Resolution Input`: Changes the resolution the Bloom should sample the scene. Useful if you need to grab more detailed objects which should glow.
+* `Mask by Depth`: Made as a way to prevent HUD elements from glowing. Enabling this will make it so the depth controls what will emit bloom or not.
+* `Depth Mask Strength`: The higher it is, the far away the bloom will apply, with 0 being the same as having depth masking disabled.
+
+The last 2 post-process parameters will also depend on your usage.
+
+* `ENABLE_SOLARIS_REGRADE_PARITY`: This will make it so Solaris will work together with ReGrade, using its exposure parameters and levels to define the bloom on the scene.
+* `SOLARIS_PERF_MODE`: Enables a higher-performance mode for Solaris, changing how it works internally to tax less of the computer. Not generally necessary, but low-performance setups might benefit from having it on.
+
+---
 
 </details>
 
@@ -595,7 +724,46 @@ This section will guide you through setting up and configuring specific shaders 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate Convolution Bloom</summary>
 
-WIP
+Convolution Bloom (or FFT Bloom) is a more-advanced and high-end bloom based on Fast-Fourier Transform with a different end-effect. The way it works allows for bloom to have different shapes and sizes, instead of being just huge glowing light sources. Those being "Spikes", which simulates blades from a camera, and "Inverse Square Glow", which is similar to traditional bloom methods, but with a much higher range.
+More about those will be shown later down the guide, meanwhile, we'll focus on the shared options.
+
+---
+
+## **Step 1:** Enabling the shader
+Click on the IMMERSE Ultimate ConvolutionBloom shader and enable it. Most of the parameters are the same as Solaris, with only one new option shared between the (later) pre-processor options.
+
+* `Bloom Padding`: Due to the way FFT works, the bloom will usually go beyond the screen resolution and boundaries and "leak" to the top or bottom of the image, causing weird / innacurate results. This parameter creates a black border to mitigate this, but will also reduce how far the bloom goes.
+* `Log Exposure Bias` and `Log HDR Whitepoint` are responsible for telling how much light the "camera" is absorbing and how bright the "White" is. The more exposure bias, the more bloom, and the higher the Whitepoint, the more intense the bright parts will glow.
+* `Bloom Intensity`: Changes the overall intensity of the bloom. Independent of what area is considered white or "dark".
+* `Bloom Radius`: How large are the light glows / ranges.
+* `Bloom Hazyness`: Changes how much of the colors the bloom washes-away. With 0 being no color changes, and 1 being a full bleached look.
+* `Enable Debug View`: Shows multiple debug outputs to help see how the shader is working, with the first option showing only the output of the bloom (how the bright areas look without taking the general image into consideration) and the second showing the Fourier texture of the bloom (more dev-oriented).
+
+---
+
+## **Step 2:** Pre-Processor options
+Before talking about the other options, we must talk about the Pre-Processor ones since those interfere on what options you'll have at your disposure, the Pre-Processor settings are:
+
+* `CONVOLUTION_BLOOM_QUALITY`: Changes the resolution of the Fourier kernel, higher values (from 0 to 2) will produce better results, but also require more resources.
+* `CONVOLUTION_BLOOM_MASK_PRESET`: The default option is "Diffraction Spikes", which will create blades of light from glowing / bright sources, similar to the blades of a camera. The second one is "Inverse Square Glow", which will create a more traditional bloom (as in, light sources will spread lights to its surroundings).
+
+---
+
+## *Step 3:* Individual options
+The options of the First method, `Diffraction Spikes`, are:
+
+* `Diffraction Spike Amount`: How many "Spikes" the bloom has, basically working as how many blades the "camera" has.
+* `Diffraction Spike Rotation`: The rotation of the blades, as in, if they are coming straight from vertical, or tilted. 
+* `Diffraction Spike Radius`: How far the "spikes" of light go through the image. The higher the value, the further they'll reach.
+* `Diffraction Spike Blurryness`: How blurry the spikes are. The lower the value, the more evident the spike shapes are.
+* `Diffraction Spike Phase Amount`: How bright the spikes (blades) are, not the light sources. The higher, the brighter / more visible the spikes will appear.
+
+The options for the Second method, `Inverse Square Glow`, are:
+
+* `Glow Intensity`: How far the bloom goes and how intense it is, higher values means further and brighter.
+* `Glare Amount`: How far the "dark" part of the bloom goes, the higher, the darker it is at the edges of the bloom sources.
+
+---
 
 </details>
 
