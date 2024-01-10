@@ -191,7 +191,7 @@ You want to manage this argument where there is a noticble increase in game deta
 
 Start at the value of `0.000` and work your way up until you're able to find details being presnted more in the scene you've chosen.
 
-![Comparison](../images/configuring-immerse-shaders/sharpened_image.jpg)
+![Comparison](../images/configuring-immerse-shaders/sharpned_image.jpg)
 
 </details>
 
