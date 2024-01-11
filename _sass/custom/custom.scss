@@ -1,26 +1,22 @@
 // Define font family and path
-$font-family: 'Atkinson Hyperlegible';
+$font-family: 'Mona Sans';
 $font-path: './fonts/';
 $body-font-family: $font-family, sans-serif;
 
-// Mixin for font-face
-@mixin font-face($style, $weight, $name) {
-  @font-face {
-    font-family: $font-family;
-    font-style: $style;
-    font-weight: $weight;
-    // Define source paths for different font formats
-    src: url('#{$font-path}Atkinson-Hyperlegible-#{$name}-102a.woff2') format('woff2'),
-         url('#{$font-path}Atkinson-Hyperlegible-#{$name}-102.woff') format('woff'),
-         url('#{$font-path}Atkinson-Hyperlegible-#{$name}-102.ttf') format('truetype');
-  }
+//this weird loopback instead of defining the font-face directly 
+//is needed to make the relative font path work
+@mixin font-face() {
+	@font-face{
+		font-family: 'Mona Sans';
+		src:
+		url('#{$font-path}Mona-Sans.woff2') format('woff2 supports variations'),
+		url('#{$font-path}Mona-Sans.woff2') format('woff2-variations');
+		font-weight: 200 900;
+		font-stretch: 75% 125%;
+	}
 }
 
-// Include font-face for different styles and weights
-@include font-face(normal, 400, 'Regular');
-@include font-face(italic, 400, 'Italic');
-@include font-face(normal, 700, 'Bold');
-@include font-face(italic, 700, 'BoldItalic');
+@include font-face();
 
 // Define navigation and content widths, header height
 $nav-width: 350px !important;
@@ -31,15 +27,264 @@ $header-height: 4rem !important;
 $padding-headers: 10px 0px 10px 0px;
 $margin-headers: 0px 0px 0px 0px;
 
-// Define font size and color for summary
-$font-size-summary: 1.3rem;
-$color-summary: #ffffff;
+$color-background-martysmods-1: #202329; //main background color like on martysmods.com
+$color-background-martysmods-2: #191c20; //main background color like on martysmods.com
+$color-navigation-active: rgb(93, 168, 237);
+
+$color-font-text: #FFFFFFDD;
+
+//font and colors
+$font-size-h1: 3.0rem;
+$font-size-h2: 2.0rem;
+$font-size-summary: 1.75rem;
+
+//==================================================================
+// Global settings and style overrides
+//==================================================================
+
+:root {
+	color-scheme: dark;
+  }
+
+html {
+	font-family: $body-font-family !important; //define font family globally for the entire document	
+	background-color: $color-background-martysmods-2; 
+	color-scheme: dark;
+  }
+
+body, head {
+	font-family: $body-font-family !important;
+	background-color: $color-background-martysmods-2;
+	color:  $color-font-text;
+}
+
+.main-header{	
+	border-style: none;	 //disable border below search bar
+}
+
+.main {
+	@include mq(lg) {
+		max-width: 1050px;
+		width: 100%;
+		margin-left: $nav-width;
+		font-size: 1.1rem;		
+	}
+}
+
+.site-header{
+	//border-style: none; //border below icon topleft
+	width: 100%;
+	background-color: $color-background-martysmods-1;
+}
+
+.side-bar {
+	border-style: none; //disable border between sidebar and main
+	@include mq(lg) {
+			width: $nav-width; //moves the sidebar to the left
+			}
+	}
+
+.site-logo {
+    width: 100%;
+    height: 100%;
+    background-image: url($logo);
+    background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: contain;
+  }
+
+h1 {
+	display: block; //possibly useful, ensures the element spans the maximum available width and nothing flows next to it ever	
+}
+ 
+h1, h2, h3 {
+	position: relative;
+	padding: $padding-headers;
+	margin: $margin-headers !important;
+}
+
+//hide breadcrumbs (directory-style info above main content
+.breadcrumb-nav-list {
+	display: none;
+}
+
+//title text on landing page
+.text-center {
+    text-align: center !important;
+	display: block;
+	padding: $padding-headers;
+	margin: $margin-headers !important;
+	//font-weight: 700 !important;
+}
+
+// Define styling for hr
+hr {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	border-style: none;
+	background-color: #00000000;
+}
+
+// Define styling for details-tree
+.details-tree {
+	position: relative;
+}
+
+//adds indentation and border to expanded details-tree
+.details-tree[open]::before {
+	border-left: 1px solid #ffffff4A;
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 2.4rem; //indentation width
+	height: calc(100% - 2.4rem); //indentation width
+}
+
+// Define styling for details-tree > *:not(summary)
+.details-tree > *:not(summary) {
+	margin-left: 2.4rem !important; //indentation width
+}
+
+summary {
+	margin-left: -0.42rem;
+}
+
+//==================================================================
+// Left Sidebar
+//==================================================================
+
+//Vertically centers the little anchor thing next to headers 
+.anchor-heading {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+//resize and reposition
+nav#site-nav.site-nav {
+	padding-top: 0.5rem;
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+	width: 100% !important;	
+}
+
+//top level color scheme
+.nav-list .nav-list-item .nav-list-link {
+	font-size: 1.01rem;  
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	color: #FFFFFF;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover {
+	background-image: none;
+	text-decoration: underline;
+}
+
+//active button
+.nav-list .nav-list-item .nav-list-link.active {
+	background-image: none;
+	color: $color-navigation-active;
+}
+
+//required to make it work in children as well, as the default css sets this manually ._.
+.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link.active {
+	background-image: none;
+	color: $color-navigation-active;
+}
+
+.nav-list .nav-list-item .nav-list-expander {
+	color: #FFFFFF;
+}
+
+//==================================================================
+// Text
+//==================================================================
+
+h1 {
+	font-weight: 200;
+	font-size: $font-size-h1 !important;
+}
+
+.text-delta {
+	font-weight: 400;
+	font-size: $font-size-h2 !important;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+summary {
+	font-weight: 400;
+	font-size: $font-size-summary;	
+	color: #FFFFFF;		
+}
+
+//NOTE widget
+p.note::before {
+	color: #ac89ff; //recoloring the NOTE text as it's almost unreadable i nfront of the background pane
+	content: "Note";
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	padding-bottom: 0.125rem;
+}
+
+//WARNING widget
+p.warning::before {
+	color: #ffa0a9;
+	content: "Warning!";
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	padding-bottom: 0.125rem;
+}
+
+
+
+/*
+//ALTERNATE STYLE, BUTTONS
+
+//top level color scheme
+.nav-list .nav-list-item .nav-list-link {
+	font-size: 1.05rem;  
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	color: #FFFFFF;
+	//font-weight: 700;
+}
+
+//custom font weight for non-top level entries
+.nav-list-item .nav-list-item .nav-list-link {
+}
+
+.nav-list .nav-list-item .nav-list-link:hover {
+	border-radius: 5px;
+	background-image: none;
+}
+
+//active button
+.nav-list .nav-list-item .nav-list-link.active {
+	border-radius: 5px;
+	background-image: none;
+	background-color:#0E91F8;
+}
+*/
+
+
+
+
 
 // THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
 // THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
 // THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
 // THIS TOOK ME SO LONG TO FIX, DO NOT BREAK IT, OR I WILL CRY //
-
+/*
 // Apply font family to body and head
 body, head {
   font-family: $body-font-family;
@@ -56,7 +301,7 @@ img {
 // Define styling for summary
 summary {
 		font-size: $font-size-summary;
-		color: $color-summary;
+		color: $color-summary;		
 }
 
 .text-center {
@@ -64,13 +309,14 @@ summary {
 	display: block;
 	padding: $padding-headers;
 	margin: $margin-headers !important;
+	//font-weight: 700 !important;
 }
 
 // Define styling for h1
 h1 {
 		display: block;
 		padding: $padding-headers;
-		margin: $margin-headers !important;
+		margin: $margin-headers !important;		
 }
 
 // Define common styling for h1, h2, h3
@@ -144,7 +390,7 @@ h1, h2, h3 {
 
 // Define styling for active nav-list .nav-list-item .nav-list-link 
 .nav-list .nav-list-item .nav-list-link.active {
-		font-weight: 400 !important;
+		font-weight: 300 !important;
 }
 
 // Define styling for site-butto
@@ -166,7 +412,7 @@ hr {
 // Define styling for p
 p {
 		margin-top: 10px !important;
-		margin-bottom: 10px !important;
+		margin-bottom: 10px !important;		
 }
 
 // Define styling for details-tree
@@ -250,4 +496,4 @@ font-weight: bold;
 text-transform: uppercase;
 font-size: 1rem;
 padding-bottom: 0.125rem;
-}
+}*/
