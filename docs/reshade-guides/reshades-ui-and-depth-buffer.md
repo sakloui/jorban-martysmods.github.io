@@ -1,11 +1,11 @@
 ---
-title: ReShade's UI & Depth Buffer
+title: ReShade GUI & Depth Buffer
 layout: default
 nav_order: 2
 parent: ReShade Guides
 ---
 
-# ReShade's UI
+# ReShade GUI
 
 Learning how to navigate through ReShade is key to being able to utilize it effectively. Being able to navigate it with ease and configure specifically what you are looking for allows the user to create whatever their imagination allows for.
 
@@ -14,7 +14,7 @@ So, this guide will walk you through all the basics of what ReShade has to offer
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Home Tab</summary>
+<summary>Home Tab</summary>
 
 The `Home` tab in ReShade houses several buttons and menus that you can interact with in order to change the way your game looks, as well as configure specific shaders.
 
@@ -25,7 +25,7 @@ Below will be a dropdown that provides a disection of each part of the `Home` ta
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Preset Selection Bar</summary>
+<summary>Preset Selection Bar</summary>
 
 At the top of the ReShade `Home` menu will be preset selection section bar:
 
@@ -40,7 +40,7 @@ By default, ReShade saves presets in the game directory, in a file called `ReSha
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Shader List</summary>
+<summary>Shader List</summary>
 
 The area below the preset selection bar is ReShade's shader list:
 ![Technique List](../images/reshades-ui-and-depth-buffer/rsui_effectlist.png){: style="max-width:65%" }
@@ -52,7 +52,7 @@ This list will provide the user with all of the shaders that is installed for Re
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Edit Pre-processor Definitions Button</summary>
+<summary>Edit Pre-processor Definitions Button</summary>
 
 Below the shader list will be the `Edit Global Preprocessor Definitions`. This button allows you to control aspects of shaders and depth before they are loaded by ReShade:
 
@@ -63,7 +63,7 @@ Below the shader list will be the `Edit Global Preprocessor Definitions`. This b
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Shader Parameters List</summary>
+<summary>Shader Parameters List</summary>
 
 The area below the shader list and edit pre-processor definitions button is the shader parameter list;
 
@@ -78,7 +78,7 @@ When you turn on a shader in ReShade, you will be able to see it's exposed param
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Add-ons Tab</summary>
+<summary>Add-ons Tab</summary>
 
 The `Add-ons Tab` is for managing ReShade Add-ons:
 
@@ -93,7 +93,7 @@ Popular Add-ons include [ShaderToggler - FransBouma](https://github.com/FransBou
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Settings Tab</summary>
+<summary>Settings Tab</summary>
 
 The `Settings` tab lets you tweak ReShade settings like shader directories, menu access keys, FPS meter configurations, theme settings:
 
@@ -221,7 +221,7 @@ The dropdowns below detail commonly used options that you can adjust within the 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Statistics Tab</summary>
+<summary>Statistics Tab</summary>
 
 ![Statistics Tab](../images/reshades-ui-and-depth-buffer/rsui_stats_tab.png){: style="max-width:65%" }
 
@@ -232,7 +232,7 @@ The `Statistics Tab`, shown in the image, is a great tool for tracking and impro
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The Log Tab</summary>
+<summary>Log Tab</summary>
 
 The `Log Tab` is a key tool for monitoring ReShade's operations and troubleshooting issues. It provides a detailed log of ReShade's activities to help you identify where your issues are.
 
@@ -243,7 +243,7 @@ If something seems wrong, it's recommended to share the error text or the entire
 ---
 
 <details markdown="block" class="details-tree">
-<summary>The About Tab</summary>
+<summary>About Tab</summary>
 
 The `About Tab`, as shown in the image above, acknowledges and recognizes the work behind ReShade as well as the current version that you are running!
 
@@ -251,13 +251,13 @@ The `About Tab`, as shown in the image above, acknowledges and recognizes the wo
 
 ---
 
-# ReShade's Depth Buffer
+# Depth Buffer
 
-The depth buffer in a game tells what in the game has “depth”, as in, what is actually 3D, and what is just a plane. 
+The depth buffer is a crucial part of any 3D game. It is a single channel image buffer which contains information about the distance of the scene to the camera, per pixel. Many ReShade effects depend on it and will not work correctly. 
 
-It's crucial for effects like Ambient Occlusion, which determines what occludes and what doesn't, and Depth of Field, which identifies what is close to the camera and what isn't. Without it, these effects can't distinguish between near and far objects. 
+ReShade's builtin `Generic Depth` Add-on scans the game data for the (likely) correct depth buffer and forwards it to the shaders.
 
-In the following sections, you'll learn how to identify a depth buffer, check if it's working, and troubleshoot common issues that prevent detection.
+In the following sections, you'll learn how to verify the depth settings are correct and how to fix common issues.
 
 {: .warning}
 Ensure you've correctly set up ReShade and followed the previous steps on the other pages! This guide assumes you've followed all instructions and have ReShade set up and running correctly.
@@ -267,18 +267,18 @@ Ensure you've correctly set up ReShade and followed the previous steps on the ot
 <details markdown="block" class="details-tree">
 <summary>Understanding Depth Buffer Basics</summary>
 
-The image below will give you an idea of what your depth buffer **should** look like:
+To start, enable the shader `DisplayDepth`. This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
+
+The image below shows what the output **should** look like. The depth buffer is on the right side, the normal buffer (generated from depth) on the left side.
 
 ![Depth Buffer Reversed](../images/reshades-ui-and-depth-buffer/working_depth_output.jpg)
 
-If your depth does not look like this - look below for the most common issues and solutions:
+If it looks like above, you're good to go. Otherwise look below for the most common issues and solutions:
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>Reversed Depth Buffer</summary>
-
-To start, enable the shader `DisplayDepth`. This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
 
 The image below shows that the `DisplayDepth` shader has loaded correctly, however, the depth is reversed. 
 
@@ -286,7 +286,7 @@ The image below shows that the `DisplayDepth` shader has loaded correctly, howev
 
 ---
 
-You can solve this issue by simply flipping the `RESHADE_DEPTH_INPUT_IS_REVERSED` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade.
+You can solve this issue by inverting the `RESHADE_DEPTH_INPUT_IS_REVERSED` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade. If it is set to 1, set it to 0 and vice versa.
 
 </details>
 
@@ -295,66 +295,22 @@ You can solve this issue by simply flipping the `RESHADE_DEPTH_INPUT_IS_REVERSED
 <details markdown="block" class="details-tree">
 <summary>Upside Down Depth Buffer</summary>
 
-To start, enable the shader `DisplayDepth`. This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
-
 The image below shows that the `DisplayDepth` shader has loaded correctly, however, the depth output is upside down:
 
 ![Depth Buffer Upside Down](../images/reshades-ui-and-depth-buffer/upside_down_normals.jpg)
 
-You can solve this issue by simply flipping the `RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade.
+You can solve this issue by simply inverting the `RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade. If it is set to 1, set it to 0 and vice versa.
 
 </details>
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>No Depth Buffer</summary>
+<summary>Empty Depth Buffer</summary>
 
-To start, enable the shader `DisplayDepth`. This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
-
-If your shader resembles the images below, it lacks data from the `Generic Depth` Add-on:
+If your output resembles **either** of the images below, it lacks data from the `Generic Depth` Add-on:
 
 ![Depth Buffer No Data](../images/reshades-ui-and-depth-buffer/depth_buffer_no_data_example.png)
-
-  * Before proceeding any further, ensure that these anti-aliasing options are disable within your game:
-
-    * MSAA ANTIALIASING
-
-    * SSAA ANTIALIASING
-
-  FXAA or TXAA are acceptable, as they don’t erase the depth-buffer information.
-
-The image shown above is the output of `DisplayDepth` showing no data from `Generic Depth`.
-
-This means that:
-
-* Your game is not presenting a depth buffer 
-
-* You have the wrong options configured for `Generic Depth`
-
-* Your depth buffer choice is wrong.
-
----
-
-You can absolve this issue simply by playing around with `Generic Depth` in order to get the proper depth buffer active:
-
-  * Try toggling on and off `Copy depth buffer before clear operations` and `Copy depth buffer before fullscreen draw calls`
-
-  * Try selecting the depth buffer with the closest resolution to your game resolution
-
-  * Try selecting the depth buffer with the highest amount of draw calls and verticies.
-
-</details>
-
----
-
-<details markdown="block" class="details-tree">
-<summary>No Depth Buffer and Reversed</summary>
-
-To start, enable the shader `DisplayDepth`. This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
-
-If your shader resembles the images below, it lacks data from the `Generic Depth` Add-on and the depth from the game is reversed:
-
 ![Depth Buffer No Data - Reversed](../images/reshades-ui-and-depth-buffer/depth_buffer_no_data_reversed_example.png)
 
   * Before proceeding any further, ensure that these anti-aliasing options are disable within your game:
@@ -363,11 +319,9 @@ If your shader resembles the images below, it lacks data from the `Generic Depth
 
     * SSAA ANTIALIASING
 
-  FXAA or TXAA are acceptable, as they don’t erase the depth-buffer information.
+  FXAA or TXAA are acceptable, as they usually do not clear the depth-buffer information. Note that some games do not mention which AA method they use.
 
-  The image shown above is the output of `DisplayDepth` showing no data from `Generic Depth`.
-
-A depth buffer that is not presenting data, and is reversed means that:
+The image shown above is the output of `DisplayDepth` showing no data from `Generic Depth`. This means that:
 
 * Your game is not presenting a depth buffer 
 
@@ -379,7 +333,7 @@ A depth buffer that is not presenting data, and is reversed means that:
 
 ---
 
-You can absolve this issue simply by playing around with `Generic Depth` in order to get the proper depth buffer active and changing the value for `RESHADE_DEPTH_INPUT_IS_REVERSED`:
+You can absolve this issue simply by toying around with `Generic Depth` in order to get the proper depth buffer active:
 
   * Try toggling on and off `Copy depth buffer before clear operations` and `Copy depth buffer before fullscreen draw calls`
 
@@ -387,9 +341,11 @@ You can absolve this issue simply by playing around with `Generic Depth` in orde
 
   * Try selecting the depth buffer with the highest amount of draw calls and verticies.
 
-  * Flip the `RESHADE_DEPTH_INPUT_IS_REVERSED` argument within the `Global Preprocessor Definitions` under the `Home` tab of ReShade.
+If at any point you start to see any features in the output that match the scene, re-check the preprocessor definitions.
 
 </details>
+
+---
 
 </details>
 

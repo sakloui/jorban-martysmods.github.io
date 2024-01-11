@@ -44,17 +44,16 @@ $font-size-summary: 1.75rem;
 
 :root {
 	color-scheme: dark;
-  }
+}
 
 html {
-	font-family: $body-font-family !important; //define font family globally for the entire document	
+	//font-family: $body-font-family !important; //can't do it here, as the default style overrides it in body, head
 	background-color: $color-background-martysmods-2; 
-	color-scheme: dark;
-  }
+}
 
 body, head {
 	font-family: $body-font-family !important;
-	background-color: $color-background-martysmods-2;
+	background-color: $color-background-martysmods-2; //define font family globally for the entire document
 	color:  $color-font-text;
 }
 
