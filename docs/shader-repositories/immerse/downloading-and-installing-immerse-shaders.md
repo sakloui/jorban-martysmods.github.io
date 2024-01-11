@@ -8,9 +8,9 @@ grand_parent: Shader Repositories
 
 # Downloading and Installing iMMERSE Shaders and Addons
 
-Created by Pascal Gilcher (also known as MartyMcFly), iMMERSE is the successor to qUINT and features some of the most robust and well known shaders that are available for ReShade.
+Created by Pascal Gilcher (also known as _Marty McFly_), iMMERSE is the successor to qUINT and features some of the most robust and well known shaders that are available for ReShade.
 
-iMMERSE comes in three different repositories:
+iMMERSE comes in three different tiers:
 
 * iMMERSE (FREE)
 
