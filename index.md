@@ -9,5 +9,5 @@ Marty's Mods Guide Site
 
 <img style="max-width: 100%" src="./assets/home-page-image.jpg"/>
 
-Welcome to our guide site! Here we host a plethora of guides that will help to illuminate you on the multifaceted features of ReShade and it's shaders!
+Welcome to our guide site! Here we host a large collection of guides that will help you to understand and better utilize ReShade!
 {: .text-center}
