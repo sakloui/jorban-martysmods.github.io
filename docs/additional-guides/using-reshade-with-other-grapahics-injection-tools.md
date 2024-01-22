@@ -2,7 +2,7 @@
 title: Using ReShade with Other Graphics Injection Tools
 layout: page
 nav_order: 98
-parent: Special and Others
+parent: Additional Guides
 ---
 
 ## **Using ReShade with Other Graphics Injection Tools**
@@ -35,7 +35,7 @@ Unlike ReShade, ENBSeries is not a generic tool. Each game requires its own spec
 
 1. Download [ENBSeries](http://enbdev.com/download.html) for the game you want to use. It's recommended to look for websites that already provide ENB presets, as the default download only includes a few example shaders.
 
-2. Extract the contents of the downloaded zip/rar file into the root folder of your game. If you're unsure about the location of the root folder, refer to [our guide on finding your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance.
+2. Extract the contents of the downloaded zip/rar file into the root folder of your game. If you're unsure about the location of the root folder, refer to [our guide on finding your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance.
 
 3. Rename the ReShade `.dll` file to `reshade.dll`.
 
@@ -62,7 +62,7 @@ For older DirectX 9 games we might need some other mods to make everything work 
 
 1. Download the latest [ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/) release.
 
-2. Extract the contents of the downloaded zip/rar file into the root folder of your game. If you're unsure about the location of the root folder, refer to [this guide](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance.
+2. Extract the contents of the downloaded zip/rar file into the root folder of your game. If you're unsure about the location of the root folder, refer to [this guide](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance.
 
 3. If there are conflicting file names for the ASI Loader file, you can use one of the examples listed below.
 

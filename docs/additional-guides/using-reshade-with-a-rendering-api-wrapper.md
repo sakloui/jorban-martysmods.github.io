@@ -2,7 +2,7 @@
 title: Using ReShade with a Rendering API Wrapper
 layout: page
 nav_order: 95
-parent: Special and Others
+parent: Additional Guides
 ---
 
 # Using ReShade with a Rendering API Wrapper
@@ -34,7 +34,7 @@ Acquire the latest DXVK version from [their GitHub releases](https://github.com/
 
 ## **Step 2:** Find your game's directory
 
-Utilize our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) if assistance is required.
+Utilize our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) if assistance is required.
 
 ---
 
@@ -119,7 +119,7 @@ Extract the files to a location where you can easily find them later. Ensure tha
 
 ## **Step 3:** Locate your game directory
 
-For this example, I'll be using the old Ubisoft game, POD (Planet of Death), which uses the Glide renderer. The instructions are similar for DirectX, but there might be some differences. If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+For this example, I'll be using the old Ubisoft game, POD (Planet of Death), which uses the Glide renderer. The instructions are similar for DirectX, but there might be some differences. If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance!
 
 ---
 
@@ -186,7 +186,7 @@ Extract the files to a location where you can easily find them later. Ensure tha
 
 ## **Step 3:** Locate your game directory
 
-For this example, I'll be using the game TrackMania Sunrise, which is an old DirectX 8-9 game. If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+For this example, I'll be using the game TrackMania Sunrise, which is an old DirectX 8-9 game. If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance!
 
 ---
 

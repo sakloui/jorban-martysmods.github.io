@@ -1,7 +1,7 @@
 ---
 title: Enabling Windows File Extensions
 layout: page
-parent: Special and Others
+parent: Additional Guides
 nav_order: 2
 ---
 

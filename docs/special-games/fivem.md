@@ -3,7 +3,6 @@ title: FiveM
 layout: page
 nav_order: 1
 parent: Special Games
-grand_parent: Special and Others
 ---
 
 # FiveM
@@ -22,7 +21,7 @@ Please do not ask for additional help in relation to getting FiveM to work in ac
 
 For this guide to be followed through step-by-step, you will have to first step up Windows file extenions to be properly viewed.
 
-You can get the information for setting up Windows file extensions to be viewed by following this our guide for [enabling Windows file extensions](https://guides.martysmods.com/docs/special-and-others/enabling-windows-file-extensions/)!
+You can get the information for setting up Windows file extensions to be viewed by following this our guide for [enabling Windows file extensions](https://guides.martysmods.com/docs/additional-guides/enabling-windows-file-extensions/)!
 
 ---
 
@@ -38,7 +37,7 @@ If you are struggling to install ReShade ot GTAV, please [follow our guide for i
 
 ## **Step 2:** Ensure ReShade Files are Installed
 
-Navigate to your GTAV folder by using our [guide for locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/)!
+Navigate to your GTAV folder by using our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)!
 
 Once there, look specifically for these two files, and singular folder and keep a mental note of where they are located:
 
@@ -66,7 +65,7 @@ Click on the `Beta` option and then close your game.
 
 ## **Step 4:** Locate your FiveM Installation
 
-In order to locate your FiveM location, please utilize our [guide for locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/)!
+In order to locate your FiveM location, please utilize our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)!
 
 ![FiveM File Location](../images/fivem/fivem-file-location.png)
 

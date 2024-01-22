@@ -1,7 +1,7 @@
 ---
 title: Finding the Archtecture Type of an Executable
 layout: page
-parent: Special and Others
+parent: Additional Guides
 nav_order: 97
 ---
 

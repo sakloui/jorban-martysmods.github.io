@@ -66,7 +66,7 @@ Upon running the ReShade installer, you will be greeted with a window instructin
 
 ![Game List](../images/downloading-and-installing-reshade/rs_game_list.png)
 
-If your game is not appearing in the standard listings, you can click "Browse..." at the bottom right to manually locate your game's executable. If this occurs and you don't know where your game is located, check out [our guide on finding your game's executable and directory](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/).
+If your game is not appearing in the standard listings, you can click "Browse..." at the bottom right to manually locate your game's executable. If this occurs and you don't know where your game is located, check out [our guide on finding your game's executable and directory](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
 ![Browse](../images/downloading-and-installing-reshade/rs_browse.png)
 
@@ -309,7 +309,7 @@ Right-click the `ReShadeXX.dll` you've extracted and choose "Rename." Then, rena
 
 Position the renamed DLL into the root folder of your game, the same directory where the game's executable is located.
 
-If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/).
+If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
 ![Place in Game Folder](../images/manual-reshade-installs/place_reshade_binary_game_folder.jpg)
 
@@ -396,7 +396,7 @@ WinRar can serve as an alternative, but this guide utilizes 7Zip.
 
 Move both the `injectXX.exe` and `ReShadeXX.dll` files to your game directory.
 
-   If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/).
+   If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
    ![File Placement](../images/manual-reshade-installs/place_reshade_dll_and_inject_in_game_folder.jpg)
 
@@ -451,7 +451,7 @@ This guide assumes that you already have ReShade installed.
 
 1. Navigate to your game directory.
 
-   If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/).
+   If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
 2. Create a `reshade-shaders` folder in the same location as your ReShade binary and enter the `reshade-shaders` folder.
 

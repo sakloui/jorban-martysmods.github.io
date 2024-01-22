@@ -2,7 +2,7 @@
 title: Finding Your Game Executable and Directory
 layout: page
 nav_order: 1
-parent: Special and Others
+parent: Additional Guides
 ---
 
 # Finding your Game's Executable and Game Directory

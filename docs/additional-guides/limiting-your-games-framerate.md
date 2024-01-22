@@ -2,7 +2,7 @@
 title: Limiting Your Game's Framerate
 layout: page
 nav_order: 4
-parent: Special and Others
+parent: Additional Guides
 ---
 
 # How to Limit Your Game's Framerate

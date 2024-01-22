@@ -1,7 +1,7 @@
 ---
 title: Setting Up Windows File Permissions
 layout: page
-parent: Special and Others
+parent: Additional Guides
 nav_order: 3
 ---
 
@@ -17,7 +17,7 @@ In this guide, we aim to simplify the concept of file permissions, however, this
 
 Before proceeding, ensure that your game is closed and no associated files are open! 
 
-The game directory is typically indicated in the file permissions error message. However, if you need assistance locating your game directory, refer to our guide on [how to find your game directory](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory).
+The game directory is typically indicated in the file permissions error message. However, if you need assistance locating your game directory, refer to our guide on [how to find your game directory](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
 ---
 

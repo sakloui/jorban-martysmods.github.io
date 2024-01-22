@@ -3,7 +3,6 @@ title: Grand Theft Auto V
 layout: page
 nav_order: 3
 parent: Special Games
-grand_parent: Special and Others
 ---
 
 ## Installing ReShade to Grand Theft Auto V
@@ -33,7 +32,7 @@ Make sure that you are selecting the "GTAV.exe" exectuable when installing ReSha
 
 ## **Step 2:** Change the ReShade DLL name from "dxgi.dll" to "d3d12.dll"
 
-Navigate to your Grand Theft Auto: V folder using our guide for [locating your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) and rename the file "dxgi.dll" to "d3d12.dll".
+Navigate to your Grand Theft Auto: V folder using our guide for [locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) and rename the file "dxgi.dll" to "d3d12.dll".
 
 </details>
 
@@ -80,7 +79,7 @@ The files shown above are files are needed for ENB.
 
 Copy each of these files over to the Grand Theft Auto: V base directory. 
 
-If you need help finding your Grand Theft Auto: V base directory, you can [follow our guide for finding your game's executable and directory](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/).
+If you need help finding your Grand Theft Auto: V base directory, you can [follow our guide for finding your game's executable and directory](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
 ![Move ENB files to GTAV Directory](../images/gtav/enb-to-gtav-move.png)
 

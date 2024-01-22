@@ -3,7 +3,6 @@ title: RageMP
 layout: page
 nav_order: 2
 parent: Special Games
-grand_parent: Special and Others
 ---
 
 # Installing ReShade to RageMP
@@ -23,7 +22,7 @@ RageMP uses Easy Anti-Cheat. Any shaders which require the depth buffer or addon
 
 1. Open up the install location of RageMP with File Explorer, 
 
-    If you are struggling to find the install location of RageMP, follow our guide [here on finding your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/).
+    If you are struggling to find the install location of RageMP, follow our guide [here on finding your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
     ![RageMP Install Location](../images/ragemp/ragemp_install_location.png)
 

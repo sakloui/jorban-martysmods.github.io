@@ -146,7 +146,7 @@ Open the `Addons` folder within the iMMERSE Ultimate Archive
 
 Navigate to your game folder where ReShade and the game exectuable exist.
 
-If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance!
 
 ---
 
