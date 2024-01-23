@@ -72,6 +72,9 @@ For $5 USD, you can access this repository, which currently features:
 <details markdown="block" class="details-tree">
 <summary>Downloading and Installing the iMMERSE Pro Repository</summary>
 
+{: .warning}
+iMMERSE Pro RTGI requires the installation of the iMMERSE (free) repository to be installed. You can do this through the ReShade Installer at the shader install portion.
+
 To access the iMMERSE Pro Archive, make sure you're a current subscriber to [Pascal's Patreon at the $5 USD Raytracers tier](http://www.patreon.com/mcflypg).
 
 Once subscribed, you are able to download iMMERSE Pro shaders from [Pascal's Discord (PGHUB)](https://discord.com/invite/wY49KMxjHT). You can find the latest iMMERSE Pro shader archive in the [#downloads-level-1](https://discord.com/channels/494578207505514496/494599998059839498) Discord channel.
@@ -101,6 +104,9 @@ For $10 USD, you can access this suite, which features:
 
 <details markdown="block" class="details-tree">
 <summary>Downloading the iMMERSE Ultimate Repository</summary>
+
+{: .warning}
+iMMERSE Pro ReLight requires the installation of the iMMERSE (free) repository to be installed. You can do this through the ReShade Installer at the shader install portion.
 
 To access the iMMERSE Ultimate repository, make sure you're a current subscriber to [Pascal's Patreon for the $10 USD Pathtracers tier](http://www.patreon.com/mcflypg).
 
