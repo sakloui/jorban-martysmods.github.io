@@ -214,11 +214,11 @@ When manually installing ReShade, you have to manually install shaders as well.
 
 2. Use the search bar to find your game.
 
-   ![Search Bar](../images/manual-reshade-installs/pcgw_search.webp)
+   ![Search Bar](../images/downloading-and-installing-reshade/pcgw_search.webp)
 
 3. Locate the API tab on your game's page, typically towards the end.
 
-   ![API Tab](../images/manual-reshade-installs/pcgamingwiki_api.webp)
+   ![API Tab](../images/downloading-and-installing-reshade/pcgamingwiki_api.webp)
 
 ---
  
@@ -240,7 +240,7 @@ WinRar can serve as an alternative, but this guide utilizes 7Zip.
 
 1. Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, hover over 7Zip, and select "Open Archive."
 
-   ![Open with 7Zip](../images/manual-reshade-installs/reshade_setup_open_with_7zip.webp)
+   ![Open with 7Zip](../images/downloading-and-installing-reshade/reshade_setup_open_with_7zip.webp)
 
 2. Choose the necessary DLL from the options:
 
@@ -248,7 +248,7 @@ WinRar can serve as an alternative, but this guide utilizes 7Zip.
 
     * `ReShade32.dll` for 32-Bit
 
-         ![Extract DLL](../images/manual-reshade-installs/7zip_extract_reshade_binaries.webp)
+         ![Extract DLL](../images/downloading-and-installing-reshade/7zip_extract_reshade_binaries.webp)
 
 ---
  
@@ -268,7 +268,7 @@ Right-click the `ReShadeXX.dll` you've extracted and choose "Rename." Then, rena
 
    * `opengl32.dll` - OpenGL
 
-   ![Rename DLL](../images/manual-reshade-installs/extacted_reshade_binary_rename.webp)
+   ![Rename DLL](../images/downloading-and-installing-reshade/extacted_reshade_binary_rename.webp)
 
 ---
  
@@ -278,11 +278,11 @@ Position the renamed DLL into the root folder of your game, the same directory w
 
 If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-![Place in Game Folder](../images/manual-reshade-installs/place_reshade_binary_game_folder.webp)
+![Place in Game Folder](../images/downloading-and-installing-reshade/place_reshade_binary_game_folder.webp)
 
 Upon completion, your game should launch with ReShade injected!
 
-![Successful Installation](../images/manual-reshade-installs/ultrakill_reshade_installed.webp)
+![Successful Installation](../images/downloading-and-installing-reshade/ultrakill_reshade_installed.webp)
 
 </details>
 
@@ -309,11 +309,11 @@ Crosire's Inject tool, being an external injector, is more likely to trigger ant
 
 2. Enter your game's name in the search bar.
 
-   ![Search Bar](../images/manual-reshade-installs/pcgw_search.webp)
+   ![Search Bar](../images/downloading-and-installing-reshade/pcgw_search.webp)
 
 3. Proceed to the API section on your game's page (usually located towards the end).
 
-   ![API Section](../images/manual-reshade-installs/pcgamingwiki_api.webp)
+   ![API Section](../images/downloading-and-installing-reshade/pcgamingwiki_api.webp)
 
 ---
 
@@ -345,7 +345,7 @@ WinRar can serve as an alternative, but this guide utilizes 7Zip.
 
 1. Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, hover over 7Zip, and select "Open Archive."
 
-   ![Open with 7Zip](../images/manual-reshade-installs/reshade_setup_open_with_7zip.webp)
+   ![Open with 7Zip](../images/downloading-and-installing-reshade/reshade_setup_open_with_7zip.webp)
 
 2. Extract the desired DLL:
 
@@ -355,7 +355,7 @@ WinRar can serve as an alternative, but this guide utilizes 7Zip.
 
    * `ReShade32.dll` for 32-Bit
 
-   ![Extract DLL](../images/manual-reshade-installs/7zip_extract_reshade_binaries.webp)
+   ![Extract DLL](../images/downloading-and-installing-reshade/7zip_extract_reshade_binaries.webp)
 
 ---
 
@@ -365,7 +365,7 @@ Move both the `injectXX.exe` and `ReShadeXX.dll` files to your game directory.
 
    If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-   ![File Placement](../images/manual-reshade-installs/place_reshade_dll_and_inject_in_game_folder.webp)
+   ![File Placement](../images/downloading-and-installing-reshade/place_reshade_dll_and_inject_in_game_folder.webp)
 
 ---
 
@@ -375,11 +375,11 @@ Move both the `injectXX.exe` and `ReShadeXX.dll` files to your game directory.
 
 2. Open Task Manager and right-click on your game under the processes tab, then select "Go to Details."
 
-   ![Go to Details](../images/manual-reshade-installs/task_manager_go_to_details.webp)
+   ![Go to Details](../images/downloading-and-installing-reshade/task_manager_go_to_details.webp)
 
 3. The highlighted executable displays the game's process name.
 
-   ![Executable Name](../images/manual-reshade-installs/task_manager_details_view_exe.webp)
+   ![Executable Name](../images/downloading-and-installing-reshade/task_manager_details_view_exe.webp)
 
 ---
 
@@ -389,23 +389,23 @@ Move both the `injectXX.exe` and `ReShadeXX.dll` files to your game directory.
 
 2. Navigate to your game's directory and open a command prompt by typing `cmd` into File Explorer's address bar.
 
-   ![Open CMD](../images/manual-reshade-installs/cmd_in_file_explorer.webp)
+   ![Open CMD](../images/downloading-and-installing-reshade/cmd_in_file_explorer.webp)
 
 3. Input `inject[x32/x64].exe "name_of_the_process.exe"` and hit Enter.
 
-   ![Inject Command](../images/manual-reshade-installs/type_inject_params.webp)
+   ![Inject Command](../images/downloading-and-installing-reshade/type_inject_params.webp)
 
 4. Open your game.
 
    If executed correctly, ReShade should be active once the game begins.
 
-   ![Successful Injection](../images/manual-reshade-installs/ultrakill_reshade_installed.webp)
+   ![Successful Injection](../images/downloading-and-installing-reshade/ultrakill_reshade_installed.webp)
 
 </details>
 
 ---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary>Manually Installing Shaders for ReShade</summary>
 
 This guide will go over how to install ReShade shaders manually without having to run the ReShade Installer.
@@ -422,7 +422,7 @@ This guide assumes that you already have ReShade installed.
 
 2. Create a `reshade-shaders` folder in the same location as your ReShade binary and enter the `reshade-shaders` folder.
 
-   ![Newly Created reshade-shaders Folder](../images/manual-reshade-installs/new_reshadeshader_folder.webp)
+   ![Newly Created reshade-shaders Folder](../images/downloading-and-installing-reshade/new_reshadeshader_folder.webp)
 
 3. Create two new folders within `reshade-shaders` called:
 
@@ -430,7 +430,7 @@ This guide assumes that you already have ReShade installed.
 
    * `Textures`
 
-   ![Newly Created Shader and Texture Folders](../images/manual-reshade-installs/new_shader_and_textures_folders.webp)
+   ![Newly Created Shader and Texture Folders](../images/downloading-and-installing-reshade/new_shader_and_textures_folders.webp)
 
 ---
 
@@ -444,11 +444,11 @@ Skip this portion of the guide if you already have the shader repositories alrea
 
 2. Click the green "<> Code" button
 
-   ![<> Code Button](../images/manual-reshade-installs/github_shader_repo_code_button_highlight.webp)
+   ![<> Code Button](../images/downloading-and-installing-reshade/github_shader_repo_code_button_highlight.webp)
 
 3. Click the "Download ZIP" button in the "<> Code" dropdown.
 
-   ![Download Zip Button](../images/manual-reshade-installs/github_download_zip_button_highlight.webp)
+   ![Download Zip Button](../images/downloading-and-installing-reshade/github_download_zip_button_highlight.webp)
 
    This will download an archive of the shader repository from that GitHub site.
 
@@ -462,11 +462,11 @@ Skip this portion of the guide if you already have the shader repositories alrea
 
 3. Copy the `Shaders` and `Textures` folders from the shader repository archive, and place them into the `reshade-shaders` folder.
 
-   ![Copying Shaders and Textures Folders](../images/manual-reshade-installs/c_and_paste_shaders_and_textures_folder.webp)
+   ![Copying Shaders and Textures Folders](../images/downloading-and-installing-reshade/c_and_paste_shaders_and_textures_folder.webp)
 
       If Windows is warning you of files already existing in that location with the names, simply click "Replace the files in the destination."
 
-      ![Merge or Replace Files Prompt](../images/manual-reshade-installs/windows_replace_prompt.webp)
+      ![Merge or Replace Files Prompt](../images/downloading-and-installing-reshade/windows_replace_prompt.webp)
 
    Remember that not every shader repository will have the same structured layout, you might have to dig deeper, collect the shader and texture files manually , or place the shaders and their textures manually within the `reshade-shaders\Shaders` and `reshade-shaders\Textures` folders.
 
@@ -482,11 +482,11 @@ Skip this portion of the guide if you already have the shader repositories alrea
 
    If you are starting with a fresh install of ReShade from a manual install, this area should be blank
 
-   ![Shaders and Textures Search Paths Highlight](../images/manual-reshade-installs/effect_and_texture_search_paths.webp)
+   ![Shaders and Textures Search Paths Highlight](../images/downloading-and-installing-reshade/effect_and_texture_search_paths.webp)
 
 4. Add the following paths to the arguments
 
-   ![Search Paths Example](../images/manual-reshade-installs/effect_and_textures_search_path_examples.webp)
+   ![Search Paths Example](../images/downloading-and-installing-reshade/effect_and_textures_search_path_examples.webp)
 
    * `.\reshade-shaders\Shaders\**`- Goes in the arguments for "Effect Search Path"
 
