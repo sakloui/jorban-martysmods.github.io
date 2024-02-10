@@ -203,7 +203,7 @@ Other less common issues might crop up as:
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Manually installing ReShade</summary>
+<summary>Manually Installing ReShade</summary>
 
 {: .note }
 When manually installing ReShade, you have to manually install shaders as well.
