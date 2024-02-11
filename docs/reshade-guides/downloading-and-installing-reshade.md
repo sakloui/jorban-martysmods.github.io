@@ -191,7 +191,6 @@ Other potential issues include:
 
 ---
 
-
 <details markdown="block" class="details-tree">
 <summary>Manually Installing ReShade</summary>
 
