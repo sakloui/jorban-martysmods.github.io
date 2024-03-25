@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # Configuring iMMERSE Shaders
 
-Below will be drop downs for each iMMERSE suite.
+Below there will be drop downs for each tier level of the iMMERSE suite.
 
 In each iMMERSE suite dropdown there are guides or explanations for each shader:
 
@@ -24,9 +24,14 @@ This section will guide you through setting up and configuring shaders within th
 <details markdown="block" class="details-tree">
 <summary>iMMERSE: Launchpad</summary>
 
+{: .warning}
+None of the iMMERSE shaders will work properly without it, always have it enabled.
+
 iMMERSE Launchpad is a helper shader, in so, there won't be a whole lot of changes you can see on screen, or require configuring from the user.
 
 However, there are a few arguments that the user might want to enable, or disable.
+
+Install the shader normally and then enable `iMMERSE Launchpad (enable and move to the top!) [MartysMods_LAUNCHPAD.fx]` in the `Home` tab of ReShade.
 
 ---
 
@@ -89,6 +94,7 @@ Textured Normals requires Smoothed Normals to be active beforehand.
 <summary>iMMERSE: MXAO</summary>
 
 iMMERSE MXAO is Marty's new iteration of MXAO, a robust ambient occlusion shader based off of GTAO and Irradiance Bitfields.
+The difference from similar implementations of the same techniques is in the performance x quality ratio, which is always the ultimate goal on the iMMERSE suite.
 
 ---
 
@@ -101,7 +107,13 @@ The steps below will guide you through each function, and provide you with good 
 
 ---
 
-## **Step 1:** Find a testing area
+## **Step 1:** Enabling the Shader
+
+Install the shader normally and then enable `iMMERSE MXAO [MartysMods_MXAO.fx]` in the `Home` tab of ReShade.
+
+---
+
+## **Step 2:** Find a testing area
 
 While iMMERSE MXAO can be used anywhere, it's best to find a **static area with complex geometry** so that you can better configure the settings that you have avalible to you.
 
@@ -109,7 +121,7 @@ Also make sure to find one area with **foliage or flat geometry** to prevent hal
 
 ---
 
-## **Step 2:** Enable "Show Raw AO" and configure "AO Type" preprocessor
+## **Step 3:** Enable "Show Raw AO" and configure "AO Type" preprocessor
 
 Start off by enabling "Show Raw AO", this will allow you to better see what each AO type does on screen without the noise of textures and colors.
 
@@ -180,18 +192,25 @@ Keep in mind that you should configure "Sample Radius" in MXAO so that it is not
 
 iMMERSE Sharpen is Marty's new iteration of DELC, a local contrast sharpener.
 
+Being a simple Sharpen shader, it doesn't have much control over over-sharpening or ringing, so everything should be tweaked with care. It is however, more effective than others at working with low values.
+
 ---
 
 <details markdown="block" class="details-tree">
 <summary>Configuring the Shader</summary>
 
-## **Step 1:** Finding a testing area:
+## **Step 1:** Installing the shader
+Install the shader and then enable `iMMERSE Sharpen [MartysMods_SHARPEN.fx]` in the `Home` tab of ReShade.
+
+---
+
+## **Step 2:** Finding a testing area
 
 While iMMERSE Sharpen can be used anywhere, it's best to find a **static area with complex texturing** so that you can better configure the settings that you have avalible to you.
 
 ---
 
-## **Step 2:** Configuring Sharpen Intensity
+## **Step 3:** Configuring Sharpen Intensity
 
 iMMERSE Sharpen has a single slider. Sharpen Intensity. This means that it takes very little in order to properly sharpen the scene.
 
@@ -212,16 +231,20 @@ Start at the value of `0.000` and work your way up until you're able to find det
 
 iMMERSE Anti-Aliasing is Marty's itteration of SMAA.
 
+SMAA is a method of anti-aliasing which is both fast and effective. It has become an industry standard since, leaving behind other performance-heavy shaders with the same goal.
+
+Install the shader and then enable `iMMERSE Anti Aliasing [MartysMods_SMAA.fx]` in the `Home` tab of ReShade.
+
 ---
 
 <details markdown="block" class="details-tree">
 <summary>General Parameters</summary>
 
-* `Edge Detection Type`: 
+* `Edge Detection Type` 
 
     * This parameter provides different options to the user for customizing the type of edge detection used. The best option for most scenarios is `Color edge detection (max)`.
 
-* `Enable Predicated Thresholding`:
+* `Enable Predicated Thresholding`
 
     * This feature allows iMMERSE Anti Aliasing to utilize the depth buffer to better calculate edges that often get missed by the edge detection methods. It is recommended to enable this feature.
 
@@ -233,8 +256,13 @@ iMMERSE Anti-Aliasing is Marty's itteration of SMAA.
 
 ---
 
+
+
 <details markdown="block" class="details-tree">
 <summary>With Depth</summary>
+
+{: .note}
+The parameters below requires explanation from the previous section. Make sure to read it!
 
 ## **Step 1:** Select the option `View edges` for the parameter `Debug Output`:
 
@@ -432,7 +460,7 @@ This section will guide you through setting up and configuring specific shaders 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro: RTGI</summary>
 
-RTGI is iMMERSE's flagship shader and is a raytraced global-illumination solution. RTGI brings realistic lighting to scenes, while not being too taxing on the performance, especially against other solutions of its class. Ultimately, bringing the best on quality to performance ratio.
+RTGI is iMMERSE's flagship shader. It is a raytraced global-illumination solution. RTGI brings realistic lighting to scenes, while not being too taxing on the performance, especially against other solutions of its class. Ultimately, bringing the best on quality to performance ratio.
 
 RTGI is capable of highlighting details or adding details that are otherwise hidden to the scenes via Global-Illumination and Ambient Occlusion with Raytracing. It can also highlight textures via its recently added Specular GGX reflections.
 
@@ -498,6 +526,8 @@ The last option is `Diffuse Bounce Lighting Intensity`. This option tells RTGI h
 	
 Now, to fine-tune it, change the `Fade-Out Range` so what you want covered from the scene gets covered up and `Z-Thickness` to change how thin or thick the objects on the scene are to add shadows.
 
+In `Z-Thickness`, always try to keep a balance of how dark the objects look around. A lower value will make little to no AO (no shadows), and a higher value will cause shadows to be disproportionate.
+
 This is also useful to avoid halos around objects which shouldn't have them.
 
 ---
@@ -539,11 +569,11 @@ It only has one option, which is `Assume sRGB Input`, with games that has flat a
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Pro: Clarity</summary>
 
-Clarity is a shader that allows you to enhance texture and image details by adjusting the image's local contrast.
+Clarity is a shader based on the feature of similar name in Adobe's software suites. It has the objective of highlighting and reviving otherwise hidden details by changing the image contrast locally.
 
-This allows you to add a soft glow or sharp, gritty textures to your game without the standard issues of haloing or noise.
+The main difference of Clarity when compared to other shaders is that it has lots of features to avoid haloing or other artifacts.
 
-Below is our guide on how to utilize Clarity to your advantage, and what you should look out for in order to get the best image possible!
+Below is a guide to help with the tweaking of the shader and its values.
 
 ---
 
@@ -562,54 +592,47 @@ Below is our guide on how to utilize Clarity to your advantage, and what you sho
 
 ---
 
-## **Step 2:** Configure `Texture Intensity` for Increased Perception and Clarity: 
+## **Step 2:** Configuring the values in `Blending` Section
 
-To configure `Texture Intensity` for increased perception and clarity in the scene, move the slider to the right.
+The `Blending` section is where most of the shaders' changes happens. We have 2 values here worth noting
 
-This does not take much.<br>
-You will notice that textures end up popping out more, and the contrast of the overall scene will increase.
+First one is *Texture Intensity*, this one is responsible for how strong the sharpening / highlighting of the details are. While the shader tries to take measures against it, high values might still cause a tiny bit of haloing and overall noise. So its recommended to change this slowly.
 
-However, do not go extremely overboard with this effect, as it can damage the game author's original envision for the game!
+Below you can see examples (close-ups) of correct and wrong results.
 
-* Example of the base game:
+* Example of correctly and incorrectly configured Texture Intensity values. Notice the black haloing around object corners:
+	
+	![Clarity Texture Intensity comparison](../images/configuring-immerse-shaders/clarity_textureintensity_comparison.png)
+	
+The second one is the *Local Contrast Intensity* slider. This allows you to remove or add the image's contrast to combat haloing and artifacts while still keeping Clarity's highlight effect on.
+Once again, its recommended to take it easy and slowly tweak that until it looks easy on the eyes and correct. The goal while using clarity is to have more details while not steering away from the game's base look.
 
-    ![Clarity Texture Intensity Base Game Image](../images/configuring-immerse-shaders/clarity_base_game_image.png)
+* Example of correctly and incorrectly configured Local Contrast values. Notice how depth details are lost when it is incorrectly tweaked:
 
-* Example of a properly configured `Texture Intensity`:
-
-    ![Clarity Texture Intensity Properly Configured](../images/configuring-immerse-shaders/clarity_properly_configured.png)
-
-* Example of a poorly configured `Texture Intensity`:
-
-    ![Clarity Texture Intensity Poorly Configured](../images/configuring-immerse-shaders/clarity_poorly_configured.png)
-
-Once you have configured this argument to your liking, you might notice that the scene is slightly darker than it should be - this is where `Local Contrast Intensity` will come into play!
-
+	![Clarity Local Contrast comparison](../images/configuring-immerse-shaders/clarity_localcontrast_comparison.png)
+	
+This section finishes and summarizes the main settings of the Clarity shader. In the next section we will detail how the depth settings work.
+	
 ---
 
-## **Step 3:** Configure `Local Contrast Intensity` to Remove Some Contrast
+</details>
 
-In order to remove some contrast from the image, while still keeping the benefits that iMMERSE Pro Clarity has to offer, you can configure the `Local Contrast Intensity` argument!
+<details markdown="block" class="details-tree">
+<summary>With Depth</summary>
 
-This argument is touchy, so it only needs a little bit.
+{: .note}
+The parameters below requires explanation from the previous section. Make sure to read it!
 
-You are going to want to match the original game world's contrast with this, so that when you flick iMMERSE Pro Clarty on and off, you would see no difference in the white and black points!
+Taking into consideration the values from the previous section (`Without Depth`), here we will detail only the values used and relevant to the depth separation section of clarity, those being.
 
-Moving this slider to the right, will increase the local contrast intensity giving the image a brighter feeling, while moving it to the left and give you a darker feel.
+* `Use Depth Separation` is the main toggle. It is responsible for telling if the Depth separation is on or off.
+* `Show Depth Separation` will show a white background for far elements, while keeping the image intact for near elements. It is a visual way of seeing where the separation between Background and Foreground is.
+* `Texture Intensity FG` is responsible for the Texture Intensity value at Foreground level. As in, elements in front of the background.
+* `Local Contrast Intensity FG` is responsible for the Contrast value at Foreground level. As in, elements in front of the background.
+* `Texture Intensity BG` is responsible for the Texture Intensity value at Background level.
+* `Local Contrast Intensity BG` is responsible for the Contrast value at Background level.
 
-* Example of the base game:
-
-    ![Clarity Local Contrast Base Game Image](../images/configuring-immerse-shaders/clarity_base_game_image.png)
-
-* Example of a properly configured `Local Contrast Intensity`:
-
-    ![Clarity Local Contrast Properly Configured](../images/configuring-immerse-shaders/clarity_properly_configured.png)
-
-* Example of a poorly configured `Local Contrast Intensity`:
-
-    ![Clarity Local Contrast Poorly Configured](../images/configuring-immerse-shaders/clarity_local_contrast_poorly_configured.png)
-
-If you get results that are close to the original game, with the added benefits of increased texture resolve/quality - you have set up Clarity without any depth separation properly!
+While separating them into depth, take note that due to background having smaller details, its smart to keep those values lower than the background ones. As to avoid noise and artifact in details.
 
 </details>
 
@@ -742,7 +765,7 @@ While there is no correct values and usage of this shader, people familiarized w
 
 ## **Step 1: Installing the Shader**
 
-Click on the iMMERSE Pro ReGrade shader and enable it. Once you do, all of its options will appear. The following steps will show each parameter and what they do.
+Click on the `iMMERSE Pro ReGrade [MartysMods_REGRADE.fx]` shader and enable it. Once you do, all of its options will appear. The following steps will show each parameter and what they do.
 
 ---
 
@@ -870,7 +893,7 @@ Special transforms are more artistic changes for the image. There are 2 options 
 
 ---
 
-## ***Step 12: Vignette and Utility*
+## **Step 12: Vignette and Utility**
 
 Vignette applies a camera vignette effect, which darkens the image around. It doesn't depend on any of the layer slots since its always applied over all of them, but the difference between this and others is the fact it is deeply integrated into ReGrade, so it takes all the color and image changes into account when applying it.
 The parameters for the Vignette are:
@@ -899,7 +922,7 @@ To configure it, follow the below steps. In this guide, there is no "best" or "w
 
 ## **Step 1:** Enable the Shader
 
-Click on the IMMERSE Pro Solaris shader and enable it. Once you do, there will be some options, first, lets start by setting up the scene settings.
+Click on the `iMMERSE Pro Solaris [MartysMods_SOLARIS.fx]` shader and enable it. Once you do, there will be some options, first, lets start by setting up the scene settings.
 
 ---
 
@@ -950,7 +973,8 @@ More about those will be shown later down the guide, meanwhile, we'll focus on t
 ---
 
 ## **Step 1:** Enabling the Shader
-Click on the IMMERSE Ultimate ConvolutionBloom shader and enable it. Most of the parameters are the same as Solaris, with only one new option shared between the (later) pre-processor options.
+
+Click on the `iMMERSE Ultimate ConvolutionBloom [MartysMods_FFTBLOOM.fx]` shader and enable it. Most of the parameters are the same as Solaris, with only one new option shared between the (later) pre-processor options.
 
 * `Bloom Padding`: Due to the way FFT works, the bloom will usually go beyond the screen resolution and boundaries and "leak" to the top or bottom of the image, causing weird / innacurate results. This parameter creates a black border to mitigate this, but will also reduce how far the bloom goes.
 * `Log Exposure Bias` and `Log HDR Whitepoint` are responsible for telling how much light the "camera" is absorbing and how bright the "White" is. The more exposure bias, the more bloom, and the higher the Whitepoint, the more intense the bright parts will glow.
@@ -990,7 +1014,68 @@ The options for the Second method, `Inverse Square Glow`, are:
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate: ReLight</summary>
 
-WIP
+ReLight is a point-lighting solution for ReShade. Similar to Studio Lights in photographs, and point lighting in games and photomodes, it allows to change the lighting of a scene. Allowing for more granular changes in the mood and details of the scenes.
+
+While you can use it for any sort of scene, use-cases prove that close-ups or photos of humanoid models are the best cases for using it. However, you're allowed to see as you fit, below is how to install and use it.
+
+{: .note}
+It doesn't require iMMERSE RTGI, however, using it together with it might result in even better screenshots.
+
+---
+
+## **Step 1: Installing the Shader and enabling it**
+
+To install the shader, simply copy the shader file to the Shaders folder and enable `MartysMods_RELIGHT [MartysMods_RELIGHT.fx]` from the "Home" tab of ReShade, in the shaders list. It should now be enabled.
+
+---
+
+## **Step 2: Enabling the debug mode and starting to tweak**
+
+After enabling, you might not notice too much difference, but its enabled, however, to better visualize it, we gotta first go through the Debug modes.
+The shader has a "Debug" section with a `Debug outputs` option, change that to "Lighting" and you should instantly see the scene with a very faint light.
+There is also a second option called `Hide Light Sources`, this will hide the Light icon from the sources.
+
+![Debug output preview](../images/configuring-immerse-shaders/relight-debug-out.png)
+
+With that explained, we can finally start to explain what each parameter does and how it works.
+
+---
+
+## **Step 3: Tweaking the Scene for the Light Sources**
+Similar to RTGI, in the `Global` section, you can tweak how much light from the original scene is kept and the overall parameters for the lighting and shadows, here, the options are the following:
+* `Ambient Light`: How much of the original scene lighting is kept
+* `Trace Shadows`: If the light will cast shadows. The two parameters below are directly related to that.
+* `Shadow Penumbra`: Penumbra is the effect of the shadow when its leaking outside from being partially hit by light. This defines how wide it is, and consequently, how intense it / dark it will look.
+* `Z-Thickness`: Like in RTGI, it defines how thick or thin the objects are. Thicker objects will cast darker shadows, while thinner ones might cast lighter and wider shadows.
+* `Shadow Trace Quality`: How defined and how many tracces the ReSTIR casted shadows have. The higher the quality, the sharper the shadows but also the higher the performance consumption.
+
+---
+
+## **Step 4: Light Sources and Parameters**
+Each light source will have its category identified as Light #, the number of light sources can be changed by going at the bottom of the shader and selecting the `AMOUNT_OF_LIGHTS` preprocessor definition. By default, it comes with 2 lights.
+
+With that out of the way, you can tweak the following about the light sources:
+* `Active`: If the light source is active or not.
+* `Position:` The light source position on the screen. First is Horizontally, Second is Vertically and the Last one is the depth.
+* `Tint:` Sets the color of the selected light source.
+* `Intensity:` How bright the light is.
+
+---
+
+## **Step 5: Humans and Sub-Surface Scattering**
+Sub-Surface Scattering (SSS) is the term for the light which bounces from inside the skin or from inside translucent surfaces. It is very common with humans and other organic matter, such as plants.
+The shader also has a quite good simulation for that effect, despite not knowing what is organic and what isn't.
+
+Below are the parameters related to that:
+* `Enable Sub-Surface Scattering`: Enables the SSS function in the shader. Not all scenes require it, so having a toggle is very helpful and saves on performance.
+* `Subsurface Scattering Quality`: Changes the quality of the effect. Higher quality will have better light traversal on those areas, however, with a bigger performance hit.
+* `SSS Translucency Radius`: Defines how deep or thick the "translucent" surfaces are. With higher values bringing more brigther and colorful light inside those areas.
+* `SSS Saturation`: How saturated the colors in those areas are.
+* `SSS Diffusion Radius`: How farther the sub-surface lighting will bleed onto the nearby surfaces.
+* `SSS Skin Hue`: In the color wheel, defines what color / hue should be used to detect what is a fitting area for the Subsurface Scattering to consider as a skin.
+* `SSS Skin Hue Tolerance:` Defines how strict the color has to be to be considered as a skin part. The higher the value, the closer to that absolute color.
+
+---
 
 </details>
 
@@ -1000,6 +1085,9 @@ WIP
 
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate Addon Guides</summary>
+
+{: .warning}
+This shaders on this section depends on both the Shader files and Addon files, trying to use one without the other will NOT work.
 
 This section will guide you through setting up and configuring specific shaders within the iMMERSE Ultimate Addon suite!
 
@@ -1018,7 +1106,6 @@ On the next set of instructions, we'll guide you through the installation of it 
 
 ## **Step 1: Installing the Shader and the Addon**
 
-`This shader depends on both the Shader files and Addon, trying to use one without the other will NOT work.`
 For this version, we recommmend using the `ADDON` version of ReShade's binaries, while the normal version might work, your mileage may vary and you might face some bugs.
 Install the shader as normal, but for the Addon, you must place it close to the ReShade DLL and game's EXE, like this:
 
@@ -1028,7 +1115,7 @@ If you want to test if everything was correctly installed, you can open your gam
 
 ![ReGradePlus ReShade Window Tab](../images/configuring-immerse-shaders/regradep_addon_tab.png)
 
-With that done, the shader can be enabled by going to the "Home" tab and enabling "iMMERSE Ultimate: ReGrade+" and "iMMERSE Ultimate: ReGrade+ Histogram". The latter shader is so the addon's histogram widgets work and display the correct values.
+With that done, the shader can be enabled by going to the "Home" tab and enabling `iMMERSE Ultimate: ReGrade+ [MartysMods_REGRADE+.fx]` and `iMMERSE Ultimate: ReGrade+ Histogram [MartysMods_REGRADE+.fx]`. The latter shader is so the addon's histogram widgets work and display the correct values.
 
 ---
 
@@ -1136,7 +1223,42 @@ While this part of the shader doesn't allow you to drag any sort of gauges, it a
 <details markdown="block" class="details-tree">
 <summary>iMMERSE Ultimate: Lut Manager</summary>
 
-WIP
+LUT Manager combines the MultiLUT shader with an addon to manage LUT textures on the fly. Its more of a tool rather than a shader by itself.
+In this guide we will detail installation steps along with how to use it effectively and how to organize your files.
+
+---
+
+## **Step 1: Installing the Addon and the Shader**
+`This shader depends on both the Shader files and Addon, trying to use one without the other will NOT work.`
+For this shader, we recommmend using the `ADDON` version of ReShade's binaries, while the normal version might work, your mileage may vary and you might face some bugs.
+Install the shader as normal, but for the Addon, you must place it close to the ReShade DLL and game's EXE, like this:
+
+![Example Addon Installation](../images/configuring-immerse-shaders/regradep_addon_installation.png)
+
+---
+
+## **Step 2: Installing the LUTs**
+
+Before starting the game and enabling the LUTs, create a folder named "LUTs" in the game directory and place the LUT files you need there. All of the main LUT formats used by ReShade shaders are supported. Those included the LUTs from the repositories in the ReShade setup.
+
+After that is done, just start the game, you may add more LUTs later ingame by reloading ReShade.
+
+---
+
+## **Step 3: Enabling the Shader**
+
+First, enable the Shader `iMMERSE Ultimate LUT Manager [MartysMods_LUTMANAGER.fx]`, after that, go to the "Add-Ons" tab, and in it, you should see MartysMods LUT Manager. There you'll see the names of all the LUTs / PNGs you have installed. Click in one of them to open the LUT list.
+After that, pick one from the list and, if the shader is enabled, the colors will change right away!
+
+![Pic of the LUT manager Window](../images/configuring-immerse-shaders/lutmanager-window.png)
+
+The shader iteself has 2 toggles, one named *Enhanced LUT Quality*, which upsamples the LUTs using a expensive method. This is best used with small 16x16x16 LUT textures. And another named *Show all LUTs in its current atlas side-by-side*, this will show all LUTs in the current png side-by-side.
+
+You can also right-click any of the LUTs you like the most and add them to a favorites list for easy-finding later.
+
+![LUT Manager Favorites Window](../images/configuring-immerse-shaders/lutmanager-favs.png)
+
+---
 
 </details>
 
