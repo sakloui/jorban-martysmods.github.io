@@ -17,7 +17,7 @@ Please do not ask for additional help in relation to getting FiveM to work in ac
 
 ---
 
-## Step 0: Housekeeping:
+# Housekeeping
 
 For this guide to be followed through step-by-step, you will have to first step up Windows file extenions to be properly viewed.
 
@@ -25,17 +25,17 @@ You can get the information for setting up Windows file extensions to be viewed 
 
 ---
 
-## **Step 1:** Install ReShade to GTAV
+# Install ReShade to GTAV
 
-Begin by downloading the latest version of ReShade from the [ReShade website](https://reshade.me).
+Start by downloading the latest version of the Add-on Support Build of ReShade.
 
-**DO NOT use older builds of ReShade** as it will only cause issues for you in the future.
+Make sure to not install ANY add-ons in this process.
 
 If you are struggling to install ReShade ot GTAV, please [follow our guide for installing ReShade](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/).
 
 ---
 
-## **Step 2:** Ensure ReShade Files are Installed
+# Navigate to Your GTAV Folder
 
 Navigate to your GTAV folder by using our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)!
 
@@ -51,19 +51,7 @@ Once there, look specifically for these two files, and singular folder and keep 
 
 ---
 
-## **Step 3:** Set FiveM to update using the **Beta Channel**
-
-Open FiveM and then navigate to the settings menu, and go to the `Game` tab.
-
-There you will find an option specifically for `Update Channel`.
-
-Click on the `Beta` option and then close your game.
-
-![Release Channel Screenshot](../images/fivem/fivem-release-channel.png)
-
----
-
-## **Step 4:** Locate your FiveM Installation
+# Locate your FiveM Installation
 
 In order to locate your FiveM location, please utilize our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)!
 
@@ -71,9 +59,9 @@ In order to locate your FiveM location, please utilize our [guide for locating y
 
 ---
 
-## **Step 5:** Create or Navigate to the Plugins Directory
+# Navigate to FiveM's Plugins Directory
 
-Once you have located your FiveM Installation folder, enter the `FiveM Application Data` folder, and create a `plugins` directory, then enter it.
+Once you have located your FiveM Installation folder, enter the `FiveM Application Data` folder, and then into your `plugins` directory.
 
 ![FiveM appdata Location](../images/fivem/fivem-appdata-location.png)
 
@@ -81,9 +69,9 @@ Once you have located your FiveM Installation folder, enter the `FiveM Applicati
 
 ---
 
-## **Step 6:** Transfer ReShade Files to the FiveM Plugins Directory
+# Transfer ReShade Files from GTAV to the FiveM Plugins Directory
 
-Transfer the ReShade files and the single folder from your GTAV directory into the FiveM `plugins` folder:
+Cut and paste ReShade's files and `ReShade-Shaders` folder from your GTAV directory into the FiveM `plugins` folder:
 
 * `dxgi.dll` - ReShade Binary File
 
@@ -93,18 +81,20 @@ Transfer the ReShade files and the single folder from your GTAV directory into t
 
 ![FiveM reshade install Location](../images/fivem/fivem-reshade-install-location.png)
 
-{: .note}
-
-Avoid copying and pasting these files, as it can cause complications, instead cut and paste, or move the files.
-
 ---
 
-## Step 7: Check for FiveM Errors using the Console
+# Press F8 and Check Your FiveM Log
 
-Launch FiveM and inspect the **entire** console for issues. You can open the console by tapping the **F8 Key** on your keyboard.
+If ReShade is launched with your game, ignore this step.
 
-In the console, you are looking for the error below, please read it fully:
+Launch FiveM and press F8 on your keyboard to read the message in your log.
+
+FiveM should present you with the error:
 
 ![Error Screenshot](../images/fivem/fivem_reshade5_bs.png)
 
 This error holds all of the steps needed in order to fix the issue that you are facing. In Green text will be the location of your `CitizenFX.ini` file. You will need to open this file and copy the entire error from `[Addons]` downards in order to solve the issue. If this is not copied exactly how it is written in your console, then you will not be able to fix the issue.
+
+# Restart FiveM and enable "Fix UI Lag"
+
+Restart the FiveM client and then go into your FiveM settings in order to enable FiveM's "Fix UI Lag" option. Afterwards, restart your game a final time.
