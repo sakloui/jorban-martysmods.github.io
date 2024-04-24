@@ -17,7 +17,7 @@ Please do not ask for additional help in relation to getting FiveM to work in ac
 
 ---
 
-## Step 0: Housekeeping:
+## **Step 0:** Housekeeping:
 
 For this guide to be followed through step-by-step, you will have to first step up Windows file extenions to be properly viewed.
 
