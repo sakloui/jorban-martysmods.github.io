@@ -235,3 +235,86 @@ That covers the installation process for dgVoodoo2 for DirectX.
 
 </details>
 
+---
+
+## Wine D3D - Wrapping Direct3D/DirectX to Vulkan or OpenGL
+---
+
+If for some reason, DXVK doesn't work or you need something more adequate for a legacy system, Wine's implementation of a DirectX wrapper might help. One advantage over DXVK is the fact that old versions can be used to wrap to OpenGL instead of Vulkan, which might worker for older GPUs or for retro games.
+Installation is very similar to DXVK and the other wrappers shown above, but we will still guide you through the steps.
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Installing WineD3D as Vulkan</summary>
+
+---
+## **Step 1:** Downloading WineD3D for Vulkan
+
+WineD3D can be downloaded from [Federico Dossena's Website](https://fdossena.com/?p=wined3d/index.frag), since we are going for Vulkan, all we gotta do is click the Download Latest button.
+If for some reason, the game you wanna install is X64, then click the *Show other downloads* text, right below the button, and select Latest version for 64-bit apps (patched with staging).
+![Button and Text](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_buttons.png)
+![Observations and Others](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_others.png)
+
+---
+
+## **Step 2:** Installing WineD3D into the game.
+
+Installing WineD3D is easy, just identify which DirectX version your game is using with [PCGamingWiki](https://pcgamingwiki.com/) and then grab the DLLs required for it:
+
+* If it's a Direct3D (1 to 7) game, the DLLs are: D3DImm.dll and DDraw.dll.
+
+* If it's a DirectX 8 game, the DLL is: D3D8.dll.
+
+* If it's a DirectX 9 game, the DLL is: D3D9.dll.
+
+* If it's a DirectX 10/10.1 game, the DLLs are: d3d10.dll, d3d10_1.dll, d3d10core.dll or just dxgi.dll
+
+* If it's a DirectX 11 game, the DLL is: d3d11.dll or dxgi.dll
+
+* If it's a DirectX 12 and onwards game, the DLL is: dxgi.dll
+
+After that, grab the DLL related to Wine itself, which is wined3d.dll, after that is done, just install ReShade as a Vulkan application.
+
+---
+
+</details>
+
+---
+
+<details markdown="block" class="details-tree">
+<summary>Installing WineD3D as OpenGL</summary>
+
+---
+
+## **Step 1:** Downloading WineD3D for OpenGL
+
+WineD3D can be downloaded from [Federico Dossena's Website](https://fdossena.com/?p=wined3d/index.frag), this time, we are going to focus at the legacy versions, so the button will be below the Latest version.
+
+Click the button for the *Last Windows 7 Compatible version*, it should work for all cases, if it doesn't, experiment with other versions, one of them is certain to work.
+
+![Legacy Button](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_older.png)
+
+---
+
+## **Step 2:** Installing WineD3D into the game.
+
+As per the previous instructions, identify the DirectX version of the game using [PCGamingWiki](https://pcgamingwiki.com/) and then grab the DLLs required for it:
+
+* If it's a Direct3D (1 to 7) game, the DLLs are: D3DImm.dll and DDraw.dll.
+
+* If it's a DirectX 8 game, the DLL is: D3D8.dll.
+
+* If it's a DirectX 9 game, the DLL is: D3D9.dll.
+
+* If it's a DirectX 10/10.1 game, the DLLs are: d3d10.dll, d3d10_1.dll, d3d10core.dll or just dxgi.dll
+
+* If it's a DirectX 11 game, the DLL is: d3d11.dll or dxgi.dll
+
+* If it's a DirectX 12 and onwards game, the DLL is: dxgi.dll
+
+After that, copy the DLL related to Wine itself, which is wined3d.dll, and then install ReShade into the game as a OpenGL application.
+
+---
+
+</details>
