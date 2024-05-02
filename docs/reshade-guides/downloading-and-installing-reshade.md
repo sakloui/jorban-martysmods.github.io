@@ -14,47 +14,56 @@ This guide is here to help you quickly download and install ReShade, ensuring yo
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Downloading the ReShade Installer</summary>
+<summary>Downloading ReShade</summary>
 
-To download ReShade, [visit the official ReShade website](https://reshade.me/#download) and scroll to the bottom, there you'll find two builds available for download:
+The latest version of ReShade will always be avaliable at [ReShade's Homepage](https://reshade.me/#download).
+
+![ReShade Homepage](../images/downloading-and-installing-reshade/rs_homepage.webp){: style="max-width:90%" }
+
+Avalible for download are two builds of ReShade that you can select. The Standard, and Full Add-on Support build. Below, you can find information specifically on what differientiates the two builds, and the common usecases for them.
+
+![ReShade Download Options](../images/downloading-and-installing-reshade/rs_download.webp){: style="max-width:90%" }
 
 ## Standard ReShade Build (Download ReShade x.x.x)
 
-Ideal for online games with strict anti-cheat mechanisms (e.g., Dead by Daylight, PUBG, Apex Legends). This build limits some features to ensure compatibility and prevent misuse for cheating in online games.
+The Standard Build of ReShade is the most common version. It is ideal for online games with strict anti-cheat mechanisms (e.g., Dead by Daylight, PUBG, Apex Legends.) This build is used for online games due to its limitations to features to prevent misuse and cheating in online games. 
+
+If you are unsure of what build to pick, this is likely the best choice!
 
 ## Full Add-On Support ReShade Build (Download ReShade x.x.x with full add-on support)
 
-{: .warning} 
-Using the full add-on build in online games with anti-cheat systems may lead to bans. Always follow game rules and expect consequences for bypassing them.
+The Full Add-On Support Build of ReShade is best for offline games or games without anti-cheat systems (e.g., Final Fantasy XXIV, World of Warcraft, Baldur's Gate 3.) This build will offer the full feature set and freedom for creating presets with various shaders and add-ons.
 
-Best for offline games or those without strict anti-cheat systems (e.g., Final Fantasy XXIV, World of Warcraft, Baldur's Gate 3). Offers full feature support and freedom for creating presets with various shaders and add-ons.
+If your game is offline, it's best to choose this build to prevent issues down the line!
 
 </details>
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Using the ReShade Installer</summary>
+<summary>Installing ReShade with the ReShade Installer</summary>
 
-# Selecting Your Game
+## Selecting Your Game
 
-To install ReShade, you first need to tell the installer where your game's executable file is. This is as simple as selecting the executable within the applications list.
+When opening the ReShade Installer, you'll be greeted with the option to choose what application that you want to install ReShade to. This part is very important, as if the wrong application or executable is selected, ReShade will not launch when your game starts.
 
 ![Game List](../images/downloading-and-installing-reshade/rs_game_list.webp)
 
-If your game isn't listed, click "Browse..." at the bottom right of the ReShade Installer to manually find your game's executable. If you are unsure of where the executable is located, besure to check our [guide on finding your game's executable and directory](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
+If your game does not appear in the listing, click the "Browse..." button at the bottom right of the ReShade Installer. This button will open up a "File Explorer" window that will allow you to manually find your game's executable. 
 
-![Browse](../images/downloading-and-installing-reshade/rs_browse.webp)
+If you are unsure of where the executable is located, check our [guide on finding your game's executable and directory](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
+
+![Browse](../images/downloading-and-installing-reshade/rs_browse.webp){: style="max-width:90%" }
 
 ---
 
-# Selecting the Rendering API
+## Selecting the Rendering API
 
-ReShade needs to match your game's Rendering API to work correctly. If unsure which API your game uses, check [PCGamingWiki](https://pcgamingwiki.com) for details.
+In order for ReShade to properly be installed, the ReShade Installer needs to know what Rendering API your game utilizes. The Rendering API has to be selected properly for ReShade to successfully inject, so make sure that you are getting this option correct, otherwise ReShade will not launch with your game.
+
+If unsure which API your game uses, check [PCGamingWiki](https://pcgamingwiki.com) for details.
 
 ![ReShade Rendering API Selection](../images/downloading-and-installing-reshade/rs_rendering_api_select.webp)
-
-Here are some general guidelines to help you guess the Rendering API:
 
 <details markdown="block" class="details-tree">
 <summary>DirectX 9</summary>
@@ -100,7 +109,7 @@ Favored in modern emulators and newer games, essential for Linux users via Wine 
 
 ---
 
-# Installing Presets
+## Installing Presets
 
 ReShade presets, stored in `.ini` files, allow you to apply someone else's visual customizations, including shader configurations and hotkeys.
 
@@ -112,7 +121,7 @@ If you don't have a preset to install, you can bypass this step by clicking "Ski
 
 ---
 
-# Installing Shaders
+## Installing Shaders
 
 Shaders are essential for enhancing game visuals through ReShade, offering a range of looks tailored by users. The ReShade Installer facilitates easy discovery and installation of these shaders.
 
@@ -148,7 +157,7 @@ Selecting a repository with a **square tick** lets you choose individual shaders
 
 ---
 
-# Installing Add-ons (Add-on Support Only)
+## Installing Add-ons (Add-on Support Only)
 
 Add-ons, introduced as a new feature in ReShade, expand customization through the ReShade Add-on API. They're primarily for users interested in exploring advanced features from both previous shader developers and current add-on creators.
 
@@ -158,7 +167,7 @@ Unless you're familiar with what an add-on does, it's recommended to avoid selec
 
 ---
 
-# Finishing Up
+## Finishing Up
 
 Once the ReShade Installer completes, a confirmation screen will show up. Simply click the "Finish" button at the bottom right of the installer, then launch your game.
 
@@ -194,56 +203,61 @@ Other potential issues include:
 <details markdown="block" class="details-tree">
 <summary>Manually Installing ReShade</summary>
 
-{: .note }
-When manually installing ReShade, you have to manually install shaders as well.
+## Identifying Game Architecture and Rendering API
 
-## **Step 1:** Identify your game's architecture and API
+If you already know your game's archtecture and Rendering API, you're more than welcome to skip this part of the guide. However, if you are unsure, make sure to navigate to the [PCGamingWiki website](https://www.pcgamingwiki.com/wiki/Home). This website is home to many wiki pages with just about every game that exists on PC.
 
-1. Navigate to [PCGamingWiki](https://www.pcgamingwiki.com/wiki/Home).
+---
 
-2. Use the search bar to find your game.
+Once at the PCGamingWiki site, use the search bar to navigate the page and find your game.
 
-   ![Search Bar](../images/downloading-and-installing-reshade/pcgw_search.webp)
+![Search Bar](../images/downloading-and-installing-reshade/pcgw_search.webp)
 
-3. Locate the API tab on your game's page, typically towards the end.
+---
 
-   ![API Tab](../images/downloading-and-installing-reshade/pcgamingwiki_api.webp)
+When you've found your specific game, scroll down and locate the API tab within the wiki.
+
+![API Tab](../images/downloading-and-installing-reshade/pcgamingwiki_api.webp)
 
 ---
  
-## **Step 2:** Download the ReShade Installer
+## Download the ReShade Installer
 
-Download the latest ReShade installer from the [official ReShade website](https://reshade.me).
-
----
-
-## Step 3: Download and install 7Zip
-
-Download and install the latest `.msi` version from [7Zip's official website](https://www.7-zip.org/download.html).
-
-WinRar can serve as an alternative, but this guide utilizes 7Zip.
+The next step will be to download the latest ReShade installer from the [official ReShade website](https://reshade.me). The installer holds the ReShade binaries required in order to manually install ReShade.
 
 ---
- 
-## Step 4: Extract the ReShade binary
 
-1. Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, hover over 7Zip, and select "Open Archive."
+## Download and Install 7Zip
 
-   ![Open with 7Zip](../images/downloading-and-installing-reshade/reshade_setup_open_with_7zip.webp)
+This guide uses 7Zip in order to extract the ReShade binaries from the ReShade Installer. You can download and install the latest `.msi` version from [7Zip's official website](https://www.7-zip.org/download.html).
 
-2. Choose the necessary DLL from the options:
-
-    * `ReShade64.dll` for 64-Bit
-
-    * `ReShade32.dll` for 32-Bit
-
-         ![Extract DLL](../images/downloading-and-installing-reshade/7zip_extract_reshade_binaries.webp)
+Keep in mind, that WinRar can serve as an alternative, but this guide utilizes 7Zip for convienence.
 
 ---
  
-## Step 5: Rename the ReShade binary based off of your game's API
+## Extract the ReShade Binary
 
-Right-click the `ReShadeXX.dll` you've extracted and choose "Rename." Then, rename it according to your game's rendering API:
+Once 7Zip is installed, Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, and hover over 7Zip, the select the "Open Archive" option.
+
+![Open with 7Zip](../images/downloading-and-installing-reshade/reshade_setup_open_with_7zip.webp)
+
+Upon clicking "Open Archive," a new window will appear that holds the two ReShade binaries. One for games with a 32Bit architecture and one for games with a 64bit archtecture.
+
+You can extract the DLL that relates to your game's architecture by draging the file out of the 7Zip window to your Desktop
+
+Below are the two different files that are within hte ReShade Installer:
+
+   * `ReShade64.dll` for 64-Bit
+
+   * `ReShade32.dll` for 32-Bit
+
+   ![Extract DLL](../images/downloading-and-installing-reshade/7zip_extract_reshade_binaries.webp)
+
+---
+ 
+## Rename the ReShade Binary
+
+After you've extracted the right binary, right-click the `ReShadeXX.dll` and click "Rename." Afterwards you can rename the binary to the proper graphics injection name for the Rendering API that your game utilizes:
 
    * `dxgi.dll` - DirectX 10/11/12
 
@@ -259,11 +273,13 @@ Right-click the `ReShadeXX.dll` you've extracted and choose "Rename." Then, rena
 
    ![Rename DLL](../images/downloading-and-installing-reshade/extacted_reshade_binary_rename.webp)
 
+Keep in mind that if you do not select this graphics injection name properly based off of your game's current Rendering API, ReShade will not inject properly.
+
 ---
  
-## Step 6: Move the renamed ReShade binary
+## Move the ReShade Binary
 
-Position the renamed DLL into the root folder of your game, the same directory where the game's executable is located.
+Lastly, you will need to move the renamed DLL into the root folder of your game, the same directory where the game's executable is located.
 
 If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
