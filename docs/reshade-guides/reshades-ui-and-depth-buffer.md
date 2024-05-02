@@ -313,7 +313,7 @@ If your output resembles **either** of the images below, it lacks data from the 
 ![Depth Buffer No Data](../images/reshades-ui-and-depth-buffer/depth_buffer_no_data_example.png)
 ![Depth Buffer No Data - Reversed](../images/reshades-ui-and-depth-buffer/depth_buffer_no_data_reversed_example.png)
 
-  * Before proceeding any further, ensure that these anti-aliasing options are disable within your game:
+  * Before proceeding any further, ensure that these anti-aliasing options are disabled within your game:
 
     * MSAA ANTIALIASING
 
@@ -394,7 +394,7 @@ The argument can only be `1` or `0`, so flipping the value for it should solve t
 ---
 
 <details markdown="block" class="details-tree">
-<summary>RESHADE_DEPTH_INPUT_X_SCALE | RESHADE_DEPTH_INPUT_Y_SCALE</summary>
+<summary>RESHADE_DEPTH_INPUT_X_SCALE and RESHADE_DEPTH_INPUT_Y_SCALE</summary>
 
 These two preprocessors modify the depth buffer size along the `X` and `Y` axes.
 

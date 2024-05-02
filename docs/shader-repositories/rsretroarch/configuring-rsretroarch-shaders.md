@@ -7,11 +7,13 @@ parent: Shader Repositories
 
 # RSRetroArch Shaders
 
-RSRetroArch shaders is a repository filled with powerful shaders that allow you to manipulate the visual output of your emulated games.
+RSRetroArch shaders is a repository filled with powerful shaders that allow you to manipulate the visual output of your emulated or retro games.
 
-This guide seeks to help you understand the processes for configuring the order and position of each shader within ReShade.
+This guide will help you understand the processes for configuring the order and position of each shader within ReShade.
 
 For detailed information about each individual shader, please refer to the [Emulators and Emulation wiki](https://emulation.gametechwiki.com/index.php/Shaders_and_filters).
+
+Due to ReShade not having access to internal resolutions or other features specific of the emulators, results might differ from Emulators which has those shaders when in comparison to ReShade.
 
 ---
 
@@ -159,22 +161,33 @@ R57-PAL is a realistic PAL shader that mimics the output of a NES PAL connection
 
 # Honorable Mentions:
 
-These shaders will exist outside of the RSRetroArch Repo, but are worth mentioning for the user to view!
+These shaders will exist outside of the RSRetroArch Repository, but are worth mentioning since they are similar to the ones here.
 
 ---
 
 ## [CRT-Royale port by akgunter](https://github.com/akgunter/crt-royale-reshade):
 
-* This is the most complex CRT shader available, replicating various effects from an actual CRT. It's best used in resolutions of 1080p and up.
+* This is the most complex CRT shader available, replicating various effects from an actual CRT.
+* Best used in resolutions of 1080p and up.
+* Presets are available here (https://github.com/Matsilagi/CRT-Royale-ReShade-Presets), made by Matsilagi.
 
 ---
 
 ## [Sony Megatron for ReShade by MajorPainTheCactus](https://github.com/MajorPainTheCactus/SonyMegatron-ReShade):
 
-* This CRT shader uses an HDR addon to simulate a monitor and mask accurately. It calculates phosphors illuminations and scanlines count based on the monitor's resolution and brightness. It's highly accurate, but requires a high-end setup and a resolution of 4K.
+* This CRT shader uses an HDR addon to simulate a monitor and mask accurately, a SDR version is also available, but it might darken the image too much. 
+* It calculates phosphors illuminations and scanlines count based on the monitor's resolution and brightness. It's highly accurate, but requires a high-end setup and a resolution of 4K.
 
 ---
 
 ## [WinUAE Shaders by guest.r](https://github.com/guestrr/WinUAE-Shaders/tree/master/ReshadeShaders):
 
-* These shaders were originally created for the UAE Amiga emulator and later ported to ReShade for use in its x64 versions. While it's a CRT shader suite, it's more tailored for desktop stations/computer terminals than Television sets or Arcade CRTs.
+* These shaders were originally created for the UAE Amiga emulator and later ported to ReShade for use in its x64 versions. 
+* While it's a CRT shader suite, it's more tailored for desktop stations/computer terminals than Television sets or Arcade CRTs.
+
+---
+
+## [RSJankShaders by matsilagi](https://github.com/Matsilagi/RSJankShaders)
+
+* A series of random small Shadertoy ports and other Shader experiments. Has some shaders which might fit the retro-gaming criteria.
+* Shaders here are largely untested and might break / will break.

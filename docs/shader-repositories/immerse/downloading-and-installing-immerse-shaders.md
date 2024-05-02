@@ -27,13 +27,13 @@ iMMERSE is the core repository of shaders from Pascal that are available [on Git
 
 The iMMERSE repository includes:
 
-* iMMERSE Launchpad
+* iMMERSE Launchpad (Basic Requirement for all iMMERSE shaders.)
 
 * iMMERSE MXAO
 
 * iMMERSE Sharpen
 
-* iMMERSE Anti-Aliasing
+* iMMERSE Anti-Aliasing (SMAA)
 
 ---
 
@@ -57,15 +57,17 @@ iMMERSE Pro is a premium repository of Pascal's shaders, available to [the "Rayt
 
 For $5 USD, you can access this repository, which currently features:
 
-* iMMERSE Pro RTGI
+* iMMERSE Pro: RTGI
 
-* iMMERSE Pro Clarity
+* iMMERSE Pro: Clarity
 
-* iMMERSE Pro Depth of Field
+* iMMERSE Pro: Depth of Field
 
-* iMMERSE Pro ReGrade
+* iMMERSE Pro: ReGrade
 
-* iMMERSE Pro Solaris
+* iMMERSE Pro: Insight (Companion tool to ReGrade)
+
+* iMMERSE Pro: Solaris
 
 ---
 
@@ -98,7 +100,7 @@ For $10 USD, you can access this suite, which features:
 
 * iMMERSE Ultimate Convolution Bloom
 
-* iMMERSE Ultimate ReGrade +
+* iMMERSE Ultimate: ReGrade+ (Add-On + Shader)
 
 ---
 
@@ -219,5 +221,9 @@ Grant Permission by clicking `Authorize`:
 Finally, verify your updated roles within the PGHub Discord Server.
 
 If you still do not have your Patreon roles in Discord, please leave the Discord server and then rejoin through Patreon!
+
+---
+
+For any other issues and inquires, do not be shy to contact our staff in the "Help" channel over our Discord!
 
 </details>
