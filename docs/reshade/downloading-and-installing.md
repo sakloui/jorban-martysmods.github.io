@@ -1,7 +1,7 @@
 ---
-title: Downloading and Installing ReShade
+title: Downloading and Installing
 layout: page
-parent: ReShade Guides
+parent: ReShade
 nav_order: 1
 ---
 
@@ -18,11 +18,11 @@ This guide is here to help you quickly download and install ReShade, ensuring yo
 
 The latest version of ReShade will always be avaliable at [ReShade's Homepage](https://reshade.me/#download).
 
-![ReShade Homepage](../images/downloading-and-installing-reshade/rs_homepage.webp){: style="max-width:90%" }
+![ReShade Homepage](../images/downloading-and-installing/rs_homepage.webp){: style="max-width:90%" }
 
 Avalible for download are two builds of ReShade that you can select. The Standard, and Full Add-on Support build. Below, you can find information specifically on what differientiates the two builds, and the common usecases for them.
 
-![ReShade Download Options](../images/downloading-and-installing-reshade/rs_download.webp){: style="max-width:90%" }
+![ReShade Download Options](../images/downloading-and-installing/rs_download.webp){: style="max-width:90%" }
 
 ## Standard ReShade Build (Download ReShade x.x.x)
 
@@ -47,13 +47,13 @@ If your game is offline, it's best to choose this build to prevent issues down t
 
 When opening the ReShade Installer, you'll be greeted with the option to choose what application that you want to install ReShade to. This part is very important, as if the wrong application or executable is selected, ReShade will not launch when your game starts.
 
-![Game List](../images/downloading-and-installing-reshade/rs_game_list.webp)
+![Game List](../images/downloading-and-installing/rs_game_list.webp)
 
 If your game does not appear in the listing, click the "Browse..." button at the bottom right of the ReShade Installer. This button will open up a "File Explorer" window that will allow you to manually find your game's executable. 
 
 If you are unsure of where the executable is located, check our [guide on finding your game's executable and directory](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-![Browse](../images/downloading-and-installing-reshade/rs_browse.webp){: style="max-width:90%" }
+![Browse](../images/downloading-and-installing/rs_browse.webp){: style="max-width:90%" }
 
 ---
 
@@ -63,14 +63,14 @@ In order for ReShade to properly be installed, the ReShade Installer needs to kn
 
 If unsure which API your game uses, check [PCGamingWiki](https://pcgamingwiki.com) for details.
 
-![ReShade Rendering API Selection](../images/downloading-and-installing-reshade/rs_rendering_api_select.webp)
+![ReShade Rendering API Selection](../images/downloading-and-installing/rs_rendering_api_select.webp)
 
 <details markdown="block" class="details-tree">
 <summary>DirectX 9</summary>
 
 DirectX 9 was common between 2005 and 2012. It's less likely for modern games, which often use newer APIs.
 
-![DirectX 9 Example](../images/downloading-and-installing-reshade/rs_dx9.webp)
+![DirectX 9 Example](../images/downloading-and-installing/rs_dx9.webp)
 
 </details>
 
@@ -81,7 +81,7 @@ DirectX 9 was common between 2005 and 2012. It's less likely for modern games, w
 
 These versions are widely used in modern games, particularly with Unity and Unreal Engine.
 
-![DirectX 10-12 Example](../images/downloading-and-installing-reshade/rs_dx10_11_12.webp)
+![DirectX 10-12 Example](../images/downloading-and-installing/rs_dx10_11_12.webp)
 
 </details>
 
@@ -92,7 +92,7 @@ These versions are widely used in modern games, particularly with Unity and Unre
 
 Chosen for certain engines and older games where DirectX is not used.
 
-![OpenGL Example](../images/downloading-and-installing-reshade/rs_ogl.webp)
+![OpenGL Example](../images/downloading-and-installing/rs_ogl.webp)
 
 </details>
 
@@ -103,7 +103,7 @@ Chosen for certain engines and older games where DirectX is not used.
 
 Favored in modern emulators and newer games, essential for Linux users via Wine or Proton. Note: Vulkan installations may require admin permissions.
 
-![Vulkan Example](../images/downloading-and-installing-reshade/rs_vk.webp)
+![Vulkan Example](../images/downloading-and-installing/rs_vk.webp)
 
 </details>
 
@@ -115,7 +115,7 @@ ReShade presets, stored in `.ini` files, allow you to apply someone else's visua
 
 The ReShade Installer simplifies preset installation: just select the desired `.ini` file, and the installer automatically handles shader downloads and installations required by the preset.
 
-![Preset Selection](../images/downloading-and-installing-reshade/rs_preset.webp)
+![Preset Selection](../images/downloading-and-installing/rs_preset.webp)
 
 If you don't have a preset to install, you can bypass this step by clicking "Skip" in the preset installation window's bottom right corner.
 
@@ -127,18 +127,18 @@ Shaders are essential for enhancing game visuals through ReShade, offering a ran
 
 Shaders are organized into repositories, displayed during the installation process. You can learn more about each by clicking on the blue-highlighted repository or author names.
 
-![Shader Repository Links](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_link_highlight.webp)
+![Shader Repository Links](../images/downloading-and-installing/reshade_installer_shader_repo_link_highlight.webp)
 
 To install shaders, simply select the desired repositories and click "Next".
 
-![Shader Repositories Selection](../images/downloading-and-installing-reshade/rs_shader.webp)
+![Shader Repositories Selection](../images/downloading-and-installing/rs_shader.webp)
 
 <details markdown="block" class="details-tree">
 <summary>Check Tick</summary>
 
 Selecting a repository with a **check tick** installs all shaders from that repository. Click "Next" to proceed with automatic installation.
 
-![Check Tick Example](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_check_tick.webp)
+![Check Tick Example](../images/downloading-and-installing/reshade_installer_shader_repo_check_tick.webp)
 
 </details>
 
@@ -149,9 +149,9 @@ Selecting a repository with a **check tick** installs all shaders from that repo
 
 Selecting a repository with a **square tick** lets you choose individual shaders within a repository. After selecting, click "Next" to install.
 
-![Square Tick Selection](../images/downloading-and-installing-reshade/reshade_installer_shader_repo_square_tick.webp)
+![Square Tick Selection](../images/downloading-and-installing/reshade_installer_shader_repo_square_tick.webp)
 
-![Individual Shader Selection](../images/downloading-and-installing-reshade/rs_shader_select.webp)
+![Individual Shader Selection](../images/downloading-and-installing/rs_shader_select.webp)
 
 </details>
 
@@ -163,7 +163,7 @@ Add-ons, introduced as a new feature in ReShade, expand customization through th
 
 Unless you're familiar with what an add-on does, it's recommended to avoid selecting any from the list to prevent potential game instability.
 
-![Selecting Add-ons](../images/downloading-and-installing-reshade/rs_addon_select.webp)
+![Selecting Add-ons](../images/downloading-and-installing/rs_addon_select.webp)
 
 ---
 
@@ -171,11 +171,11 @@ Unless you're familiar with what an add-on does, it's recommended to avoid selec
 
 Once the ReShade Installer completes, a confirmation screen will show up. Simply click the "Finish" button at the bottom right of the installer, then launch your game.
 
-![Installation Complete](../images/downloading-and-installing-reshade/rs_complete.webp)
+![Installation Complete](../images/downloading-and-installing/rs_complete.webp)
 
 Upon successful installation, you'll see a ReShade banner in-game:
 
-![ReShade In-Game Banner](../images/downloading-and-installing-reshade/rs_game_banner.webp)
+![ReShade In-Game Banner](../images/downloading-and-installing/rs_game_banner.webp)
 
 If you don't see this banner, ReShade may not have been injected correctly. Try reinstalling, ensuring all steps are followed precisely.
 
@@ -211,13 +211,13 @@ If you already know your game's archtecture and Rendering API, you're more than 
 
 Once at the PCGamingWiki site, use the search bar to navigate the page and find your game.
 
-![Search Bar](../images/downloading-and-installing-reshade/pcgw_search.webp)
+![Search Bar](../images/downloading-and-installing/pcgw_search.webp)
 
 ---
 
 When you've found your specific game, scroll down and locate the API tab within the wiki.
 
-![API Tab](../images/downloading-and-installing-reshade/pcgamingwiki_api.webp)
+![API Tab](../images/downloading-and-installing/pcgamingwiki_api.webp)
 
 ---
  
@@ -239,7 +239,7 @@ Keep in mind, that WinRar can serve as an alternative, but this guide utilizes 7
 
 Once 7Zip is installed, Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, and hover over 7Zip, the select the "Open Archive" option.
 
-![Open with 7Zip](../images/downloading-and-installing-reshade/reshade_setup_open_with_7zip.webp)
+![Open with 7Zip](../images/downloading-and-installing/reshade_setup_open_with_7zip.webp)
 
 Upon clicking "Open Archive," a new window will appear that holds the two ReShade binaries. One for games with a 32Bit architecture and one for games with a 64bit archtecture.
 
@@ -251,7 +251,7 @@ Below are the two different files that are within hte ReShade Installer:
 
    * `ReShade32.dll` for 32-Bit
 
-   ![Extract DLL](../images/downloading-and-installing-reshade/7zip_extract_reshade_binaries.webp)
+   ![Extract DLL](../images/downloading-and-installing/7zip_extract_reshade_binaries.webp)
 
 ---
  
@@ -271,7 +271,7 @@ After you've extracted the right binary, right-click the `ReShadeXX.dll` and cli
 
    * `opengl32.dll` - OpenGL
 
-   ![Rename DLL](../images/downloading-and-installing-reshade/extacted_reshade_binary_rename.webp)
+   ![Rename DLL](../images/downloading-and-installing/extacted_reshade_binary_rename.webp)
 
 Keep in mind that if you do not select this graphics injection name properly based off of your game's current Rendering API, ReShade will not inject properly.
 
@@ -283,11 +283,11 @@ Lastly, you will need to move the renamed DLL into the root folder of your game,
 
 If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-![Place in Game Folder](../images/downloading-and-installing-reshade/place_reshade_binary_game_folder.webp)
+![Place in Game Folder](../images/downloading-and-installing/place_reshade_binary_game_folder.webp)
 
 Upon completion, your game should launch with ReShade injected!
 
-![Successful Installation](../images/downloading-and-installing-reshade/ultrakill_reshade_installed.webp)
+![Successful Installation](../images/downloading-and-installing/ultrakill_reshade_installed.webp)
 
 </details>
 
@@ -314,11 +314,11 @@ Crosire's Inject tool, being an external injector, is more likely to trigger ant
 
 2. Enter your game's name in the search bar.
 
-   ![Search Bar](../images/downloading-and-installing-reshade/pcgw_search.webp)
+   ![Search Bar](../images/downloading-and-installing/pcgw_search.webp)
 
 3. Proceed to the API section on your game's page (usually located towards the end).
 
-   ![API Section](../images/downloading-and-installing-reshade/pcgamingwiki_api.webp)
+   ![API Section](../images/downloading-and-installing/pcgamingwiki_api.webp)
 
 ---
 
@@ -350,7 +350,7 @@ WinRar can serve as an alternative, but this guide utilizes 7Zip.
 
 1. Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, hover over 7Zip, and select "Open Archive."
 
-   ![Open with 7Zip](../images/downloading-and-installing-reshade/reshade_setup_open_with_7zip.webp)
+   ![Open with 7Zip](../images/downloading-and-installing/reshade_setup_open_with_7zip.webp)
 
 2. Extract the desired DLL:
 
@@ -360,7 +360,7 @@ WinRar can serve as an alternative, but this guide utilizes 7Zip.
 
    * `ReShade32.dll` for 32-Bit
 
-   ![Extract DLL](../images/downloading-and-installing-reshade/7zip_extract_reshade_binaries.webp)
+   ![Extract DLL](../images/downloading-and-installing/7zip_extract_reshade_binaries.webp)
 
 ---
 
@@ -370,7 +370,7 @@ Move both the `injectXX.exe` and `ReShadeXX.dll` files to your game directory.
 
    If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-   ![File Placement](../images/downloading-and-installing-reshade/place_reshade_dll_and_inject_in_game_folder.webp)
+   ![File Placement](../images/downloading-and-installing/place_reshade_dll_and_inject_in_game_folder.webp)
 
 ---
 
@@ -380,11 +380,11 @@ Move both the `injectXX.exe` and `ReShadeXX.dll` files to your game directory.
 
 2. Open Task Manager and right-click on your game under the processes tab, then select "Go to Details."
 
-   ![Go to Details](../images/downloading-and-installing-reshade/task_manager_go_to_details.webp)
+   ![Go to Details](../images/downloading-and-installing/task_manager_go_to_details.webp)
 
 3. The highlighted executable displays the game's process name.
 
-   ![Executable Name](../images/downloading-and-installing-reshade/task_manager_details_view_exe.webp)
+   ![Executable Name](../images/downloading-and-installing/task_manager_details_view_exe.webp)
 
 ---
 
@@ -394,17 +394,17 @@ Move both the `injectXX.exe` and `ReShadeXX.dll` files to your game directory.
 
 2. Navigate to your game's directory and open a command prompt by typing `cmd` into File Explorer's address bar.
 
-   ![Open CMD](../images/downloading-and-installing-reshade/cmd_in_file_explorer.webp)
+   ![Open CMD](../images/downloading-and-installing/cmd_in_file_explorer.webp)
 
 3. Input `inject[x32/x64].exe "name_of_the_process.exe"` and hit Enter.
 
-   ![Inject Command](../images/downloading-and-installing-reshade/type_inject_params.webp)
+   ![Inject Command](../images/downloading-and-installing/type_inject_params.webp)
 
 4. Open your game.
 
    If executed correctly, ReShade should be active once the game begins.
 
-   ![Successful Injection](../images/downloading-and-installing-reshade/ultrakill_reshade_installed.webp)
+   ![Successful Injection](../images/downloading-and-installing/ultrakill_reshade_installed.webp)
 
 </details>
 
@@ -427,7 +427,7 @@ This guide assumes that you already have ReShade installed.
 
 2. Create a `reshade-shaders` folder in the same location as your ReShade binary and enter the `reshade-shaders` folder.
 
-   ![Newly Created reshade-shaders Folder](../images/downloading-and-installing-reshade/new_reshadeshader_folder.webp)
+   ![Newly Created reshade-shaders Folder](../images/downloading-and-installing/new_reshadeshader_folder.webp)
 
 3. Create two new folders within `reshade-shaders` called:
 
@@ -435,7 +435,7 @@ This guide assumes that you already have ReShade installed.
 
    * `Textures`
 
-   ![Newly Created Shader and Texture Folders](../images/downloading-and-installing-reshade/new_shader_and_textures_folders.webp)
+   ![Newly Created Shader and Texture Folders](../images/downloading-and-installing/new_shader_and_textures_folders.webp)
 
 ---
 
@@ -449,11 +449,11 @@ Skip this portion of the guide if you already have the shader repositories alrea
 
 2. Click the green "<> Code" button
 
-   ![<> Code Button](../images/downloading-and-installing-reshade/github_shader_repo_code_button_highlight.webp)
+   ![<> Code Button](../images/downloading-and-installing/github_shader_repo_code_button_highlight.webp)
 
 3. Click the "Download ZIP" button in the "<> Code" dropdown.
 
-   ![Download Zip Button](../images/downloading-and-installing-reshade/github_download_zip_button_highlight.webp)
+   ![Download Zip Button](../images/downloading-and-installing/github_download_zip_button_highlight.webp)
 
    This will download an archive of the shader repository from that GitHub site.
 
@@ -467,11 +467,11 @@ Skip this portion of the guide if you already have the shader repositories alrea
 
 3. Copy the `Shaders` and `Textures` folders from the shader repository archive, and place them into the `reshade-shaders` folder.
 
-   ![Copying Shaders and Textures Folders](../images/downloading-and-installing-reshade/c_and_paste_shaders_and_textures_folder.webp)
+   ![Copying Shaders and Textures Folders](../images/downloading-and-installing/c_and_paste_shaders_and_textures_folder.webp)
 
       If Windows is warning you of files already existing in that location with the names, simply click "Replace the files in the destination."
 
-      ![Merge or Replace Files Prompt](../images/downloading-and-installing-reshade/windows_replace_prompt.webp)
+      ![Merge or Replace Files Prompt](../images/downloading-and-installing/windows_replace_prompt.webp)
 
    Remember that not every shader repository will have the same structured layout, you might have to dig deeper, collect the shader and texture files manually , or place the shaders and their textures manually within the `reshade-shaders\Shaders` and `reshade-shaders\Textures` folders.
 
@@ -487,11 +487,11 @@ Skip this portion of the guide if you already have the shader repositories alrea
 
    If you are starting with a fresh install of ReShade from a manual install, this area should be blank
 
-   ![Shaders and Textures Search Paths Highlight](../images/downloading-and-installing-reshade/effect_and_texture_search_paths.webp)
+   ![Shaders and Textures Search Paths Highlight](../images/downloading-and-installing/effect_and_texture_search_paths.webp)
 
 4. Add the following paths to the arguments
 
-   ![Search Paths Example](../images/downloading-and-installing-reshade/effect_and_textures_search_path_examples.webp)
+   ![Search Paths Example](../images/downloading-and-installing/effect_and_textures_search_path_examples.webp)
 
    * `.\reshade-shaders\Shaders\**`- Goes in the arguments for "Effect Search Path"
 
