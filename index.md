@@ -7,13 +7,13 @@ nav_order: 1
 # Marty's Mods Guide Site
 {: .text-center}
 
-<img style="max-width: 85%" src="./assets/home-page-image.jpg"/>
+<img style="max-width: 85%" src="./assets/home-page-image.webp"/>
 {: .text-center}
 
 ---
 
 ## Welcome to our guide site!
-{: .text-center}
+{: .text-center}    
 
 In order to navigate our guide site, please use the navigation bar on the left hand side of your screen. There you will find organized guides that will help you to learn and understand ReShade better, alongside other more helpful guides that can help walk you through some of the issues that plague users!
 {: .text-center}

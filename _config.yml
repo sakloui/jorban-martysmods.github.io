@@ -6,7 +6,7 @@ url:
 repository: jorban-martysmods/jorban-martysmods.github.io # for github-metadata
 
 #Site Logo
-logo: "/assets/mmlogo.png"
+logo: "/assets/mmlogo.webp"
 
 include:
   - /assets/fonts/
