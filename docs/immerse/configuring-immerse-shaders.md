@@ -1,9 +1,7 @@
 ---
-title: Configuring iMMERSE Shaders
 layout: page
 nav_order: 2
 parent: iMMERSE
-grand_parent: Shader Repositories
 ---
 
 # Configuring iMMERSE Shaders

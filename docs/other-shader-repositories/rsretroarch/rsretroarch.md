@@ -2,7 +2,7 @@
 title: RSRetroArch
 layout: default
 nav_order: 2
-parent: Shader Repositories
+parent: Other Shader Repositories
 ---
 
 # RSRetroArch Shaders

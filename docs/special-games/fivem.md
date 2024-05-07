@@ -19,7 +19,7 @@ Please do not ask for additional help in relation to getting FiveM to work in ac
 
 # Housekeeping
 
-For this guide to be followed through step-by-step, you will have to first step up Windows file extenions to be properly viewed.
+For this guide to be followed through step-by-step, you will have to first set up Windows file extenions to be properly viewed.
 
 You can get the information for setting up Windows file extensions to be viewed by following this our guide for [enabling Windows file extensions](https://guides.martysmods.com/docs/additional-guides/enabling-windows-file-extensions/)!
 
@@ -31,7 +31,7 @@ Start by downloading the latest version of the Add-on Support Build of ReShade.
 
 Make sure to not install ANY add-ons in this process.
 
-If you are struggling to install ReShade ot GTAV, please [follow our guide for installing ReShade](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/).
+If you are struggling to install ReShade to GTAV, please [follow our guide for installing ReShade](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/).
 
 ---
 
@@ -94,6 +94,12 @@ FiveM should present you with the error:
 ![Error Screenshot](../images/fivem/fivem_reshade5_bs.png)
 
 This error holds all of the steps needed in order to fix the issue that you are facing. In Green text will be the location of your `CitizenFX.ini` file. You will need to open this file and copy the entire error from `[Addons]` downards in order to solve the issue. If this is not copied exactly how it is written in your console, then you will not be able to fix the issue.
+
+You can copy and paste these two lines into your `CitizenFX.ini` file, however, you MUST use your own ID instead of the dummy ID given:
+
+> `[Addons]`
+> 
+> `ReShade5=ID:XXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes`
 
 # Restart FiveM and enable "Fix UI Lag"
 

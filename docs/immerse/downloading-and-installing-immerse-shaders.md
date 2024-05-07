@@ -1,9 +1,7 @@
 ---
-title: Downloading and Installing iMMERSE Shaders and Add-ons
 layout: page
 nav_order: 1
 parent: iMMERSE
-grand_parent: Shader Repositories
 ---
 
 # Downloading and Installing iMMERSE Shaders and Addons

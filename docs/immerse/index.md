@@ -1,8 +1,7 @@
 ---
 title: iMMERSE
 layout: default
-parent: Shader Repositories
-nav_order: 1
+nav_order: 3
 has_toc: true
 has_children: true
 ---
@@ -12,4 +11,3 @@ has_children: true
 **iMMERSE** is a distinguished shader repository developed by Pascal Gilcher, also known as _Marty McFly_. 
 
 These shaders are renowned for their significant performance increases over competing shader repositories and visual aesthetic.
-

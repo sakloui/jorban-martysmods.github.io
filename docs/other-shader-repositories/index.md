@@ -1,14 +1,14 @@
 ---
-title: Shader Repositories
+title: Other Shader Repositories
 layout: default
-nav_order: 4
+nav_order: 6
 has_children: true
 has_toc: true
 ---
 
 # ReShade Shader Repositories
 
-Dive deep into a curated collection of pages and guides, dedicated to various esteemed shader developers and their repositories.
+Dive deep into a curated collection of pages and guides, dedicated to shader developers for ReShade.
 
 These repositories are the very essence of ReShade, crafting its unique identity in the world of graphical enhancements.
 
