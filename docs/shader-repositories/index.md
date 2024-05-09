@@ -1,5 +1,5 @@
 ---
-title: Other Shader Repositories
+title: Shader Repositories
 layout: default
 nav_order: 6
 has_children: true
