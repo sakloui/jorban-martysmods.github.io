@@ -2,6 +2,6 @@
 title: "LUT Manager (Addon)"
 layout: page
 nav_order: 11
-parent: "iMMERSE: Ultimate"
+parent: "iMMERSE Ultimate"
 grand_parent: Shader Repositories
 ---
