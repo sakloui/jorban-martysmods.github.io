@@ -28,11 +28,11 @@ RTGI is made to take advantage of specific Launchpad features, such as Smoothed 
 
 ## Enable iMMERSE Pro: RTGI and iMMERSE: Launchpad
 
-* Enable the shader `iMMERSE Launchpad [MartysMods_LAUNCHPAD.fx]` in the "Home" tab of ReShade.
+Enable the shader `iMMERSE Launchpad [MartysMods_LAUNCHPAD.fx]` in the "Home" tab of ReShade.
 
-* Drag andd drop `iMMERSE Launchpad [MartysMods_Launchpad.fx]` to the top of the ReShade "Home" tab to ensure that it's the first in the shader load order.
+Drag andd drop `iMMERSE Launchpad [MartysMods_Launchpad.fx]` to the top of the ReShade "Home" tab to ensure that it's the first in the shader load order.
 
-* Enable the shader `iMMERSE Pro RTGI [MartysMods_RTGI.fx]` in the "Home" tab of ReShade.
+Enable the shader `iMMERSE Pro RTGI [MartysMods_RTGI.fx]` in the "Home" tab of ReShade.
 
 ---
 
