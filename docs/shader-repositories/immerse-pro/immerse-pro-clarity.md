@@ -20,11 +20,11 @@ Below is a guide to help with the tweaking of the shader and its values.
 
 Simply check the shader `iMMERSE Pro Clarity [MartysMods_CLARITY.fx]` in the "Home" tab of ReShade.
 
-![Check Clarity Shader](../images/configuring-immerse-shaders/immerse_clarity_enable.png)
+![Check Clarity Shader](../images/immerse_clarity_enable.png)
 
 This will activate Clarity and give you the arguments at the bottom to change.
 
-![Show User Clarity Options with Defaults](../images/configuring-immerse-shaders/show_user_clarity_arguments.png)
+![Show User Clarity Options with Defaults](../images/show_user_clarity_arguments.png)
 
 ---
 
@@ -32,14 +32,14 @@ This will activate Clarity and give you the arguments at the bottom to change.
 
 "Texture Intensity" is responsible for how strong the sharpening / highlighting of the details are.
 	
-![Clarity Texture Intensity comparison](../images/configuring-immerse-shaders/clarity_textureintensity_comparison.png)
+![Clarity Texture Intensity comparison](../images/clarity_textureintensity_comparison.png)
 	
 
 # Local Contrast Intensity
 
 "Local Contrast Intensity" allows you to remove or add the image's contrast to combat haloing and artifacts while still keeping Clarity's highlight effect on.
 
-![Clarity Local Contrast comparison](../images/configuring-immerse-shaders/clarity_localcontrast_comparison.png)
+![Clarity Local Contrast comparison](../images/clarity_localcontrast_comparison.png)
 
 # Sample Radius
 
