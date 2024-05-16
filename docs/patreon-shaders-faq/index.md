@@ -47,7 +47,7 @@ The iMMERSE repository includes:
 
 To install the iMMERSE repository, utilize the ReShade Installer to download the iMMERSE repository during the shader installation process.
 
-**Alternatively**, if you would like to install this repository manually, check out [our guide for installing ReShade shaders manually](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/#step-1-create-a-reshade-shaders-folder)!
+**Alternatively**, if you would like to install this repository manually, check out [our guide for installing ReShade shaders manually](https://guides.martysmods.com/docs/reshade/downloading-and-installing/#step-1-create-a-reshade-shaders-folder)!
 
 If you plan on installing iMMERSE Pro or iMMERSE Ultimate shaders, DO NOT install the iMMERSE Repository manually or through the ReShade installer. Doing so will cause duplicates of the iMMERSE base shaders - as they are included with the iMMERSE Pro and Ultimate archives.
 
@@ -87,7 +87,7 @@ Once subscribed, you are able to download iMMERSE Pro shaders from [Pascal's Dis
 
 You are free to keep these shaders after your subscription and you will not be revoked access to these shaders at any given point. You are also free to end your subscription at any time.
 
-Once you've downloaded the latest iMMERSE Pro Shader archive, you can install them with a simple drag and drop procedure. This process is shown in [our guide for installing ReShade Shaders manually](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/#step-1-create-a-reshade-shaders-folder)!
+Once you've downloaded the latest iMMERSE Pro Shader archive, you can install them with a simple drag and drop procedure. This process is shown in [our guide for installing ReShade Shaders manually](https://guides.martysmods.com/docs/reshade/downloading-and-installing/#step-1-create-a-reshade-shaders-folder)!
 
 </details>
 
@@ -130,7 +130,7 @@ You are free to keep these shaders after your subscription and you will not be r
 <details markdown="block" class="details-tree">
 <summary>Installing iMMERSE Ultimate Shaders</summary>
 
-Once you've downloaded the latest iMMERSE Ultimate Shader archive, you can install them with a simple drag and drop procedure. This process is shown in [our guide for installing ReShade Shaders manually](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/#step-1-create-a-reshade-shaders-folder)!
+Once you've downloaded the latest iMMERSE Ultimate Shader archive, you can install them with a simple drag and drop procedure. This process is shown in [our guide for installing ReShade Shaders manually](https://guides.martysmods.com/docs/reshade/downloading-and-installing/#step-1-create-a-reshade-shaders-folder)!
 
 </details>
 
