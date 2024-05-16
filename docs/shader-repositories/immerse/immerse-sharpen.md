@@ -32,6 +32,6 @@ You want to manage this argument where there is a noticble increase in game deta
 
 Start at the value of `0.000` and work your way up until you're able to find details being presnted more in the scene you've chosen.
 
-![Comparison](../images/configuring-immerse-shaders/sharpned_image.webp)
+![Comparison](../images/sharpned_image.webp)
 
 JORDAN, REMOVE IMAGE AS ITS NOT NEEDED.
