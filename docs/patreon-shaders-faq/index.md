@@ -143,7 +143,7 @@ Once you've downloaded the latest iMMERSE Ultimate Shader archive, you can insta
 
 Open the iMMERSE Ultimate archive that you've downloaded from the PGHub Discord:
 
-![Image](./images/immerse_ultimate_archive.jpg)
+![Image](./images/immerse_ultimate_archive.webp)
 
 ---
 
@@ -151,7 +151,7 @@ Open the iMMERSE Ultimate archive that you've downloaded from the PGHub Discord:
 
 Open the "**Addons**" folder within the iMMERSE Ultimate Archive
 
-![Image](./images/immerse_ultimate_addons.jpg)
+![Image](./images/immerse_ultimate_addons.webp)
 
 ---
 
@@ -167,7 +167,7 @@ If you're unsure where your game directory is located, please see our guide on [
 
 Drag and drop the addon files from the iMMERSE Ultimate archive into your game folder.
 
-![Image](./images/addons_drag_and_drop.jpg)
+![Image](./images/addons_drag_and_drop.webp)
 
 After moving the addon files into your game folder, you've sucessfully installed the iMMERSE Ultimate Add-on portion of the archive!
 
@@ -196,7 +196,7 @@ Navigate to [Patreon's 'Connected Apps' Settings](https://www.patreon.com/settin
 
 Click the "**Discord**" Icon:
 
-![Image](./images/patreon_discord_icon.jpg) 
+![Image](./images/patreon_discord_icon.webp) 
 
 ---
 
@@ -204,7 +204,7 @@ Click the "**Discord**" Icon:
 
 Click "**Disconnect**" to unlink your Discord Account from Patreon:
 
-![Image](./images/patreon_disconnect_discord.jpg)
+![Image](./images/patreon_disconnect_discord.webp)
 
 ---
 
@@ -212,7 +212,7 @@ Click "**Disconnect**" to unlink your Discord Account from Patreon:
 
 Click "**Connect**" and sign into your Discord account:
 
-![Image](./images/patreon_connect_discord.jpg)
+![Image](./images/patreon_connect_discord.webp)
 
 ---
 
@@ -220,7 +220,7 @@ Click "**Connect**" and sign into your Discord account:
 
 Grant Permission by clicking "**Authorize**":
 
-![Image](./images/discord_authorize.jpg)
+![Image](./images/discord_authorize.webp)
 
 ---
 
