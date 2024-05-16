@@ -40,7 +40,7 @@ The parameters for each option is explained further down the guide, so if you wa
 
 * **Special Transforms:** allows for more "artistic" changes on the scene brightness and light levels.
 
-![ReGrade Slots](../images/regrade_slots_preview.png)
+![ReGrade Slots](../images/regrade_slots_preview.webp)
 
 Now that you know each of the functions, lets get deeper and start doing some modifications.
 

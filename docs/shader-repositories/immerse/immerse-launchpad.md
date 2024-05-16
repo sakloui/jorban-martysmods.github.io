@@ -20,9 +20,9 @@ Install the shader normally and then enable `iMMERSE Launchpad (enable and move 
 
 Simply, toggle on Smoothed Normals in Launchpad's avaliable arguments to enable it.
 
-![Comparison](../images/configuring-immerse-shaders/launchpad_smoothed_normals.jpg){: style="max-width:85%" }
+![Comparison](../images/configuring-immerse-shaders/launchpad_smoothed_normals.webp){: style="max-width:85%" }
 
-![Texture Normals Preview](../images/configuring-immerse-shaders/texture_normals_preview.png)
+![Texture Normals Preview](../images/configuring-immerse-shaders/texture_normals_preview.webp)
 
 Textured Normals allows you to bring more detail out into the normals, by estimating the surface relief through color information.
 
@@ -39,7 +39,7 @@ Textured Normals requires Smoothed Normals to be active beforehand.
 
     You do not want this value to be too high, please use it with caution!
 	
-![Texture Normals Radius](../images/configuring-immerse-shaders/texture_normals_radius.png)
+![Texture Normals Radius](../images/configuring-immerse-shaders/texture_normals_radius.webp)
 
 * Textured Normals Intensity
 
@@ -47,10 +47,10 @@ Textured Normals requires Smoothed Normals to be active beforehand.
 
     You do not want this value to be too high, please use it with caution!
 
-![Texture Normals Intensity](../images/configuring-immerse-shaders/texture_normals_intensity.png)
+![Texture Normals Intensity](../images/configuring-immerse-shaders/texture_normals_intensity.webp)
 
 * Textured Normals Quality
 
     Value ranging from 1 to 3 that allows the user to increase or decrease the quality of the textured normals on screen.
 	
-![Texture Normals Quality](../images/configuring-immerse-shaders/texture_normals_quality.png)	
+![Texture Normals Quality](../images/configuring-immerse-shaders/texture_normals_quality.webp)	

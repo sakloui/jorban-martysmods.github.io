@@ -38,7 +38,7 @@ After enabling, you might not notice too much difference, but its enabled, howev
 
 The shader has a debug section and under exists the option "Debug outputs." Changing this to "Lighting will allow you to instantly see the scene with a very faint light.
 
-![Debug output preview](../images/relight-debug-out.png)
+![Debug output preview](../images/relight-debug-out.webp)
 
 ---
 

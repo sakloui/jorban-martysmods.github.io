@@ -24,11 +24,11 @@ Without the addon support build of ReShade, ReGrade +'s addon and shader **WILL 
 
 Install the shader as normal, but for the Addon, you must place it close to the ReShade DLL and game's EXE, like this:
 
-![ReGradePlus Addon Installation](../images/regradep_addon_installation.png)
+![ReGradePlus Addon Installation](../images/regradep_addon_installation.webp)
 
 If you want to test if everything was correctly installed, you can open your game, if it was, you'll have a new tab in ReShade's menu, named "ReGrade +."
 
-![ReGradePlus ReShade Window Tab](../images/regradep_addon_tab.png)
+![ReGradePlus ReShade Window Tab](../images/regradep_addon_tab.webp)
 
 With that done, the shader can be enabled by going to the "Home" tab and enabling `iMMERSE Ultimate: ReGrade+ [MartysMods_REGRADE+.fx]` and `iMMERSE Ultimate: ReGrade+ Histogram [MartysMods_REGRADE+.fx]`. The latter shader is so the addon's histogram widgets work and display the correct values.
 
@@ -40,11 +40,11 @@ Before explaining its parameters, we recommend you move the "ReGrade +" tab to a
 
 Remember, enabling the Shader itself won't do anything, and if one of the components are not running, the Addon / Shader Window will tell, like so:
 
-![ReGradePlus ReShade Window Alerts - All OFF](../images/regradep_shaders_off.png)
+![ReGradePlus ReShade Window Alerts - All OFF](../images/regradep_shaders_off.webp)
 
 If everything is correct, it should look like this:
 
-![ReGradePlus ReShade Window Alerts - All ON](../images/regradep_shaders_ok.png)
+![ReGradePlus ReShade Window Alerts - All ON](../images/regradep_shaders_ok.webp)
 
 Now, with those ready, you can start tweaking the parameters, please note that different from the usual ReShade shaders, this one works differently and closer than professional industry tools, so its alright if you get confused at first.
 This guide will do its best to help you with questions and whatever you might need to use this shader correctly.
@@ -67,7 +67,7 @@ By clicking on the Drop-Down box, you can choose between different options, such
 
 You can also click the "Undock" button to have those working separated from the ReGrade+ window. Allowing for better organization of the workspace.
 
-![ReGradePlus Scopes Window](../images/regradep_scopes_widget.png)
+![ReGradePlus Scopes Window](../images/regradep_scopes_widget.webp)
 
 ---
 
@@ -117,11 +117,11 @@ The options we can see here are divided in Categories, and each one of those has
 
 By default, it comes enabled in the "RGB" mode, which tweaks all of the 3 main colors (Red, Green and Blue) toning and brightness, however, you can change to a per-channel mode by clicking the coloured squares in the lower part of the Graph.
 
-![ReGradePlus Tone Curve Modes](../images/regradep_curves_mode.png)
+![ReGradePlus Tone Curve Modes](../images/regradep_curves_mode.webp)
 
 To start using it, click on a point in the graph and move it to start changing the tone curve. To plot a new point, click somewhere else and move that point. The changes, along with the graphic, will all update in real-time.
 
-![ReGradePlus Tone Curve Points Example](../images/regradep_curves_points.png)
+![ReGradePlus Tone Curve Points Example](../images/regradep_curves_points.webp)
 
 You cannot delete per-point, so any time you need to revert the changes, you can right click and select "Reset to Default" to have all the curve changes and points undone.
 
@@ -135,7 +135,7 @@ The "Color Correction" section is subdivided in two: "Split Tuning" and a "Color
 
 There are two ways you can edit those values, you can either click on the point on the center of color wheel and move it on where you want it to be, or you can drag the gauges left and right for more granular and fine-tuning of the values.
 
-![ReGradePlus Split Toning Wheel Example](../images/regradep_colorwheel_toning.png)
+![ReGradePlus Split Toning Wheel Example](../images/regradep_colorwheel_toning.webp)
 
 The second wheel allows you to change the color values of Red, Orange, Yellow, Green, Aqua, Purple and Magenta by Luma (brightness) and also Saturation (Amount of Color).
 
@@ -147,4 +147,4 @@ To reset the values of a changed color, right click on the point you wanna reset
 
 While this part of the shader doesn't allow you to drag any sort of gauges, it allows you to see how much of the values are changed in each section of the spectrum.
 
-![ReGradePlus Color Wheel Example](../images/regradep_colorwheel_example.png)
+![ReGradePlus Color Wheel Example](../images/regradep_colorwheel_example.webp)

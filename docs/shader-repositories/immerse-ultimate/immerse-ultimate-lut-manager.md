@@ -20,7 +20,7 @@ Without the addon support build of ReShade, LUT Manager's addon and shader **WIL
 
 Install the shader as normal, but for the Addon, you must place it close to the ReShade DLL and game's EXE, like this:
 
-![Example Addon Installation](../images/regradep_addon_installation.png)
+![Example Addon Installation](../images/regradep_addon_installation.webp)
 
 ---
 
@@ -38,10 +38,10 @@ First, enable the Shader `iMMERSE Ultimate LUT Manager [MartysMods_LUTMANAGER.fx
 
 After that, pick one from the list and, if the shader is enabled, the colors will change right away!
 
-![Pic of the LUT manager Window](../images/lutmanager-window.png)
+![Pic of the LUT manager Window](../images/lutmanager-window.webp)
 
 The shader iteself has 2 toggles, one named "Enhanced LUT Quality," which upsamples the LUTs using a expensive method. This is best used with small 16x16x16 LUT textures. And another named "Show all LUTs in its current atlas side-by-side," this will show all LUTs in the current png side-by-side.
 
 You can also right-click any of the LUTs you like the most and add them to a favorites list for easy-finding later.
 
-![LUT Manager Favorites Window](../images/lutmanager-favs.png)
+![LUT Manager Favorites Window](../images/lutmanager-favs.webp)

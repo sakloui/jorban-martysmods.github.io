@@ -44,13 +44,13 @@ The Ambient Light argument allows you to configure it from 0.0 to 1.0. Where 0.0
 
 A good strategy is to use these for close-up pictures or to give your scene more of a studio-lighting look by having only the parts you want lit illuminated.
 
-![Comparison between none to full Ambient Lighting](../images/rtgi_ambient_lighting_comparison.png)
+![Comparison between none to full Ambient Lighting](../images/rtgi_ambient_lighting_comparison.webp)
 
 Another tool to aid with ambient light in general is the new "Ambient Lighting Sky Intensity" feature, added in 0.51 (released 21/08/2024) to replace the old "Skycolor" feature, working together with Ambient Lighting to help the scenes have a more accurate light tone, this new revision allows it to work better with indoors, which might contribute for more moody scenes of indoors.
 
 The value goes from 0.0 to 1.0, with 0 being none, and 1 being the max. Please take note that in dark scenes, it will darken the environment, so have that in mind.
 
-![Comparison between none to full Sky Intensity](../images/rtgi_sky_lighting_comparison.png)
+![Comparison between none to full Sky Intensity](../images/rtgi_sky_lighting_comparison.webp)
 
 ---
 	
@@ -62,19 +62,19 @@ First, we'll start up by changing the quality of the RTGI by going on the "Diffu
 
 The higher the quality, the larger the GI will bleed and the less noise it will have in the final result.
 
-![Comparison of Quality Levels](../images/rtgi_quality_comparison.png)
+![Comparison of Quality Levels](../images/rtgi_quality_comparison.webp)
 
 Second option that will need to be tweaked is "Diffuse GI Radius." This option tells RTGI how far you want the global-illumination to go in the scene. 
 
 The larger this is, the more the bright elements will spread on the scene. With 1 being little to no light bleeding and 20 being the farthest it can reach.
 
-![Comparison of GI Radius](../images/rtgi_radius_comparison.png)
+![Comparison of GI Radius](../images/rtgi_radius_comparison.webp)
 
 The last option is "Diffuse Bounce Lighting Intensity." This option tells RTGI how much Diffuse lighting you want within the scene. 
 
 You want to configure this option to provide as much bounce lighting you want, while not making light sources overbrighten the entire scene.
 
-![Comparison of Bounce Lighting Values](../images/rtgi_bouncelighting_comparison.png)
+![Comparison of Bounce Lighting Values](../images/rtgi_bouncelighting_comparison.webp)
 	
 Now, to fine-tune it, change the "Fade-Out Range" so what you want covered from the scene gets covered up and "Z-Thickness" to change how thin or thick the objects on the scene are to add shadows.
 
@@ -100,11 +100,11 @@ Then, the second parameter: "Specular Lighting Intensity". This tells RTGI how m
 
 If you don't want to cause a "wet-world" effect, tweak those until they just show a bit of the geometry above them.
 
-![Specular Lighting Preview](../images/rtgi_specular_comparison.png)
+![Specular Lighting Preview](../images/rtgi_specular_comparison.webp)
 	
 At last, we have "Surface Roughness," this tells how Defined the reflections are, since RTGI doesn't know how rough surfaces are, it guesses and blurs the reflections as a mean to make it more rough and less defined. 0 makes the reflections super-shiny and defined, while 1.0 makes them super-blurry and hard to see.
 	
-![Reflection Roughness Comparison](../images/rtgi_reflection_comparison.png)
+![Reflection Roughness Comparison](../images/rtgi_reflection_comparison.webp)
 	
 ---
 

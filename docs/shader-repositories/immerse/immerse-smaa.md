@@ -43,7 +43,7 @@ The parameters below requires explanation from the previous section. Make sure t
 
 This will allow you to see all of the edges that iMMERSE Anti Aliasing is able to detect, and will allow us to better see the changes that the shader is able to make!
 
-![Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_preview.png)
+![Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_preview.webp)
 
 ---
 
@@ -51,7 +51,7 @@ This will allow you to see all of the edges that iMMERSE Anti Aliasing is able t
 
 This option is the best soltuion for getting the most amount of edges within iMMERSE Anti Aliasing - However, other options can be chosen if desired.
 
-![Color Edge Detection(Max) Preview](../images/configuring-immerse-shaders/smaa_color_edge_detection_max_argument.png)
+![Color Edge Detection(Max) Preview](../images/configuring-immerse-shaders/smaa_color_edge_detection_max_argument.webp)
 
 ---
 
@@ -59,7 +59,7 @@ This option is the best soltuion for getting the most amount of edges within iMM
 
 With this selected, you should notice a large decrease of edges that are being detected, this is normal, do not panic, as we will be configuring other parameters in order to get more of those edges back into view!
 
-![Enable Predicated Thresholding Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_depth_preview.png)
+![Enable Predicated Thresholding Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_depth_preview.webp)
 
 ---
 
@@ -67,7 +67,7 @@ With this selected, you should notice a large decrease of edges that are being d
 
 When reducing the arguments for "Edge Detection Threshold" and "Depth Edged Detection Threshold" you are allowing SMAA to detect more edges within the scene, and will greatly increase the amount of edges that you see.
 
-![Reducing Edge Detection Threshold and Depth Edge Detection Threshold Parameter Preview](../images/configuring-immerse-shaders/smaa_reduce_edt_and_dedt.png)
+![Reducing Edge Detection Threshold and Depth Edge Detection Threshold Parameter Preview](../images/configuring-immerse-shaders/smaa_reduce_edt_and_dedt.webp)
 
 ---
 
@@ -75,7 +75,7 @@ When reducing the arguments for "Edge Detection Threshold" and "Depth Edged Dete
 
 If you already have this set to default values, the parameter will likely not change much within your scene, it's worth keeping in mind that this parameter will not do anything if you do not have depth access within your game!
 
-![Reducing Predication Threshold Parameter Preview](../images/configuring-immerse-shaders/smaa_reduce_pt.png)
+![Reducing Predication Threshold Parameter Preview](../images/configuring-immerse-shaders/smaa_reduce_pt.webp)
 
 ---
 
@@ -87,11 +87,11 @@ Keep in mind that this parameter also will not do anything if you do not have de
 
 * Good "Predication Strength" value debug output:
 
-        ![Good](../images/configuring-immerse-shaders/smaa_debug_edge_prediction_good_strength_preview.png)
+        ![Good](../images/configuring-immerse-shaders/smaa_debug_edge_prediction_good_strength_preview.webp)
 
 * Poor "Predication Strength" value debug output:
 
-        ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_prediction_bad_strength_preview.png)
+        ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_prediction_bad_strength_preview.webp)
 
 ---
 
@@ -101,11 +101,11 @@ You want to reduce "Predition Scale" down to the point where you are still picki
 
 * Good "Predication Scale" value debug output:
 
-    ![Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_good.png)
+    ![Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_good.webp)
 
 * Poor "Predication Scale" value debug output:
   
-    ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_bad.png)
+    ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_pred_scale_bad.webp)
 
 ---
 
@@ -127,11 +127,11 @@ Please know that this will not take away all of your aliasing issues, but it can
 
 ### SMAA Enabled:
 
-![Enabled](../images/configuring-immerse-shaders/smaa_enabled_preview.png)
+![Enabled](../images/configuring-immerse-shaders/smaa_enabled_preview.webp)
 
 ### SMAA Disabled:
 
-![Disabled](../images/configuring-immerse-shaders/smaa_disabled_preview.png)
+![Disabled](../images/configuring-immerse-shaders/smaa_disabled_preview.webp)
 
 
 You can now disable "Debug Output" and continue to the game as usual!
@@ -160,7 +160,7 @@ danke
 
 * This will allow you to see all of the edges that iMMERSE Anti Aliasing is able to detect, and will allow us to better see the changes that the shader is able to make!
 
-    ![Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_preview.png)
+    ![Debug Output Preview](../images/configuring-immerse-shaders/smaa_debug_edges_preview.webp)
 
 ---
 
@@ -170,7 +170,7 @@ danke
 
     * However, other options can be chosen if desired.
 
-        ![Color Edge Detection(Max) Preview](../images/configuring-immerse-shaders/smaa_color_edge_detection_max_argument.png)
+        ![Color Edge Detection(Max) Preview](../images/configuring-immerse-shaders/smaa_color_edge_detection_max_argument.webp)
 
 ---
 
@@ -180,11 +180,11 @@ danke
 
     * Good `Predication Scale` value debug output:
 
-        ![Good](../images/configuring-immerse-shaders/smaa_debug_edge_detect_thresh_good.png)
+        ![Good](../images/configuring-immerse-shaders/smaa_debug_edge_detect_thresh_good.webp)
 
     * Poor `Predication Scale` value debug output:
         
-        ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_detect_thresh_bad.png)
+        ![Not Good](../images/configuring-immerse-shaders/smaa_debug_edge_detect_thresh_bad.webp)
 
 ---
 
@@ -192,7 +192,7 @@ danke
 
 * In theory this should allow iMMERSE Anti Aliasisng to provide better results for edges - however, in practice, the change is not always visable off the bat.
 
-    ![SMAA USE EXTENDED EDGE DETECTION Argument Preview](../images/configuring-immerse-shaders/smaa_use_edge_extended_preview.png)
+    ![SMAA USE EXTENDED EDGE DETECTION Argument Preview](../images/configuring-immerse-shaders/smaa_use_edge_extended_preview.webp)
 
 ---
 
@@ -216,11 +216,11 @@ Please know that this method is not as good as the method with depth detection -
 
   * SMAA Enabled:
 
-  ![Enabled](../images/configuring-immerse-shaders/smaa_no_depth_enabled.png)
+  ![Enabled](../images/configuring-immerse-shaders/smaa_no_depth_enabled.webp)
 
   * SMAA Disabled:
 
-  ![Disabled](../images/configuring-immerse-shaders/smaa_no_depth_disabled.png)
+  ![Disabled](../images/configuring-immerse-shaders/smaa_no_depth_disabled.webp)
 
 ---
 

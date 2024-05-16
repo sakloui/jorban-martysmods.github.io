@@ -28,7 +28,7 @@ If you are on an area without geometry, the screen will just be white. So make s
 
 By default, MXAO will use GTAO, however, there are three others from you to choose from:
 
-![MXAO Modes Comparison](../images/configuring-immerse-shaders/mxao_comparison_numbered.png)
+![MXAO Modes Comparison](../images/configuring-immerse-shaders/mxao_comparison_numbered.webp)
 
 * **0**: Ground Truth Ambient Occlusion (high contrast, fast)
 
@@ -44,7 +44,7 @@ AO type 3 will often be the best looking, but will only work in DX11 and above, 
 
 ## "Sample Quality and Shading Rate" arguments
 
-![MXAO Quality Comparison](../images/configuring-immerse-shaders/mxao_quality_comparison.png)
+![MXAO Quality Comparison](../images/configuring-immerse-shaders/mxao_quality_comparison.webp)
 
 "Sample Quality" configures how many times geometry will be taken to generate the ambient occlusion. While this raises the quality and how detailed and dark the geometry is, it will also be harsher on performance the higher it is.
 
@@ -56,7 +56,7 @@ Often, you will not have to go past very high, however, large radius setups migh
 
 ## "Sample Radius" argument
 
-![MXAO Sample Radius Comparison](../images/configuring-immerse-shaders/mxao_sampleradius_comparison_numbered.png)
+![MXAO Sample Radius Comparison](../images/configuring-immerse-shaders/mxao_sampleradius_comparison_numbered.webp)
 
 "Sample Radius" defines how far MXAO will reach out and spread it's shading. The lower this argue is set the closer the shading will be concentrated.
 
@@ -64,13 +64,13 @@ Often, you will not have to go past very high, however, large radius setups migh
 
 Keep in mind that you should configure "Sample Radius" in MXAO so that it is not producing halos in its shading that "spread" in the environment. Below are examples of a correct configuration, and a wrong configuration.
 
-![MXAO Bad Example](../images/configuring-immerse-shaders/mxao_excessive_sample_radius_example.png)
+![MXAO Bad Example](../images/configuring-immerse-shaders/mxao_excessive_sample_radius_example.webp)
 
 ---
 
 ## "Ambient Occlusion Amount, Fade-Out Distance, and Filter Quality" arguments
 
-![MXAO Amount Comparison](../images/configuring-immerse-shaders/mxao_amount_comparison.png)
+![MXAO Amount Comparison](../images/configuring-immerse-shaders/mxao_amount_comparison.webp)
 
 "Ambient Occlusion Amount" allows you to configure how strong the shadows are. Larger and close together objects should be dark, but, you want to avoid excessive shading on leaves and tiny objects.
 
