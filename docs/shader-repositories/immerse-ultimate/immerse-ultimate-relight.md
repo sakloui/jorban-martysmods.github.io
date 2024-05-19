@@ -8,35 +8,22 @@ grand_parent: Shader Repositories
 
 # iMMERSE Ultimate: ReLight
 
-ReLight is a point-lighting solution for ReShade. Similar to Studio Lights in photographs, and point lighting in games and photomodes, it allows to change the lighting of a scene. Allowing for more granular changes in the mood and details of the scenes.
+ReLight is a point-lighting solution for ReShade. Similar to Studio Lights in photographs, ReLight allows you to change the lighting, and adjust for more granular changes in the mood and details of the scenes.
 
-While you can use it for any sort of scene, use-cases prove that close-ups or photos of humanoid models are the best cases for using it. However, you're allowed to see as you fit, below is how to install and use it.
+While you can use it for any sort of scene, use-cases prove that close-ups or photos of humanoid models are the best cases for using ReLight. However, you're allowed to see as you fit.
 
 ---
 
 ## iMMERSE: Launchpad
+Before starting, make sure Launchpad is properly installed and enabled within ReShade as it's a requirement for ReLight to work properly. Launchpad is included with the latest version of the iMMERSE Ultimate archive. Afterwards, find a location in-game and start tweaking ReLight.
 
-Before starting, make sure Launchpad is properly set-up. After that, find a place you want to try the shader in a game or application and get to tweaking it. If you do not have the iMMERSE: Launchpad shader, you can grab it from the ReShade installer or by manually installing it from the [iMMERSE GitHub](https://github.com/martymcmodding/iMMERSE)
-
-If you want to manually install the iMMERSE GitHub repository for Launchpad, make sure to follow [our guide on manually installing shaders for ReShade](https://guides.martysmods.com/docs/reshade-guides/manual-reshade-installs/#step-1-create-a-reshade-shaders-folder)!
-
-ReLight is made to take advantage of specific Launchpad features, such as Smoothed and Textured Normals, so make sure to read the guide specific to [iMMERSE: Launchpad]() if you ever get lost or feel like something could look better.
-
----
-
-## Enable iMMERSE Ultimate: ReLight and iMMERSE: Launchpad
-
-Enable the shader `iMMERSE: Launchpad [MartysMods_LAUNCHPAD.fx]` in the "Home" tab of ReShade. Launchpad needs to be above ReShade
-
-Enable the shader `iMMERSE Ultimate: ReLight [MartysMods_RELIGHT.fx]` from the "Home" tab of ReShade.
+ReLight is made to take advantage of specific Launchpad features, such as Smoothed and Textured Normals, so make sure to read the guide specific to [iMMERSE: Launchpad](https://guides.martysmods.com/docs/shader-repositories/immerse/immerse-launchpad/) if you ever get lost or feel like something could look better.
 
 ---
 
 ## ReLight's Debug
 
-After enabling, you might not notice too much difference, but its enabled, however, to better visualize it, we gotta first go through the Debug modes.
-
-The shader has a debug section and under exists the option "Debug outputs." Changing this to "Lighting will allow you to instantly see the scene with a very faint light.
+Upon enabling ReLight, you might not notice too much of a difference within your scene, In order to better visualize what ReLight is providing to the scene you can use the debug modes that are provided in the shader's arguments.
 
 ![Debug output preview](../images/relight-debug-out.webp)
 
@@ -44,33 +31,37 @@ The shader has a debug section and under exists the option "Debug outputs." Chan
 
 ## General Shader Arguments
 
-Similar to RTGI, in the "Global" section, you can tweak how much light from the original scene is kept and the overall parameters for the lighting and shadows, here, the options are the following:
+Similar to RTGI, in the "Global" section of ReLight, you can tweak how much light from the original scene is kept and the overall parameters for the lighting and shadows.
 
-* **Ambient Light:** How much of the original scene lighting is kept
+The options for you to configure are:
 
-* **Trace Shadows:** If the light will cast shadows. The two parameters below are directly related to that.
+* **Ambient Light:** How much of the original scene lighting is kept. ![Ambient Light Argument 1-0](../images/ambient-light-slider.webp)
 
-* **Shadow Penumbra:** Penumbra is the effect of the shadow when its leaking outside from being partially hit by light. This defines how wide it is, and consequently, how intense it / dark it will look.
+* **Shadow Tracing:** This argument will control if and how the lights placed in ReLight will end up casting shadows.![Ambient Light Argument 1-0](../images/relight-shadow-tracing-type.webp)
 
-* **Z-Thickness:** Like in RTGI, it defines how thick or thin the objects are. Thicker objects will cast darker shadows, while thinner ones might cast lighter and wider shadows.
+* **Shadow Trace Quality:** Shadow Trace Quality will define the quality of the shadows that are being traced. The higher the quality, the more samples per ray are being accounted for, and therefore the sharper the shadows end up being.
 
-* **Shadow Trace Quality:** How defined and how many tracces the ReSTIR casted shadows have. The higher the quality, the sharper the shadows but also the higher the performance consumption.
+* **Z-Thickness:** Like in RTGI, "Z-Thickness" will define how thick or thin the objects are within the scene. Thicker objects will cast darker and more prominent shadows, while thinner ones will often cast lighter and less prominent shadows.
 
 ---
 
 ## Light Sources and Parameters
 
-Each light source will have its category identified as "Light #." The number of light sources can be changed by going at the bottom of the shader's parameter list and selecting the `AMOUNT_OF_LIGHTS` preprocessor definition. By default, it comes with 2 lights and at most can go up to 4.
-
-With that out of the way, you can tweak the following about the light sources:
+Each light source will have its category identified as "Light #." The number of light sources can be changed by going to the bottom of the shader's parameter list and selecting the `AMOUNT_OF_LIGHTS` preprocessor definition. By default, it comes with 2 lights and at most can go up to 4.
 
 * **Active:** If the light source is active or not.
 
-* **Position:** The light source position on the screen. First is Horizontally, Second is Vertically and the Last one is the depth.
+* **Type:** This will control what type of light that you are using for the specific light source you're configuring. You can choose between Point or Infinite.
 
-* **Tint:** Sets the color of the selected light source.
+* **Temp / Tint:** This argument allows the user to set the tint and tint control of the particular light source.
 
-* **Intensity:** How bright the light is.
+* **Intensity:** How bright and large the light source is within the screen space.
+
+* **Shadow Penumbra:** Penumbra is the effect of the shadow when its leaking outside from being partially hit by light. Changing the argument for "Shadow Penumbra" will allow you to adjust how soft the shading cast from your ReLight probes will be in the final image.
+
+* **Infinite Light: Azimuth/Elevation:** This will end up controling how the Infinite Light mode will end up casting light into the scene based on Azimuth and Elevation
+
+* **Point Light: Position:** This argument will control where the light source is positioned within the screen space. First is horizontal (X), second is vertical (Y), and the third is the depth (Z).
 
 ---
 

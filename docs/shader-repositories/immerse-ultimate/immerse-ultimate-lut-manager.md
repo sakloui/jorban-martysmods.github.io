@@ -8,13 +8,11 @@ grand_parent: Shader Repositories
 
 # iMMERSE Ultimate: Lut Manager
 
-LUT Manager combines the MultiLUT shader with an addon to manage LUT textures on the fly. Its more of a tool rather than a shader by itself.
-
-In this guide we will detail installation steps along with how to use it effectively and how to organize your files.
+LUT Manager combines a LUT application shader with an addon to manage LUT textures on the fly. This can allow users to easily switch between different LUTs without having to create or utilize a shader for each individual LUT file.
 
 ---
 
-## **Step 1: Installing the Addon and the Shader**
+## Installing the Addon and the Shader
 
 Without the addon support build of ReShade, LUT Manager's addon and shader **WILL NOT** work. 
 
@@ -24,17 +22,17 @@ Install the shader as normal, but for the Addon, you must place it close to the 
 
 ---
 
-## Installing LUTs
+## Downloading and Installing LUTs
 
-Before starting the game and enabling the LUTs, create a folder named "LUTs" in the game directory and place the LUT files you need there. All of the main LUT formats used by ReShade shaders are supported. Those included the LUTs from the repositories in the ReShade setup.
+Look-Up-Tables, commonly refered to as LUTs, are a format of predefined color grades. In ReShade, they're often in the format of a LUT atlas PNG file. You can browse common LUT repositories [such as MLUT](https://github.com/TheGordinho/MLUT) in order to view, find, and download LUTs at your pleasure.
 
-After that is done, just start the game, you may add more LUTs later ingame by reloading ReShade.
+Once you have the LUTs that you desire, create a folder named "LUTs" in the game directory and place the LUT textures that you've aquired inside.
 
 ---
 
 ## Enabling the Shader
 
-First, enable the Shader `iMMERSE Ultimate LUT Manager [MartysMods_LUTMANAGER.fx]`, after that, go to the "Add-Ons" tab, and in it, you should see MartysMods LUT Manager. There you'll see the names of all the LUTs / PNGs you have installed. Click in one of them to open the LUT list.
+To enable LUT Manager, simply enable the shader `iMMERSE Ultimate LUT Manager [MartysMods_LUTMANAGER.fx]`, after that, go to the "Add-Ons" tab, and in it, you should see MartysMods LUT Manager. There you'll see the names of all the LUTs you have installed and you can click the files to open the LUT list.
 
 After that, pick one from the list and, if the shader is enabled, the colors will change right away!
 
