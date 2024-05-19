@@ -25,7 +25,7 @@ ReLight is made to take advantage of specific Launchpad features, such as Smooth
 
 Upon enabling ReLight, you might not notice too much of a difference within your scene, In order to better visualize what ReLight is providing to the scene you can use the debug modes that are provided in the shader's arguments.
 
-![Debug output preview](../images/relight-debug-out.webp)
+![Debug output preview](../images/relight-debug-output.webp)
 
 ---
 
