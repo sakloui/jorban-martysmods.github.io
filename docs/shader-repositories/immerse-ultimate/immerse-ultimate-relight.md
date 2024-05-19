@@ -35,9 +35,13 @@ Similar to RTGI, in the "Global" section of ReLight, you can tweak how much ligh
 
 The options for you to configure are:
 
-* **Ambient Light:** How much of the original scene lighting is kept. ![Ambient Light Argument 1-0](../images/ambient-light-slider.webp)
+* **Ambient Light:** How much of the original scene lighting is kept. `1` being all of the ambient light from the scene, `0` being no ambient light from the scene.
 
-* **Shadow Tracing:** This argument will control if and how the lights placed in ReLight will end up casting shadows.![Ambient Light Argument 1-0](../images/relight-shadow-tracing-type.webp)
+![Ambient Light Argument 1-0](../images/ambient-light-slider.webp)
+
+* **Shadow Tracing:** This argument will control if and how the lights placed in ReLight will end up casting shadows. The options to choose from are "Off," "Visability Test," and "Recursive Path Tracing."
+
+![Ambient Light Argument 1-0](../images/relight-shadow-tracing-type.webp)
 
 * **Shadow Trace Quality:** Shadow Trace Quality will define the quality of the shadows that are being traced. The higher the quality, the more samples per ray are being accounted for, and therefore the sharper the shadows end up being.
 
