@@ -10,22 +10,22 @@ grand_parent: Shader Repositories
 
 ![ReLight Main Image](../images/relight-main.png)
 
+{: .highlight-title }
+>IMPORTANT
+>
+>ReLight **REQUIRES** iMMERSE: Launchpad in order to function.
+
 ReLight is a point-lighting solution for ReShade. Similar to studio lights in photography, ReLight allows you to change the lighting, and adjust for more granular changes in the mood and details of the scenes.
 
 While you can use it for any sort of scene, use-cases prove that close-ups or photos of humanoid models are the best cases for using ReLight. However, you're allowed to see as you fit.
 
----
 
-## iMMERSE: Launchpad
-Before starting, make sure Launchpad is properly installed and enabled within ReShade as it's a requirement for ReLight to work properly. Launchpad is included with the latest version of the iMMERSE Ultimate archive. Afterwards, find a location in-game and start tweaking ReLight.
-
-ReLight is made to take advantage of specific Launchpad features, such as Smoothed and Textured Normals, so make sure to read the guide specific to [iMMERSE: Launchpad](https://guides.martysmods.com/docs/shader-repositories/immerse/immerse-launchpad/) if you ever get lost or feel like something could look better.
 
 ---
 
 ## ReLight's Debug
 
-Upon enabling ReLight, you might not notice too much of a difference within your scene, In order to better visualize what ReLight is providing to the scene you can use the debug modes that are provided in the shader's arguments.
+In order to better visualize what ReLight is providing to the scene you can use the debug modes that are provided in the shader's arguments.
 
 ![Debug output preview](../images/relight-debug-output.webp)
 
