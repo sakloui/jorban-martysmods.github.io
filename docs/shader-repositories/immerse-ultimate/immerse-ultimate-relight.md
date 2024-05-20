@@ -8,7 +8,9 @@ grand_parent: Shader Repositories
 
 # iMMERSE Ultimate: ReLight
 
-ReLight is a point-lighting solution for ReShade. Similar to Studio Lights in photographs, ReLight allows you to change the lighting, and adjust for more granular changes in the mood and details of the scenes.
+![ReLight Main Image](../images/relight-main.png)
+
+ReLight is a point-lighting solution for ReShade. Similar to studio lights in photography, ReLight allows you to change the lighting, and adjust for more granular changes in the mood and details of the scenes.
 
 While you can use it for any sort of scene, use-cases prove that close-ups or photos of humanoid models are the best cases for using ReLight. However, you're allowed to see as you fit.
 
@@ -45,7 +47,11 @@ The options for you to configure are:
 
 * **Shadow Trace Quality:** Shadow Trace Quality will define the quality of the shadows that are being traced. The higher the quality, the more samples per ray are being accounted for, and therefore the sharper the shadows end up being.
 
+![Shadow Trace Quality Low - Maximum](../images/relight-shadow-quality.png)
+
 * **Z-Thickness:** Like in RTGI, "Z-Thickness" will define how thick or thin the objects are within the scene. Thicker objects will cast darker and more prominent shadows, while thinner ones will often cast lighter and less prominent shadows.
+
+![Z-Thickness 0-2](../images/relight-z-thickness.png)
 
 ---
 
