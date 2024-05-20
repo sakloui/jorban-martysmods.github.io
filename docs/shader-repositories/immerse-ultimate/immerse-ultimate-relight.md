@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # iMMERSE Ultimate: ReLight
 
-![ReLight Main Image](../images/relight-main.png)
+![ReLight Main Image](../images/relight-main.webm)
 
 {: .highlight-title }
 >IMPORTANT
@@ -47,11 +47,11 @@ The options for you to configure are:
 
 * **Shadow Trace Quality:** Shadow Trace Quality will define the quality of the shadows that are being traced. The higher the quality, the more samples per ray are being accounted for, and therefore the sharper the shadows end up being.
 
-![Shadow Trace Quality Low - Maximum](../images/relight-shadow-quality.png)
+![Shadow Trace Quality Low - Maximum](../images/relight-shadow-quality.webm)
 
 * **Z-Thickness:** Like in RTGI, "Z-Thickness" will define how thick or thin the objects are within the scene. Thicker objects will cast darker and more prominent shadows, while thinner ones will often cast lighter and less prominent shadows.
 
-![Z-Thickness 0-2](../images/relight-z-thickness.png)
+![Z-Thickness 0-2](../images/relight-z-thickness.webm)
 
 ---
 
