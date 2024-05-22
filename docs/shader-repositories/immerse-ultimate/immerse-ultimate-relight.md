@@ -25,9 +25,17 @@ While you can use it for any sort of scene, use-cases prove that close-ups or ph
 
 ## ReLight's Debug
 
-In order to better visualize what ReLight is providing to the scene you can use the debug modes that are provided in the shader's arguments.
+In order to better visualize what ReLight is providing to the scene, it is best to use ReLight's Debug functions. You can find these Debug functions at the bottom of the shader arguments.
 
-![Debug output preview](../images/relight-debug-output.webp)
+![Debug menu preview](../images/relight-debug-menu.png)
+
+* **Debug Outputs:** Shows the different debug modes that ReLight provides. These are: "None," "Validation Layer (all)," "Lighting," "SSS Skin Mask," and " SSS Translucency." Each of which is self explanitory.
+
+* **Light Overlay:** Controls when the ReLight spheres appear on screen. The options to the user are: "Disabled," "Show while GUI is open," "Show while GUI is open and on screenshots," and "Show always." Each of which is self explanitory.
+
+* **Light Overlay Opacity:** Controls the opacity of the ReLight spheres on screen. The value can be controlled from `0.100` to `1.000`. `1.00` being as opaque as possible, while `0.100` being as transparent/translucent as possible.
+
+![Debug output preview](../images/relight-debug.png)
 
 ---
 
@@ -37,21 +45,21 @@ Similar to RTGI, in the "Global" section of ReLight, you can tweak how much ligh
 
 The options for you to configure are:
 
-* **Ambient Light:** How much of the original scene lighting is kept. `1` being all of the ambient light from the scene, `0` being no ambient light from the scene.
+* **Ambient Intensity:** How much of the original scene lighting is kept. `1` being all of the ambient light from the scene, `0` being no ambient light from the scene.
 
-![Ambient Light Argument 1-0](../images/ambient-light-slider.webp)
+![Ambient Light Argument 1-0](../images/ambient-light-slider.png)
 
 * **Shadow Tracing:** This argument will control if and how the lights placed in ReLight will end up casting shadows. The options to choose from are "Off," "Visability Test," and "Recursive Path Tracing."
 
-![Ambient Light Argument 1-0](../images/relight-shadow-tracing-type.webp)
+![Ambient Light Argument 1-0](../images/relight-shadow-tracing-type.png)
 
 * **Shadow Trace Quality:** Shadow Trace Quality will define the quality of the shadows that are being traced. The higher the quality, the more samples per ray are being accounted for, and therefore the sharper the shadows end up being.
 
-![Shadow Trace Quality Low - Maximum](../images/relight-shadow-quality.webp)
+![Shadow Trace Quality Low - Maximum](../images/relight-shadow-quality.png)
 
-* **Z-Thickness:** Like in RTGI, "Z-Thickness" will define how thick or thin the objects are within the scene. Thicker objects will cast darker and more prominent shadows, while thinner ones will often cast lighter and less prominent shadows.
+* **Object Thickness:** Will define how thick or thin the objects are within the scene. Thicker objects will cast darker and more prominent shadows, while thinner ones will often cast lighter and less prominent shadows.
 
-![Z-Thickness 0-2](../images/relight-z-thickness.webp)
+![Z-Thickness 0-2](../images/relight-z-thickness.png)
 
 ---
 
