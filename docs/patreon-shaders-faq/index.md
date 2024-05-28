@@ -1,15 +1,10 @@
 ---
-title: Patreon Shaders FAQ
+title: Marty's Mods FAQ
 layout: default
 nav_order: 5
 ---
 
-# Patreon Shaders FAQ
-
-Below will be drop downs for general questions that get asked about iMMERSE, iMMERSE Pro, and iMMERSE Ultimate.
-
-<details markdown="block" class="details-tree">
-<summary> What does Marty's Mods have</summary>
+# What Marty's Mods Provides
 
 ## iMMERSE:
 
@@ -47,15 +42,14 @@ iMMERSE Ultimate is an aditional premium repository of shaders and addons provid
 | ReGrade+ (Add-On + Shader) | An addon and shader combo that provides a GUI to ReGrade |
 | LUT Manager (Add-On + Shader) | An addon and shader combo that allows you to organize your luts into an individual folder without needing a massive list of shaders for them |
 
-</details>
-
 ---
 
-<details markdown="block" class="details-tree">
-<summary> Downloading and Installing Shaders and Addons</summary>
+# Downloading & Installing Process
 
 {: .note }
 All purchased shader repositories & archives are free to keep as long as you do not delete them. If you are in need of another copy of packages that you've paid for, please reach out to @jorban on Discord with information to your purchase and an included invoice from Patreon! ♥
+
+---
 
 ## Downloading:
 
@@ -92,54 +86,28 @@ Since Addons stray a bit from the Shader install procedure they have to be insta
 
 4. Now, simply drag and drop the addon files from the iMMERSE Ultimate archive into your game folder.
 
-    ![Image](./images/addons_drag_and_drop.webp)
-
-</details>
-
 ---
 
-<details markdown="block" class="details-tree">
-<summary>Patreon Roles not Updating in Discord</summary>
+# Connecting Discord & Patreon
 
-If you're having trouble accessing the iMMERSE Pro archive due to role permissions in the Discord, follow these steps to resolve the issue:
+Downloading any premium Marty's Mods repository requires access to Discord and Patreon. These two have to be linked in order to work in tandom as well. Without a link, you will not be able to access to the locations provided previously! This guide will go over how to set up a Discord and Patreon link.
 
----
+1. First, click the hyperlink here in order to navigate to [Patreon's 'Connected Apps' Settings.](https://www.patreon.com/settings/apps/) Once there, you will be greeted with a host of applications that you can connect to your Patreon account.
 
-## Open Patreon's "Connected Apps" Settings
+    ![Patreon Connected Apps](./images/patreon-connected-apps.png){: style="max-width:40%" }
 
-Navigate to [Patreon's 'Connected Apps' Settings](https://www.patreon.com/settings/apps/)
+2. Once there, click the "**Discord**" button
 
----
+    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.png){: style="max-width:40%" }
 
-## Navigate to the Discord Account Connections
+3. Afterwards, you'll be taken to a new portion of the settings menu where you can "**Connect**" a Discord account. Click the "**Connect**" button.
 
-Click the "**Discord**" Icon:
+    ![Patreon Discord Connected Apps Connect Button](./images/discord-connect-button.png){: style="max-width:40%" }
 
-![Image](./images/patreon_discord_icon.webp) 
+4. A new window should appear asking you to log into Discord.
 
----
+    ![Patreon Discord Login](./images/patreon-discord-login.png){: style="max-width:40%" }
 
-## Disconnect your Discord Account
+5. Now that you are logged in, Discord will tell you about Patreon's connection to your Discord account, as well as ask you to authorize the connection. Click "**Authorize**" in the bottom right hand corner.
 
-Click "**Disconnect**" to unlink your Discord Account from Patreon:
-
-![Image](./images/patreon_disconnect_discord.webp)
-
----
-
-## Reconnect your Discord Account
-
-Click "**Connect**" and sign into your Discord account:
-
-![Image](./images/patreon_connect_discord.webp)
-
----
-
-## Grant Discord Permissions for Patreon
-
-Grant Permission by clicking "**Authorize**":
-
-![Image](./images/discord_authorize.webp)
-
-</details>
-
+    ![Patreon Discord Authorization](./images/discord-authorize.png){: style="max-width:40%" }
