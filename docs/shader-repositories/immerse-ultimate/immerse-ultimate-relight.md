@@ -19,13 +19,11 @@ ReLight is a point-lighting solution for ReShade. Similar to studio lights in ph
 
 While you can use it for any sort of scene, use-cases prove that close-ups or photos of humanoid models are the best cases for using ReLight. However, you're allowed to see as you fit.
 
-
-
 ---
 
 ## ReLight's Debug
 
-In order to better visualize what ReLight is providing to the scene, it is best to use ReLight's Debug functions. You can find these Debug functions at the bottom of the shader arguments.
+In order to better visualize what ReLight is providing to the scene, it is best to use ReLight's debug functions. You can find these debug functions at the bottom of the shader arguments.
 
 ![Debug menu preview](../images/relight-debug-menu.png)
 
