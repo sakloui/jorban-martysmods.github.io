@@ -10,7 +10,7 @@ grand_parent: Shader Repositories
 
 ![MXAO Comparison](../images/mxao_main.png)
 
-iMMERSE MXAO is Marty's new iteration of MXAO, a robust ambient occlusion shader based off of GTAO and Irradiance Bitfields. The difference from similar implementations of the same techniques is in the performance to quality ratio, which is always the ultimate goal on the iMMERSE suite.
+iMMERSE: MXAO is Marty's new iteration of MXAO, a robust ambient occlusion shader based off of GTAO and Irradiance Bitfields. The difference from similar implementations of the same techniques is in the performance to quality ratio, which is always the ultimate goal on the iMMERSE suite.
 
 ---
 

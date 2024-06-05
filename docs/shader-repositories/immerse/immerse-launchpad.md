@@ -13,7 +13,7 @@ grand_parent: Shader Repositories
 >
 >This shader is required to be used for Marty's Mods shaders RTGI and ReLight. It can also be optionally used with MXAO.
 
-iMMERSE Launchpad is a helper shader for other Marty's Mods shaders like RTGI, MXAO, and ReLight. With that in mind, there won't be a whole lot of changes that you can see on screen.
+iMMERSE: Launchpad is a helper shader for other Marty's Mods shaders like RTGI, MXAO, and ReLight. With that in mind, there won't be a whole lot of changes that you can see on screen.
 
 ## Smoothed Normals
 
