@@ -6,7 +6,7 @@ parent: iMMERSE
 grand_parent: Shader Repositories
 ---
 
-# iMMERSE SMAA
+# iMMERSE: SMAA
 
 ![iMMERSE SMAA Main Image](../images/smaa_main.png)
 
