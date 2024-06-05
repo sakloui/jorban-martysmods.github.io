@@ -8,6 +8,8 @@ grand_parent: Shader Repositories
 
 # iMMERSE Pro: ReGrade
 
+![regrade showoff](../images/regrade_main.png)
+
 ReGrade is a color-correction suite designed to be feature-packed enough to be close to commercial tools. With all of its available options, it has the power to bring the usability and versatility of even commercial-level tools to games. Effectively removing the step of toggling between a color-correction software and the game to finish editing, making it all real-time and hassle-free.
 
 While there is no correct values and usage of this shader, people familiarized with Photography, color theory and related areas will make the best usage. However, even people with no experience can get great results by looking at the changes made being shown instantly.
@@ -16,11 +18,7 @@ While there is no correct values and usage of this shader, people familiarized w
 
 ## Color Operations and Slots
 
-At first, you should notice lots of drop-down boxes in the section "Color Operations", this tells the shader what color operation is applied on each step. Think of it like building blocks, with the first being the bottom layer, and the last being the top layer.
-
-You have 9 slots available, and the following options, they can be applied in any order as the user desires or needs:
-
-The parameters for each option is explained further down the guide, so if you wanna know the values for each function, keep reading:
+At first, you should notice lots of drop-down boxes in the section "Color Operations", this tells the shader what color operation is applied on each step. Think of it like building blocks, with the first being the bottom layer, and the last being the top layer. You have 9 slots available, and the following options, they can be applied in any order as the user desires or needs:
 
 * **Levels:** will change the black and white levels of the image.
 
@@ -40,16 +38,11 @@ The parameters for each option is explained further down the guide, so if you wa
 
 * **Special Transforms:** allows for more "artistic" changes on the scene brightness and light levels.
 
-![ReGrade Slots](../images/regrade_slots_preview.webp)
-
-Now that you know each of the functions, lets get deeper and start doing some modifications.
-
 ---
 
 ## Levels
 
 Levels changes the black and white levels of a picture. On a bare explanation: It means it changes what is considered completely back and completely white on the image.
-The parameters are:
 
 * **Bypass Levels:** effectively disables the changes made in that layer.
 
@@ -66,7 +59,6 @@ The parameters are:
 ## Adjustments
 
 Adjustments are for overall global / wide adjustments of a picture. Its made to have less granularity and serve as quick tweaks to change and stabilize colors and scene without needing to fiddle with settings much.
-The parameters for those are:
 
 * **Bypass Adjustements:** disables the changes made in that layer.
 
@@ -87,7 +79,6 @@ The parameters for those are:
 ## Lift, Gamma and Gain
 
 Lift,Gamma and Gain changes separate the bright parts of the image in 3 layers - Dark, Midtones and Bright. Not only that, but it allows to change the colors of each one of them.
-The parameters are:
 
 * **Bypass Lift Gamma Gain:** disables the changes made in that layer.
 
@@ -103,8 +94,7 @@ The parameters are:
 
 ## Calibration
 
-This adjust overall color and temperature calibrations of the image. Again, for general changes without much need for granularity.
-The parameters are:
+This adjust overall color and temperature calibrations of the image.
 
 * **Bypass Calibration:** disables the changes made in that layer.
 
@@ -134,8 +124,6 @@ The parameters dictate changes to each one of the colors (Red, Orange, Yellow, G
 
 Tone curve allows the user to change the brightness of the 3 light values of the image per-tone, which means it can use this to make certain gradients within those areas brighter or darker.
 
-The parameters for those are:
-
 * **Shadows:** changes the images Shadow brightness.
 
 * **Darks:** changes the images Dark points brightness.
@@ -154,8 +142,6 @@ The parameters for those are:
 
 Split toning allows the user to change the tint of 2 of the image's tone properties in a curve.
 
-The parameters are:
-
 * **Split Mode:** changes which parts of the image's curve will be changed, being able to pick between Shadows / Highlights and Grey / Saturated Colors.
 
 * **Tint A:** changes the tint / grey value of the first parameter.
@@ -170,25 +156,19 @@ The parameters are:
 
 ## Color Balance
 
-Color balance changes the color Brightness and saturation of the image's lighting.
-
-They are split in Dark, Hightlights and Midtones.
+Color balance changes the color Brightness and saturation of the image's lighting. They are split in Dark, Hightlights and Midtones.
 
 ---
 
 ## Special Transforms
 
-Special transforms are more artistic changes for the image. 
-
-There are 2 options here skipping the bypass one, which is "Bleach Bypass (Gamma Corrected)," which bleaches taking Gamma into consideration, and "Gamma on Luma - Chroma," which changes the gamma level on the colors and luminosity.
+Special transforms are more artistic changes for the image. There are 2 options here skipping the bypass one, which is "Bleach Bypass (Gamma Corrected)," which bleaches taking Gamma into consideration, and "Gamma on Luma - Chroma," which changes the gamma level on the colors and luminosity.
 
 ---
 
 ## Vignette and Utility
 
 Vignette applies a camera vignette effect, which darkens the image around. It doesn't depend on any of the layer slots since its always applied over all of them, but the difference between this and others is the fact it is deeply integrated into ReGrade, so it takes all the color and image changes into account when applying it.
-
-The parameters for the Vignette are:
 
 * **Mechanical Vignette: Radius** changes the Vignette radius on the image.
 
