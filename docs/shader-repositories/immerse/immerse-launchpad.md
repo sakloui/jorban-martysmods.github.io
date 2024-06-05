@@ -17,9 +17,9 @@ iMMERSE Launchpad is a helper shader for other Marty's Mods shaders like RTGI, M
 
 ## Smoothed Normals
 
-"Smoothed Normals" is a configuration option within iMMERSE Launchpad to allow you to smoothed the normals that get pulled into ReShade.
+* **Smoothed Normals** is a configuration option within iMMERSE Launchpad to allow you to smoothed the normals that get pulled into ReShade.
 
-![Comparison](../images/launchpad_smoothed_normals.png)
+    ![Comparison](../images/launchpad_smoothed_normals.png)
 
 ---
 

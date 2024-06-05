@@ -16,6 +16,6 @@ iMMERSE: Sharpen is a robust sharpener utilizing contrast based sharpening to ge
 
 ## Sharpen Intensity
 
-iMMERSE: Sharpen has a single slider. "**Sharpen Intensity**." This means that it takes very little in order to properly sharpen the scene. You will want to manage this argument where there is a noticble increase in game details, but not overly sharpening what there is to offer.
+iMMERSE: Sharpen has a single slider, **Sharpen Intensity**. This means that it takes very little in order to properly sharpen the scene. You will want to manage this argument where there is a noticble increase in game details, but not overly sharpening what there is to offer.
 
 Start at the value of `0.000` and work your way up until you're able to find details being presnted more in the scene you've chosen.
