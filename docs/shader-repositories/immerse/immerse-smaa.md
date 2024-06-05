@@ -10,7 +10,7 @@ grand_parent: Shader Repositories
 
 ![iMMERSE SMAA Main Image](../images/smaa_main.png)
 
-iMMERSE Anti-Aliasing is Marty's itteration of SMAA. SMAA is a method of anti-aliasing which is both fast and effective. It has became an industry standard since it's initial release, leaving behind other performance-heavy shaders with the same goal.
+iMMERSE: Anti-Aliasing is Marty's itteration of SMAA. SMAA is a method of anti-aliasing which is both fast and effective. It has became an industry standard since it's initial release, leaving behind other performance-heavy shaders with the same goal.
 
 SMAA is best used where games only offer solutions such as FXAA or when no anti-aliasing solution is provided at all.
 
@@ -34,7 +34,7 @@ In order to better visualize what SMAA is doing, it's best to use it's debug fun
 
 * **Edge Detection Threshold:** Will define how many edges will be detected from the edge detection type.
 
-* **Depth Edge Detection Threshold:** Will define how much of the edges in depth are detected. (**Will only work if "Predicated Thresholding" is enabled.**)
+* **Depth Edge Detection Threshold:** Will define how much of the edges in depth are detected. (Will only work if "Predicated Thresholding" is enabled.)
 
 * **Max Search Steps:** Will define how many steps are used within the SMAA construct in order to effectively anti-alias the scene.
 
