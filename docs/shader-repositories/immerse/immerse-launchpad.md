@@ -13,11 +13,11 @@ grand_parent: Shader Repositories
 >
 >This shader is required to be used for Marty's Mods shaders RTGI and ReLight. It can also be optionally used with MXAO.
 
-iMMERSE: Launchpad is a helper shader for other Marty's Mods shaders like RTGI, MXAO, and ReLight. With that in mind, there won't be a whole lot of changes that you can see on screen.
+iMMERSE: Launchpad is a helper shader for other Marty's Mods shaders like RTGI, MXAO, and ReLight. Because of this, you won't see many visible changes on screen.
 
 ## Smoothed Normals
 
-* **Smoothed Normals** is a configuration option within iMMERSE Launchpad to allow you to smoothed the normals that get pulled into ReShade.
+* **Smoothed Normals** Configures the normals to be smoothed or not. Smoothed normals allows for RTGI and ReLight to provide much better lighting than they could with the original normals.
 
     ![Comparison](../images/launchpad_smoothed_normals.png)
 
@@ -25,10 +25,10 @@ iMMERSE: Launchpad is a helper shader for other Marty's Mods shaders like RTGI, 
 
 ## Textured Normals
 
-* **Textured Normals Sample Radius:** Value used to increase or decrease the sampling radius of added textured normals. If this value is set too high, you will lose lots of detail or have the normals be misrepresented within MXAO, RTGI, or ReLight.
+* **Textured Normals Sample Radius:** Adjusts how far the shader samples for textured normals. Setting this too high can reduce detail or distort normals in MXAO, RTGI, or ReLight.
 
-* **Textured Normals Intensity:** Value used to increase or decrease the intensity of added textured normals. If the value is set too high, you will end up creating massive normals in places normals should not exist.
+* **Textured Normals Intensity:** Adjusts the strength of the textured normals. Setting this too high can create exaggerated normals where they shouldn't be.
 
     ![Texture Normals Intensity](../images/launchpad_textured_normals.png)
 
-* **Textured Normals Quality:** Value ranging from 1 to 3 that allows the user to increase or decrease the quality of the textured normals on screen. Typically you want the quality value to be set to 3 unless you're within a large performance constraint.
+* **Textured Normals Quality:** Ranges from 1 to 3, allowing you to control the quality of the textured normals. It's best to set this to 3 unless you need better performance.
