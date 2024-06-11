@@ -8,43 +8,39 @@ grand_parent: Shader Repositories
 
 # iMMERSE Pro: Clarity
 
-Clarity is a shader based on the feature of similar name in Adobe's software suites. It has the objective of highlighting and restoring otherwise hidden details by changing the image contrast locally.
+![Clarity Header Image](../images/clarity_main.png)
 
-The main difference of Clarity when compared to other shaders is that it has lots of features to avoid haloing or other artifacts.
-
-Below is a guide to help with the tweaking of the shader and its values.
+iMMERSE Pro: Clarity is a shader based on the sharpening technique used in Photoshop's Clarity tool. Its main goal is to highlight and restore details that are either already in the image or hidden. Unlike other shaders, Clarity has features to avoid haloing and other artifacts.
 
 ---
 
-## Enable iMMERSE Pro: Clarity
+## Basic Arguments
 
-Simply check the shader `iMMERSE Pro Clarity [MartysMods_CLARITY.fx]` in the "Home" tab of ReShade.
-
-![Check Clarity Shader](../images/immerse_clarity_enable.webp)
-
-This will activate Clarity and give you the arguments at the bottom to change.
-
-![Show User Clarity Options with Defaults](../images/show_user_clarity_arguments.webp)
+* **Effect Radius:** Defines the area around each pixel that Clarity affects. A larger radius affects more surrounding pixels, creating a broader effect.
 
 ---
 
-## Texture Intensity
+## Blending Arguments
 
-"Texture Intensity" is responsible for how strong the sharpening / highlighting of the details are.
-	
-![Clarity Texture Intensity comparison](../images/clarity_textureintensity_comparison.webp)
-	
+* **Texture Intensity:** Controls how strong the sharpening and highlighting of details are. Increase this to make details more pronounced.
 
-# Local Contrast Intensity
+* **Local Contrast Intensity:** Adjusts the image's contrast to combat haloing and artifacts while maintaining Clarity's highlighting effect. Higher values increase contrast, which can help in reducing unwanted halos and enhancing overall detail.
 
-"Local Contrast Intensity" allows you to remove or add the image's contrast to combat haloing and artifacts while still keeping Clarity's highlight effect on.
 
-![Clarity Local Contrast comparison](../images/clarity_localcontrast_comparison.webp)
+---
 
-# Sample Radius
+## Depth Separation Arguments
 
-JORDAN FINISH THIS LATER
+* **Use Depth Separation:** Toggles the use of depth separation. This allows Clarity to treat the foreground and background differently, improving visual depth.
 
-# Pairing this with depth
+* **Show Depth Separation:** Toggles the depth separation debug mode. This helps you see and configure the separation between foreground and background more effectively.
 
-JORDAN FINISH THIS LATER
+* **Foreground/Background Balance:** Configures the balance between foreground and background separation. Adjust this to control how much emphasis is placed on the foreground versus the background.
+
+* **Texture Intensity FG:** Configures the texture intensity for the foreground. Use this to sharpen and highlight details in the foreground independently of the background.
+
+* **Local Contrast Intensity FG:** Configures the local contrast intensity for the foreground. Adjust this to manage the contrast in the foreground, helping to reduce artifacts and enhance detail.
+
+* **Texture Intensity BG:** Configures the texture intensity for the background. Similar to the foreground setting, but applies to the background, allowing for independent control.
+
+* **Local Contrast Intensity BG:** Configures the local contrast intensity for the background. This setting helps manage contrast in the background, ensuring that it complements the foreground without introducing unwanted artifacts.
