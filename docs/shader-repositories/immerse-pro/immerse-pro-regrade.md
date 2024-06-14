@@ -10,7 +10,7 @@ grand_parent: Shader Repositories
 
 ![regrade showoff](../images/regrade_main.png)
 
-ReGrade is a color-correction suite designed to be feature-packed enough to be close to commercial tools. With all of its available options, it has the power to bring the usability and versatility of even commercial-level tools to games. Effectively removing the step of toggling between a color-correction software and the game to finish editing, making it all real-time and hassle-free.
+iMMERSE Pro: ReGrade is a color-correction suite designed to be feature-packed enough to be close to commercial tools. With all of its available options, it has the power to bring the usability and versatility of even commercial-level tools to games. Effectively removing the step of toggling between a color-correction software and the game to finish editing, making it all real-time and hassle-free.
 
 While there is no correct values and usage of this shader, people familiarized with Photography, color theory and related areas will make the best usage. However, even people with no experience can get great results by looking at the changes made being shown instantly.
 
@@ -18,164 +18,164 @@ While there is no correct values and usage of this shader, people familiarized w
 
 ## Color Operations and Slots
 
-At first, you should notice lots of drop-down boxes in the section "Color Operations", this tells the shader what color operation is applied on each step. Think of it like building blocks, with the first being the bottom layer, and the last being the top layer. You have 9 slots available, and the following options, they can be applied in any order as the user desires or needs:
+At first, you should notice lots of drop-down boxes in the section "Color Operations." This tells the shader what color operation is applied at each step. Think of it like building blocks, with the first being the bottom layer and the last being the top layer. You have 9 slots available, and the following options can be applied in any order as the user desires or needs:
 
-* **Levels:** will change the black and white levels of the image.
+* **Levels:** Adjusts the black and white points of the image, effectively controlling the contrast and brightness range.
 
-* **Adjustments:** is for general color and overall image changes without much granularity
+* **Adjustments:** Provides general color and overall image changes, useful for broad adjustments.
 
-* **Lift Gamma Gain:** allows you to tweak the "Lift", "Gamma" and "Gain" levels of the image.
+* **Lift Gamma Gain:** Allows you to tweak the "Lift" (shadows), "Gamma" (midtones), and "Gain" (highlights) levels of the image, offering detailed control over different brightness ranges.
 
-* **Calibration:** allows you modify the default values for the Color Hues and Layers.
+* **Calibration:** Allows you to modify the default values for color hues and layers, ensuring accurate color representation.
 
-* **Color Remapping:** allows you to directly change the colors of the image.
+* **Color Remapping:** Enables direct changes to the colors of the image, often used for creative color effects.
 
-* **Tone Curves:** allows you to change the tones of the exposed and unexposed (bright and dark) parts of the image.
+* **Tone Curves:** Adjusts the tones of the exposed (bright) and unexposed (dark) parts of the image, providing precise control over the tonal range.
 
-* **Split Toning:** allows you to change the values and colors of the tones (exposed and unexposed) parts of the image separately. Effectively having even more granularity over "Tone Curves".
+* **Split Toning:** Allows you to change the colors of the tones in the exposed (highlights) and unexposed (shadows) parts of the image separately.
 
-* **Color Balance:** allows for changing the colors on the Shadows, Midtones and Highlighs of the image, offering granularity beyond just the exposure of the shadows.
+* **Color Balance:** Adjusts the colors in the shadows, midtones, and highlights of the image, providing detailed color correction beyond just exposure adjustments.
 
-* **Special Transforms:** allows for more "artistic" changes on the scene brightness and light levels.
+* **Special Transforms:** Offers more "artistic" changes to the scene's brightness and light levels, allowing for creative and unconventional effects.
+
 
 ---
 
 ## Levels
 
-Levels changes the black and white levels of a picture. On a bare explanation: It means it changes what is considered completely back and completely white on the image.
+* **Bypass Levels:** Effectively disables the changes made in that layer.
 
-* **Bypass Levels:** effectively disables the changes made in that layer.
+* **Black Level In:** Changes where the black levels start.
 
-* **Black Level In:** changes where the black levels start.
+* **White Level In:** Changes where the white levels start.
 
-* **White Level In:** changes where the white levels start.
+* **Black Level Out:** Changes where the black levels end.
 
-* **Black Level Out:** changes where the black levels end.
+* **White Level Out:** Changes where the white levels end.
 
-* **White Level Out:** changes the white levels end.
 
 ---
 
 ## Adjustments
 
-Adjustments are for overall global / wide adjustments of a picture. Its made to have less granularity and serve as quick tweaks to change and stabilize colors and scene without needing to fiddle with settings much.
+* **Bypass Adjustments:** Disables the changes made in that layer.
 
-* **Bypass Adjustements:** disables the changes made in that layer.
+* **Contrast:** Changes the entire image's contrast.
 
-* **Contrast:** changes the entire image's contrast.
+* **Exposure:** Changes the entire image exposure. Exposure is how much light the lens is absorbing, with higher values making the image brighter and lower values making the image darker.
 
-* **Exposure:** changes the entire image exposure. Exposure is how much light the lens is absorbing. With higher values making the image brighter, and lower values making the image darker.
+* **Gamma:** Changes the brightness of the image.
 
-* **Gamma:** changes the brightness of the image.
+* **Filmic Gamma:** Changes the brightness of the dark points of the image.
 
-* **Filmic Gamma:** changes the brightness of the dark points of the image.
+* **Saturation:** Changes how much the colors are saturated in the image.
 
-* **Saturation:** changes how much the colors are saturated in the image.
+* **Vibrance:** Changes how vibrant and colorful the colors are in the image.
 
-* **Vibrance:** changes how vibrant and colorful the colors are in the image.
 
 ---
 
 ## Lift, Gamma and Gain
 
-Lift,Gamma and Gain changes separate the bright parts of the image in 3 layers - Dark, Midtones and Bright. Not only that, but it allows to change the colors of each one of them.
+* **Bypass Lift Gamma Gain:** Disables the changes made in that layer.
 
-* **Bypass Lift Gamma Gain:** disables the changes made in that layer.
+* **Lift Gamma Gain Mode:** Changes the way the calculations for Lift, Gamma, and Gain work, with 2 standards available: 
+    * **American Society of Cinematographers (ACES)**
+    * **DaVinci Resolve**
 
-* **Lift Gamma Gain Mode:** changes the way the calculations for it works, with 2 standards available, "American Society of Cinematographers" and "DaVinci Resolve", with the latter mimicing how the software works.
+* **Lift:** Changes the black levels of the image. If set to non-grey values, it will also change the color.
 
-* **Lift:** changes the White levels of the image. If set to non-grey values, it will change the color aswell.
+* **Gamma:** Changes the midtones of the image. If set to non-grey values, it will change the overall temperature of the image.
 
-* **Gamma:** changes the midtones of the image. If set to non-grey values, it will change the overall temperature of the image.
+* **Gain:** Changes the white levels of the image. If set to non-grey values, it will change the color of the bright parts of the image.
 
-* **Gain:** changes the dark levels of the image. If set to non-grey values, it will change the color of dark parts of the image.
 
 ---
 
 ## Calibration
 
-This adjust overall color and temperature calibrations of the image.
+* **Bypass Calibration:** Disables the changes made in that layer.
 
-* **Bypass Calibration:** disables the changes made in that layer.
+* **Color Temperature:** Changes the white balance/temperature of the entire image.
 
-* **Color Temperature:** changes the white / temperature of the entire image.
+* **Lab A Offset:** Changes the magenta/green balance of the image colors.
 
-* **Lab A Offset:** changes the Magenta / Green balance of the image colors.
+* **Lab B Offset:** Changes the orange/blue balance of the image colors.
 
-* **Lab B Offset:** changes the Orange / Blue balance of the image colors.
+* **R G B Primary Mode:** Changes how the color changing behavior works, with 3 methods available:
+    * **ReGrade Legacy:** Mimics the old ReGrade shader version.
+    * **Barycentric:** Uses a method based on barycentric coordinates to adjust the color balance, providing unique and precise control over color blending.
+    * **Hue Based:** Adjusts colors based on their hue, allowing for intuitive and natural color changes.
 
-* **R G B Primary Mode:** changes how the color changing behaviour works, with 3 methods available: "ReGrade Legacy" mimicing the old ReGrade shader version, "Barycentric" and "Hue Based".
+* **R G B Primary Hue:** Changes the hue offset of each color channel (red, green, and blue).
 
-* **R G B Primary Hue:** changes the hue offset of each color channel (Red, Green and Blue)
-
-* **R G B Primary Saturation:** changes the hue saturation value of each color channel (Red, Green and Blue)
+* **R G B Primary Saturation:** Changes the hue saturation value of each color channel (red, green, and blue).
 
 ---
 
 ## Color Remapping
 
-Color remapping allows the user to change the color values of each one of the colors in the image, this allows them to have more control over the colors of the image.
+Color remapping allows the user to change the color values of each of the colors in the image, giving more control over the overall color scheme.
 
-The parameters dictate changes to each one of the colors (Red, Orange, Yellow, Green, Aqua, Blue and Magenta) , separating it by Hue (First Value), Saturation (Second Value) and Color Value (Third Value)
+The parameters dictate changes to each of the colors (red, orange, yellow, green, aqua, blue, and magenta), separating it by Hue (first value), Saturation (second value), and Color Value (third value).
 
 ---
 
 ## Tone Curve
 
-Tone curve allows the user to change the brightness of the 3 light values of the image per-tone, which means it can use this to make certain gradients within those areas brighter or darker.
+* **Shadows:** Changes the image's shadow brightness.
 
-* **Shadows:** changes the images Shadow brightness.
+* **Darks:** Changes the image's dark points brightness.
 
-* **Darks:** changes the images Dark points brightness.
+* **Lights:** Changes the image's bright points brightness.
 
-* **Lights:** changes the images Bright points brightness.
+* **Highlights:** Changes the image's highlight points brightness.
 
-* **Highlights:** changes the images brigthest points brightness.
+* **Dark Wash Range:** Changes how much the dark points wash/bleach the colors.
 
-* **Dark Wash Range:** changes how much dark points washes / bleaches the colours.
-
-* **Dark Wash Intensity:** changes how intense the bleaching of the colors are.
+* **Dark Wash Intensity:** Changes how intense the bleaching of the colors is.
 
 ---
 
 ## Split Toning
 
-Split toning allows the user to change the tint of 2 of the image's tone properties in a curve.
+* **Split Mode:** Changes which parts of the image's curve will be adjusted, allowing you to pick between shadows/highlights and grey/saturated colors.
 
-* **Split Mode:** changes which parts of the image's curve will be changed, being able to pick between Shadows / Highlights and Grey / Saturated Colors.
+* **Tint A:** Changes the tint/grey value of the first parameter.
 
-* **Tint A:** changes the tint / grey value of the first parameter.
+* **Tint B:** Changes the tint/grey value of the second parameter.
 
-* **Tint B:** changes the tint / grey value of the second parameter.
+* **Balance:** Changes which side will be more intense/prevalent. A lower value prioritizes the first value, while a higher value prioritizes the second value.
 
-* **Balance:** changes which side will be more intense / prevalent, the lower the value, the more it will prioritize the first value, and the higher the value, the more the second value is prioritize.
-
-* **Blend Mode:** changes how these changes are mixed in the image. With the option being "Soft Light" and "Overlay".
+* **Blend Mode:** Changes how these adjustments are mixed into the image, with options being "Soft Light" and "Overlay."
 
 ---
 
 ## Color Balance
 
-Color balance changes the color Brightness and saturation of the image's lighting. They are split in Dark, Hightlights and Midtones.
+Color balance changes the color brightness and saturation of the image's lighting. They are split into Dark, Highlights, and Midtones.
 
 ---
 
 ## Special Transforms
 
-Special transforms are more artistic changes for the image. There are 2 options here skipping the bypass one, which is "Bleach Bypass (Gamma Corrected)," which bleaches taking Gamma into consideration, and "Gamma on Luma - Chroma," which changes the gamma level on the colors and luminosity.
+* **Bleach Bypass (Gamma Corrected):** Controls the bleaching effect while taking gamma into consideration.
+
+* **Gamma on Luma - Chroma:** Controls the gamma level on the colors and luminosity.
 
 ---
 
 ## Vignette and Utility
 
-Vignette applies a camera vignette effect, which darkens the image around. It doesn't depend on any of the layer slots since its always applied over all of them, but the difference between this and others is the fact it is deeply integrated into ReGrade, so it takes all the color and image changes into account when applying it.
+* **Mechanical Vignette: Radius:** Changes the vignette radius on the image.
 
-* **Mechanical Vignette: Radius** changes the Vignette radius on the image.
+* **Mechanical Vignette: Blurriness:** Changes how out-of-focus the outer part of the vignette is on the image.
 
-* **Mechanical Vignette: Blurryness** changes how out-of-focus the outer-part of the vignette is on the image.
+* **Mechanical Vignette: Shape:** Changes the shape of the vignette, with 0 being circular and higher values creating more anamorphic-looking shapes.
 
-* **Mechanical Vignette: Shape** changes the shape of the vignette, with 0 being circular and higher values aiming for more anamorphic-looking ones.
+* **Sensor Vignette: Scale:** Changes how much of the vignette is visible on the image.
 
-* **Sensor Vignette: Scale** changes how much of the vignette is visible on the image.
+* **Vignette Blending Mode:** Changes how the vignette will be blended on the image. 
 
-* **Vignette Blending Mode** changes how the Vignette will be blended on the image. With "HDR simulation" focusing on the brightness and color levels and blending with those, with an option to preserve tones, and Standard just placing it over the image. 
+    * **HDR simulation:** Focuses on the brightness and color levels, blending with those to preserve tones. 
+    * **Standard:** Places the vignette over the image.

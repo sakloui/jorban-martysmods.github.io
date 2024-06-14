@@ -8,106 +8,72 @@ grand_parent: Shader Repositories
 
 # iMMERSE Ultimate: ReGrade +
 
-ReGrade+ is a commercial-level color-correction suite for ReShade. Taking inspiration and trying to mimic the featureset of industry-standard and professional tools, this version of ReGrade aims to take way the middleman step of having to leave the game to make more granular and intuitive changes on an external software. Effectively turning color-correction into a single experience.
-
-The advantage to this from the other implementations is that not only it offers that sort of featureset, but also makes it so the changes can be seen in real-time and with graphical interfaces similar to those tools thanks to its addon.
-
-While everyone can use the tool and its capabilities, users with more knowledge on Color Theory, Photography and Image Post-Processing areas might take the most advantage of this shaders' features.
-
-On the next set of instructions, we'll guide you through the installation of it along with the featureset it offers.
+ReGrade+ is a commercial-level color-correction suite for ReShade, inspired by industry-standard tools. It eliminates the need to leave the game for detailed adjustments, allowing real-time color correction with an intuitive UI. This makes it a seamless experience for users, especially those knowledgeable in Color Theory, Photography, and Image Post-Processing.
 
 ---
 
-## Installing the ReGrade + Shader and Addon
+## Enabling ReGrade +
 
-Without the addon support build of ReShade, ReGrade +'s addon and shader **WILL NOT** work. 
+Before adjusting parameters, move the "ReGrade +" tab to a separate window in the ReShade/Game UI. This controls the entire shader and lets you tweak other effects while viewing the results in real-time.
 
-Install the shader as normal, but for the Addon, you must place it close to the ReShade DLL and game's EXE, like this:
+Enabling the shader alone won't activate it. If any component is not running, the Addon/Shader Window will indicate it, like so:
 
-![ReGradePlus Addon Installation](../images/regradep_addon_installation.webp)
-
-If you want to test if everything was correctly installed, you can open your game, if it was, you'll have a new tab in ReShade's menu, named "ReGrade +."
-
-![ReGradePlus ReShade Window Tab](../images/regradep_addon_tab.webp)
-
-With that done, the shader can be enabled by going to the "Home" tab and enabling `iMMERSE Ultimate: ReGrade+ [MartysMods_REGRADE+.fx]` and `iMMERSE Ultimate: ReGrade+ Histogram [MartysMods_REGRADE+.fx]`. The latter shader is so the addon's histogram widgets work and display the correct values.
+![ReGradePlus ReShade Window Alerts - All OFF](../images/regrade_shaders_disabled.png)
 
 ---
 
-## Using the Shader
+## Scopes
 
-Before explaining its parameters, we recommend you move the "ReGrade +" tab to a separate window in the ReShade / Game UI since that controls the entire shader. This will also allow you to tweak your other effects along with the color correction and visualize the results better without having to jump between windows.
+The "Scopes" section provides graphical representations of various color statistics and balances. By default, it shows the "Histogram RGB," which displays exposure and color values of the current scene. You can select different options from the drop-down box:
 
-Remember, enabling the Shader itself won't do anything, and if one of the components are not running, the Addon / Shader Window will tell, like so:
+* **Histogram Y:** Displays the luminance levels of the image.
 
-![ReGradePlus ReShade Window Alerts - All OFF](../images/regradep_shaders_off.webp)
+    ![Histogram Y Image](../images/regrade_histogram_y.png)
 
-If everything is correct, it should look like this:
+* **Histogram RGB:** Shows the color levels of the image.
 
-![ReGradePlus ReShade Window Alerts - All ON](../images/regradep_shaders_ok.webp)
+    ![Histogram RGB Image](../images/regrade_histogram_rgb.png)
 
-Now, with those ready, you can start tweaking the parameters, please note that different from the usual ReShade shaders, this one works differently and closer than professional industry tools, so its alright if you get confused at first.
-This guide will do its best to help you with questions and whatever you might need to use this shader correctly.
+* **Waveform Y:** Visualizes the luminance levels in a waveform/spectral format.
 
----
+    ![Waveform Y Image](../images/regrade_waveform_y.png)
 
-## Scopes Window
+* **Waveform RGB:** Visualizes the color levels in the same waveform/spectral format.
 
-The "Scopes" area of the window is an easy way to see graphics of various colour statistics and balances of the image. By default, it is configured to "Histogram RGB", which is supposed to show the exposure and color values on the current scene.
+    ![Waveform RGB Image](../images/regrade_waveform_rgb.png)
 
-By clicking on the Drop-Down box, you can choose between different options, such as:
+* **Waveform RGB Parade:** Separates the color levels by channel in a waveform/spectral format.
 
-* **Histogram Y:** shows the Luma levels of the images.
+    ![Waveform RGB Parade Image](../images/regrade_waveform_rgb_parade.png)
 
-* **Histogram RGB:** shows the color levels of the images.
-
-* **Waveform Y:** shows the Luma levels of the image in a nice Waveform / Spectral visualization.
-
-* **Waveform RGB:** shows the color levels of the image in the same Waveform / Spectral visualization.
-
-You can also click the "Undock" button to have those working separated from the ReGrade+ window. Allowing for better organization of the workspace.
-
-![ReGradePlus Scopes Window](../images/regradep_scopes_widget.webp)
 
 ---
 
 ## Tweaks
 
-The "Tweaks" section of the shader is dedicated for general tweaking of the images' brightness, saturation and whatnot. It is the region with less granularity and meant for quick-tweaks and changes without going deep into the image formatting.
+The "Tweaks" section is designed for general adjustments to the image's brightness, saturation, and other basic settings. It offers quick changes without delving deeply into image formatting. The options are categorized, with each category containing several sub-categories:
 
-The options we can see here are divided in Categories, and each one of those has lots of sub-categories, such as:
+* **White Balance:** Adjusts colors and tones related to temperature and bright points.
 
-* **White Balance** which changes the colors and image tones related to the temperature and bright points of the images, the options available are:
+    * **Temperature:** Adjusts the color temperature of the image.
+    * **Lab Offset A:** Alters the green and magenta levels of the image.
+    * **Lab Offset B:** Alters the orange and blue levels of the image.
 
-    * **Temperature:** Changes the color temperature of the image.
+* **Exposure:** Controls image illumination, lighting, and exposure, with some color adjustments.
 
-    * **Lab Offset A:** Changes the level of Green and Magenta of the image.
+    * **Exposure:** Changes how much light the image absorbs. Lower values darken the image, higher values brighten it.
+    * **Contrast:** Adjusts the contrast levels of the entire image.
+    * **Gamma:** Modifies the image's overall brightness.
+    * **Filmic Gamma:** Adjusts brightness specifically in dark and mid-tone areas.
+    * **Saturation:** Controls color saturation. Higher values increase colorfulness, lower values desaturate the image.
+    * **Vibrance:** Enhances the intensity of colors. Higher values make colors more vibrant.
 
-    * **Lab Offset B:** Changes the level of Orange and Blue of the image.
+* **High Dynamic Range:** Fine-tunes the image's lighting across different brightness levels.
 
-* **Exposure** is all related directly to the image illumination, lighting and exposure, with a few color options aswell, those are:
-
-    * **Exposure:** Changes the image exposure, which is how much light the lenses are absorbing. Lower values means a darker image, higher values means a brighter image.
-
-    * **Contrast:** Changes the entire image's contrast levels.
-
-    * **Gamma:** Changes the image's brightness.
-
-    * **Filmic Gamma:** Changes the image's brightness on the dark and mid-points.
-
-    * **Saturation:** Changes the image's color saturation. The higher the value, the more colorful the image is, the less, the more saturated.
-
-    * **Vibrance:** Changes how vibrant the colors are. The higher tha value, the more vibrant.
-
-* **High Dynamic Range** is all related to the image's lighting tweaks. This allows you to change anything inbetween all the brightness levels. The options are:
-
-    * **Shadows:** Controls the brightness of the grey points of the image.
-
-    * **Darks:** Controls the brightness of the darkest points of the image.
-
-    * **Lights:** Controls how bright is the highest point of the image.
-
-    * **Highlights:** Controls how bright are the highest light points of the image. It is recommended to always have the Lights level below this.
+    * **Shadows:** Adjusts the brightness of the grey areas.
+    * **Darks:** Controls the brightness of the darkest areas.
+    * **Lights:** Sets the brightness of the brightest areas.
+    * **Highlights:** Adjusts the brightness of the highest light points. It's recommended to keep this level above the "Lights" setting.
 
 ---
 
@@ -117,13 +83,9 @@ The options we can see here are divided in Categories, and each one of those has
 
 By default, it comes enabled in the "RGB" mode, which tweaks all of the 3 main colors (Red, Green and Blue) toning and brightness, however, you can change to a per-channel mode by clicking the coloured squares in the lower part of the Graph.
 
-![ReGradePlus Tone Curve Modes](../images/regradep_curves_mode.webp)
-
 To start using it, click on a point in the graph and move it to start changing the tone curve. To plot a new point, click somewhere else and move that point. The changes, along with the graphic, will all update in real-time.
 
 ![ReGradePlus Tone Curve Points Example](../images/regradep_curves_points.webp)
-
-You cannot delete per-point, so any time you need to revert the changes, you can right click and select "Reset to Default" to have all the curve changes and points undone.
 
 ---
 
