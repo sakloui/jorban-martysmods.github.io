@@ -31,7 +31,7 @@ Start by downloading the latest version of the Add-on Support Build of ReShade.
 
 Make sure to not install ANY add-ons in this process.
 
-If you are struggling to install ReShade to GTAV, please [follow our guide for installing ReShade](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/).
+If you are struggling to install ReShade to GTAV, please [follow our guide for installing ReShade](https://guides.martysmods.com/docs/reshade/downloading-and-installing/).
 
 ---
 
