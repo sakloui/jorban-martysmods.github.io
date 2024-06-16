@@ -22,7 +22,7 @@ This guide will go over how to install ReShade specifically for Grand Theft Auto
 
 ---
 
-## **Step 1:** Install ReShade through the ReShade Installer
+## Install ReShade through the ReShade Installer
 
 Install ReShade to Grand Theft Auto: V through the ReShade Installer. If you need help with the ReShade installation, please refer to [our guide on downloading and installing ReShade.](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/)
 
@@ -30,7 +30,7 @@ Make sure that you are selecting the "GTAV.exe" exectuable when installing ReSha
 
 ---
 
-## **Step 2:** Change the ReShade DLL name from "dxgi.dll" to "d3d12.dll"
+## Change the ReShade DLL name from "dxgi.dll" to "d3d12.dll"
 
 Navigate to your Grand Theft Auto: V folder using our guide for [locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) and rename the file "dxgi.dll" to "d3d12.dll".
 
@@ -45,7 +45,7 @@ This guide will go over how to install ReShade alongside ENB in Grand Theft Auto
 
 ---
 
-## **Step 1:** Download ENB for Grand Theft Auto: V - Ignore if you already have ENB Installed
+## Download ENB for Grand Theft Auto: V - Ignore if you already have ENB Installed
 
 Navigate to the ENB page for Grand Theft Auto: V [http://enbdev.com/download_mod_gta5.htm](http://enbdev.com/download_mod_gta5.htm)
 
@@ -61,7 +61,7 @@ Then click the download icon at the bottom of the change-log page.
 
 ---
 
-## **Step 2:** Install ENB for Grand Theft Auto: V - Ignore if you already have ENB Installed
+## Install ENB for Grand Theft Auto: V - Ignore if you already have ENB Installed
 
 Open the archive that you have downloaded from the ENB page for Grand Theft Auto: V.
 
@@ -85,7 +85,7 @@ If you need help finding your Grand Theft Auto: V base directory, you can [follo
 
 ---
 
-## **Step 3:** Make a copy of ENB's "d3d11.dll" and rename it to "d3d12.dll"
+## Make a copy of ENB's "d3d11.dll" and rename it to "d3d12.dll"
 
 This step has to be done because the latest version of Grand Theft Auto: V refuses to inject via the "d3d11.dll" injection name.
 
@@ -98,7 +98,7 @@ You should have a two files that look identical to the image below.
 
 ---
 
-## **Step 4:** Install ReShade normally
+## Install ReShade normally
 
 Install ReShade as you normally would.
 

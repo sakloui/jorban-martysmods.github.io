@@ -17,7 +17,7 @@ Please do not ask for additional help in relation to getting FiveM to work in ac
 
 ---
 
-# Housekeeping
+## Housekeeping
 
 For this guide to be followed through step-by-step, you will have to first set up Windows file extenions to be properly viewed.
 
@@ -25,7 +25,7 @@ You can get the information for setting up Windows file extensions to be viewed 
 
 ---
 
-# Install ReShade to GTAV
+## Install ReShade to GTAV
 
 Start by downloading the latest version of the Add-on Support Build of ReShade.
 
@@ -35,7 +35,7 @@ If you are struggling to install ReShade to GTAV, please [follow our guide for i
 
 ---
 
-# Navigate to Your GTAV Folder
+## Navigate to Your GTAV Folder
 
 Navigate to your GTAV folder by using our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)!
 
@@ -51,7 +51,7 @@ Once there, look specifically for these two files, and singular folder and keep 
 
 ---
 
-# Locate your FiveM Installation
+## Locate your FiveM Installation
 
 In order to locate your FiveM location, please utilize our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)!
 
@@ -59,7 +59,7 @@ In order to locate your FiveM location, please utilize our [guide for locating y
 
 ---
 
-# Navigate to FiveM's Plugins Directory
+## Navigate to FiveM's Plugins Directory
 
 Once you have located your FiveM Installation folder, enter the `FiveM Application Data` folder, and then into your `plugins` directory.
 
@@ -69,7 +69,7 @@ Once you have located your FiveM Installation folder, enter the `FiveM Applicati
 
 ---
 
-# Transfer ReShade Files from GTAV to the FiveM Plugins Directory
+## Transfer ReShade Files from GTAV to the FiveM Plugins Directory
 
 Cut and paste ReShade's files and `ReShade-Shaders` folder from your GTAV directory into the FiveM `plugins` folder:
 
@@ -83,7 +83,7 @@ Cut and paste ReShade's files and `ReShade-Shaders` folder from your GTAV direct
 
 ---
 
-# Press F8 and Check Your FiveM Log
+## Press F8 and Check Your FiveM Log
 
 If ReShade is launched with your game, ignore this step.
 
@@ -104,6 +104,6 @@ ReShade5=ID:XXXXXX acknowledged that ReShade 5.x has a bug that will lead to gam
 
 ---
 
-# Restart FiveM and enable "Fix UI Lag"
+## Restart FiveM and enable "Fix UI Lag"
 
 Restart the FiveM client and then go into your FiveM settings in order to enable FiveM's "Fix UI Lag" option. Afterwards, restart your game a final time.
