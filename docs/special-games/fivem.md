@@ -97,9 +97,12 @@ This error holds all of the steps needed in order to fix the issue that you are 
 
 You can copy and paste these two lines into your `CitizenFX.ini` file, however, you MUST use your own ID instead of the dummy ID given:
 
-> `[Addons]`
-> 
-> `ReShade5=ID:XXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes`
+```
+[Addons]
+ReShade5=ID:XXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes
+```
+
+---
 
 # Restart FiveM and enable "Fix UI Lag"
 
