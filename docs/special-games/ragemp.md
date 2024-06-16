@@ -28,4 +28,4 @@ Once you have the folder open, copy the location of the game from the address ba
 
 In order to download the latest copy of ReShade, navigate to the [ReShade Website](https://reshade.me). Keep in mind that you cannot use the addon support build of ReShade, as EAC will not let you play the game with it installed. Once downloaded, you can run the setup/installer.
 
-In the ReShade Installer, click the browse function in the bottom right hand corner, and File Explorer will open. Then, paste the location of the game into the address bar of the File Explorer Window that has oppened. Afterwards, click "ragemp_v.exe" and then click "Open" in the bottom right hand corner of the File Explorer Window.
+In the ReShade Installer, click the browse function in the bottom right hand corner and File Explorer will open. Then, paste the location of the game into the address bar of the File Explorer Window that has oppened. Afterwards, click "ragemp_v.exe" and then click "Open" in the bottom right hand corner of the File Explorer Window.
