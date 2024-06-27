@@ -16,9 +16,7 @@ RageMP uses Easy Anti-Cheat. Any shaders which require the depth buffer or addon
 
 ## Open RageMP's Install Folder
 
-Open up the install location of RageMP with File Explorer, if you are struggling to find the install location of RageMP, follow our guide [here on finding your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
-
-Once you have the folder open, copy the location of the game from the address bar in File Explorer.
+Open up the install location of RageMP with File Explorer, if you are struggling to find the install location of RageMP, follow our guide [here on finding your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/). Once you have the folder open, copy the location of the game from the address bar in File Explorer.
 
 ![RageMP Install Address](../images/ragemp/ragemp_install_address.png)
 
@@ -26,6 +24,4 @@ Once you have the folder open, copy the location of the game from the address ba
 
 ## Downloading and installing ReShade
 
-In order to download the latest copy of ReShade, navigate to the [ReShade Website](https://reshade.me). Keep in mind that you cannot use the addon support build of ReShade, as EAC will not let you play the game with it installed. Once downloaded, you can run the setup/installer.
-
-In the ReShade Installer, click the browse function in the bottom right hand corner and File Explorer will open. Then, paste the location of the game into the address bar of the File Explorer Window that has oppened. Afterwards, click "ragemp_v.exe" and then click "Open" in the bottom right hand corner of the File Explorer Window.
+In order to download the latest copy of ReShade, navigate to the [ReShade Website](https://reshade.me). Keep in mind that you cannot use the addon support build of ReShade, as EAC will not let you play the game with it installed. Once downloaded, you can run the setup/installer. In the ReShade Installer, click the browse function in the bottom right hand corner and File Explorer will open. Then, paste the location of the game into the address bar of the File Explorer Window that has oppened. Afterwards, click "ragemp_v.exe" and then click "Open" in the bottom right hand corner of the File Explorer Window.
