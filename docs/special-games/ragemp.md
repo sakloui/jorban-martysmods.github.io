@@ -18,7 +18,7 @@ RageMP uses Easy Anti-Cheat. Any shaders which require the depth buffer or addon
 
 Open up the install location of RageMP with File Explorer, if you are struggling to find the install location of RageMP, follow our guide [here on finding your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/). Once you have the folder open, copy the location of the game from the address bar in File Explorer.
 
-![RageMP Install Address](../images/ragemp/ragemp_install_address.png)
+![RageMP Install Address](../images/ragemp/ragemp_install_address.webp)
 
 ---
 

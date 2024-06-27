@@ -35,7 +35,7 @@ Navigate to your GTAV folder by using our [guide for locating your game's execut
 | reshade.ini | ReShade Settings File| 
 | reshade-shaders | ReShade Shaders & Textures Folder |
 
-![GTAV ReShade Install Files](../images/fivem/gtav-reshade-install-files.png)
+![GTAV ReShade Install Files](../images/fivem/gtav-reshade-install-files.webp)
 
 ---
 
@@ -43,7 +43,7 @@ Navigate to your GTAV folder by using our [guide for locating your game's execut
 
 In order to locate your FiveM location, please utilize our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)!
 
-![FiveM File Location](../images/fivem/fivem-file-location.png)
+![FiveM File Location](../images/fivem/fivem-file-location.webp)
 
 ---
 
@@ -51,9 +51,9 @@ In order to locate your FiveM location, please utilize our [guide for locating y
 
 Once you have located your FiveM Installation folder, enter the `FiveM Application Data` folder, and then into your `plugins` directory.
 
-![FiveM appdata Location](../images/fivem/fivem-appdata-location.png)
+![FiveM appdata Location](../images/fivem/fivem-appdata-location.webp)
 
-![FiveM plugins Location](../images/fivem/fivem-plugins-location.png)
+![FiveM plugins Location](../images/fivem/fivem-plugins-location.webp)
 
 ---
 
@@ -66,7 +66,7 @@ Cut and paste ReShade's files and `ReShade-Shaders` folder from your GTAV direct
 | reshade.ini | ReShade Settings File| 
 | reshade-shaders | ReShade Shaders & Textures Folder |
 
-![FiveM reshade install Location](../images/fivem/fivem-reshade-install-location.png)
+![FiveM reshade install Location](../images/fivem/fivem-reshade-install-location.webp)
 
 ---
 
@@ -74,7 +74,7 @@ Cut and paste ReShade's files and `ReShade-Shaders` folder from your GTAV direct
 
 Launch FiveM and press F8 on your keyboard to read the message in your log. FiveM should present you with the error:
 
-![Error Screenshot](../images/fivem/fivem_reshade5_bs.png)
+![Error Screenshot](../images/fivem/fivem_reshade5_bs.webp)
 
 This error holds all of the steps needed in order to fix the issue that you are facing. In Green text will be the location of your "CitizenFX.ini" file. You will need to open this file and copy the entire error from "[Addons]" downards in order to solve the issue. If this is not copied exactly how it is written in your console, then you will not be able to fix the issue. You can copy and paste these two lines into your "CitizenFX.ini" file, however, you MUST use your own ID instead of the dummy ID given:
 

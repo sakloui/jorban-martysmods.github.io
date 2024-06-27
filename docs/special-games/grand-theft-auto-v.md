@@ -35,11 +35,11 @@ Navigate to your Grand Theft Auto: V folder using our guide for [locating your g
 
 Navigate to the ENB page for Grand Theft Auto: V [http://enbdev.com/download_mod_gta5.htm](http://enbdev.com/download_mod_gta5.htm). The ENB page for Grand Theft Auto: V will provide you with the latest version of ENB for Grand Theft Auto: V. At the bottom of the page, click the latest version to go to it's change-log page.
 
-![ENB Version Select Highlight](../images/gtav/enb-version-select.png)
+![ENB Version Select Highlight](../images/gtav/enb-version-select.webp)
 
 Then click the download icon at the bottom of the change-log page.
 
-![ENB Download Button Highlight](../images/gtav/enb-download-button.png)
+![ENB Download Button Highlight](../images/gtav/enb-download-button.webp)
 
 ---
 
@@ -47,21 +47,21 @@ Then click the download icon at the bottom of the change-log page.
 
 Open the archive that you have downloaded from the ENB page for Grand Theft Auto: V.
 
-![ENB Archive Image](../images/gtav/open-enb-archive.png)
+![ENB Archive Image](../images/gtav/open-enb-archive.webp)
 
 Then enter the "WrapperVersion" directory.
 
-![ENB Wrapper Version Directory](../images/gtav/enter-wrapperversion-directory.png)
+![ENB Wrapper Version Directory](../images/gtav/enter-wrapperversion-directory.webp)
 
 Once there you will be greated with a plethora of files:
 
-![ENB WrapperVersion Files Image](../images/gtav/wrapperversion-files.png)
+![ENB WrapperVersion Files Image](../images/gtav/wrapperversion-files.webp)
 
 The files shown above are files are needed for ENB. Copy each of these files over to the Grand Theft Auto: V base directory. 
 
 If you need help finding your Grand Theft Auto: V base directory, you can [follow our guide for finding your game's executable and directory](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-![Move ENB files to GTAV Directory](../images/gtav/enb-to-gtav-move.png)
+![Move ENB files to GTAV Directory](../images/gtav/enb-to-gtav-move.webp)
 
 ---
 
@@ -69,7 +69,7 @@ If you need help finding your Grand Theft Auto: V base directory, you can [follo
 
 This step has to be done because the latest version of Grand Theft Auto: V refuses to inject via the "d3d11.dll" injection name. However, ENB does not like to inject via the "d3d12.dll" so this is the compromise. You should have a two files that look identical to the image below.
 
-![Renamed ENB DLL](../images/gtav/enb-dll-rename.png)
+![Renamed ENB DLL](../images/gtav/enb-dll-rename.webp)
 
 ---
 
