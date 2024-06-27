@@ -7,11 +7,7 @@ nav_order: 97
 
 ## Finding the Architecture Type of an Executable
 
-When modding with graphics injections, it is crucial to correctly determine the architecture type of your game's executable.
-
-Whether you are a seasoned modder or new to the world of modding, understanding the architecture type is essential for compatibility and proper execution of ReShade and other graphics injections into your game. 
-
-We will explore various techniques and tools that will enable you to identify your application's architecture type with ease.
+When modding with graphics injections, it is crucial to correctly determine the architecture type of your game's executable. Whether you are a seasoned modder or new to the world of modding, understanding the architecture type is essential for compatibility and proper execution of ReShade and other graphics injections into your game. 
 
 ---
 
