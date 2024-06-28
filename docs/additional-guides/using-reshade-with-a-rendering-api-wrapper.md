@@ -7,86 +7,61 @@ parent: Additional Guides
 
 # Using ReShade with a Rendering API Wrapper
 
-Rendering API wrappers are powerful tools that can bridge different versions of rendering APIs. 
-
-Commonly, they enable conversion of older APIs (e.g., DirectX 9) into modern ones like Vulkan. 
-
-This can offer benefits like ensuring ReShade shaders compile smoothly or boosting performance in older games.
+Rendering API wrappers bridge different versions of rendering APIs, allowing older APIs (e.g., DirectX 9) to convert to modern ones like Vulkan. This can enhance ReShade shader compatibility or improve performance in older games.
 
 ---
 
 ## DXVK: Wrapping DirectX to Vulkan
 
-DXVK is a tool designed to transform DirectX games to run on the Vulkan API. It's especially valuable for adapting older DirectX 9 games to benefit from newer compute shaders incompatible with DX9.
+DXVK transforms DirectX games to run on the Vulkan API, useful for adapting older DirectX 9 games to benefit from newer compute shaders incompatible with DX9.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>Installing DXVK</summary>
 
----
+## Download DXVK
 
-## **Step 1:** Download DXVK
+Download the latest DXVK version from [their GitHub releases](https://github.com/doitsujin/dxvk/releases).
 
-Acquire the latest DXVK version from [their GitHub releases](https://github.com/doitsujin/dxvk/releases).
+## Find your game's directory
 
----
+If needed, use [our guide](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) to locate your game's executable.
 
-## **Step 2:** Find your game's directory
+## Find your game's architecture and API
 
-Utilize our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) if assistance is required.
+Refer to [PCGamingWiki](https://pcgamingwiki.com/) to determine your game's rendering API and architecture.
 
----
+![Game's API](../images/using-reshade-with-a-rendering-api-wrapper/pcgamingwiki_game_api.png)
 
-## **Step 3:** Find your game's architecture and API
+![Game's Architecture](../images/using-reshade-with-a-rendering-api-wrapper/pcgamingwiki_game_api_bit_arch.png)
 
-Refer to [PCGamingWiki](https://pcgamingwiki.com/) to find your game's rendering API and architecture.
+## Extract DXVK's files
 
-  ![Game's API](../images/using-reshade-with-a-rendering-api-wrapper/pcgamingwiki_game_api.png)
-
-  ![Game's Architecture](../images/using-reshade-with-a-rendering-api-wrapper/pcgamingwiki_game_api_bit_arch.png)
-
----
-
-## **Step 4:** Extract DXVK's files
-
-Unzip the DXVK archive (e.g., `dxvk-2.2.tar.gz`) using a tool like [7zip](https://www.7-zip.org/).
-
-Within the archive, you'll spot two directories: `x64` and `x32`.
+Unzip the DXVK archive (e.g., `dxvk-2.2.tar.gz`) using [7zip](https://www.7-zip.org/). Inside, you'll find `x64` and `x32` directories. Navigate to the appropriate folder based on your game's architecture.
 
 ![DXVK Archive](../images/using-reshade-with-a-rendering-api-wrapper/dxvk_7zip_arch.png)
 
-Ensure to navigate into the appropriate architecture folder based on the details that you've collected from PCGamingWiki in the previous step.
+## Choose the relevant DXVK DLL file for your game's rendering API
 
----
+Inside the chosen architecture directory, you'll find files corresponding to different rendering APIs:
 
-## **Step 5:** Choose the relevant DXVK DLL file for your game's rendering API
+| File Name     | DirectX Version   |
+|---------------|-------------------|
+| dxgi.dll      | DirectX 11 and 12 |
+| d3d11.dll     | DirectX 11        |
+| d3d10core.dll | DirectX 10        |
+| d3d9.dll      | DirectX 9         |
 
-Inside the chosen architecture directory, you'll find multiple files. These correspond to different rendering APIs:
+## Transfer the DLL to your game's root directory
 
- * dxgi.dll - DX11/DX12
-
- * d3d11.dll - DX11
-
- * d3d10core.dll - DX10
-
- * d3d9.dll - DX9
-
----
-
-## **Step 6:** Transfer the DLL to your game's root directory
-
-Ensure the chosen DLL is in the same location as the game's executable.
+Place the chosen DLL in the same location as the game's executable.
 
 ![Transfer DLL](../images/using-reshade-with-a-rendering-api-wrapper/dxvk_install_drag.png)
 
----
+## Reinstall ReShade and test
 
-## **Step 7:** Reinstall ReShade and test
-
-Install ReShade for your game using the Vulkan API and give it a test run. 
-
-If ReShade doesn't display after Vulkan installation, you might have selected an incorrect application or used the wrong architecture/DLL.
+Install ReShade for your game using the Vulkan API and test it. If ReShade doesn't display after installation, you might have selected the wrong application or used the incorrect architecture/DLL.
 
 </details>
 
@@ -94,189 +69,135 @@ If ReShade doesn't display after Vulkan installation, you might have selected an
 
 ## dgVoodoo 2: Wrapping 3DFX Glide and Direct3D / DirectX (1 to 9) to DirectX12
 
-DGVoodoo2 is a powerful tool that enables you to enhance older games by wrapping their outdated proprietary renderers from 3DFX and Direct3D (versions 1 to 9) to more modern DirectX equivalents. By doing so, you can unlock the benefits of modern DirectX features for these older titles.
-
-DGVoodoo2 serves two primary purposes. First, it allows older games to leverage advanced features like Compute Shaders, which were not available on older rendering APIs and GPUs. This means you can enjoy improved graphics and performance in these games. Second, DGVoodoo2 helps improve compatibility with modern operating systems, ensuring that these older titles run smoothly and without graphical issues.
+dgVoodoo2 enhances older games by wrapping outdated renderers from 3DFX and Direct3D (versions 1 to 9) to modern DirectX equivalents, unlocking modern DirectX features and improving compatibility with modern operating systems.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>Installing dgVoodoo 2 for 3DFX Glide</summary>
 
----
+## Download dgVoodoo2
 
-## **Step 1:** Download dgVoodoo2
+Download the latest version of dgVoodoo2 from [dege's website](http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/).
 
-Acquire the latest version of dgVoodoo2 from [dege's website](http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/). At the time of writing this guide, the latest version is 2.83.1.
+## Extract the downloaded files
 
----
+Extract the files to a location with write permissions, like the "Documents" folder or the "Desktop."
 
-## **Step 2:** Extract the downloaded files
+## Locate your game directory
 
-Extract the files to a location where you can easily find them later. Ensure that you have write permissions for the chosen directory. It is recommended to extract the files to either the "Documents" folder or the "Desktop". As long as you have write permissions for the directory, any location will suffice.
+If needed, use [our guide](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) to locate your game's executable.
 
----
+## Locate the game directory within dgVoodoo2
 
-## **Step 3:** Locate your game directory
-
-For this example, I'll be using the old Ubisoft game, POD (Planet of Death), which uses the Glide renderer. The instructions are similar for DirectX, but there might be some differences. If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance!
-
----
-
-## **Step 4:** Locate the game directory within dgVoodoo2
-
-Now that we have our directory and files extracted, it's time to install dgVoodoo2. To prevent issues, we recommend running the tool as Administrator, as we may need to write to folders that require elevated permissions. After opening dgVoodoo2, you'll be greeted with its main window.
+Run dgVoodoo2 as Administrator. Click "Add" and navigate to your game's directory.
 
 ![Main Window, General tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_main_window.png)
 
-To start installing dgVoodoo2 for your desired game, click on the "Add" button, and then navigate to the game's directory as located before.
-
 ![Find Directory Dialogue](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_directory_dialogue.png)
 
-Now that it's done, we can start configuring it. It is not fully installed yet, but we'll leave that for the end.
+## Configure the game
 
----
+Click on the "Glide" tab. Adjust the settings as needed:
 
-## **Step 5:** Configure the game
+* **3Dfx card**: Specifies the GPU functions and specs dgVoodoo2 will simulate.
+* **Onboard RAM**: Defines how much RAM your "GPU" has (8MB or 16MB).
+* **Texturing**: Adjust Memory Size and Texturing options.
+* **3Dfx Watermark**: Enable or disable the watermark.
 
-To configure dgVoodoo2 for the game, click on the tab that says "Glide". Most of the options are self-explanatory, but it's worth going through some of them and explaining.
+![Glide Tab Options](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_glide_tab.png)
 
-![All of the options and buttons on the tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_glide_tab.png)
+## Finishing dgVoodoo2 installation
 
-* The first option worth noting is the 3Dfx card option. This tells the game which "GPU" you have, specifying the GPU functions and specs that dgVoodoo2 will simulate. Most games work on default settings, but some may require specific models.
+Copy the necessary DLL files from the dgVoodoo2 directory to your game's directory. Run the game to complete the installation.
 
-* The second option is the Onboard RAM, which defines how much RAM your "GPU" has. Most games work with 8MB, but if you want to improve graphics on some games, they may require 16MB.
-
-* In the texturing section, most settings can be left as-is. However, if you feel the need to change them, you can adjust the Memory Size and Texturing options. These are useful for defining the Memory Size each mapping unit has and how many of them. Note that only Voodoo3 and onward had variants with different TMUs, so if you plan on using Voodoo2, this isn't required.
-
-* In the Miscellaneous section, you can enable or disable the "3Dfx Watermark" checkbox to show or hide the watermark in the games. This is purely aesthetic.
-
-After configuring all the settings, all that remains is copying the DLL files and running the game.
-
----
-
-## **Step 6:** Finishing dgVoodoo2 installation
-
-After completing the configuration, it's time to finish the dgVoodoo2 installation. Open two Explorer windows: one for the game directory and another for the dgVoodoo2 directory. In the dgVoodoo2 directory, navigate to the 3dfx folder, select x86, and drag and drop the 3 DLL files to the game directory. Then, run the game, and it should be installed.
-
-That covers the installation process for dgVoodoo2 glide.
 ![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dlls.png)
 
 </details>
 
 ---
 
-
 <details markdown="block" class="details-tree">
 <summary>Installing dgVoodoo 2 for DirectX</summary>
 
----
+## Download dgVoodoo2
 
-## **Step 1:** Download dgVoodoo2
+Download the latest version of dgVoodoo2 from [dege's website](http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/).
 
-Acquire the latest version of dgVoodoo2 from [dege's website](http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/). At the time of writing this guide, the latest version is 2.83.1.
+## Extract the downloaded files
 
----
+Extract the files to a location with write permissions, like the "Documents" folder or the "Desktop."
 
-## **Step 2:** Extract the downloaded files
+## Locate your game directory
 
-Extract the files to a location where you can easily find them later. Ensure that you have write permissions for the chosen directory. It is recommended to extract the files to either the "Documents" folder or the "Desktop". As long as you have write permissions for the directory, any location will suffice.
+If needed, use [our guide](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) to locate your game's executable.
 
----
+## Locate the game directory within dgVoodoo2
 
-## **Step 3:** Locate your game directory
-
-For this example, I'll be using the game TrackMania Sunrise, which is an old DirectX 8-9 game. If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance!
-
----
-
-## **Step 4:** Locate the game directory within dgVoodoo2
-
-Now that we have our directory and files extracted, it's time to install dgVoodoo2. To prevent issues, we recommend running the tool as Administrator, as we may need to write to folders that require elevated permissions. After opening dgVoodoo2, you'll be greeted with its main window.
+Run dgVoodoo2 as Administrator. Click "Add" and navigate to your game's directory.
 
 ![Main Window, General tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_main_window.png)
 
-To start installing dgVoodoo2 for your desired game, click on the "Add" button, and then navigate to the game's directory as located before.
-
 ![Find Directory Dialogue](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_directory_dialogue.png)
 
-Now that it's done, we can start configuring it. It is not fully installed yet, but we'll leave that for the end.
+## Configure the game
 
----
+Click on the "DirectX" tab. Adjust the settings as needed:
 
-## **Step 5:** Configure the game
+* **Videocard**: The card that dgVoodoo2 will emulate. Set it to the maximum VRAM available.
+* **dgVoodoo watermark**: Disable this checkbox to remove the watermark on the screen.
 
-To configure dgVoodoo2 for the game, click on the tab that says "DirectX". Most of the options are self-explanatory, but it's worth going through some of them and explaining.
+![DirectX Tab Options](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_tab.png)
 
-![All of the options and buttons on the tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_tab.png)
+## Finishing the dgVoodoo2 installation
 
-* The Videocard option is the card that dgVoodoo2 will be emulating. Some games require specific brands for features, but most of the time, the dgVoodoo 3D Virtual accelerated card will work just fine. Set it to the maximum VRAM you have available.
+Copy the necessary DLL files from the dgVoodoo2 directory to your game's directory. Run the game to complete the installation.
 
-* In the Miscellaneous section, make sure to disable the checkbox with "dgVoodoo watermark". This will remove the watermark on the lower-right of the screen.
+| DLL Files                    | DirectX Version    |
+|------------------------------|--------------------|
+| D3D9.dll                     | DirectX 9          |
+| D3D8.dll                     | DirectX 8          |
+| D3DImm.dll, DDraw.dll        | Direct3D 1 to 7    |
 
-After configuring all the settings, all that remains is copying the DLL files and running the game.
+If unsure about which DLL to use, check [PCGamingWiki](https://pcgamingwiki.com/) for your game's details.
 
----
-
-## **Step 6:** Finishing the dgVoodoo2 installation
-
-After completing the configuration, it's time to finish the dgVoodoo2 installation. Open two Explorer windows: one for the game directory and another for the dgVoodoo2 directory. In the dgVoodoo2 directory, navigate to the MS folder. Take note of which DLLs to move on a game-to-game basis:
-
-* If it's a Direct3D (1 to 7) game, the DLLs are: D3DImm.dll and DDraw.dll.
-
-* If it's a DirectX 8 game, the DLL is: D3D8.dll.
-
-* If it's a DirectX 9 game, the DLL is: D3D9.dll.
-
-If you are unsure about which DLL to use, check the [PCGamingWiki](https://pcgamingwiki.com/) page for the game to determine its architecture and DirectX version.
-
-That covers the installation process for dgVoodoo2 for DirectX.
 ![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_dlls.png)
 
 </details>
 
 ---
 
-## Wine D3D - Wrapping Direct3D/DirectX to Vulkan or OpenGL
----
+## Wine D3D: Wrapping Direct3D/DirectX to Vulkan or OpenGL
 
-If for some reason, DXVK doesn't work or you need something more adequate for a legacy system, Wine's implementation of a DirectX wrapper might help. One advantage over DXVK is the fact that old versions can be used to wrap to OpenGL instead of Vulkan, which might worker for older GPUs or for retro games.
-Installation is very similar to DXVK and the other wrappers shown above, but we will still guide you through the steps.
+If DXVK doesn't work or is unsuitable for a legacy system, Wine's DirectX wrapper might help. Older versions can wrap to OpenGL instead of Vulkan, which may be better for older GPUs or retro games. Installation is similar to DXVK and other wrappers.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>Installing WineD3D as Vulkan</summary>
 
----
-## **Step 1:** Downloading WineD3D for Vulkan
+## Downloading WineD3D for Vulkan
 
-WineD3D can be downloaded from [Federico Dossena's Website](https://fdossena.com/?p=wined3d/index.frag), since we are going for Vulkan, all we gotta do is click the Download Latest button.
-If for some reason, the game you wanna install is X64, then click the *Show other downloads* text, right below the button, and select Latest version for 64-bit apps (patched with staging).
+Download WineD3D from [Federico Dossena's Website](https://fdossena.com/?p=wined3d/index.frag). Click the "Download Latest" button. For x64 games, select "Latest version for 64-bit apps (patched with staging)."
+
 ![Button and Text](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_buttons.png)
+
 ![Observations and Others](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_others.png)
 
----
+## Installing WineD3D into the game
 
-## **Step 2:** Installing WineD3D into the game.
+Identify the DirectX version of your game using [PCGamingWiki](https://pcgamingwiki.com/) and then grab the required DLLs:
 
-Installing WineD3D is easy, just identify which DirectX version your game is using with [PCGamingWiki](https://pcgamingwiki.com/) and then grab the DLLs required for it:
+| DLL Files                                    | DirectX Version          |
+|----------------------------------------------|--------------------------|
+| dxgi.dll                                     | DirectX 12               |
+| d3d11.dll, dxgi.dll                          | DirectX 11               |
+| d3d10.dll, d3d10_1.dll, d3d10core.dll, dxgi.dll | DirectX 10/10.1          |
+| D3D9.dll                                     | DirectX 9                |
+| D3D8.dll                                     | DirectX 8                |
+| D3DImm.dll, DDraw.dll                        | Direct3D 1 to 7          |
 
-* If it's a Direct3D (1 to 7) game, the DLLs are: D3DImm.dll and DDraw.dll.
-
-* If it's a DirectX 8 game, the DLL is: D3D8.dll.
-
-* If it's a DirectX 9 game, the DLL is: D3D9.dll.
-
-* If it's a DirectX 10/10.1 game, the DLLs are: d3d10.dll, d3d10_1.dll, d3d10core.dll or just dxgi.dll
-
-* If it's a DirectX 11 game, the DLL is: d3d11.dll or dxgi.dll
-
-* If it's a DirectX 12 and onwards game, the DLL is: dxgi.dll
-
-After that, grab the DLL related to Wine itself, which is wined3d.dll, after that is done, just install ReShade as a Vulkan application.
-
----
+Additionally, copy `wined3d.dll`. Then, install ReShade as a Vulkan application.
 
 </details>
 
@@ -285,36 +206,25 @@ After that, grab the DLL related to Wine itself, which is wined3d.dll, after tha
 <details markdown="block" class="details-tree">
 <summary>Installing WineD3D as OpenGL</summary>
 
----
+## Downloading WineD3D for OpenGL
 
-## **Step 1:** Downloading WineD3D for OpenGL
-
-WineD3D can be downloaded from [Federico Dossena's Website](https://fdossena.com/?p=wined3d/index.frag), this time, we are going to focus at the legacy versions, so the button will be below the Latest version.
-
-Click the button for the *Last Windows 7 Compatible version*, it should work for all cases, if it doesn't, experiment with other versions, one of them is certain to work.
+Download WineD3D from [Federico Dossena's Website](https://fdossena.com/?p=wined3d/index.frag). Click the button for the "Last Windows 7 Compatible version."
 
 ![Legacy Button](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_older.png)
 
----
+## Installing WineD3D into the game
 
-## **Step 2:** Installing WineD3D into the game.
+Identify the DirectX version of the game using [PCGamingWiki](https://pcgamingwiki.com/) and then grab the required DLLs:
 
-As per the previous instructions, identify the DirectX version of the game using [PCGamingWiki](https://pcgamingwiki.com/) and then grab the DLLs required for it:
+| DLL Files                                    | DirectX Version          |
+|----------------------------------------------|--------------------------|
+| dxgi.dll                                     | DirectX 12               |
+| d3d11.dll, dxgi.dll                          | DirectX 11               |
+| d3d10.dll, d3d10_1.dll, d3d10core.dll, dxgi.dll | DirectX 10/10.1          |
+| D3D9.dll                                     | DirectX 9                |
+| D3D8.dll                                     | DirectX 8                |
+| D3DImm.dll, DDraw.dll                        | Direct3D 1 to 7          |
 
-* If it's a Direct3D (1 to 7) game, the DLLs are: D3DImm.dll and DDraw.dll.
-
-* If it's a DirectX 8 game, the DLL is: D3D8.dll.
-
-* If it's a DirectX 9 game, the DLL is: D3D9.dll.
-
-* If it's a DirectX 10/10.1 game, the DLLs are: d3d10.dll, d3d10_1.dll, d3d10core.dll or just dxgi.dll
-
-* If it's a DirectX 11 game, the DLL is: d3d11.dll or dxgi.dll
-
-* If it's a DirectX 12 and onwards game, the DLL is: dxgi.dll
-
-After that, copy the DLL related to Wine itself, which is wined3d.dll, and then install ReShade into the game as a OpenGL application.
-
----
+Also, copy `wined3d.dll`. Then, install ReShade into the game as an OpenGL application.
 
 </details>
