@@ -15,7 +15,7 @@ By default, Windows disables the function to allow users to see known file exten
 
 Start by searching for "File Explorer Options" in the Windows Start Menu:
 
-  ![Start Menu Search Image](../images/enabling-windows-file-extensions/file_explorer_options_start_menu.jpg)
+  ![Start Menu Search Image](../images/enabling-windows-file-extensions/file_explorer_options_start_menu.webp)
 
 This options menu allows you to modify the settings of Windows "File Explorer".
 
@@ -27,10 +27,10 @@ Once the options menu opens, you will see three tabs at the top.
 
 Click on the "View" tab:
 
-![File Options View Tab Image](../images/enabling-windows-file-extensions/file_explorer_options_view_tab.jpg)
+![File Options View Tab Image](../images/enabling-windows-file-extensions/file_explorer_options_view_tab.webp)
 
 Then, untick the checkbox next to "Hide extensions for known file types."
 
-![File Options Untick Option Image](../images/enabling-windows-file-extensions/file_explorer_options_remove_tick.jpg)
+![File Options Untick Option Image](../images/enabling-windows-file-extensions/file_explorer_options_remove_tick.webp)
 
 Lastly, click the "OK" button in the bottom right corner of the options menu to save your changes.

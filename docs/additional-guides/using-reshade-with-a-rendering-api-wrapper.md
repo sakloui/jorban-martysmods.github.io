@@ -32,15 +32,15 @@ If needed, use [our guide](https://guides.martysmods.com/docs/additional-guides/
 
 Refer to [PCGamingWiki](https://pcgamingwiki.com/) to determine your game's rendering API and architecture.
 
-![Game's API](../images/using-reshade-with-a-rendering-api-wrapper/pcgamingwiki_game_api.png)
+![Game's API](../images/using-reshade-with-a-rendering-api-wrapper/pcgamingwiki_game_api.webp)
 
-![Game's Architecture](../images/using-reshade-with-a-rendering-api-wrapper/pcgamingwiki_game_api_bit_arch.png)
+![Game's Architecture](../images/using-reshade-with-a-rendering-api-wrapper/pcgamingwiki_game_api_bit_arch.webp)
 
 ## Extract DXVK's files
 
 Unzip the DXVK archive (e.g., `dxvk-2.2.tar.gz`) using [7zip](https://www.7-zip.org/). Inside, you'll find `x64` and `x32` directories. Navigate to the appropriate folder based on your game's architecture.
 
-![DXVK Archive](../images/using-reshade-with-a-rendering-api-wrapper/dxvk_7zip_arch.png)
+![DXVK Archive](../images/using-reshade-with-a-rendering-api-wrapper/dxvk_7zip_arch.webp)
 
 ## Choose the relevant DXVK DLL file for your game's rendering API
 
@@ -57,7 +57,7 @@ Inside the chosen architecture directory, you'll find files corresponding to dif
 
 Place the chosen DLL in the same location as the game's executable.
 
-![Transfer DLL](../images/using-reshade-with-a-rendering-api-wrapper/dxvk_install_drag.png)
+![Transfer DLL](../images/using-reshade-with-a-rendering-api-wrapper/dxvk_install_drag.webp)
 
 ## Reinstall ReShade and test
 
@@ -92,9 +92,9 @@ If needed, use [our guide](https://guides.martysmods.com/docs/additional-guides/
 
 Run dgVoodoo2 as Administrator. Click "Add" and navigate to your game's directory.
 
-![Main Window, General tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_main_window.png)
+![Main Window, General tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_main_window.webp)
 
-![Find Directory Dialogue](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_directory_dialogue.png)
+![Find Directory Dialogue](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_directory_dialogue.webp)
 
 ## Configure the game
 
@@ -105,13 +105,13 @@ Click on the "Glide" tab. Adjust the settings as needed:
 * **Texturing**: Adjust Memory Size and Texturing options.
 * **3Dfx Watermark**: Enable or disable the watermark.
 
-![Glide Tab Options](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_glide_tab.png)
+![Glide Tab Options](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_glide_tab.webp)
 
 ## Finishing dgVoodoo2 installation
 
 Copy the necessary DLL files from the dgVoodoo2 directory to your game's directory. Run the game to complete the installation.
 
-![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dlls.png)
+![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dlls.webp)
 
 </details>
 
@@ -136,9 +136,9 @@ If needed, use [our guide](https://guides.martysmods.com/docs/additional-guides/
 
 Run dgVoodoo2 as Administrator. Click "Add" and navigate to your game's directory.
 
-![Main Window, General tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_main_window.png)
+![Main Window, General tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_main_window.webp)
 
-![Find Directory Dialogue](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_directory_dialogue.png)
+![Find Directory Dialogue](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_directory_dialogue.webp)
 
 ## Configure the game
 
@@ -147,7 +147,7 @@ Click on the "DirectX" tab. Adjust the settings as needed:
 * **Videocard**: The card that dgVoodoo2 will emulate. Set it to the maximum VRAM available.
 * **dgVoodoo watermark**: Disable this checkbox to remove the watermark on the screen.
 
-![DirectX Tab Options](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_tab.png)
+![DirectX Tab Options](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_tab.webp)
 
 ## Finishing the dgVoodoo2 installation
 
@@ -161,7 +161,7 @@ Copy the necessary DLL files from the dgVoodoo2 directory to your game's directo
 
 If unsure about which DLL to use, check [PCGamingWiki](https://pcgamingwiki.com/) for your game's details.
 
-![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_dlls.png)
+![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_dlls.webp)
 
 </details>
 
@@ -180,9 +180,9 @@ If DXVK doesn't work or is unsuitable for a legacy system, Wine's DirectX wrappe
 
 Download WineD3D from [Federico Dossena's Website](https://fdossena.com/?p=wined3d/index.frag). Click the "Download Latest" button. For x64 games, select "Latest version for 64-bit apps (patched with staging)."
 
-![Button and Text](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_buttons.png)
+![Button and Text](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_buttons.webp)
 
-![Observations and Others](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_others.png)
+![Observations and Others](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_others.webp)
 
 ## Installing WineD3D into the game
 
@@ -210,7 +210,7 @@ Additionally, copy `wined3d.dll`. Then, install ReShade as a Vulkan application.
 
 Download WineD3D from [Federico Dossena's Website](https://fdossena.com/?p=wined3d/index.frag). Click the button for the "Last Windows 7 Compatible version."
 
-![Legacy Button](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_older.png)
+![Legacy Button](../images/using-reshade-with-a-rendering-api-wrapper/wined3d_older.webp)
 
 ## Installing WineD3D into the game
 

@@ -17,11 +17,11 @@ Right-click the Windows Taskbar and select "Task Manager."
 
 * **Windows 11:**
 
-   ![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global.png)
+   ![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global.webp)
 
 * **Windows 10:**
 
-   ![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global_win10.png)
+   ![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global_win10.webp)
 
 ---
 
@@ -31,10 +31,10 @@ With your game actively running, switch to your Task Manager. Then, navigate the
 
 * **Windows 11:**
 
-   ![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global.png)
+   ![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global.webp)
 
 * **Windows 10:**
 
-   ![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global_win10.png) 
+   ![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global_win10.webp) 
 
 This will highlight your game's application in File Explorer. Here, you can identify both the location and the specific executable of the game.

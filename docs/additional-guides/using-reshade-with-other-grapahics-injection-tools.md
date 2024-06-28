@@ -66,7 +66,7 @@ For older DirectX 9 games we might need some other mods to make everything work 
 
 3. If there are conflicting file names for the ASI Loader file, you can use one of the examples listed below.
 
-![ASI File names](../images/using-reshade-with-other-grapahics-injection-tools/ASI_filenames.png)
+![ASI File names](../images/using-reshade-with-other-grapahics-injection-tools/ASI_filenames.webp)
 
 4. create a new folder called `plugins` in the root folder of the game.
 
@@ -117,7 +117,7 @@ As with any combination of mods, installing SpecialK with ReShade may cause issu
 
 5. To open the SpecialK GUI, press `Ctrl + Shift + Backspace`.
 
-![SpecialK Shortcut](../images/using-reshade-with-other-grapahics-injection-tools/crtl_shift_backspace.png)
+![SpecialK Shortcut](../images/using-reshade-with-other-grapahics-injection-tools/crtl_shift_backspace.webp)
 
 For more information check out he official SpecialK [wiki](https://wiki.special-k.info/en/SpecialK/ReShade) page for ReShade
 

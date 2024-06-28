@@ -11,8 +11,7 @@ When modding with graphics injections, it is crucial to correctly determine the 
 
 ---
 
-<details markdown="block" class="details-tree">
-<summary>Finding the Architecture Type with Task Manager</summary>
+## Using Task Manager
 
 1. Open your game, and then `Alt + Tab` to your Desktop.
 
@@ -24,11 +23,11 @@ When modding with graphics injections, it is crucial to correctly determine the 
 
 * 32 Bit: If the application has a 32-bit architecture, it will be labeled as (32 Bits)
 
- ![Showing Task Manager with Highlight on 32-Bit](../images/finding-the-architecture-type-of-an-executable/hl2-32bit.png)
+ ![Showing Task Manager with Highlight on 32-Bit](../images/finding-the-architecture-type-of-an-executable/hl2-32bit.webp)
 
 * 64 Bit: If there is no such tag, it means the application utilizes a 64-bit architecture.
 
- ![Showing Task Manager with Highlight on No Architecture](../images/finding-the-architecture-type-of-an-executable/ultrakill-32bit.png)
+ ![Showing Task Manager with Highlight on No Architecture](../images/finding-the-architecture-type-of-an-executable/ultrakill-32bit.webp)
 
 </details>
 
