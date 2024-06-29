@@ -36,5 +36,5 @@ You can learn all about downloading and installing ReShade by following through 
 
 ---
 
-[Downloading and Installing ReShade](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/){: .btn .btn-blue .mr-4 } 
+[Downloading and Installing ReShade](https://guides.martysmods.com/docs/reshade/downloading-and-installing/){: .btn .btn-blue .mr-4 } 
 {: .text-center}
