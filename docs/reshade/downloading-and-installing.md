@@ -282,24 +282,10 @@ Upon clicking "Open Archive," a new window will appear that holds the two ReShad
 | ReShade's 32-Bit Binary | ReShade32.dll |
 
 ---
- 
-## Rename the ReShade Binary
-
-After you've extracted the right binary, right-click the `ReShadeXX.dll` and click "Rename." Afterwards you can rename the binary to the proper graphics injection name for the Rendering API that your game utilizes.
-
-![Rename DLL](../images/downloading-and-installing/extacted_reshade_binary_rename.webp)
-
-| DirectX 10/11/12 | dxgi.dll |
-| DirectX 12 | d3d12.dll |
-| DirectX 11 | d3d11.dll |
-| DirectX 10 | d3d10.dll |
-| DirectX 9 | d3d9.dll |
-| OpenGL | opengl32.dll |
-
 
 ## Move the ReShade Binary
 
-You will need to move the renamed DLL into the root folder of your game, the same directory where the game's executable is located. If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
+You will need to move the ReShade DLL into the root folder of your game, the same directory where the game's executable is located. If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
 ![Place in Game Folder](../images/downloading-and-installing/place_reshade_binary_game_folder.webp)
 
