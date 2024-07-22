@@ -58,7 +58,7 @@ heading_anchors: true
 # Footer content
 # appears at the bottom of every page's main content
 markup / liquid-based content.:
-footer_content: "Copyright &copy; 2023 MartysMods."
+footer_content: "Copyright &copy; 2024 MartysMods."
 
 # Footer last edited timestamp
 last_edit_timestamp: false # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -89,6 +89,8 @@ color_scheme: dark
 back_to_top: true
 back_to_top_text: "Back to top"
 
-
 # Set favicon
 favicon_ico: "/assets/favicon.ico"
+
+# Add support for Jekyll Ideal Image Slider https://github.com/jekylltools/jekyll-ideal-image-slider
+iis_slider_array: []

@@ -201,8 +201,7 @@ Ensure you've correctly set up ReShade and followed the previous steps on the ot
 
 ---
 
-<details markdown="block" class="details-tree">
-<summary>Understanding Depth Buffer Basics</summary>
+## Understanding Depth Buffer Basics
 
 To start, enable the shader "DisplayDepth" This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
 
@@ -272,58 +271,14 @@ You can resolve this issue simply by toying around with "Generic Depth" in order
 
 ---
 
-</details>
+## Global Preprocessor Settings
 
----
+* **RESHADE_DEPTH_INPUT_IS_REVERSED:** This preprocessor is used when you can see the normals, but the depth image itself is not visible. The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
 
-<details markdown="block" class="details-tree">
-<summary>Global Preprocessor Arguments</summary>
+* **RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN:** This preprocessor is used when the image displayed by the DisplayDepth shader is upside down. The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
 
-This section will provide you with the "Global Preprocessor Definitions" that can be utilized with the ReShade Depth Buffer.
+* **RESHADE_DEPTH_INPUT_IS_LOGARITHMIC:** This argument is used when the depth buffer displays numerous waves or "stripes". Very FEW games actually utilize this, so it's rare that you'll need to toggle or modify this setting. The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
 
----
+* **RESHADE_DEPTH_INPUT_X_SCALE** and **RESHADE_DEPTH_INPUT_Y_SCALE:** These two preprocessors modify the depth buffer size along the X and Y axes. They work in multiplcations and you can test them in the "DisplayDepth" shader before applying them to the global preprocessors.
 
-<details markdown="block" class="details-tree">
-<summary>RESHADE_DEPTH_INPUT_IS_REVERSED</summary>
-
-This preprocessor is used when you can see the normals, but the depth image itself is not visible. The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
-
-</details>
-
----
-
-<details markdown="block" class="details-tree">
-<summary>RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN</summary>
-
-This preprocessor is used when the image displayed by the DisplayDepth shader is upside down. The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
-
-</details>
-
----
-
-<details markdown="block" class="details-tree">
-<summary>RESHADE_DEPTH_INPUT_IS_LOGARITHMIC</summary>
-
-This argument is used when the depth buffer displays numerous waves or "stripes". Very FEW games actually utilize this, so it's rare that you'll need to toggle or modify this setting. The argument can only be `1` or `0`, so flipping the value for it should solve the problem.
-
-</details>
-
----
-
-<details markdown="block" class="details-tree">
-<summary>RESHADE_DEPTH_INPUT_X_SCALE and RESHADE_DEPTH_INPUT_Y_SCALE</summary>
-
-These two preprocessors modify the depth buffer size along the X and Y axes. They work in multiplcations and you can test them in the "DisplayDepth" shader before applying them to the global preprocessors.
-
-</details>
-
----
-
-<details markdown="block" class="details-tree">
-<summary>RESHADE_DEPTH_LINEARIZATION_FAR_PLANE</summary>
-
-This preprocessor will adjust the value of the depth range. If the depth range is too narrow or wide, based on the visible black to white (close to far) gradient given from the depth in "DisplayDepth", shaders that utilize the depth buffer will not be able to properly account for depth. The values can be either extremely low or high, so you'll need to experiment to determine the best fit for your specific case.
-
-</details>
-
-</details>
+* **RESHADE_DEPTH_LINEARIZATION_FAR_PLANE:** This preprocessor will adjust the value of the depth range. If the depth range is too narrow or wide, based on the visible black to white (close to far) gradient given from the depth in "DisplayDepth", shaders that utilize the depth buffer will not be able to properly account for depth. The values can be either extremely low or high, so you'll need to experiment to determine the best fit for your specific case.
